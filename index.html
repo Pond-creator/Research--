@@ -528,6 +528,110 @@ body{
 .sv3.bold{font-weight:700;color:var(--text)}
 .sv3.neu{color:var(--text3)}
 
+/* ── MOBILE RESPONSIVE ── */
+@media(max-width:768px){
+  /* Nav */
+  .nav{padding:0 12px;gap:0}
+  .nav-brand{font-size:12px;margin-right:10px}
+  .nt{font-size:11px;padding:12px 8px}
+  .nr{gap:6px}
+  .btn-export{padding:6px 10px;font-size:10px}
+  .date-picker-wrap select{font-size:10px}
+  .date-updated{display:none}
+
+  /* Page */
+  .page{padding:16px 14px 40px}
+  .ptitle{font-size:18px}
+  .psub{font-size:12px}
+
+  /* Grids → single column */
+  .g2,.g3,.g4{grid-template-columns:1fr;gap:12px}
+  .span2{grid-column:span 1}
+
+  /* Cards */
+  .card{padding:14px}
+  .card-title{font-size:12px}
+
+  /* KPI */
+  .kv{font-size:20px}
+  .kl{font-size:9px}
+
+  /* Tables → scrollable */
+  .tbl,.cmp{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:11px}
+  .tbl th,.cmp th{font-size:9px;padding:0 0 8px}
+  .tbl td,.cmp td{font-size:11px;padding:8px 0}
+  .tbl th+th,.tbl td+td,.cmp th+th,.cmp td+td{padding-left:8px}
+
+  /* Website stats 5-col → 1-col */
+  div[style*="grid-template-columns:repeat(5,1fr)"]{
+    grid-template-columns:1fr!important;
+  }
+
+  /* Webstat grid */
+  .webstat-grid{grid-template-columns:1fr!important}
+
+  /* SWOT */
+  .swot{grid-template-columns:1fr}
+  .sw:nth-child(1){border-radius:var(--r14) var(--r14) 0 0!important}
+  .sw:nth-child(2){border-radius:0!important}
+  .sw:nth-child(3){border-radius:0!important}
+  .sw:nth-child(4){border-radius:0 0 var(--r14) var(--r14)!important}
+
+  /* Actions */
+  .act{padding:12px}
+  .act-num{font-size:18px}
+  .act-title{font-size:12px}
+  .act-desc{font-size:11px}
+
+  /* YouTube grid */
+  .yt-grid{grid-template-columns:1fr 1fr!important}
+  .yt-box{padding:14px}
+  .yt-title{font-size:14px}
+
+  /* Charts */
+  .ch{height:160px}
+  .ch-lg{height:200px}
+
+  /* Insights */
+  .g3 .ins{padding:12px}
+  .ins-text{font-size:11px}
+
+  /* MR rows */
+  .mr{grid-template-columns:100px 1fr 55px;gap:8px}
+  .mr-l{font-size:10px}
+  .mr-v{font-size:11px}
+
+  /* Brand hero */
+  .brand-hero{flex-direction:column;gap:14px;padding:16px}
+
+  /* Ads alert */
+  .ads-alert{flex-direction:column;gap:8px;padding:12px}
+  .ads-alert-icon{font-size:20px}
+
+  /* KW tags */
+  .kw{font-size:10px;padding:2px 7px}
+
+  /* Sentiment */
+  .sent-lbl{min-width:90px;font-size:11px}
+
+  /* Folio radar */
+  .g2 .card .ch-lg{height:220px}
+
+  /* Section label */
+  .sec{font-size:9px;margin:16px 0 10px}
+
+  /* Eyebrow */
+  .eyebrow{font-size:9px}
+}
+
+@media(max-width:480px){
+  .ptitle{font-size:16px}
+  .nav-brand{display:none}
+  .nt{font-size:10px;padding:12px 6px}
+  .yt-grid{grid-template-columns:1fr!important}
+  .g2{grid-template-columns:1fr}
+}
+
 @media print{
   .nav{position:static}.btn-refresh{display:none}
   body{background:#fff;color:#111}
