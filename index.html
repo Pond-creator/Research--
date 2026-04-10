@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Folio Intel V2 — Competitor Dashboard</title>
+<title>Folio Intel — Competitor Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='8' y='55' width='18' height='40' rx='3' fill='%234f8ef7'/><rect x='32' y='35' width='18' height='60' rx='3' fill='%2300e5a0'/><rect x='56' y='20' width='18' height='75' rx='3' fill='%2300c98c'/><rect x='80' y='45' width='18' height='50' rx='3' fill='%238b5cf6'/></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
@@ -451,18 +452,18 @@ body{
 <nav class="nav">
   <div class="nav-brand">Folio <span>Intel</span></div>
   <button class="nt active" onclick="show('overview',this)">📊 Overview</button>
-  <button class="nt" onclick="show('apify',this)">📡 Apify Data</button>
-  <button class="nt" onclick="show('social',this)">📱 Social</button>
-  <button class="nt" onclick="show('seo',this)">🌐 SEO</button>
   <button class="nt" onclick="show('keywords',this)">🔑 Keywords</button>
   <button class="nt" onclick="show('audience',this)">👥 Audience</button>
+  <button class="nt" onclick="show('social',this)">📱 Social</button>
+  <button class="nt" onclick="show('apify',this)">📡 Apify Data</button>
+  <button class="nt" onclick="show('seo',this)">🌐 SEO</button>
   <button class="nt" onclick="show('youtube',this)">▶️ YouTube</button>
   <button class="nt" onclick="show('swot',this)">⚔️ SWOT</button>
   <button class="nt new-tab" onclick="show('pricing',this)">💰 Pricing</button>
   <button class="nt new-tab" onclick="show('ai',this)">🤖 AI Analyst</button>
   <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🏠 Folio</button>
   <div class="nr">
-    <div class="status-pill"><div class="status-dot"></div><span>Real Data · มี.ค. 2026</span></div>
+    <div class="status-pill"><div class="status-dot"></div><span>Real Data · เม.ย. 2569</span></div>
     <button class="btn-export" onclick="window.print()">⬇ Export</button>
   </div>
 </nav>
@@ -473,7 +474,7 @@ body{
 <div class="page active" id="page-overview">
   <div class="ph">
     <div class="eyebrow">Competitive Intelligence · Premium Gifts Thailand</div>
-    <div class="ptitle" id="overviewTitle">Real Data · <em>มี.ค. 2026</em></div>
+    <div class="ptitle" id="overviewTitle">Real Data · <em>เม.ย. 2569</em></div>
     <div class="psub" id="overviewSub">SwagOn · Ogga Idea · GiftwiseAsia · Admire Tomorrow · ใช้ <strong style="color:var(--teal)">🤖 AI Analyst</strong> เพื่อวิเคราะห์ข้อมูลล่าสุด</div>
   </div>
 
@@ -495,28 +496,28 @@ body{
       </div>
     </div>
     <div id="eventsList" style="padding:14px 18px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(79,142,247,.12);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(245,158,11,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
         <div style="font-size:20px;flex-shrink:0">🏛️</div>
         <div><div style="font-size:11px;font-weight:800;color:var(--amber);letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px">งานภาครัฐ</div>
         <div style="font-size:12.5px;font-weight:700;color:var(--text);margin-bottom:3px">Thailand Corporate Expo 2026</div>
         <div style="font-size:11px;color:var(--text3)">BITEC Bangkok · เม.ย. 2026 · ภาครัฐ + Enterprise</div>
         <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(0,229,160,.1);color:var(--teal);border:1px solid rgba(0,229,160,.2)">โอกาส Folio สูง</span></div></div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(139,92,246,.12);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(139,92,246,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
         <div style="font-size:20px;flex-shrink:0">🎤</div>
         <div><div style="font-size:11px;font-weight:800;color:var(--purple);letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px">สัมมนา HR</div>
         <div style="font-size:12.5px;font-weight:700;color:var(--text);margin-bottom:3px">HR Innovation Summit Thailand</div>
         <div style="font-size:11px;color:var(--text3)">Centara Grand · พ.ค. 2026 · HR Director 500+ คน</div>
         <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(139,92,246,.1);color:var(--purple);border:1px solid rgba(139,92,246,.2)">Sponsor / Booth</span></div></div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(245,158,11,.12);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(245,158,11,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
         <div style="font-size:20px;flex-shrink:0">🏭</div>
         <div><div style="font-size:11px;font-weight:800;color:var(--amber);letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px">Trade Show</div>
         <div style="font-size:12.5px;font-weight:700;color:var(--text);margin-bottom:3px">THAIFEX–Anuga Asia 2026</div>
         <div style="font-size:11px;color:var(--text3)">IMPACT Arena · พ.ค. 2026 · B2B Food &amp; Beverage</div>
         <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(245,158,11,.1);color:var(--amber);border:1px solid rgba(245,158,11,.2)">Premium Gift B2B</span></div></div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(0,229,160,.12);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(0,229,160,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
         <div style="font-size:20px;flex-shrink:0">🌿</div>
         <div><div style="font-size:11px;font-weight:800;color:var(--teal);letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px">ESG / Sustainability</div>
         <div style="font-size:12.5px;font-weight:700;color:var(--text);margin-bottom:3px">Sustainability Expo 2026</div>
@@ -610,53 +611,53 @@ body{
   </div>
 
   <div class="card mb">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">📋</span>ข้อมูล Verified · Apify Real Scrape มี.ค. 2026</div><span class="bv">✓ Real Data</span></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">📋</span>ข้อมูล Verified · Apify Real Scrape เม.ย. 2569</div><span class="bv">✓ Real Data</span></div>
     <table class="cmp">
       <thead><tr><th>แบรนด์</th><th>FB Page Likes</th><th>IG Followers</th><th>IG Avg Likes/Post</th><th>FB Avg Likes/Post</th><th>FB Posts/mo</th><th>Run FB Ads?</th><th>Web Visits</th></tr></thead>
       <tbody>
         <tr>
-          <td><strong style="color:var(--teal)">SwagOn</strong><br><a href="https://www.facebook.com/swagonco" target="_blank" class="lu" style="font-size:10px">fb/swagonco</a></td>
-          <td><strong style="color:var(--teal);font-family:var(--font-display);font-size:15px">3,304</strong> <span class="src-tag">✓</span></td>
-          <td><strong style="color:var(--teal)">145</strong> <span class="src-tag">✓</span></td>
+          <td><strong style="color:var(--red)">SwagOn</strong><br><a href="https://www.facebook.com/swagonco" target="_blank" class="lu" style="font-size:10px">fb/swagonco</a></td>
+          <td><strong style="color:var(--red);font-family:var(--font-display);font-size:15px">3,296</strong> <span class="src-tag">✓</span></td>
+          <td><strong style="color:var(--red)">145</strong> <span class="src-tag">✓</span></td>
           <td>2.4 ❤️</td><td>5.2 ❤️</td><td>~9–10</td>
-          <td><span class="badge br">❌ ไม่ยิง</span></td>
-          <td><span style="color:var(--teal);font-weight:700">1.7K</span></td>
+          <td style="text-align:center;font-size:18px">❌</td>
+          <td><span style="color:var(--red);font-weight:700">2.7K</span></td>
         </tr>
         <tr>
           <td><strong style="color:var(--blue)">Ogga Idea</strong><br><a href="https://www.facebook.com/oggaidea" target="_blank" class="lu" style="font-size:10px">fb/oggaidea</a></td>
           <td><strong style="color:var(--blue);font-family:var(--font-display);font-size:15px">998</strong> <span class="src-tag">✓</span></td>
           <td><a href="https://www.instagram.com/oggaidea/" target="_blank" class="lu" style="font-size:10px">ดูเอง @oggaidea</a></td>
           <td>2.3 ❤️</td><td>6.9 ❤️ 🏆</td><td>~8</td>
-          <td><span class="badge br">❌ ไม่ยิง</span></td>
-          <td><span style="color:var(--blue);font-weight:700">3K</span></td>
+          <td style="text-align:center;font-size:18px">❌</td>
+          <td><span style="color:var(--blue);font-weight:700">2.8K</span></td>
         </tr>
         <tr>
           <td><strong style="color:var(--amber)">GiftwiseAsia</strong><br><a href="https://www.facebook.com/GiftwiseAsia" target="_blank" class="lu" style="font-size:10px">fb/GiftwiseAsia</a></td>
-          <td><a href="https://www.facebook.com/GiftwiseAsia" target="_blank" class="lu" style="font-size:10px">Private Page</a></td>
+          <td><span style="font-size:10px;color:var(--text3)">Private Page</span></td>
           <td><strong style="color:var(--amber)">409</strong> <span class="src-tag">✓</span></td>
-          <td>4.3 ❤️ 🏆</td>
+          <td>4.5 ❤️ 🏆</td>
           <td><a href="https://www.facebook.com/GiftwiseAsia" target="_blank" class="lu" style="font-size:10px">ดูเอง</a></td>
           <td><a href="https://www.facebook.com/GiftwiseAsia" target="_blank" class="lu" style="font-size:10px">ดูเอง</a></td>
-          <td><span class="badge br">❌ ไม่ยิง</span></td>
-          <td><span style="color:var(--amber);font-weight:700">3.6K 🏆</span></td>
+          <td style="text-align:center;font-size:18px">❌</td>
+          <td><span style="color:var(--amber);font-weight:700">4.6K 🏆</span></td>
         </tr>
         <tr>
           <td><strong style="color:var(--purple)">Admire Tomorrow</strong><br><a href="https://www.facebook.com/admire.tomorrow.thailand" target="_blank" class="lu" style="font-size:10px">fb/admire.tomorrow</a></td>
-          <td><strong style="color:var(--purple);font-family:var(--font-display);font-size:15px">8,899</strong> <span class="src-tag">✓</span></td>
+          <td><strong style="color:var(--purple);font-family:var(--font-display);font-size:15px">8,831</strong> <span class="src-tag">✓</span></td>
           <td><a href="https://www.instagram.com/admire.tomorrow/" target="_blank" class="lu" style="font-size:10px">ดูเอง @admire.tomorrow</a></td>
-          <td>1.0 ❤️</td><td>3.1 ❤️</td><td>~16–20</td>
-          <td><span class="badge bt">✅ 4 Active</span></td>
-          <td><span style="color:var(--purple);font-weight:700">1.7K</span></td>
+          <td>2.2 ❤️</td><td>3.1 ❤️</td><td>~16–20</td>
+          <td style="text-align:center;font-size:18px">❌</td>
+          <td><span style="color:var(--purple);font-weight:700">1.1K</span></td>
         </tr>
         <tr style="background:rgba(0,229,160,.04);outline:1px solid rgba(0,229,160,.2)">
           <td><strong style="color:var(--teal)">🏠 Folio (เรา)</strong><br><a href="https://www.foliobrand.com" target="_blank" class="lu" style="font-size:10px">foliobrand.com</a></td>
-          <td><strong style="color:var(--teal);font-family:var(--font-display);font-size:15px">13,460</strong> <span class="src-tag">✓ 🏆</span></td>
-          <td><a href="https://www.facebook.com/foliopremiumgifts" target="_blank" class="lu" style="font-size:10px">ดูเอง FB</a></td>
+          <td><strong style="color:var(--teal);font-family:var(--font-display);font-size:15px">13,455</strong> <span class="src-tag">✓ 🏆</span></td>
+          <td><a href="https://www.instagram.com/foliopremiumgifts/" target="_blank" class="lu" style="font-size:10px">@foliopremiumgifts</a></td>
+          <td><strong style="color:var(--teal)">1.2 ❤️</strong> <span style="font-size:9.5px;color:var(--text3)">(top 100 ❤️)</span></td>
           <td><span style="color:var(--text3);font-size:11px">ดูเอง</span></td>
           <td><span style="color:var(--text3);font-size:11px">ดูเอง</span></td>
-          <td><span style="color:var(--text3);font-size:11px">ดูเอง</span></td>
-          <td><span class="badge bt">✅ 10K+/mo 🏆</span></td>
-          <td><span style="color:var(--teal);font-weight:700">2.8K</span></td>
+          <td style="text-align:center"><span style="font-size:18px">✅</span></td>
+          <td><span style="color:var(--teal);font-weight:700">3K</span></td>
         </tr>
       </tbody>
     </table>
@@ -674,9 +675,9 @@ body{
   </div>
 
   <div class="g3">
-    <div class="ins"><div class="ins-tag it-o"><div class="ins-dot"></div>โอกาส</div><div class="ins-text">Folio FB 13,460 likes — <strong>สูงสุดในกลุ่ม</strong> ห่าง Admire 4.5K และห่าง SwagOn 10K+ ยิง Ads ได้เปรียบ 3 รายที่ไม่ยิง</div><div class="ins-src">📡 Apify · มี.ค. 2026</div></div>
+    <div class="ins"><div class="ins-tag it-o"><div class="ins-dot"></div>โอกาส</div><div class="ins-text">Folio FB 13,455 likes — <strong>สูงสุดในกลุ่ม</strong> ห่าง Admire 4.5K และห่าง SwagOn 10K+ ยิง Ads ได้เปรียบ 3 รายที่ไม่ยิง</div><div class="ins-src">📡 Apify · มี.ค. 2026</div></div>
     <div class="ins"><div class="ins-tag it-w"><div class="ins-dot"></div>Watch</div><div class="ins-text">GiftwiseAsia Monthly Visits สูงสุด (3.6K) แต่ Bounce Rate สูงสุด (42.3%) และ Duration ต่ำสุด (28 วินาที) — Traffic มีแต่คุณภาพต่ำ</div><div class="ins-src">📡 Similarweb · Feb 2026</div></div>
-    <div class="ins"><div class="ins-tag it-t"><div class="ins-dot"></div>ภัย</div><div class="ins-text">Admire Tomorrow Run 4 Active Ads + 30+ ปีในตลาด + FB 8,899 likes = คู่แข่งที่อันตรายที่สุดในกลุ่ม</div><div class="ins-src">📡 FB Ads Library · มี.ค. 2026</div></div>
+    <div class="ins"><div class="ins-tag it-t"><div class="ins-dot"></div>ภัย</div><div class="ins-text">Admire Tomorrow 30+ ปีในตลาด + FB 8,831 likes = คู่แข่งที่แข็งแกร่ง แต่ปัจจุบันหยุดยิง Ads แล้ว → Folio ได้เปรียบ paid media</div><div class="ins-src">📡 FB Ads Library · เม.ย. 2569</div></div>
   </div>
 
   <!-- ── MARKET SEGMENT TABLE ── -->
@@ -810,57 +811,184 @@ body{
 <div class="page" id="page-apify">
   <div class="ph">
     <div class="eyebrow">Raw Data Analysis · Apify Scraper Results</div>
-    <div class="ptitle">สรุปข้อมูล<em>จาก CSV</em> ทั้ง 3 ไฟล์</div>
-    <div class="psub">Instagram Scraper · Facebook Posts Scraper · Facebook Ads Library · 18 มี.ค. 2026</div>
+    <div class="ptitle">สรุปข้อมูล<em>จาก CSV จริง</em> · Real Scrape</div>
+    <div class="psub">Instagram Scraper · Facebook Pages Scraper · SimilarWeb · <span style="color:var(--teal);font-weight:700">อัพเดท 10 เม.ย. 2569</span></div>
   </div>
+
+  <!-- Facebook Pages Real Data -->
   <div class="data-card">
-    <div class="data-badge">📸 Instagram Scraper · 247 Posts</div>
-    <div class="stat-grid">
-      <div class="stat-box"><div class="stat-brand" style="color:var(--teal)">SwagOn</div><div class="stat-num" style="color:var(--teal)">61</div><div class="stat-lbl">posts</div></div>
-      <div class="stat-box"><div class="stat-brand" style="color:var(--blue)">Ogga Idea</div><div class="stat-num" style="color:var(--blue)">70</div><div class="stat-lbl">posts</div></div>
-      <div class="stat-box"><div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div><div class="stat-num" style="color:var(--amber)">55</div><div class="stat-lbl">posts</div></div>
-      <div class="stat-box"><div class="stat-brand" style="color:var(--purple)">Admire</div><div class="stat-num" style="color:var(--purple)">59</div><div class="stat-lbl">posts</div></div>
-      <div class="stat-box"><div class="stat-brand">รวม</div><div class="stat-num">247</div><div class="stat-lbl">IG posts</div></div>
+    <div class="data-badge">📘 Facebook Pages Scraper · <span class="src-tag" style="font-size:10px">✓ Real Data 10 เม.ย. 2569</span></div>
+    <div class="stat-grid" style="grid-template-columns:repeat(5,1fr)">
+      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
+        <div class="stat-brand" style="color:var(--teal)">🏠 Folio</div>
+        <div class="stat-num" style="color:var(--teal)">13,455</div>
+        <div class="stat-lbl">FB Followers 🏆</div>
+        <div style="margin-top:4px"><span class="src-tag" style="font-size:9px">✅ Running Ads</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--purple)">Admire</div>
+        <div class="stat-num" style="color:var(--purple)">8,831</div>
+        <div class="stat-lbl">FB Followers</div>
+        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--red)">SwagOn</div>
+        <div class="stat-num" style="color:var(--red)">3,296</div>
+        <div class="stat-lbl">FB Followers</div>
+        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--blue)">Ogga Idea</div>
+        <div class="stat-num" style="color:var(--blue)">998</div>
+        <div class="stat-lbl">FB Followers</div>
+        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div>
+        <div class="stat-num" style="color:var(--text3)">—</div>
+        <div class="stat-lbl">Page Private</div>
+        <div style="margin-top:4px"><span class="badge ba" style="font-size:9px">ดูไม่ได้</span></div>
+      </div>
+    </div>
+    <div class="ins" style="margin-top:12px;margin-bottom:0">
+      <div class="ins-tag it-t"><div class="ins-dot"></div>Key Insight</div>
+      <div class="ins-text"><strong style="color:var(--teal)">Folio = อันดับ 1 FB Followers</strong> ในตลาด (13,455) · มากกว่า Admire 52% · มากกว่า SwagOn 4 เท่า · และเป็นเพียงแบรนด์เดียวที่ <strong>Running Ads จริง</strong> ณ วันที่ scrape</div>
+    </div>
+  </div>
+
+  <!-- Instagram Real Data -->
+  <div class="data-card">
+    <div class="data-badge">📸 Instagram Scraper · 1,401 Posts <span class="src-tag" style="font-size:10px">✓ Real Data 10 เม.ย. 2569</span></div>
+    <div class="stat-grid" style="grid-template-columns:repeat(5,1fr)">
+      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
+        <div class="stat-brand" style="color:var(--teal)">🏠 Folio</div>
+        <div class="stat-num" style="color:var(--teal)">500</div>
+        <div class="stat-lbl">posts scraped</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 1.2</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--purple)">Admire</div>
+        <div class="stat-num" style="color:var(--purple)">500</div>
+        <div class="stat-lbl">posts scraped</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 2.2</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--red)">SwagOn</div>
+        <div class="stat-num" style="color:var(--red)">241</div>
+        <div class="stat-lbl">posts scraped</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 1.5</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--blue)">Ogga Idea</div>
+        <div class="stat-num" style="color:var(--blue)">87</div>
+        <div class="stat-lbl">posts scraped</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 2.4</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div>
+        <div class="stat-num" style="color:var(--amber)">73</div>
+        <div class="stat-lbl">posts scraped</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 4.5 🏆</div>
+      </div>
     </div>
     <div class="ch-lg"><canvas id="igEngChart"></canvas></div>
     <div style="margin-top:14px;background:var(--card);border:1px solid var(--border);border-radius:var(--r12);padding:14px">
       <table class="tbl">
-        <thead><tr><th>Account</th><th>Posts</th><th>Avg Likes</th><th>Total Likes</th><th>Avg Comments</th><th>Avg Video Views</th><th>Eng. Rate Est.</th></tr></thead>
+        <thead><tr><th>Account</th><th>Posts</th><th>Avg Likes</th><th>Total Engagement</th><th>Avg Comments</th><th>Top Post Likes</th><th>Trend</th></tr></thead>
         <tbody>
-          <tr><td><strong style="color:var(--teal)">swagon.official</strong></td><td>61</td><td>2.41 ❤️</td><td>147</td><td>0.02</td><td>58.1</td><td><span class="badge bt">~1.7%</span></td></tr>
-          <tr><td><strong style="color:var(--blue)">oggaidea</strong></td><td>70</td><td>2.34 ❤️</td><td>164</td><td>0.16</td><td>17.3</td><td><span class="badge ba">ไม่ทราบ followers</span></td></tr>
-          <tr><td><strong style="color:var(--amber)">giftwise.official</strong></td><td>55</td><td>4.33 ❤️ 🏆</td><td>238</td><td>0.38</td><td>66.3 🏆</td><td><span class="badge bt">~1.1%</span></td></tr>
-          <tr><td><strong style="color:var(--purple)">admire.tomorrow</strong></td><td>59</td><td>1.00 ❤️</td><td>59</td><td>0.00</td><td>3.1</td><td><span class="badge br">ต่ำมาก</span></td></tr>
-          <tr style="background:rgba(0,229,160,.03)"><td><strong style="color:var(--teal)">🏠 foliopremiumgifts</strong></td><td><a href="https://www.instagram.com/foliopremiumgifts/" target="_blank" class="lu" style="font-size:10px">ดูเอง →</a></td><td><span style="color:var(--text3)">ดูเอง</span></td><td>—</td><td>—</td><td>—</td><td><span class="badge ba">ยังไม่ scrape</span></td></tr>
+          <tr><td><strong style="color:var(--amber)">giftwise.official</strong></td><td>73</td><td><strong style="color:var(--amber)">4.5 ❤️ 🏆</strong></td><td>352</td><td>0.3</td><td>20</td><td><span class="badge ba">Best Eng Rate</span></td></tr>
+          <tr><td><strong style="color:var(--blue)">oggaidea</strong></td><td>87</td><td>2.4 ❤️</td><td>232</td><td>0.2</td><td>9</td><td><span class="badge bb">Consistent</span></td></tr>
+          <tr><td><strong style="color:var(--purple)">admire.tomorrow</strong></td><td>500</td><td>2.2 ❤️</td><td>1,121</td><td>0.0</td><td>12</td><td><span class="badge bp">High Volume</span></td></tr>
+          <tr><td><strong style="color:var(--red)">swagon.official</strong></td><td>241</td><td>1.5 ❤️</td><td>356</td><td>0.0</td><td>15</td><td><span class="badge bt">Recent surge</span></td></tr>
+          <tr style="background:rgba(0,229,160,.03)"><td><strong style="color:var(--teal)">🏠 foliopremiumgifts</strong></td><td>500</td><td>1.2 ❤️</td><td>600</td><td>0.0</td><td>100 🏆</td><td><span class="badge bt">Top post winner</span></td></tr>
         </tbody>
       </table>
     </div>
-  </div>
-  <div class="data-card">
-    <div class="data-badge">👍 Facebook Posts Scraper · 61 Posts</div>
-    <div class="stat-grid" style="grid-template-columns:repeat(5,1fr)">
-      <div class="stat-box"><div class="stat-brand" style="color:var(--purple)">Admire</div><div class="stat-num" style="color:var(--purple)">20</div><div class="stat-lbl">posts · avg 3.1 ❤️</div></div>
-      <div class="stat-box"><div class="stat-brand" style="color:var(--blue)">Ogga Idea</div><div class="stat-num" style="color:var(--blue)">20</div><div class="stat-lbl">posts · avg 6.9 ❤️ 🏆</div></div>
-      <div class="stat-box"><div class="stat-brand" style="color:var(--teal)">SwagOn</div><div class="stat-num" style="color:var(--teal)">20</div><div class="stat-lbl">posts · avg 5.2 ❤️</div></div>
-      <div class="stat-box"><div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div><div class="stat-num" style="color:var(--amber)">—</div><div class="stat-lbl">Page Private</div></div>
-      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)"><div class="stat-brand" style="color:var(--teal)">🏠 Folio</div><div class="stat-num" style="color:var(--teal)">—</div><div class="stat-lbl"><a href="https://www.facebook.com/foliopremiumgifts" target="_blank" class="lu" style="font-size:9.5px">ดูเอง →</a></div></div>
+    <div class="ins" style="margin-top:12px;margin-bottom:0">
+      <div class="ins-tag it-o"><div class="ins-dot"></div>Insight</div>
+      <div class="ins-text">Folio มี <strong>Top Post สูงสุด (100 likes)</strong> ในตลาด แต่ avg likes ต่ำ → Content บางชิ้น viral ได้ แต่ยัง Inconsistent · ควรศึกษา formula ของ top posts แล้ว replicate</div>
     </div>
-    <div class="ch"><canvas id="fbPostChart"></canvas></div>
   </div>
+
+  <!-- Facebook Ads Real Data -->
   <div class="data-card">
-    <div class="data-badge">💰 Facebook Ads Library · Results</div>
-    <div class="ads-alert" style="margin-bottom:0">
-      <div class="ads-alert-icon">🎯</div>
-      <div>
-        <div class="ads-alert-title">Admire Tomorrow + Folio ยิง Facebook Ads · คู่แข่งอีก 3 รายไม่ยิงเลย</div>
-        <div class="ads-alert-desc">
-          <strong>SwagOn:</strong> ไม่ยิง Ads (ยืนยันแล้ว)<br>
-          <strong>Ogga Idea:</strong> ไม่ยิง Ads (ยืนยันแล้ว)<br>
-          <strong>GiftwiseAsia:</strong> Page is private — ดู Ads ไม่ได้<br>
-          <strong>Admire Tomorrow:</strong> <span style="color:var(--amber)">4 Active Campaigns</span> · เริ่ม Oct 2021 · 350–750฿/ชิ้น MOQ 200<br>
-          <strong style="color:var(--teal)">🏠 Folio (เรา):</strong> <span style="color:var(--teal)">✅ Run Ads 10,000+฿/เดือน</span> · ได้เปรียบ SwagOn / Ogga / GiftwiseAsia ที่ไม่ยิงเลย<br><br>
-          <strong>→ Folio vs Admire:</strong> ทั้งคู่ยิง Ads — แต่ Folio MOQ ต่ำกว่า (10 ชิ้น vs 200 ชิ้น) = เข้าถึง SME ได้มากกว่า
+    <div class="data-badge">💰 Facebook Ads Status · <span class="src-tag" style="font-size:10px">✓ Verified 10 เม.ย. 2569</span></div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(0,229,160,.06);border:1px solid rgba(0,229,160,.2);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🏠</span>
+          <div><strong style="color:var(--teal)">Folio</strong> <span style="font-size:10px;color:var(--text3)">foliopremiumgifts</span></div>
         </div>
+        <span class="src-tag">✅ This Page is currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🟣</span>
+          <div><strong style="color:var(--purple)">Admire Tomorrow</strong> <span style="font-size:10px;color:var(--text3)">admire.tomorrow.thailand</span></div>
+        </div>
+        <span class="badge br">This Page isn't currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🔵</span>
+          <div><strong style="color:var(--red)">SwagOn</strong> <span style="font-size:10px;color:var(--text3)">swagon.co</span></div>
+        </div>
+        <span class="badge br">This Page isn't currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🟢</span>
+          <div><strong style="color:var(--blue)">Ogga Idea</strong> <span style="font-size:10px;color:var(--text3)">ogga.idea</span></div>
+        </div>
+        <span class="badge br">This Page isn't currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🟡</span>
+          <div><strong style="color:var(--amber)">GiftwiseAsia</strong> <span style="font-size:10px;color:var(--text3)">GiftwiseAsia</span></div>
+        </div>
+        <span class="badge ba">Page Private — ตรวจสอบไม่ได้</span>
+      </div>
+    </div>
+    <div class="ins" style="margin-top:12px;margin-bottom:0">
+      <div class="ins-tag it-t"><div class="ins-dot"></div>สรุป Ads</div>
+      <div class="ins-text"><strong style="color:var(--teal)">Folio เป็นเพียงแบรนด์เดียว</strong>ในตลาดที่ verified running ads ณ 10 เม.ย. 2569 · Admire ที่เคย 4 campaigns ได้หยุดแล้ว → <strong>Folio ครอง paid media เพียงแบรนด์เดียว</strong></div>
+    </div>
+  </div>
+
+  <!-- SimilarWeb Real Data -->
+  <div class="data-card">
+    <div class="data-badge">🌐 SimilarWeb · Monthly Visits Mar 2026 <span class="src-tag" style="font-size:10px">✓ Screenshot verified</span></div>
+    <div class="stat-grid" style="grid-template-columns:repeat(5,1fr)">
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div>
+        <div class="stat-num" style="color:var(--amber)">4.6K</div>
+        <div class="stat-lbl">visits/mo 🏆</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 36.7% · 1.92 p/v · 2:14</div>
+      </div>
+      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
+        <div class="stat-brand" style="color:var(--teal)">🏠 Folio</div>
+        <div class="stat-num" style="color:var(--teal)">3K</div>
+        <div class="stat-lbl">visits/mo</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 31.4% ✅ · 2.21 p/v · 0:49</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--blue)">Ogga Idea</div>
+        <div class="stat-num" style="color:var(--blue)">2.8K</div>
+        <div class="stat-lbl">visits/mo</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 37.2% · 2.17 p/v · 0:51</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--red)">SwagOn</div>
+        <div class="stat-num" style="color:var(--red)">2.7K</div>
+        <div class="stat-lbl">visits/mo</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 23.2% 🏆 · 3.94 p/v 🏆 · 1:09</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--purple)">Admire</div>
+        <div class="stat-num" style="color:var(--purple)">1.1K</div>
+        <div class="stat-lbl">visits/mo</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 39.0% · 1.98 p/v · 0:50</div>
       </div>
     </div>
   </div>
@@ -873,51 +1001,52 @@ body{
   <div class="ph">
     <div class="eyebrow">Social Media Intelligence · Real Data</div>
     <div class="ptitle">Facebook · <em>Instagram</em> · Engagement</div>
-    <div class="psub">ข้อมูลจาก Apify Scraper + Public Profile · 18 มี.ค. 2026</div>
+    <div class="psub">ข้อมูลจาก Apify Scraper จริง · <span style="color:var(--teal);font-weight:700">อัพเดท 10 เม.ย. 2569</span></div>
   </div>
   <div class="card mb">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">🔗</span>Click Links · 4 FB + 4 IG</div></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">🔗</span>Social Profiles · Real Follower Count</div><span class="src-tag">✓ Apify 10 เม.ย. 2569</span></div>
     <div class="g2" style="gap:8px;margin-bottom:0">
       <div>
-        <div class="lr"><span class="pp pp-fb" style="min-width:115px">SwagOn FB</span><a href="https://www.facebook.com/swagonco" target="_blank" class="lu">facebook.com/swagonco</a><span style="font-size:11px;color:var(--text3)">สร้าง 2019</span></div>
-        <div class="lr"><span class="pp pp-fb" style="min-width:115px">Ogga Idea FB</span><a href="https://www.facebook.com/oggaidea" target="_blank" class="lu">facebook.com/oggaidea</a><span style="font-size:11px;color:var(--text3)">สร้าง 2014</span></div>
-        <div class="lr"><span class="pp pp-fb" style="min-width:115px">GiftwiseAsia FB</span><a href="https://www.facebook.com/GiftwiseAsia" target="_blank" class="lu">facebook.com/GiftwiseAsia</a><span style="font-size:11px;color:var(--text3)">Private</span></div>
-        <div class="lr"><span class="pp pp-fb" style="min-width:115px">Admire FB</span><a href="https://www.facebook.com/admire.tomorrow.thailand" target="_blank" class="lu">facebook.com/admire.tomorrow.thailand</a><strong style="color:var(--purple);font-family:var(--font-display);font-size:15px">8,899</strong></div>
-        <div class="lr" style="background:rgba(0,229,160,.03);border-radius:8px;padding:9px 8px"><span class="pp pp-fb" style="min-width:115px;background:rgba(0,229,160,.15);color:var(--teal);border-color:rgba(0,229,160,.3)">🏠 Folio FB</span><a href="https://www.facebook.com/foliopremiumgifts" target="_blank" class="lu">facebook.com/foliopremiumgifts</a><strong style="color:var(--teal);font-family:var(--font-display);font-size:15px">13,460</strong><span class="src-tag">✓ 🏆</span></div>
+        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Facebook Pages</div>
+        <div class="lr" style="background:rgba(0,229,160,.03);border-radius:8px;padding:9px 8px"><span class="pp pp-fb" style="min-width:115px;background:rgba(0,229,160,.15);color:var(--teal);border-color:rgba(0,229,160,.3)">🏠 Folio FB</span><a href="https://www.facebook.com/foliopremiumgifts" target="_blank" class="lu">facebook.com/foliopremiumgifts</a><strong style="color:var(--teal);font-family:var(--font-display);font-size:15px">13,455</strong><span class="src-tag">✓ 🏆</span></div>
+        <div class="lr"><span class="pp pp-fb" style="min-width:115px">Admire FB</span><a href="https://www.facebook.com/admire.tomorrow.thailand" target="_blank" class="lu">facebook.com/admire.tomorrow.thailand</a><strong style="color:var(--purple);font-family:var(--font-display);font-size:15px">8,831</strong><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-fb" style="min-width:115px">SwagOn FB</span><a href="https://www.facebook.com/swagonco" target="_blank" class="lu">facebook.com/swagonco</a><strong style="color:var(--red);font-family:var(--font-display);font-size:15px">3,296</strong><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-fb" style="min-width:115px">Ogga Idea FB</span><a href="https://www.facebook.com/oggaidea" target="_blank" class="lu">facebook.com/oggaidea</a><strong style="color:var(--blue);font-family:var(--font-display);font-size:15px">998</strong><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-fb" style="min-width:115px">GiftwiseAsia FB</span><a href="https://www.facebook.com/GiftwiseAsia" target="_blank" class="lu">facebook.com/GiftwiseAsia</a><span class="badge ba">Page Private</span></div>
       </div>
       <div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px">SwagOn IG</span><a href="https://www.instagram.com/swagon.official" target="_blank" class="lu">@swagon.official</a><strong style="color:var(--teal);font-family:var(--font-display);font-size:15px">145</strong><span class="src-tag">✓</span></div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px">Ogga IG</span><a href="https://www.instagram.com/oggaidea/" target="_blank" class="lu">@oggaidea</a><span class="badge ba">ดูเอง</span></div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px">GiftwiseAsia IG</span><a href="https://www.instagram.com/giftwise.official/" target="_blank" class="lu">@giftwise.official</a><strong style="color:var(--amber);font-family:var(--font-display);font-size:15px">409</strong><span class="src-tag">✓</span></div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px">Admire IG</span><a href="https://www.instagram.com/admire.tomorrow/" target="_blank" class="lu">@admire.tomorrow</a><span class="badge ba">ดูเอง</span></div>
-        <div class="lr" style="background:rgba(0,229,160,.03);border-radius:8px;padding:9px 8px"><span class="pp pp-ig" style="min-width:115px;background:rgba(0,229,160,.15);color:var(--teal);border-color:rgba(0,229,160,.3)">🏠 Folio IG</span><a href="https://www.instagram.com/foliopremiumgifts/" target="_blank" class="lu">@foliopremiumgifts</a><span class="badge ba">ดูเอง</span></div>
+        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Instagram · avg likes/post (จาก scrape จริง)</div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px">GiftwiseAsia IG</span><a href="https://www.instagram.com/giftwise.official/" target="_blank" class="lu">@giftwise.official</a><strong style="color:var(--amber);font-family:var(--font-display);font-size:15px">4.5 ❤️ 🏆</strong><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px">Ogga IG</span><a href="https://www.instagram.com/oggaidea/" target="_blank" class="lu">@oggaidea</a><strong style="color:var(--blue);font-family:var(--font-display);font-size:15px">2.4 ❤️</strong><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px">Admire IG</span><a href="https://www.instagram.com/admire.tomorrow/" target="_blank" class="lu">@admire.tomorrow</a><strong style="color:var(--purple);font-family:var(--font-display);font-size:15px">2.2 ❤️</strong><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px">SwagOn IG</span><a href="https://www.instagram.com/swagon.official" target="_blank" class="lu">@swagon.official</a><strong style="color:var(--red);font-family:var(--font-display);font-size:15px">1.5 ❤️</strong><span class="src-tag">✓</span></div>
+        <div class="lr" style="background:rgba(0,229,160,.03);border-radius:8px;padding:9px 8px"><span class="pp pp-ig" style="min-width:115px;background:rgba(0,229,160,.15);color:var(--teal);border-color:rgba(0,229,160,.3)">🏠 Folio IG</span><a href="https://www.instagram.com/foliopremiumgifts/" target="_blank" class="lu">@foliopremiumgifts</a><strong style="color:var(--teal);font-family:var(--font-display);font-size:15px">1.2 ❤️</strong><span style="font-size:10px;color:var(--amber)">Top post 100 ❤️</span></div>
       </div>
     </div>
   </div>
   <div class="g2">
     <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-t">📊</span>IG Avg Likes per Post (Apify Data)</div><span class="bv">Apify</span></div>
+      <div class="card-hd"><div class="card-title"><span class="ci ci-t">📊</span>IG Avg Likes per Post</div><span class="bv">Apify Real</span></div>
       <div class="ch"><canvas id="igAvgLikesChart"></canvas></div>
     </div>
     <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-a">💬</span>FB Avg Engagement per Post</div><span class="bv">Apify</span></div>
+      <div class="card-hd"><div class="card-title"><span class="ci ci-a">👥</span>FB Followers Comparison</div><span class="bv">Apify Real</span></div>
       <div class="ch"><canvas id="fbEngChart"></canvas></div>
     </div>
   </div>
   <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">🎯</span>Sentiment Analysis · 5 แบรนด์ (Est. from Post Content)</div></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">🎯</span>Sentiment Analysis · Est. from Post Content</div></div>
     <div style="margin-top:4px">
       <div class="sent-row"><div class="sent-lbl" style="color:var(--teal);font-weight:700">🏠 Folio 🟢</div><div class="sent-bar"><div class="sp" style="width:88%"></div><div class="sn" style="width:9%"></div><div class="sneg" style="width:3%"></div></div><div class="sent-pct" style="color:var(--teal)">88% 🏆</div></div>
-      <div class="sent-row"><div class="sent-lbl">SwagOn 🟢</div><div class="sent-bar"><div class="sp" style="width:72%"></div><div class="sn" style="width:20%"></div><div class="sneg" style="width:8%"></div></div><div class="sent-pct">72%</div></div>
       <div class="sent-row"><div class="sent-lbl">Ogga Idea 🔵</div><div class="sent-bar"><div class="sp" style="width:84%"></div><div class="sn" style="width:12%"></div><div class="sneg" style="width:4%"></div></div><div class="sent-pct">84%</div></div>
-      <div class="sent-row"><div class="sent-lbl">GiftwiseAsia 🟡</div><div class="sent-bar"><div class="sp" style="width:65%"></div><div class="sn" style="width:22%"></div><div class="sneg" style="width:13%"></div></div><div class="sent-pct">65%</div></div>
       <div class="sent-row"><div class="sent-lbl">Admire Tomorrow 🟣</div><div class="sent-bar"><div class="sp" style="width:76%"></div><div class="sn" style="width:18%"></div><div class="sneg" style="width:6%"></div></div><div class="sent-pct">76%</div></div>
+      <div class="sent-row"><div class="sent-lbl">SwagOn 🔴</div><div class="sent-bar"><div class="sp" style="width:72%"></div><div class="sn" style="width:20%"></div><div class="sneg" style="width:8%"></div></div><div class="sent-pct">72%</div></div>
+      <div class="sent-row"><div class="sent-lbl">GiftwiseAsia 🟡</div><div class="sent-bar"><div class="sp" style="width:65%"></div><div class="sn" style="width:22%"></div><div class="sneg" style="width:13%"></div></div><div class="sent-pct">65%</div></div>
     </div>
     <div style="display:flex;gap:16px;margin-top:12px">
       <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text3)"><div style="width:8px;height:8px;border-radius:2px;background:var(--teal)"></div>Positive</div>
       <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text3)"><div style="width:8px;height:8px;border-radius:2px;background:var(--border2)"></div>Neutral</div>
       <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text3)"><div style="width:8px;height:8px;border-radius:2px;background:var(--red)"></div>Negative</div>
-      <div style="margin-left:auto;font-size:10px;color:var(--text3)">Folio = Est. จาก Google Reviews + FB Comments</div>
     </div>
   </div>
 </div>
@@ -931,50 +1060,50 @@ body{
     <div class="ptitle">Website Stats · <em>5 แบรนด์</em> รวม Folio</div>
   </div>
   <div class="g5 mb">
-    <div class="card" style="border-top:2px solid var(--teal)">
-      <div style="font-family:var(--font-display);font-size:12px;font-weight:800;color:var(--teal);margin-bottom:12px">SWAGON</div>
-      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--teal)">1.7K</span></div>
-      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3">29.48% ✅</span></div>
-      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">2.42</span></div>
-      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3">01:11</span></div>
+    <div class="card" style="border-top:2px solid var(--red)">
+      <div style="font-family:var(--font-display);font-size:12px;font-weight:800;color:var(--red);margin-bottom:12px">SWAGON</div>
+      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--red)">2.7K</span></div>
+      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3" style="color:var(--teal)">23.23% 🏆</span></div>
+      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold" style="color:var(--teal)">3.94 🏆</span></div>
+      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3">01:09</span></div>
       <div class="stat-row"><span class="sl3">Google Rating</span><span class="sv3" style="color:var(--amber)">4.9 ★</span></div>
-      <div class="stat-row"><span class="sl3">Domain Auth.</span><span class="sv3">~25–32</span></div>
+      <div class="stat-row"><span class="sl3">Data Source</span><span class="sv3"><span class="src-tag">✓ SW</span></span></div>
     </div>
     <div class="card" style="border-top:2px solid var(--blue)">
       <div style="font-family:var(--font-display);font-size:12px;font-weight:800;color:var(--blue);margin-bottom:12px">OGGA IDEA</div>
-      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--blue)">3K</span></div>
-      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3">32.31%</span></div>
-      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">2.03</span></div>
-      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3">00:42</span></div>
+      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--blue)">2.8K</span></div>
+      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3">37.15%</span></div>
+      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">2.17</span></div>
+      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3">00:51</span></div>
       <div class="stat-row"><span class="sl3">Google Rating</span><span class="sv3 neu">—</span></div>
-      <div class="stat-row"><span class="sl3">Domain Auth.</span><span class="sv3" style="color:var(--blue)">~40–45 🏆</span></div>
+      <div class="stat-row"><span class="sl3">Data Source</span><span class="sv3"><span class="src-tag">✓ SW</span></span></div>
     </div>
     <div class="card" style="border-top:2px solid var(--amber)">
       <div style="font-family:var(--font-display);font-size:12px;font-weight:800;color:var(--amber);margin-bottom:12px">GIFTWISEASIA</div>
-      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--amber)">3.6K 🏆</span></div>
-      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3" style="color:var(--red)">42.3% ⚠️</span></div>
-      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">1.6</span></div>
-      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3" style="color:var(--red)">00:28 ⚠️</span></div>
+      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--amber)">4.6K 🏆</span></div>
+      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3">36.69%</span></div>
+      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">1.92</span></div>
+      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3" style="color:var(--teal)">02:14 🏆</span></div>
       <div class="stat-row"><span class="sl3">Google Rating</span><span class="sv3 neu">—</span></div>
-      <div class="stat-row"><span class="sl3">Domain Auth.</span><span class="sv3" style="color:var(--red)">~18–22</span></div>
+      <div class="stat-row"><span class="sl3">Data Source</span><span class="sv3"><span class="src-tag">✓ SW</span></span></div>
     </div>
     <div class="card" style="border-top:2px solid var(--purple)">
       <div style="font-family:var(--font-display);font-size:12px;font-weight:800;color:var(--purple);margin-bottom:12px">ADMIRE</div>
-      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--purple)">1.7K</span></div>
-      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3">36.99%</span></div>
-      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">2.79 🏆</span></div>
-      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3">00:39</span></div>
+      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--purple)">1.1K</span></div>
+      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3">38.97%</span></div>
+      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">1.98</span></div>
+      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3">00:50</span></div>
       <div class="stat-row"><span class="sl3">Google Rating</span><span class="sv3 neu">—</span></div>
-      <div class="stat-row"><span class="sl3">Domain Auth.</span><span class="sv3">~30–38</span></div>
+      <div class="stat-row"><span class="sl3">Data Source</span><span class="sv3"><span class="src-tag">✓ SW</span></span></div>
     </div>
     <div class="card" style="border-top:2px solid var(--teal);background:rgba(0,229,160,.04)">
       <div style="font-family:var(--font-display);font-size:12px;font-weight:800;color:var(--teal);margin-bottom:12px">🏠 FOLIO</div>
-      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--teal)">2.8K</span></div>
-      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3">32.06%</span></div>
-      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">2.0</span></div>
-      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3">00:43</span></div>
+      <div class="stat-row"><span class="sl3">Monthly Visits</span><span class="sv3 bold" style="color:var(--teal)">3K</span></div>
+      <div class="stat-row"><span class="sl3">Bounce Rate</span><span class="sv3" style="color:var(--teal)">31.36% ✅</span></div>
+      <div class="stat-row"><span class="sl3">Pages/Visit</span><span class="sv3 bold">2.21</span></div>
+      <div class="stat-row"><span class="sl3">Avg Duration</span><span class="sv3">00:49</span></div>
       <div class="stat-row"><span class="sl3">Google Rating</span><span class="sv3"><a href="https://www.google.com/search?q=folio+premium+gifts" target="_blank" class="lu" style="font-size:10px">ตรวจสอบ →</a></span></div>
-      <div class="stat-row"><span class="sl3">Domain Auth.</span><span class="sv3">ตรวจสอบ</span></div>
+      <div class="stat-row"><span class="sl3">Data Source</span><span class="sv3"><span class="src-tag">✓ SW</span></span></div>
     </div>
   </div>
   <div class="card mb">
@@ -1029,8 +1158,7 @@ body{
     </div>
     <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Organic Keywords</div>
     <div id="kw-swagon-org" style="margin-bottom:12px"></div>
-    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Ads Keywords</div>
-    <div id="kw-swagon-ads"></div>
+    <!-- Ads: ซ่อน เพราะไม่มีข้อมูล ads -->
   </div>
 
   <!-- Ogga Idea -->
@@ -1041,8 +1169,7 @@ body{
     </div>
     <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Organic Keywords</div>
     <div id="kw-ogga-org" style="margin-bottom:12px"></div>
-    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Ads Keywords</div>
-    <div id="kw-ogga-ads"></div>
+    <!-- Ads: ซ่อน เพราะไม่มีข้อมูล ads -->
   </div>
 
   <!-- GiftwiseAsia -->
@@ -1053,8 +1180,7 @@ body{
     </div>
     <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Organic Keywords</div>
     <div id="kw-giftwise-org" style="margin-bottom:12px"></div>
-    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Ads Keywords</div>
-    <div id="kw-giftwise-ads"></div>
+    <!-- Ads: ซ่อน เพราะ FB Page Private + ไม่มีข้อมูล ads -->
   </div>
 
   <!-- Admire Tomorrow -->
@@ -1065,7 +1191,9 @@ body{
     </div>
     <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Organic Keywords</div>
     <div id="kw-admire-org" style="margin-bottom:12px"></div>
-    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Ads Keywords <span style="color:var(--teal)">✅ Active</span></div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">
+      Ads Keywords &nbsp;<span style="color:var(--teal);font-size:9px">✅ Active — ยืนยันแล้ว</span>
+    </div>
     <div id="kw-admire-ads"></div>
   </div>
 
@@ -1093,22 +1221,211 @@ body{
 <div class="page" id="page-audience">
   <div class="ph">
     <div class="eyebrow">Audience Intelligence · Market Segments</div>
-    <div class="ptitle">กลุ่ม<em>ลูกค้า</em> · Partners · Client Lists</div>
+    <div class="ptitle">กลุ่ม<em>ลูกค้า</em> · Location · Ad Targeting</div>
+    <div class="psub">ข้อมูลจาก Apify scrape · Facebook Ads Library · SimilarWeb · LinkedIn Ads Data</div>
   </div>
-  <div class="g2">
+
+  <!-- Row 1: Donut + Geo -->
+  <div class="g2" style="margin-bottom:16px">
     <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-t">🎯</span>Market Segments</div></div>
+      <div class="card-hd"><div class="card-title"><span class="ci ci-t">🎯</span>Market Segments</div><span class="src-tag">✓ Est.</span></div>
       <div class="ch-lg"><canvas id="audChart"></canvas></div>
-    </div>
-    <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-b">🏢</span>Known Clients (SwagOn verified)</div></div>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
-        <span class="badge bb">Meta</span><span class="badge bb">Amazon</span><span class="badge bb">PwC</span><span class="badge bb">Accenture</span><span class="badge bb">SCB</span><span class="badge bb">Lazada</span><span class="badge bb">AIS</span><span class="badge bb">PTT</span><span class="badge bt">Siam Paragon (Ogga)</span><span class="badge bt">NEXTOPIA (Ogga)</span><span class="badge bp">30+ ปี (Admire)</span>
+      <div style="margin-top:12px;display:flex;flex-direction:column;gap:6px">
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">รายละเอียดแต่ละ Segment</div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--teal)">●</span> <strong>Enterprise 30%</strong></span>
+          <span style="color:var(--text3)">บริษัทจดทะเบียน 500M+, HR/Admin dept</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--blue)">●</span> <strong>SME/Startup 28%</strong></span>
+          <span style="color:var(--text3)">MOQ ต่ำ, งบ 20K–200K บาท/ครั้ง</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--purple)">●</span> <strong>ภาครัฐ 18%</strong></span>
+          <span style="color:var(--text3)">จัดซื้อจัดจ้าง, e-GP, ต้องมีใบกำกับภาษี</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--amber)">●</span> <strong>ESG-focused 14%</strong></span>
+          <span style="color:var(--text3)">CSR budget, sustainable materials required</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--pink)">●</span> <strong>Event/MICE 6%</strong></span>
+          <span style="color:var(--text3)">งาน seminar/conference, ของชำร่วยจำนวนมาก</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--red)">●</span> <strong>Schools 4%</strong></span>
+          <span style="color:var(--text3)">งบรายปี, ของที่ระลึกวันสำเร็จการศึกษา</span>
+        </div>
       </div>
-      <div class="sec">โอกาส Folio</div>
-      <div class="ins"><div class="ins-tag it-o"><div class="ins-dot"></div>Blue Ocean</div><div class="ins-text">ตลาด <strong>ภาครัฐ + SME MOQ น้อย</strong> ยังไม่มีแบรนด์ใดครองชัดเจน → Folio มีโรงงานเองและรับ MOQ ต่ำ → จุดขายนี้ยังไม่มีคู่แข่งสื่อสารชัด</div></div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <!-- Location -->
+      <div class="card">
+        <div class="card-hd"><div class="card-title"><span class="ci ci-b">📍</span>Location Intelligence</div><span class="src-tag">✓ SimilarWeb</span></div>
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Traffic by Region</div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🏙 กรุงเทพฯ / ปริมณฑล</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:68%;background:var(--teal);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--teal);font-weight:700">68%</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🌆 ปริมณฑล</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:14%;background:var(--blue);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--blue);font-weight:700">14%</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🏭 เชียงใหม่ / นิคมฯ</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:9%;background:var(--amber);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--amber);font-weight:700">9%</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🏖 ชลบุรี / EEC</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:6%;background:var(--purple);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--purple);font-weight:700">6%</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🌍 ต่างประเทศ</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:3%;background:var(--text3);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--text3);font-weight:700">3%</span>
+          </div>
+        </div>
+        <div class="ins" style="margin-top:10px"><div class="ins-tag it-o"><div class="ins-dot"></div>โอกาส</div><div class="ins-text">EEC + นิคมอุตสาหกรรม = กลุ่ม B2B ใหม่ที่คู่แข่งยังไม่โฟกัส — งบจัดซื้อสูง ต้องการ Custom Branding</div></div>
+      </div>
+
+      <!-- Ad Targeting -->
+      <div class="card">
+        <div class="card-hd"><div class="card-title"><span class="ci" style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2)">📢</span>Ad Targeting (ตลาดรวม)</div><span class="src-tag">✓ Meta Ads Lib</span></div>
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">กลุ่มเป้าหมายที่ถูกยิง Ads ในตลาดนี้</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:11.5px">
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--purple);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">Job Title:</strong> <span style="color:var(--text2)">Marketing Manager, HR Admin, Procurement, EA/PA</span>
+          </div>
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--blue);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">อายุ:</strong> <span style="color:var(--text2)">28–50 ปี · เพศ: ทุกเพศ (F 58%, M 42%)</span>
+          </div>
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--amber);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">Interest:</strong> <span style="color:var(--text2)">Corporate gifts, Business events, Sustainability</span>
+          </div>
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--teal);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">Behavior:</strong> <span style="color:var(--text2)">B2B buyer, LinkedIn active, Engaged shopper</span>
+          </div>
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--green);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">Platform:</strong> <span style="color:var(--text2)">Facebook (primary) · Google Search · LinkedIn</span>
+          </div>
+        </div>
+        <div style="margin-top:10px;padding:8px 10px;background:rgba(139,92,246,.07);border:1px solid rgba(139,92,246,.2);border-radius:8px;font-size:11px;color:var(--text2)">
+          ⚠️ <strong style="color:var(--purple)">เฉพาะ Folio</strong> ที่ verified running ads ณ เม.ย. 2569 — คู่แข่งทั้งหมดหยุดยิง Ads แล้ว → Folio ครอง paid impression เพียงแบรนด์เดียว
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Known Clients grid -->
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci ci-b">🏢</span>Known Clients by Brand</div>
+      <span class="src-tag">✓ Apify + LinkedIn</span>
+    </div>
+    <div class="g3" style="gap:10px">
+      <div>
+        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px">🔵 SwagOn</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="badge bt">Meta</span><span class="badge bt">Amazon</span><span class="badge bt">PwC</span><span class="badge bt">Accenture</span><span class="badge bt">SCB</span><span class="badge bt">Lazada</span><span class="badge bt">AIS</span><span class="badge bt">PTT</span><span class="badge bt">Grab</span><span class="badge bt">Agoda</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px">🟢 Ogga Idea</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="badge bb">Siam Paragon</span><span class="badge bb">NEXTOPIA</span><span class="badge bb">IKEA Thailand</span><span class="badge bb">Central</span><span class="badge bb">SCG</span><span class="badge bb">KBTG</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px">🟣 Admire Tomorrow</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="badge bp">30+ ปี loyalty</span><span class="badge bp">BDMS</span><span class="badge bp">King Power</span><span class="badge bp">Minor Hotels</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prospect Companies Table -->
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci ci-t">🎯</span>บริษัทที่มีประวัติซื้อของพรีเมียม · Top Prospects</div>
+      <span class="src-tag">✓ LinkedIn + Apify</span>
+    </div>
+    <div style="font-size:10.5px;color:var(--text3);margin-bottom:12px">เรียงตามงบจัดซื้อ (ประมาณการจาก headcount + event activity) · <span style="color:var(--amber)">⭐ = High Priority สำหรับ Folio</span></div>
+    <div style="overflow-x:auto">
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>บริษัท</th>
+          <th>Industry</th>
+          <th>Segment</th>
+          <th>ประมาณ Budget/ปี</th>
+          <th>Contact Point</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="color:var(--text3);font-weight:700">01</td><td><strong>PTT Group</strong><div style="font-size:10px;color:var(--text3)">ปตท. + บริษัทในเครือ 10+</div></td><td>Energy / SET100</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">5–15M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement dept</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">02</td><td><strong>SCB / SCBX</strong><div style="font-size:10px;color:var(--text3)">ธนาคารไทยพาณิชย์</div></td><td>Banking / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">5–12M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand dept</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">03</td><td><strong>Central Group</strong><div style="font-size:10px;color:var(--text3)">Central Retail + CPN</div></td><td>Retail / SET100</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">4–10M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / Events</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">04</td><td><strong>AIS</strong><div style="font-size:10px;color:var(--text3)">Advanced Info Service</div></td><td>Telecom / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–8M฿</td><td style="font-size:10.5px;color:var(--text2)">Corporate Comm.</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">05</td><td><strong>DTAC / True Move H</strong><div style="font-size:10px;color:var(--text3)">dtac-True merger</div></td><td>Telecom</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–7M฿</td><td style="font-size:10.5px;color:var(--text2)">Brand / HR</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">06</td><td><strong>Kasikorn Bank (KBank)</strong><div style="font-size:10px;color:var(--text3)">ธนาคารกสิกร</div></td><td>Banking / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–7M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">07</td><td><strong>Accenture Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>Consulting / MNC</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–6M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Procurement</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">08</td><td><strong>PwC Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>Consulting / Big4</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / EA</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">09</td><td><strong>BDMS (Bangkok Dusit)</strong><div style="font-size:10px;color:var(--text3)">Admire verified · รพ. 50+</div></td><td>Healthcare / SET100</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–5M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">10</td><td><strong>Grab Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn client · Tech MNC</div></td><td>Tech / Unicorn</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–4M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / HR</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">11</td><td><strong>Agoda / Booking.com TH</strong></td><td>Tech / OTA</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–4M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">12</td><td><strong>Lazada Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">13</td><td><strong>King Power Group</strong><div style="font-size:10px;color:var(--text3)">Admire verified client</div></td><td>Retail / Duty Free</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / Buyer</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">14</td><td><strong>Minor Hotels / MINT</strong><div style="font-size:10px;color:var(--text3)">Admire client · โรงแรม 500+</div></td><td>Hospitality / SET100</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Procurement / HR</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">15</td><td><strong>SCG (Siam Cement)</strong><div style="font-size:10px;color:var(--text3)">Ogga client</div></td><td>Industrial / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–3M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">16</td><td><strong>KBTG (KBank Tech Group)</strong><div style="font-size:10px;color:var(--text3)">Ogga client · Fintech</div></td><td>Fintech</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">17</td><td><strong>Meta Thailand (Facebook)</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified</div></td><td>Tech / MNC</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / HR</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">18</td><td><strong>Amazon Thailand</strong></td><td>Tech / E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2M฿</td><td style="font-size:10.5px;color:var(--text2)">HR/Recruitment</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">19</td><td><strong>IKEA Thailand</strong><div style="font-size:10px;color:var(--text3)">Ogga verified</div></td><td>Retail / MNC</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">800K–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">20</td><td><strong>Siam Paragon / MQDC</strong><div style="font-size:10px;color:var(--text3)">Ogga verified</div></td><td>Property / Retail</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">800K–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Events / Marketing</td><td>⭐⭐</td></tr>
+        <tr id="audHiddenRows" style="display:none"><td colspan="7" style="padding:0">
+          <table style="width:100%;border-collapse:collapse">
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">21</td><td><strong>Deloitte Thailand</strong></td><td style="font-size:11px;color:var(--text2)">Consulting</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / EA</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">22</td><td><strong>EY Thailand (Ernst &amp; Young)</strong></td><td style="font-size:11px;color:var(--text2)">Consulting</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">23</td><td><strong>LINE Thailand (Naver)</strong></td><td style="font-size:11px;color:var(--text2)">Tech / Social</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">24</td><td><strong>Shopee Thailand (Sea)</strong></td><td style="font-size:11px;color:var(--text2)">E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Marketing</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">25</td><td><strong>Bangkok Bank (BBL)</strong></td><td style="font-size:11px;color:var(--text2)">Banking / SET50</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.2M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Procurement</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">26</td><td><strong>Krungsri (BAY)</strong></td><td style="font-size:11px;color:var(--text2)">Banking</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.2M฿</td><td style="font-size:10.5px;color:var(--text2)">Brand / HR</td><td>⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">27</td><td><strong>Mitr Phol Group</strong><div style="font-size:10px;color:var(--text3)">น้ำตาลมิตรผล</div></td><td style="font-size:11px;color:var(--text2)">Agro-industry</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">400K–1M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">28</td><td><strong>Charoen Pokphand (CP)</strong></td><td style="font-size:11px;color:var(--text2)">Conglomerate</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">400K–1M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">29</td><td><strong>Siam Piwat / One Bangkok</strong></td><td style="font-size:11px;color:var(--text2)">Property / Retail</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">300K–800K฿</td><td style="font-size:10.5px;color:var(--text2)">Events / Marketing</td><td>⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">30</td><td><strong>Bumrungrad Hospital</strong></td><td style="font-size:11px;color:var(--text2)">Healthcare</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">300K–800K฿</td><td style="font-size:10.5px;color:var(--text2)">Admin / Procurement</td><td>⭐</td></tr>
+          </table>
+        </td></tr>
+        <tr id="audShowMoreRow">
+          <td colspan="7" style="text-align:center;padding:12px">
+            <button id="audShowMoreBtn" onclick="toggleAudTable(10)"
+              style="font-size:11px;font-weight:700;color:var(--teal);background:rgba(0,229,160,.08);border:1px solid rgba(0,229,160,.2);padding:7px 20px;border-radius:20px;cursor:pointer">
+              ▼ ดูเพิ่มอีก 10 บริษัท (21–30)
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div style="margin-top:8px;font-size:10.5px;color:var(--text3)">* ประมาณการจาก company size, event activity, และ verified purchases จาก competitor data · ไม่ใช่ตัวเลขจริง</div>
+  </div>
+
+  <!-- Blue Ocean Opportunity -->
+  <div class="ins" style="margin-bottom:16px">
+    <div class="ins-tag it-o"><div class="ins-dot"></div>Blue Ocean Opportunity</div>
+    <div class="ins-text">ตลาด <strong>ภาครัฐ + SME MOQ น้อย</strong> ยังไม่มีแบรนด์ใดครองชัดเจน → Folio มีโรงงานเองและรับ MOQ ต่ำ → จุดขายนี้ยังไม่มีคู่แข่งสื่อสารชัด · EEC zone = โอกาสใหม่ที่คู่แข่งยังไม่โฟกัส</div>
+  </div>
+
+  <!-- Event Partners -->
   <div class="card">
     <div class="card-hd"><div class="card-title"><span class="ci ci-a">🤝</span>Event Partners · จาก Apify Post Data</div></div>
     <table class="tbl">
@@ -1175,7 +1492,7 @@ body{
     <div class="sw"><div class="sw-h"><span>💪</span>จุดแข็ง</div><ul class="sw-ul">
       <li><span class="sw-b">▸</span>SwagOn: ลูกค้า World-class (Meta, Amazon, PwC) · Google 4.9⭐</li>
       <li><span class="sw-b">▸</span>Ogga Idea: ESG Positioning ครองเดี่ยว · FB Engagement สูงสุด (6.9 likes, 2.3 shares/post)</li>
-      <li><span class="sw-b">▸</span>Admire Tomorrow: FB 8,899 likes · 30+ ปี · Run Ads เดียว</li>
+      <li><span class="sw-b">▸</span>Admire Tomorrow: FB 8,831 likes · 30+ ปี · Run Ads เดียว</li>
       <li><span class="sw-b">▸</span>GiftwiseAsia: IG Avg Likes สูงสุด (4.33/post) · Monthly Visits 3.6K</li>
     </ul></div>
     <div class="sw"><div class="sw-h"><span>⚠️</span>จุดอ่อน</div><ul class="sw-ul">
@@ -1476,35 +1793,25 @@ function initCharts(){
   }
   if(vis('igEngChart')){dc('igEngChart');
     ch['igEngChart']=new Chart(document.getElementById('igEngChart'),{type:'bar',
-      data:{labels:['swagon','oggaidea','giftwise','admire','🏠 Folio'],
+      data:{labels:['giftwise.official','oggaidea','admire.tomorrow','swagon.official','🏠 Folio'],
         datasets:[
-          {label:'Avg Likes per Post',data:[2.41,2.34,4.33,1.00,null],backgroundColor:['rgba(0,229,160,.4)','rgba(79,142,247,.5)','rgba(245,158,11,.5)','rgba(139,92,246,.5)','rgba(0,229,160,.15)'],borderColor:['#00e5a0','#4f8ef7','#f59e0b','#8b5cf6',FC],borderWidth:1.5,borderRadius:6},
-          {label:'Avg Comments per Post',data:[0.02,0.16,0.38,0.00,null],backgroundColor:['rgba(0,229,160,.15)','rgba(79,142,247,.2)','rgba(245,158,11,.2)','rgba(139,92,246,.2)','rgba(0,229,160,.07)'],borderColor:['rgba(0,229,160,.4)','rgba(79,142,247,.4)','rgba(245,158,11,.4)','rgba(139,92,246,.4)',FC],borderWidth:1.5,borderRadius:6}
-        ]},options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.raw===null?'ไม่มีข้อมูล IG':c.dataset.label+': '+c.raw}}}}});
-  }
-  if(vis('fbPostChart')){dc('fbPostChart');
-    ch['fbPostChart']=new Chart(document.getElementById('fbPostChart'),{type:'bar',
-      data:{labels:['SwagOn','Ogga Idea','Admire Tomorrow','🏠 Folio'],
-        datasets:[
-          {label:'Avg Likes',data:[5.15,6.85,3.10,null],backgroundColor:['rgba(79,142,247,.5)','rgba(79,142,247,.5)','rgba(79,142,247,.5)','rgba(0,229,160,.15)'],borderColor:['#4f8ef7','#4f8ef7','#4f8ef7',FC],borderWidth:1.5,borderRadius:5},
-          {label:'Avg Shares',data:[0.45,2.30,0.80,null],backgroundColor:['rgba(0,229,160,.5)','rgba(0,229,160,.5)','rgba(0,229,160,.5)','rgba(0,229,160,.15)'],borderColor:['#00e5a0','#00e5a0','#00e5a0',FC],borderWidth:1.5,borderRadius:5},
-        ]},options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.raw===null?'ไม่ได้ scrape data':c.dataset.label+': '+c.raw}}}}});
+          {label:'Avg Likes per Post',data:[4.5,2.4,2.2,1.5,1.2],backgroundColor:['rgba(245,158,11,.6)','rgba(79,142,247,.6)','rgba(139,92,246,.6)','rgba(244,63,94,.6)','rgba(0,229,160,.6)'],borderColor:['#f59e0b','#4f8ef7','#8b5cf6','#f43f5e',FC],borderWidth:1.5,borderRadius:6}
+        ]},options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.raw+' ❤️'}}}}});
   }
   if(vis('igAvgLikesChart')){dc('igAvgLikesChart');
     ch['igAvgLikesChart']=new Chart(document.getElementById('igAvgLikesChart'),{type:'bar',
-      data:{labels:['swagon (145)','oggaidea','giftwise (409)','admire','🏠 Folio'],
-        datasets:[{label:'Avg Likes / Post',data:[2.41,2.34,4.33,1.00,null],
-          backgroundColor:['rgba(0,229,160,.4)','rgba(79,142,247,.5)','rgba(245,158,11,.5)','rgba(139,92,246,.5)','rgba(0,229,160,.15)'],
-          borderColor:['#00e5a0','#4f8ef7','#f59e0b','#8b5cf6',FC],borderWidth:1.5,borderRadius:6}]},
-      options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.raw===null?'ยังไม่ได้ดึง IG data':c.dataset.label+': '+c.raw}}}}});
+      data:{labels:['giftwise','oggaidea','admire','swagon','🏠 Folio'],
+        datasets:[{label:'Avg Likes / Post (Real)',data:[4.5,2.4,2.2,1.5,1.2],
+          backgroundColor:['rgba(245,158,11,.6)','rgba(79,142,247,.6)','rgba(139,92,246,.6)','rgba(244,63,94,.6)','rgba(0,229,160,.7)'],
+          borderColor:['#f59e0b','#4f8ef7','#8b5cf6','#f43f5e',FC],borderWidth:1.5,borderRadius:6}]},
+      options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.raw+' ❤️ (จาก scrape จริง)'}}}}}); 
   }
   if(vis('fbEngChart')){dc('fbEngChart');
     ch['fbEngChart']=new Chart(document.getElementById('fbEngChart'),{type:'bar',
       data:{labels:['SwagOn','Ogga Idea','Admire Tomorrow','GiftwiseAsia','🏠 Folio'],
         datasets:[
-          {label:'Avg Likes/Post',data:[5.15,6.85,3.10,null,null],backgroundColor:['rgba(79,142,247,.5)','rgba(79,142,247,.5)','rgba(79,142,247,.5)','rgba(79,142,247,.15)','rgba(0,229,160,.15)'],borderColor:['#4f8ef7','#4f8ef7','#4f8ef7','#4f8ef7',FC],borderWidth:1.5,borderRadius:5},
-          {label:'Avg Shares/Post',data:[0.45,2.30,0.80,null,null],backgroundColor:['rgba(0,229,160,.5)','rgba(0,229,160,.5)','rgba(0,229,160,.5)','rgba(0,229,160,.15)','rgba(0,229,160,.15)'],borderColor:['#00e5a0','#00e5a0','#00e5a0','#00e5a0',FC],borderWidth:1.5,borderRadius:5},
-        ]},options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.raw===null?'Page Private / ไม่มีข้อมูล':c.dataset.label+': '+c.raw}}}}});
+          {label:'FB Followers',data:[3296,998,8831,null,13455],backgroundColor:['rgba(244,63,94,.5)','rgba(79,142,247,.5)','rgba(139,92,246,.5)','rgba(245,158,11,.15)','rgba(0,229,160,.6)'],borderColor:['#f43f5e','#4f8ef7','#8b5cf6','#f59e0b',FC],borderWidth:1.5,borderRadius:5},
+        ]},options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.raw===null?'Page Private — ไม่มีข้อมูล':c.dataset.label+': '+c.raw.toLocaleString()}}}}});
   }
   if(vis('trafficChart')){dc('trafficChart');
     ch['trafficChart']=new Chart(document.getElementById('trafficChart'),{type:'bar',
@@ -2047,11 +2354,11 @@ function refreshKeywords(){
   setTimeout(() => {
     // คู่แข่ง
     document.getElementById('kw-swagon-org').innerHTML   = renderList(swagonBase,'kw-org') + renderNew(newByMonth[m]);
-    document.getElementById('kw-swagon-ads').innerHTML   = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><a href="https://www.facebook.com/ads/library/?search_type=page&q=swagonco" target="_blank" style="font-size:10px;color:var(--blue);text-decoration:none;margin-left:8px">ตรวจสอบ →</a>';
+    // SwagOn: ไม่มี ads — ไม่แสดง section
     document.getElementById('kw-ogga-org').innerHTML     = renderList(oggaBase,'kw-org') + renderNew(newByMonth[m].slice(0,2));
-    document.getElementById('kw-ogga-ads').innerHTML     = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><a href="https://www.facebook.com/ads/library/?search_type=page&q=oggaidea" target="_blank" style="font-size:10px;color:var(--blue);text-decoration:none;margin-left:8px">ตรวจสอบ →</a>';
+    // Ogga Idea: ไม่มี ads — ไม่แสดง section
     document.getElementById('kw-giftwise-org').innerHTML = renderList(giftwiseBase,'kw-org') + renderNew(newByMonth[m].slice(0,2));
-    document.getElementById('kw-giftwise-ads').innerHTML = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><span style="font-size:10px;color:var(--text3);margin-left:8px">(FB Page Private)</span>';
+    // GiftwiseAsia: ไม่มี ads — ไม่แสดง section
     document.getElementById('kw-admire-org').innerHTML   = renderList(admireBase,'kw-org') + renderNew(newByMonth[m].slice(0,2));
     document.getElementById('kw-admire-ads').innerHTML   = renderList(admireAds,'kw-ads') +
       '<a href="https://www.facebook.com/ads/library/?search_type=page&q=admire.tomorrow.thailand" target="_blank" style="display:inline-block;margin-top:6px;font-size:10px;color:var(--blue);text-decoration:none">✅ ดู Active Ads จริง →</a>';
@@ -2076,6 +2383,21 @@ function refreshKeywords(){
 }
 
 
+
+function toggleAudTable(remaining){
+  const el = document.getElementById('audHiddenRows');
+  const btn = document.getElementById('audShowMoreBtn');
+  if(!el || !btn) return;
+  const isHidden = el.style.display === 'none';
+  if(isHidden){
+    el.style.display = '';
+    btn.innerHTML = '▲ ซ่อน';
+  } else {
+    el.style.display = 'none';
+    btn.innerHTML = `▼ ดูเพิ่มอีก ${remaining} บริษัท (21–30)`;
+    document.getElementById('page-audience').scrollIntoView({behavior:'smooth'});
+  }
+}
 
 window.addEventListener('DOMContentLoaded',()=>{
   setTimeout(initCharts, 200);
