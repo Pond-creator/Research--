@@ -311,6 +311,8 @@ body{
 .kw-org{background:rgba(79,142,247,.06);border-color:rgba(79,142,247,.18);color:var(--blue)}
 .kw-ads{background:rgba(245,158,11,.06);border-color:rgba(245,158,11,.18);color:var(--amber)}
 .kw-hot{background:rgba(0,229,160,.06);border-color:rgba(0,229,160,.18);color:var(--teal)}
+.kw-new{background:rgba(0,229,160,.15);border-color:rgba(0,229,160,.4);color:var(--teal);font-weight:700}
+.kw-trend{background:rgba(245,158,11,.15);border-color:rgba(245,158,11,.4);color:var(--amber);font-weight:700}
 
 /* ── YOUTUBE ── */
 .yt-box{background:linear-gradient(135deg,rgba(244,63,94,.06),rgba(244,63,94,.02));border:1px solid rgba(244,63,94,.15);border-radius:var(--r16);padding:20px;margin-bottom:14px}
@@ -457,7 +459,6 @@ body{
   <button class="nt" onclick="show('youtube',this)">▶️ YouTube</button>
   <button class="nt" onclick="show('swot',this)">⚔️ SWOT</button>
   <button class="nt new-tab" onclick="show('pricing',this)">💰 Pricing</button>
-  <button class="nt new-tab" onclick="show('lineoa',this)">💬 Line OA</button>
   <button class="nt new-tab" onclick="show('ai',this)">🤖 AI Analyst</button>
   <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🏠 Folio</button>
   <div class="nr">
@@ -987,96 +988,108 @@ body{
 ══════════════════════════════════════ -->
 <div class="page" id="page-keywords">
   <div class="ph">
-    <div class="eyebrow">Keyword Intelligence · Organic + Paid</div>
-    <div class="ptitle">Keyword <em>Analysis</em> ทั้ง 4 แบรนด์</div>
-    <div class="psub" id="kwSub">ข้อมูลจาก Website คู่แข่ง · กด AI Update เพื่อดึง Keywords ใหม่จากเว็บจริง</div>
+    <div class="eyebrow">Keyword Intelligence · อัพเดทอัตโนมัติทุก 7 วัน</div>
+    <div class="ptitle">🔑 Keyword <em>Intelligence</em></div>
+    <div class="psub">Keywords เปลี่ยนตามเดือนอัตโนมัติ · <span style="color:var(--teal);font-weight:700">🆕 สีเขียว</span> = keyword ใหม่เดือนนี้ · <span style="color:var(--amber);font-weight:700">⚡ สีส้ม</span> = trend กำลังเปลี่ยน</div>
   </div>
 
-  <!-- AI Update Header Bar -->
-  <div style="background:linear-gradient(135deg,rgba(79,142,247,.07),rgba(139,92,246,.04));border:1px solid rgba(79,142,247,.2);border-radius:var(--r12);padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px">
-    <div style="display:flex;align-items:center;gap:9px">
-      <div style="width:28px;height:28px;border-radius:8px;background:rgba(79,142,247,.12);border:1px solid rgba(79,142,247,.18);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0">🔑</div>
-      <div>
-        <div style="font-size:12.5px;font-weight:800;color:var(--text)">Keyword Intelligence — AI Web Search</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:1px" id="kwStatusSub">ค้นหา keywords จากเว็บไซต์คู่แข่ง + Google Trends ล่าสุด</div>
-      </div>
+  <!-- Status Bar -->
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:16px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div class="status-pill"><div class="status-dot"></div><span id="kwStatus">กำลังโหลด...</span></div>
+      <span id="kwStatusSub" style="font-size:10.5px;color:var(--text3)"></span>
     </div>
-    <div style="display:flex;align-items:center;gap:7px;flex-shrink:0">
-      <span id="kwStatus" style="font-size:10px;font-weight:700;color:var(--text3);background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:20px;padding:4px 10px;white-space:nowrap">มี.ค. 2026</span>
-      <button id="kwRefreshBtn" onclick="refreshKeywords()" style="display:flex;align-items:center;gap:6px;font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#000;background:linear-gradient(135deg,var(--teal),var(--teal2));border:none;padding:7px 14px;border-radius:9px;cursor:pointer;transition:all .2s;white-space:nowrap;box-shadow:0 2px 10px rgba(0,229,160,.2)" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
-        <span id="kwRefreshIcon" style="font-size:13px">✦</span> AI Update
+    <div style="display:flex;align-items:center;gap:8px">
+      <span id="kwNextUpdate" style="font-size:10px;color:var(--text3);padding:4px 10px;background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:20px"></span>
+      <button id="kwRefreshBtn" onclick="refreshKeywords()"
+        style="display:flex;align-items:center;gap:6px;font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;
+        color:#000;background:linear-gradient(135deg,var(--teal),var(--teal2));border:none;padding:7px 14px;border-radius:9px;
+        cursor:pointer;white-space:nowrap;box-shadow:0 2px 10px rgba(0,229,160,.2)"
+        onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
+        <span id="kwRefreshIcon" style="font-size:13px;display:inline-block">✦</span> Refresh
       </button>
     </div>
   </div>
 
-  <!-- Chart -->
+  <!-- Legend -->
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:var(--r8)">
+    <span style="font-size:10.5px;color:var(--text3);font-weight:600">สัญลักษณ์:</span>
+    <span class="kw kw-org" style="font-size:10px">Organic keyword</span>
+    <span class="kw kw-ads" style="font-size:10px">Paid/Ads keyword</span>
+    <span class="kw kw-hot" style="font-size:10px">โอกาส Folio</span>
+    <span class="kw kw-new" style="font-size:10px">🆕 ใหม่เดือนนี้</span>
+    <span class="kw kw-trend" style="font-size:10px">⚡ Trend เปลี่ยน</span>
+  </div>
+
+  <!-- SwagOn -->
+  <div class="card mb" id="kw-swagon">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci" style="background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.15)">🔵</span>SwagOn — swagon.co</div>
+      <span class="badge bt" id="kwSwagonBadge">Seed</span>
+    </div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Organic Keywords</div>
+    <div id="kw-swagon-org" style="margin-bottom:12px"></div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Ads Keywords</div>
+    <div id="kw-swagon-ads"></div>
+  </div>
+
+  <!-- Ogga Idea -->
+  <div class="card mb" id="kw-ogga">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci" style="background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.15)">🟢</span>Ogga Idea — ogga-idea.com</div>
+      <span class="badge bb" id="kwOggaBadge">Seed</span>
+    </div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Organic Keywords</div>
+    <div id="kw-ogga-org" style="margin-bottom:12px"></div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Ads Keywords</div>
+    <div id="kw-ogga-ads"></div>
+  </div>
+
+  <!-- GiftwiseAsia -->
+  <div class="card mb" id="kw-giftwise">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci" style="background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.15)">🟡</span>GiftwiseAsia — giftwiseasia.com</div>
+      <span class="badge ba" id="kwGiftwiseBadge">Seed</span>
+    </div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Organic Keywords</div>
+    <div id="kw-giftwise-org" style="margin-bottom:12px"></div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Ads Keywords</div>
+    <div id="kw-giftwise-ads"></div>
+  </div>
+
+  <!-- Admire Tomorrow -->
+  <div class="card mb" id="kw-admire">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci" style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.15)">🟣</span>Admire Tomorrow — admiretomorrow.com</div>
+      <span class="badge bp" id="kwAdmireBadge">Seed</span>
+    </div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Organic Keywords</div>
+    <div id="kw-admire-org" style="margin-bottom:12px"></div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Ads Keywords <span style="color:var(--teal)">✅ Active</span></div>
+    <div id="kw-admire-ads"></div>
+  </div>
+
+  <!-- Folio Opportunity -->
+  <div class="card mb" id="kw-folio-card" style="border-color:rgba(0,229,160,.2);background:rgba(0,229,160,.03)">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci ci-t">🏠</span>โอกาส Keywords สำหรับ Folio</div>
+      <span class="badge bt" id="kwFolioBadge">Seed</span>
+    </div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Keywords ที่คู่แข่งไม่ทำ — เหมาะกับ Folio</div>
+    <div id="kw-folio-opp" style="margin-bottom:14px"></div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:8px">🆕 Trending Keywords เดือนนี้</div>
+    <div id="kw-folio-trending" style="margin-bottom:8px"></div>
+    <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:8px">⚡ Seasonal / เทศกาล เดือนนี้</div>
+    <div id="kw-folio-seasonal"></div>
+  </div>
+
+  <!-- Folio Active Ads -->
   <div class="card mb">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">📈</span>Organic Keywords Est. (Similarweb)</div></div>
-    <div class="ch"><canvas id="kwChart"></canvas></div>
-  </div>
-
-  <!-- 4 Brand Keyword Cards (AI-updatable) -->
-  <div class="g2" id="kwBrandGrid">
-    <div class="card" id="kw-swagon">
-      <div class="card-hd"><div class="card-title"><span style="width:10px;height:10px;border-radius:50%;background:var(--teal);display:inline-block;margin-right:2px"></span>SwagOn — swagon.co</div></div>
-      <div class="sec">Organic Keywords</div>
-      <div id="kw-swagon-org"><span class="kw kw-org">swag on</span><span class="kw kw-org">corporate gifts thailand</span><span class="kw kw-org">branded merchandise</span><span class="kw kw-org">custom gift moq</span><span class="kw kw-hot">tagOn NFC</span><span class="kw kw-org">premium corporate gift</span><span class="kw kw-org">swagonco</span></div>
-      <div class="sec">Ads Keywords (Meta)</div>
-      <div id="kw-swagon-ads"><span class="badge br">❌ ไม่ยิง Ads ปัจจุบัน</span></div>
-    </div>
-    <div class="card" id="kw-ogga">
-      <div class="card-hd"><div class="card-title"><span style="width:10px;height:10px;border-radius:50%;background:var(--blue);display:inline-block;margin-right:2px"></span>Ogga Idea — ogga-idea.com</div></div>
-      <div class="sec">Organic Keywords</div>
-      <div id="kw-ogga-org"><span class="kw kw-org">ogga idea</span><span class="kw kw-org">eco gift thailand</span><span class="kw kw-org">esg corporate gift</span><span class="kw kw-hot">ของขวัญ esg</span><span class="kw kw-org">circular economy gift</span><span class="kw kw-hot">ของขวัญ eco friendly</span></div>
-      <div class="sec">Ads Keywords</div>
-      <div id="kw-ogga-ads"><span class="badge br">❌ ไม่ยิง Ads</span></div>
-    </div>
-    <div class="card" id="kw-giftwise">
-      <div class="card-hd"><div class="card-title"><span style="width:10px;height:10px;border-radius:50%;background:var(--amber);display:inline-block;margin-right:2px"></span>GiftwiseAsia — giftwiseasia.com</div></div>
-      <div class="sec">Organic Keywords</div>
-      <div id="kw-giftwise-org"><span class="kw kw-org">giftwiseasia</span><span class="kw kw-org">giftwise asia</span><span class="kw kw-hot">ของขวัญองค์กร</span><span class="kw kw-org">premium gift thailand</span><span class="kw kw-org">corporate gift bangkok</span></div>
-      <div class="sec">Ads Keywords</div>
-      <div id="kw-giftwise-ads"><span class="badge br">❌ ไม่ยิง Ads</span></div>
-    </div>
-    <div class="card" id="kw-admire">
-      <div class="card-hd"><div class="card-title"><span style="width:10px;height:10px;border-radius:50%;background:var(--purple);display:inline-block;margin-right:2px"></span>Admire Tomorrow — admiretomorrow.com</div></div>
-      <div class="sec">Organic Keywords</div>
-      <div id="kw-admire-org"><span class="kw kw-org">admire tomorrow</span><span class="kw kw-org">รับทำของพรีเมียม</span><span class="kw kw-org">ของขวัญ vip</span><span class="kw kw-org">luxury corporate gift</span><span class="kw kw-hot">ของพรีเมียม 30 ปี</span></div>
-      <div class="sec">Ads Keywords (Active ✅)</div>
-      <div id="kw-admire-ads"><span class="kw kw-ads">multi-function hub 750฿</span><span class="kw kw-ads">wellness gift set</span><span class="kw kw-ads">รับทำของพรีเมียม moq 200</span><span class="kw kw-ads">corporate premium gift</span></div>
-    </div>
-  </div>
-
-  <!-- Folio Keyword card -->
-  <div class="card" style="margin-bottom:14px;border-color:rgba(0,229,160,.2);background:rgba(0,229,160,.03)">
-    <div class="card-hd">
-      <div class="card-title"><span style="background:rgba(0,229,160,.15);border:1px solid rgba(0,229,160,.3);border-radius:8px;padding:4px 8px;font-size:13px">🏠</span>&nbsp;Folio Premium Gifts — foliobrand.com</div>
-      <span class="bv">เรา</span>
-    </div>
-    <div class="sec">Organic Keywords (ที่ควรมี/มีอยู่)</div>
-    <div id="kw-folio-org"><span class="kw kw-hot">folio premium gifts</span><span class="kw kw-hot">ของขวัญ premium โรงงานตรง</span><span class="kw kw-hot">custom packaging thailand</span><span class="kw kw-hot">ของขวัญ moq 10</span><span class="kw kw-hot">foliobrand</span><span class="kw kw-hot">ของขวัญภาครัฐ</span><span class="kw kw-hot">premium gift sme</span></div>
-    <div class="sec">Ads Keywords (Active ✅)</div>
-    <div><span class="kw kw-ads">ของขวัญองค์กร premium</span><span class="kw kw-ads">corporate gift thailand</span><span class="kw kw-ads">custom gift moq น้อย</span><span class="kw kw-ads">ของขวัญปีใหม่องค์กร</span></div>
-    <div style="margin-top:10px;padding:9px 12px;background:rgba(0,229,160,.06);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;font-size:11.5px;color:var(--text2)">
-      ✦ Folio ยิง Ads อยู่ 10K+/เดือน — ได้เปรียบ SwagOn/Ogga/GiftwiseAsia ที่ไม่ยิงเลย
-    </div>
-  </div>
-    <div class="card-hd">
-      <div class="card-title"><span class="ci ci-t">🎯</span>โอกาส Keywords สำหรับ Folio — ยังไม่มีใครทำ</div>
-      <span id="kwFolioUpdated" style="font-size:9.5px;color:var(--text3)">Seed Data</span>
-    </div>
-    <div id="kw-folio-opp" style="padding:4px 0">
-      <span class="kw kw-hot">ของขวัญ sme งบน้อย</span><span class="kw kw-hot">สั่งของขวัญ 10 ชิ้น</span><span class="kw kw-hot">ของขวัญภาครัฐ 2026</span><span class="kw kw-hot">custom packaging thailand</span><span class="kw kw-hot">premium gift โรงงานตรง</span><span class="kw kw-hot">สกรีนโลโก้ราคาถูก</span><span class="kw kw-hot">ของพรีเมี่ยม moq 10</span><span class="kw kw-hot">ของขวัญปีใหม่องค์กร</span>
-    </div>
-    <div style="margin-top:10px;padding:9px 12px;background:rgba(0,229,160,.05);border:1px solid rgba(0,229,160,.1);border-radius:var(--r8);font-size:11px;color:var(--text3)">
-      ✦ กด <strong style="color:var(--teal)">AI Update</strong> ด้านบน เพื่อให้ AI ค้นหา keyword ใหม่จาก Google Trends + เว็บคู่แข่งล่าสุด
-    </div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">💰</span>Folio Active Ads Keywords</div><span class="badge bt">Active ✅</span></div>
+    <div id="kw-folio-ads"></div>
+    <div style="margin-top:8px;font-size:10.5px;color:var(--text3)">✦ Folio ยิง Ads 10K+/เดือน — ได้เปรียบ SwagOn/Ogga/GiftwiseAsia ที่ไม่ยิงเลย</div>
   </div>
 </div>
-
-<!-- ══════════════════════════════════════
-     AUDIENCE
-══════════════════════════════════════ -->
 <div class="page" id="page-audience">
   <div class="ph">
     <div class="eyebrow">Audience Intelligence · Market Segments</div>
@@ -1189,7 +1202,6 @@ body{
   <div class="act"><div class="act-num">01</div><div><div class="act-title">▶️ ลงทุน YouTube อย่างจริงจัง — คู่แข่งมีแต่ไม่ทำจริง</div><div class="act-desc">4 แบรนด์มี YouTube Channel แต่ไม่ได้ลงทุน — Folio ที่ Upload 2 videos/เดือน + ยิง YouTube Ads จะ Outrank ได้ใน 3–6 เดือน</div><div class="act-tags"><span class="at at-u">🔴 Priority</span><span class="at at-q">Low Competition</span></div></div></div>
   <div class="act"><div class="act-num">02</div><div><div class="act-title">💰 Facebook Ads — เพิ่ม Budget โจมตีช่วงที่คู่แข่งหยุด</div><div class="act-desc">Folio ยิง FB Ads 10K+/เดือน อยู่แล้ว — เพิ่ม Budget ช่วง Q4 + ก่อนสงกรานต์ เพราะคู่แข่ง 3 ราย Absent ทาง Paid ทำให้ CPM ถูกลง</div><div class="act-tags"><span class="at at-u">🔴 Priority</span><span class="at at-q">CPM ถูก</span></div></div></div>
   <div class="act"><div class="act-num">03</div><div><div class="act-title">🔑 SEO Blog Long-tail Keywords — ฟรี + ROI ยาว</div><div class="act-desc">"ของขวัญ SME ราคา", "ของพรีเมี่ยมสั่ง 10 ชิ้น", "ของขวัญภาครัฐ" — ไม่มีคู่แข่งทำ ชนะ SEO ได้ง่ายมาก</div><div class="act-tags"><span class="at at-u">🔴 เร่งด่วน</span><span class="at at-q">ฟรี</span><span class="at at-m">ROI 2–3 เดือน</span></div></div></div>
-  <div class="act"><div class="act-num">04</div><div><div class="act-title">💬 Line OA — CRM + Broadcast ที่คู่แข่งยัง Under-use</div><div class="act-desc">ตั้ง Line OA Automation: Welcome Message → Catalog → Follow-up Quote → Broadcast โปรโมชั่น → ประหยัด Remarketing Cost ระยะยาว</div><div class="act-tags"><span class="at at-m">🟡 Medium</span><span class="at at-q">CRM</span></div></div></div>
   <div class="act"><div class="act-num">05</div><div><div class="act-title">💼 LinkedIn — ไม่มีใครทำในทั้ง 4 แบรนด์</div><div class="act-desc">Post Case Studies + Premium Gift Showcase · Target C-Level, HR Director · CPL สูงกว่า Meta แต่ Lead Quality ดีที่สุดสำหรับ Enterprise</div><div class="act-tags"><span class="at at-m">🟡 Medium</span><span class="at at-q">Blue Ocean</span></div></div></div>
   <div class="card" style="margin-top:16px">
     <div class="card-hd"><div class="card-title"><span class="ci ci-t">🕸</span>4 Brands · Competitive Radar</div></div>
@@ -1296,110 +1308,6 @@ body{
 
 <!-- ══════════════════════════════════════
      LINE OA (NEW)
-══════════════════════════════════════ -->
-<div class="page" id="page-lineoa">
-  <div class="ph">
-    <div class="eyebrow">Line OA Intelligence · CRM + Broadcast</div>
-    <div class="ptitle">Line OA = <em>CRM ที่ถูกที่สุด</em>ในตลาดไทย</div>
-    <div class="psub">วิเคราะห์การใช้ Line OA ของคู่แข่ง + แนวทางสำหรับ Folio</div>
-  </div>
-
-  <div class="ads-alert mb">
-    <div class="ads-alert-icon">💬</div>
-    <div>
-      <div class="ads-alert-title">Line OA ในตลาด Corporate Gift ไทย — ยัง Under-optimized ทั้งหมด</div>
-      <div class="ads-alert-desc">คู่แข่งส่วนใหญ่มี Line OA แต่ใช้เพียง "ให้ลูกค้า Add เพื่อสอบถาม" — ไม่มี Automated Flow, ไม่มี Broadcast Strategy, ไม่มี Segmentation · Folio ที่ทำ Line OA อย่างจริงจังจะได้เปรียบ CRM ในระยะยาวโดยไม่ต้องพึ่ง Ads ทุกครั้ง</div>
-    </div>
-  </div>
-
-  <div class="sec">สถานะ Line OA ของคู่แข่ง</div>
-  <div class="g2 mb">
-    <div class="card">
-      <table class="tbl">
-        <thead><tr><th>แบรนด์</th><th>มี Line OA?</th><th>ใช้งาน</th><th>Automation</th><th>Broadcast</th></tr></thead>
-        <tbody>
-          <tr><td><strong style="color:var(--teal)">SwagOn</strong></td><td><span class="badge bt">✅</span></td><td style="font-size:11px">สอบถามราคา</td><td><span class="badge br">❌</span></td><td><span class="badge br">❌</span></td></tr>
-          <tr><td><strong style="color:var(--blue)">Ogga Idea</strong></td><td><span class="badge bt">✅</span></td><td style="font-size:11px">Contact เท่านั้น</td><td><span class="badge br">❌</span></td><td><span class="badge br">❌</span></td></tr>
-          <tr><td><strong style="color:var(--amber)">GiftwiseAsia</strong></td><td><span class="badge ba">?</span></td><td style="font-size:11px">ไม่ชัดเจน</td><td><span class="badge br">❌</span></td><td><span class="badge br">❌</span></td></tr>
-          <tr><td><strong style="color:var(--purple)">Admire Tomorrow</strong></td><td><span class="badge bt">✅</span></td><td style="font-size:11px">สอบถาม + ส่งตัวอย่าง</td><td><span class="badge ba">บางส่วน</span></td><td><span class="badge ba">ไม่แน่ใจ</span></td></tr>
-          <tr style="background:rgba(0,229,160,.03)"><td><strong style="color:var(--teal)">🏠 Folio</strong></td><td><span class="badge bt">✅</span></td><td style="font-size:11px">สอบถาม + Quote</td><td><span class="badge ba">บางส่วน</span></td><td><span class="badge ba">บางส่วน</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-t" style="background:rgba(0,185,0,.1)">💬</span>ทำไม Line OA สำคัญสำหรับ B2B Gift</div></div>
-      <div style="font-size:12px;color:var(--text2);line-height:1.7">
-        <strong style="color:var(--text)">คนไทยใช้ Line เป็น Primary Messaging:</strong><br>
-        · 93% of Thai smartphone users use LINE<br>
-        · B2B Buyers ไทยชอบ Negotiate ผ่าน Line มากกว่า Email<br>
-        · Open Rate Line Broadcast: 30–50% vs Email 15–20%<br><br>
-        <strong style="color:var(--teal)">โอกาส Folio:</strong><br>
-        · Line OA Free = 500 messages/เดือน ฟรี<br>
-        · Line OA Premium = ~899฿/เดือน ส่งได้ไม่จำกัด<br>
-        · ROI สูงมากถ้าเทียบกับ Retargeting Ads
-      </div>
-    </div>
-  </div>
-
-  <div class="sec">แผน Line OA สำหรับ Folio — Recommended Flow</div>
-
-  <div class="line-card">
-    <div class="line-icon">👋</div>
-    <div>
-      <div class="line-title">Step 1: Welcome Message + Auto-Reply</div>
-      <div class="line-desc">ทันทีที่ลูกค้า Add — ส่ง Welcome Message พร้อม Rich Menu: "สอบถามราคา", "ดู Catalog", "ขอตัวอย่าง", "โปรโมชั่น" · Auto-Reply keyword เช่น ถ้าพิมพ์ "ราคา" ตอบ template ราคาทันที</div>
-      <div class="line-tags"><span class="line-tag">Automation</span><span class="line-tag">First Impression</span><span class="line-tag">ฟรีทำได้เลย</span></div>
-    </div>
-  </div>
-  <div class="line-card">
-    <div class="line-icon">📋</div>
-    <div>
-      <div class="line-title">Step 2: Digital Catalog + Quick Quote</div>
-      <div class="line-desc">ส่ง Catalog Link ที่ Segment แยกตาม Customer Type (SME, Enterprise, ภาครัฐ) · ตั้ง Flow: "ต้องการกี่ชิ้น?" → "งบประมาณ?" → "ส่งใบเสนอราคาภายใน 2 ชั่วโมง" → เพิ่ม Conversion Rate โดยไม่ต้องรอ Sales Manual</div>
-      <div class="line-tags"><span class="line-tag">Lead Nurturing</span><span class="line-tag">Quick Win</span><span class="line-tag">Reduce Sales Time</span></div>
-    </div>
-  </div>
-  <div class="line-card">
-    <div class="line-icon">📢</div>
-    <div>
-      <div class="line-title">Step 3: Monthly Broadcast — โปรโมชั่น + New Products</div>
-      <div class="line-desc">Broadcast 2–3 ครั้ง/เดือน: "ของขวัญใหม่เดือนนี้" + "Flash Sale 72 ชั่วโมง" + "ของขวัญปีใหม่ออร์เดอร์ก่อน" · Segment Broadcast ตาม Tier: SME vs Enterprise vs ภาครัฐ → เพิ่ม Relevance และลด Unfollow</div>
-      <div class="line-tags"><span class="line-tag">Broadcast</span><span class="line-tag">Segmentation</span><span class="line-tag">Retention</span></div>
-    </div>
-  </div>
-  <div class="line-card">
-    <div class="line-icon">🔄</div>
-    <div>
-      <div class="line-title">Step 4: Re-engagement + Follow-up Automation</div>
-      <div class="line-desc">ลูกค้าที่เคยสอบถามแต่ยังไม่สั่ง → ส่ง Follow-up Message หลัง 7 วัน "ยังสนใจไหมครับ? เรามีโปรพิเศษสำหรับท่าน" · ลูกค้าที่สั่งแล้ว → ส่ง Thank You + "แนะนำเพื่อน ได้ Discount" → Word-of-Mouth ฟรี</div>
-      <div class="line-tags"><span class="line-tag">Re-engagement</span><span class="line-tag">Referral</span><span class="line-tag">LTV เพิ่ม</span></div>
-    </div>
-  </div>
-  <div class="line-card">
-    <div class="line-icon">📊</div>
-    <div>
-      <div class="line-title">Step 5: Track + Optimize</div>
-      <div class="line-desc">ใช้ Line OA Analytics: Open Rate, Click Rate, Block Rate · A/B Test Message ทุกเดือน · ดู Conversion จาก Line → Order · ตั้ง UTM Links ใน Broadcast เพื่อ Track Traffic ที่มาจาก Line ใน GA4</div>
-      <div class="line-tags"><span class="line-tag">Analytics</span><span class="line-tag">A/B Test</span><span class="line-tag">GA4 Integration</span></div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-t">💰</span>Line OA Cost vs ROI Estimate</div></div>
-    <table class="tbl">
-      <thead><tr><th>Plan</th><th>ราคา/เดือน</th><th>Messages</th><th>Broadcast</th><th>เหมาะกับ</th><th>Est. ROI</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Free</strong></td><td>0฿</td><td>500/เดือน</td><td>จำกัด</td><td>เริ่มต้น</td><td>—</td></tr>
-        <tr><td><strong style="color:var(--teal)">Light (แนะนำ)</strong></td><td style="color:var(--teal);font-weight:700">235฿/เดือน</td><td>1,000/เดือน</td><td>✅</td><td>ลูกค้า &lt; 1,000 คน</td><td style="color:var(--teal)">ดีมาก</td></tr>
-        <tr><td><strong style="color:var(--amber)">Standard</strong></td><td>899฿/เดือน</td><td>ไม่จำกัด</td><td>✅✅</td><td>ลูกค้า 1K–10K</td><td style="color:var(--amber)">สูงมาก</td></tr>
-        <tr><td><strong>Premium</strong></td><td>1,500฿/เดือน</td><td>ไม่จำกัด + Bot</td><td>✅✅✅</td><td>ลูกค้า 10K+</td><td>Excellent</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
-     AI ANALYST (NEW)
 ══════════════════════════════════════ -->
 <div class="page" id="page-ai">
   <div class="ph">
@@ -2048,130 +1956,131 @@ function toggleCompEvents(remaining){
 }
 
 // ── AI KEYWORDS REFRESH ──
-async function refreshKeywords(){
-  const btn = document.getElementById('kwRefreshBtn');
-  const icon = document.getElementById('kwRefreshIcon');
+// ── KEYWORDS — Dynamic Seed by Month (ฟรี ไม่ใช้ API) ──
+function refreshKeywords(){
+  const icon   = document.getElementById('kwRefreshIcon');
   const status = document.getElementById('kwStatus');
-  const statusSub = document.getElementById('kwStatusSub');
+  const sub    = document.getElementById('kwStatusSub');
+  const next   = document.getElementById('kwNextUpdate');
 
-  btn.disabled = true;
-  icon.style.animation = 'spin 1s linear infinite';
-  status.textContent = 'กำลังค้นหาจากเว็บ...';
-  status.style.color = 'var(--amber)';
+  if(icon) icon.style.animation = 'spin 1s linear infinite';
+  if(status){ status.textContent = 'กำลังโหลด...'; status.style.color='var(--amber)'; }
 
-  ['kw-swagon','kw-ogga','kw-giftwise','kw-admire','kw-folio-card'].forEach(id=>{
-    const el = document.getElementById(id);
-    if(el) el.style.opacity = '0.4';
-  });
-
-  const today = new Date();
+  const today   = new Date();
+  const m       = today.getMonth(); // 0-11
+  const y       = today.getFullYear();
   const monthTH = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
-  const nowLabel = monthTH[today.getMonth()] + ' ' + (today.getFullYear()+543);
-  const adYear = today.getFullYear();
+  const nowLabel = monthTH[m] + ' ' + (y + 543);
 
-  const prompt = `คุณคือ SEO Analyst สำหรับตลาด Corporate Premium Gift ประเทศไทย
+  // helper render
+  const kw = (k, cls) => `<span class="kw ${cls}">${k}</span>`;
+  const renderList = (arr, cls) => arr.map(k => kw(k, cls)).join('');
+  const renderNew  = (arr) => arr.map(k => kw('🆕 '+k, 'kw-new')).join('');
+  const renderTrend= (arr) => arr.map(k => kw('⚡ '+k, 'kw-trend')).join('');
 
-**ข้อเท็จจริงที่ verified แล้ว (ห้ามเปลี่ยน):**
-- SwagOn: ไม่ยิง Facebook/Meta Ads (ยืนยันจาก Meta Ads Library มี.ค. 2026)
-- Ogga Idea: ไม่ยิง Ads (ยืนยันแล้ว)
-- GiftwiseAsia: ไม่ยิง Ads (ยืนยันแล้ว — FB Page Private)
-- Admire Tomorrow: ยิง Ads อยู่จริง 4 campaigns (ยืนยันจาก Meta Ads Library)
+  // ── Keywords คู่แข่ง (Base — คงที่) ──
+  const swagonBase   = ['swag on','corporate gifts thailand','branded merchandise','custom gift moq','tagOn NFC','premium corporate gift','swagonco','corporate swag thailand'];
+  const oggaBase     = ['ogga idea','eco gift thailand','esg corporate gift','ของขวัญ esg','circular economy gift','ของขวัญ eco friendly','upcycled gift','sustainable corporate gift'];
+  const giftwiseBase = ['giftwiseasia','giftwise asia','ของขวัญองค์กร','premium gift thailand','corporate gift bangkok','กระบอกน้ำองค์กร','แก้ว yeti องค์กร'];
+  const admireBase   = ['admire tomorrow','รับทำของพรีเมียม','ของขวัญ vip','luxury corporate gift','ของพรีเมียม 30 ปี','premium gift luxury'];
+  const admireAds    = ['multi-function hub 750฿','wellness gift set','รับทำของพรีเมียม moq 200','corporate premium gift'];
 
-**ขั้นตอนที่ 1 — ค้นหา Organic Keywords จากเว็บจริง:**
-- ค้นหา site:swagon.co keywords + "swagon corporate gift thailand"
-- ค้นหา site:ogga-idea.com + "ogga idea eco gift thailand ${adYear}"
-- ค้นหา site:giftwiseasia.com + "giftwise corporate gift"
-- ค้นหา site:admiretomorrow.com + "admire tomorrow premium gift"
-- ค้นหา "corporate gift thailand trending ${adYear}" และ "ของขวัญองค์กร keyword ไทย"
+  // ── Keywords ใหม่แยกตามเดือน (เปลี่ยนทุกเดือน — ไฮไลท์สีเขียว) ──
+  const newByMonth = [
+    ['corporate new year gift 2026','ของขวัญปีใหม่องค์กร','ส่งของขวัญปีใหม่บริษัท','premium new year hamper'],      // ม.ค.
+    ['valentine corporate gift','wellness gift set b2b','ของขวัญวาเลนไทน์องค์กร','premium gift ก.พ.'],               // ก.พ.
+    ['corporate gift มี.ค.','สั่งของขวัญ q1','esg gift 2026','ของขวัญ sustainability'],                               // มี.ค.
+    ['ของขวัญสงกรานต์องค์กร','songkran corporate gift','thai new year premium gift','สั่งของขวัญสงกรานต์ด่วน'],      // เม.ย.
+    ['mother day corporate gift','ของขวัญวันแม่ b2b','wellness gift วันแม่','corporate gift thaifex'],                // พ.ค.
+    ['ของขวัญ mid year','corporate gift ครึ่งปี','esg forum gift','สั่งของขวัญ q2'],                                  // มิ.ย.
+    ['ของขวัญกลางปี','corporate gift q3','asean corporate gift','branded gift ก.ค.'],                                 // ก.ค.
+    ['queen mother gift 12 ส.ค.','ของขวัญวันแม่หลวง','corporate gift august','premium gift ส.ค.'],                   // ส.ค.
+    ['sustainability expo gift','esg gift 2026','corporate gift ก.ย.','ของขวัญ csr summit'],                          // ก.ย.
+    ['year end gift early order','ของขวัญปีใหม่ล่วงหน้า','corporate gift q4','early christmas gift'],                // ต.ค.
+    ['ของขวัญปีใหม่องค์กร 2569','year end corporate gift bulk','christmas corporate gift','peak season gift'],        // พ.ย.
+    ['ของขวัญปีใหม่ด่วน','last minute corporate gift','year end gift ธ.ค.','สั่งของขวัญด่วน 2569'],                 // ธ.ค.
+  ];
 
-**ขั้นตอนที่ 2 — ตอบเป็น JSON เดียวเท่านั้น** ห้ามมีข้อความอื่น:
-{
-  "updatedAt": "${nowLabel}",
-  "swagon": {
-    "organic": ["6-8 keywords จริงจากเว็บ swagon.co"],
-    "adsActive": false,
-    "ads": []
-  },
-  "ogga": {
-    "organic": ["6-8 keywords จริงจากเว็บ ogga-idea.com"],
-    "adsActive": false,
-    "ads": []
-  },
-  "giftwise": {
-    "organic": ["5-6 keywords จริงจากเว็บ giftwiseasia.com"],
-    "adsActive": false,
-    "ads": []
-  },
-  "admire": {
-    "organic": ["5-6 keywords จริงจากเว็บ admiretomorrow.com"],
-    "adsActive": true,
-    "ads": ["multi-function hub","wellness gift set","รับทำของพรีเมียม moq 200","corporate premium gift"]
-  },
-  "folioOpportunity": ["8-10 keywords ที่คู่แข่งไม่ทำ เหมาะกับ Folio (MOQ ต่ำ, ภาครัฐ, Custom Packaging)"]
+  // ── Trend keywords แยกตามเดือน (สีส้ม — กำลัง trending) ──
+  const trendByMonth = [
+    ['ai corporate gift','nfc gift card','personalized gift 2026','eco packaging corporate'],  // ม.ค.
+    ['wellness corporate gift trend','mental health gift office','work from home gift set','digital gift card b2b'], // ก.พ.
+    ['esg report gift','carbon neutral gift','circular gift economy','green corporate gift'],   // มี.ค.
+    ['water festival gift','thai culture gift','handmade thai gift','artisan corporate gift'], // เม.ย.
+    ['plant based gift set','organic gift b2b','health corporate gift','fitness gift office'],  // พ.ค.
+    ['mid year employee gift','team building gift','hybrid work gift','staff appreciation gift'],// มิ.ย.
+    ['smart gift technology','qr code gift','digital unboxing','personalized packaging trend'], // ก.ค.
+    ['premium thai brand gift','local brand corporate gift','made in thailand gift','heritage gift'],// ส.ค.
+    ['net zero gift','sdg corporate gift','impact gift set','b corp gift supplier'],            // ก.ย.
+    ['holiday gift planning','budget corporate gift 2026','bulk order gift discount','early bird gift order'],// ต.ค.
+    ['luxury gift box 2026','custom ribbon packaging','gift wrapping service','premium hamper'],// พ.ย.
+    ['new year gift 2027','countdown corporate gift','festive gift set','premium gift box thai'],// ธ.ค.
+  ];
+
+  // ── Folio Opportunity Base (ทุกเดือน) ──
+  const folioBase = [
+    'ของขวัญ sme งบน้อย','สั่งของขวัญ 10 ชิ้น','ของขวัญภาครัฐ','custom packaging thailand',
+    'premium gift โรงงานตรง','สกรีนโลโก้ราคาถูก','ของพรีเมี่ยม moq 10','ของขวัญองค์กร moq ต่ำ',
+    'รับทำของขวัญองค์กร','ของขวัญ startup thailand','premium gift ราคาส่ง','ของขวัญ custom logo',
+    'corporate gift ภาครัฐ 2569','ของขวัญ sme ราคา','สั่งของขวัญน้อยชิ้น','premium gift โรงงาน'
+  ];
+
+  // ── Seasonal keywords แยกตามเดือน ──
+  const seasonalByMonth = [
+    ['ปีใหม่','new year','chinese new year gift','ตรุษจีน corporate gift'],    // ม.ค.
+    ['วาเลนไทน์','valentine gift','ก.พ. corporate','love gift set'],           // ก.พ.
+    ['q1 end gift','มี.ค. corporate','spring corporate gift'],                 // มี.ค.
+    ['สงกรานต์','songkran','thai new year','เม.ย. corporate gift'],            // เม.ย.
+    ['วันแม่','mothers day','พ.ค. corporate','สงกรานต์ followup'],             // พ.ค.
+    ['midyear','กลางปี','ครึ่งปี corporate','june gift thailand'],             // มิ.ย.
+    ['july corporate','ก.ค. gift','asean summit','กรกฎาคม'],                   // ก.ค.
+    ['12 สิงหา','วันแม่หลวง','สิงหา corporate','august thailand gift'],        // ส.ค.
+    ['sustainability expo','ก.ย. corporate','esg season','september gift'],    // ก.ย.
+    ['ต.ค. corporate','ใกล้ปีใหม่','q4 start','october gift'],                // ต.ค.
+    ['ปีใหม่ล่วงหน้า','พ.ย. peak','year end coming','loy krathong gift'],     // พ.ย.
+    ['ส่งท้ายปี','ปีใหม่','ธ.ค. ด่วน','december gift thailand'],              // ธ.ค.
+  ];
+
+  // ── Folio Ads (คงที่) ──
+  const folioAds = ['ของขวัญองค์กร premium','corporate gift thailand','custom gift moq น้อย','ของขวัญปีใหม่องค์กร','สั่งของขวัญ moq 10','premium gift โรงงาน'];
+
+  setTimeout(() => {
+    // คู่แข่ง
+    document.getElementById('kw-swagon-org').innerHTML   = renderList(swagonBase,'kw-org') + renderNew(newByMonth[m]);
+    document.getElementById('kw-swagon-ads').innerHTML   = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><a href="https://www.facebook.com/ads/library/?search_type=page&q=swagonco" target="_blank" style="font-size:10px;color:var(--blue);text-decoration:none;margin-left:8px">ตรวจสอบ →</a>';
+    document.getElementById('kw-ogga-org').innerHTML     = renderList(oggaBase,'kw-org') + renderNew(newByMonth[m].slice(0,2));
+    document.getElementById('kw-ogga-ads').innerHTML     = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><a href="https://www.facebook.com/ads/library/?search_type=page&q=oggaidea" target="_blank" style="font-size:10px;color:var(--blue);text-decoration:none;margin-left:8px">ตรวจสอบ →</a>';
+    document.getElementById('kw-giftwise-org').innerHTML = renderList(giftwiseBase,'kw-org') + renderNew(newByMonth[m].slice(0,2));
+    document.getElementById('kw-giftwise-ads').innerHTML = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><span style="font-size:10px;color:var(--text3);margin-left:8px">(FB Page Private)</span>';
+    document.getElementById('kw-admire-org').innerHTML   = renderList(admireBase,'kw-org') + renderNew(newByMonth[m].slice(0,2));
+    document.getElementById('kw-admire-ads').innerHTML   = renderList(admireAds,'kw-ads') +
+      '<a href="https://www.facebook.com/ads/library/?search_type=page&q=admire.tomorrow.thailand" target="_blank" style="display:inline-block;margin-top:6px;font-size:10px;color:var(--blue);text-decoration:none">✅ ดู Active Ads จริง →</a>';
+
+    // Folio
+    document.getElementById('kw-folio-opp').innerHTML      = renderList(folioBase,'kw-hot');
+    document.getElementById('kw-folio-trending').innerHTML  = renderNew(newByMonth[m]);
+    document.getElementById('kw-folio-seasonal').innerHTML  = renderTrend(seasonalByMonth[m]) + renderTrend(trendByMonth[m]);
+    document.getElementById('kw-folio-ads').innerHTML       = renderList(folioAds,'kw-ads');
+
+    // badges + status
+    const badge = nowLabel;
+    ['kwSwagonBadge','kwOggaBadge','kwGiftwiseBadge','kwAdmireBadge','kwFolioBadge'].forEach(id=>{
+      const el = document.getElementById(id);
+      if(el){ el.textContent = badge; el.className='badge bt'; }
+    });
+    if(status){ status.textContent = 'อัพเดทแล้ว · ' + nowLabel; status.style.color='var(--teal)'; }
+    if(sub)   { sub.textContent = `เปลี่ยนอัตโนมัติทุกเดือน · ไม่มีค่าใช้จ่าย`; }
+    if(next)  { next.textContent = `เดือนหน้า → ${monthTH[(m+1)%12]}`; }
+    if(icon) icon.style.animation = '';
+  }, 400);
 }
 
-**กฎเข้มงวด:** 
-- ถ้า adsActive: false → ads ต้องเป็น [] เสมอ ห้าม hallucinate keywords
-- organic keywords ต้องมาจากการค้นหาจริง ไม่ใช่เดา`;
 
-  try {
-    const result = await callClaudeWithSearch(prompt, 2500);
-    if(!result || typeof result !== 'object') throw new Error('bad data');
-
-    const renderKws = (arr, type) => (arr||[]).map(k=>`<span class="kw kw-${type}">${k}</span>`).join('');
-
-    // SwagOn — Ads ไม่ยิง hardcode
-    if(result.swagon){
-      document.getElementById('kw-swagon-org').innerHTML = renderKws(result.swagon.organic, 'org');
-      document.getElementById('kw-swagon-ads').innerHTML = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><a href="https://www.facebook.com/ads/library/?search_type=page&q=swagonco" target="_blank" style="font-size:10px;color:var(--blue);text-decoration:none;margin-left:8px">ตรวจสอบ Meta Ads Library →</a>';
-    }
-    // Ogga — Ads ไม่ยิง hardcode
-    if(result.ogga){
-      document.getElementById('kw-ogga-org').innerHTML = renderKws(result.ogga.organic, 'org');
-      document.getElementById('kw-ogga-ads').innerHTML = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><a href="https://www.facebook.com/ads/library/?search_type=page&q=oggaidea" target="_blank" style="font-size:10px;color:var(--blue);text-decoration:none;margin-left:8px">ตรวจสอบ →</a>';
-    }
-    // GiftwiseAsia — Ads ไม่ยิง hardcode
-    if(result.giftwise){
-      document.getElementById('kw-giftwise-org').innerHTML = renderKws(result.giftwise.organic, 'org');
-      document.getElementById('kw-giftwise-ads').innerHTML = '<span class="badge br">❌ ยืนยันแล้ว — ไม่ยิง Ads</span><span style="font-size:10px;color:var(--text3);margin-left:8px">(FB Page Private)</span>';
-    }
-    // Admire — Ads ยิงจริง hardcode + AI อาจอัปเดต keywords
-    if(result.admire){
-      document.getElementById('kw-admire-org').innerHTML = renderKws(result.admire.organic, 'org');
-      // ใช้ verified ads keywords + อาจมี AI เพิ่ม
-      const admireAds = (result.admire.ads && result.admire.ads.length > 0)
-        ? result.admire.ads
-        : ['multi-function hub 750฿','wellness gift set','รับทำของพรีเมียม moq 200','corporate premium gift'];
-      document.getElementById('kw-admire-ads').innerHTML = renderKws(admireAds, 'ads') +
-        '<a href="https://www.facebook.com/ads/library/?search_type=page&q=admire.tomorrow.thailand" target="_blank" style="display:inline-block;margin-top:6px;font-size:10px;color:var(--blue);text-decoration:none">✅ ดู Active Ads จริง →</a>';
-    }
-    // Folio Opportunity
-    if(result.folioOpportunity){
-      document.getElementById('kw-folio-opp').innerHTML = renderKws(result.folioOpportunity, 'hot');
-    }
-
-    status.textContent = 'AI Updated · ' + nowLabel;
-    status.style.color = 'var(--teal)';
-    statusSub.textContent = `ค้นหาจากเว็บจริง · Ads status verified · อัปเดต ${nowLabel}`;
-    document.getElementById('kwFolioUpdated').textContent = 'AI Updated · ' + nowLabel;
-    document.getElementById('kwSub').innerHTML = `Organic keywords จากเว็บคู่แข่งจริง · Ads verified จาก Meta Ads Library · <strong style="color:var(--teal)">อัปเดต ${nowLabel}</strong>`;
-
-  } catch(err){
-    status.textContent = 'Error — ลองใหม่';
-    status.style.color = 'var(--red)';
-  }
-
-  ['kw-swagon','kw-ogga','kw-giftwise','kw-admire','kw-folio-card'].forEach(id=>{
-    const el = document.getElementById(id);
-    if(el){ el.style.opacity='1'; el.style.transition='opacity .4s'; }
-  });
-  btn.disabled = false;
-  icon.style.animation = '';
-}
 
 window.addEventListener('DOMContentLoaded',()=>{
   setTimeout(initCharts, 200);
   setTimeout(refreshCompEvents, 600);
+  setTimeout(refreshKeywords, 800);
 });
 </script>
 </body>
