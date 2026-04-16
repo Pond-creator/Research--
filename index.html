@@ -485,22 +485,20 @@ body{
         <div style="width:32px;height:32px;border-radius:9px;background:rgba(79,142,247,.12);border:1px solid rgba(79,142,247,.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0">📅</div>
         <div>
           <div style="font-size:13px;font-weight:800;color:var(--text)">งานพรีเมียม &amp; สัมมนา — โอกาสเสนอขาย</div>
-          <div style="font-size:10px;color:var(--text3);margin-top:1px">คลิก AI Update เพื่อดึงข้อมูลงานล่าสุดจากทั่วไทย</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:1px">⏸ รอคำสั่งอัพเดท · อัพเดทล่าสุด เม.ย. 2569</div>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:7px;flex-shrink:0">
-        <span id="eventsStatus" style="font-size:10px;font-weight:700;color:var(--text3);background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:20px;padding:4px 10px">มี.ค. 2026</span>
-        <button id="eventsRefreshBtn" onclick="refreshEvents()" style="font-size:10px;font-weight:800;letter-spacing:.05em;color:#000;background:linear-gradient(135deg,var(--teal),var(--teal2));border:none;padding:7px 14px;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .2s;white-space:nowrap" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
-          <span id="eventsRefreshIcon" style="font-size:13px;display:inline-block">✦</span> AI Update
-        </button>
+        <span id="eventsStatus" style="font-size:10px;font-weight:700;color:var(--text3);background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:20px;padding:4px 10px">เม.ย. 2569</span>
+
       </div>
     </div>
     <div id="eventsList" style="padding:14px 18px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
       <div style="background:rgba(255,255,255,.03);border:1px solid rgba(245,158,11,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
         <div style="font-size:20px;flex-shrink:0">🏛️</div>
         <div><div style="font-size:11px;font-weight:800;color:var(--amber);letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px">งานภาครัฐ</div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text);margin-bottom:3px">Thailand Corporate Expo 2026</div>
-        <div style="font-size:11px;color:var(--text3)">BITEC Bangkok · เม.ย. 2026 · ภาครัฐ + Enterprise</div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text);margin-bottom:3px">Government Procurement Fair Q2</div>
+        <div style="font-size:11px;color:var(--text3)">BITEC Bangkok · มิ.ย. 2026 · ภาครัฐ + Enterprise</div>
         <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(0,229,160,.1);color:var(--teal);border:1px solid rgba(0,229,160,.2)">โอกาส Folio สูง</span></div></div>
       </div>
       <div style="background:rgba(255,255,255,.03);border:1px solid rgba(139,92,246,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start">
@@ -526,7 +524,7 @@ body{
       </div>
     </div>
     <div style="padding:9px 18px;border-top:1px solid rgba(79,142,247,.1);font-size:10.5px;color:var(--text3);display:flex;align-items:center;gap:6px">
-      <span style="color:var(--blue)">✦</span> กด <strong style="color:var(--text)">AI Update</strong> เพื่อให้ AI ค้นหางานล่าสุดจากทั่วไทยและวิเคราะห์โอกาสเสนอขาย Folio โดยอัตโนมัติ
+      <span style="color:var(--text3)">⏸</span> <span style="color:var(--text3)">รอคำสั่งอัพเดท — อัพโหลด index ใหม่เมื่อต้องการอัพเดทข้อมูล</span>
     </div>
   </div>
 
@@ -891,7 +889,6 @@ body{
         <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 4.5 🏆</div>
       </div>
     </div>
-    <div class="ch-lg"><canvas id="igEngChart"></canvas></div>
     <div style="margin-top:14px;background:var(--card);border:1px solid var(--border);border-radius:var(--r12);padding:14px">
       <table class="tbl">
         <thead><tr><th>Account</th><th>Posts</th><th>Avg Likes</th><th>Total Engagement</th><th>Avg Comments</th><th>Top Post Likes</th><th>Trend</th></tr></thead>
@@ -1024,15 +1021,9 @@ body{
       </div>
     </div>
   </div>
-  <div class="g2">
-    <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-t">📊</span>IG Avg Likes per Post</div><span class="bv">Apify Real</span></div>
-      <div class="ch"><canvas id="igAvgLikesChart"></canvas></div>
-    </div>
-    <div class="card">
+  <div class="card">
       <div class="card-hd"><div class="card-title"><span class="ci ci-a">👥</span>FB Followers Comparison</div><span class="bv">Apify Real</span></div>
       <div class="ch"><canvas id="fbEngChart"></canvas></div>
-    </div>
   </div>
   <div class="card">
     <div class="card-hd"><div class="card-title"><span class="ci ci-b">🎯</span>Sentiment Analysis · Est. from Post Content</div></div>
@@ -1130,13 +1121,7 @@ body{
     </div>
     <div style="display:flex;align-items:center;gap:8px">
       <span id="kwNextUpdate" style="font-size:10px;color:var(--text3);padding:4px 10px;background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:20px"></span>
-      <button id="kwRefreshBtn" onclick="refreshKeywords()"
-        style="display:flex;align-items:center;gap:6px;font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;
-        color:#000;background:linear-gradient(135deg,var(--teal),var(--teal2));border:none;padding:7px 14px;border-radius:9px;
-        cursor:pointer;white-space:nowrap;box-shadow:0 2px 10px rgba(0,229,160,.2)"
-        onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
-        <span id="kwRefreshIcon" style="font-size:13px;display:inline-block">✦</span> Refresh
-      </button>
+      <span style="font-size:10px;color:var(--text3);padding:5px 12px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:8px">⏸ รอคำสั่งอัพเดท</span>
     </div>
   </div>
 
@@ -1791,21 +1776,8 @@ function initCharts(){
           borderColor:['#00e5a0','#4f8ef7','#f59e0b','#8b5cf6',FC],borderWidth:[1.5,1.5,1.5,1.5,2.5],borderRadius:8}]},
       options:{...DO,...GP,scales:{...GS}}});
   }
-  if(vis('igEngChart')){dc('igEngChart');
-    ch['igEngChart']=new Chart(document.getElementById('igEngChart'),{type:'bar',
-      data:{labels:['giftwise.official','oggaidea','admire.tomorrow','swagon.official','🏠 Folio'],
-        datasets:[
-          {label:'Avg Likes per Post',data:[4.5,2.4,2.2,1.5,1.2],backgroundColor:['rgba(245,158,11,.6)','rgba(79,142,247,.6)','rgba(139,92,246,.6)','rgba(244,63,94,.6)','rgba(0,229,160,.6)'],borderColor:['#f59e0b','#4f8ef7','#8b5cf6','#f43f5e',FC],borderWidth:1.5,borderRadius:6}
-        ]},options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.raw+' ❤️'}}}}});
-  }
-  if(vis('igAvgLikesChart')){dc('igAvgLikesChart');
-    ch['igAvgLikesChart']=new Chart(document.getElementById('igAvgLikesChart'),{type:'bar',
-      data:{labels:['giftwise','oggaidea','admire','swagon','🏠 Folio'],
-        datasets:[{label:'Avg Likes / Post (Real)',data:[4.5,2.4,2.2,1.5,1.2],
-          backgroundColor:['rgba(245,158,11,.6)','rgba(79,142,247,.6)','rgba(139,92,246,.6)','rgba(244,63,94,.6)','rgba(0,229,160,.7)'],
-          borderColor:['#f59e0b','#4f8ef7','#8b5cf6','#f43f5e',FC],borderWidth:1.5,borderRadius:6}]},
-      options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.raw+' ❤️ (จาก scrape จริง)'}}}}}); 
-  }
+
+
   if(vis('fbEngChart')){dc('fbEngChart');
     ch['fbEngChart']=new Chart(document.getElementById('fbEngChart'),{type:'bar',
       data:{labels:['SwagOn','Ogga Idea','Admire Tomorrow','GiftwiseAsia','🏠 Folio'],
@@ -1988,67 +1960,6 @@ async function callClaudeWithSearch(prompt, maxTokens){
 }
 
 // ── AI COMPETITOR EVENTS REFRESH (Update Event คู่แข่ง + โอกาสเสนอขาย) ──
-// ── AI EVENTS REFRESH (งานพรีเมียม & สัมมนา) ──
-async function refreshEvents(){
-  const btn = document.getElementById('eventsRefreshBtn');
-  const icon = document.getElementById('eventsRefreshIcon');
-  const list = document.getElementById('eventsList');
-  const statusEl = document.getElementById('eventsStatus');
-
-  btn.disabled = true;
-  icon.style.animation = 'spin 1s linear infinite';
-  statusEl.textContent = 'กำลังค้นหาจากเว็บ...';
-  statusEl.style.color = 'var(--amber)';
-  list.style.opacity = '0.4';
-
-  const today = new Date();
-  const monthTH = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
-  const nowLabel = monthTH[today.getMonth()] + ' ' + (today.getFullYear()+543);
-  const thYear = today.getFullYear()+543;
-  const adYear = today.getFullYear();
-
-  const prompt = `คุณคือ AI วิเคราะห์ตลาดสำหรับ Folio Premium Gifts (foliobrand.com) ผู้ขายของขวัญองค์กรระดับพรีเมียมในไทย
-
-**ขั้นตอนที่ 1:** ค้นหาจาก web_search:
-- "งานสัมมนา corporate thailand ${thYear}"
-- "trade show thailand ${thYear} BITEC IMPACT"
-- "HR summit thailand ${thYear}"
-- "sustainability expo thailand ${thYear}"
-- "งานภาครัฐ จัดซื้อ ${adYear}"
-
-**ขั้นตอนที่ 2:** แนะนำ 4 งานที่ Folio น่าไปเสนอขาย/ออกบูธ เน้น HR / ภาครัฐ / ESG / Trade Show ปี ${thYear}
-
-**ตอบเป็น JSON array เท่านั้น:**
-[{"emoji":"🏛️","category":"ประเภทงาน","categoryColor":"#f59e0b","categoryBg":"rgba(245,158,11,.1)","categoryBorder":"rgba(245,158,11,.2)","name":"ชื่องานจริง","detail":"สถานที่ · วันที่ · กลุ่มเป้าหมาย","tag":"โอกาส Folio","tagColor":"#00e5a0","tagBg":"rgba(0,229,160,.1)","tagBorder":"rgba(0,229,160,.2)"}]`;
-
-  try {
-    const events = await callClaudeWithSearch(prompt, 2000);
-    if(!events || !Array.isArray(events)) throw new Error('bad data');
-
-    list.innerHTML = events.map(e=>`
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(79,142,247,.12);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;transition:border-color .2s" onmouseover="this.style.borderColor='rgba(0,229,160,.25)'" onmouseout="this.style.borderColor='rgba(79,142,247,.12)'">
-        <div style="font-size:20px;flex-shrink:0">${e.emoji}</div>
-        <div>
-          <div style="font-size:11px;font-weight:800;color:${e.categoryColor};letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px">${e.category}</div>
-          <div style="font-size:12.5px;font-weight:700;color:var(--text);margin-bottom:3px">${e.name}</div>
-          <div style="font-size:11px;color:var(--text3)">${e.detail}</div>
-          <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:${e.tagBg};color:${e.tagColor};border:1px solid ${e.tagBorder}">${e.tag}</span></div>
-        </div>
-      </div>`).join('');
-
-    list.style.opacity = '1';
-    list.style.transition = 'opacity .4s';
-    statusEl.textContent = nowLabel + ' · AI Updated';
-    statusEl.style.color = 'var(--teal)';
-  } catch(err){
-    list.innerHTML = `<div style="grid-column:span 2;padding:20px;text-align:center;color:var(--text3);font-size:12px">⚠️ ไม่สามารถดึงข้อมูลได้ กรุณาลองใหม่</div>`;
-    list.style.opacity = '1';
-    statusEl.textContent = 'Error — ลองใหม่';
-    statusEl.style.color = 'var(--red)';
-  }
-  btn.disabled = false;
-  icon.style.animation = '';
-}
 
 // ── AI COMPETITOR EVENTS (Auto-load, dynamic seed by month) ──
 function refreshCompEvents(){
@@ -2068,21 +1979,15 @@ function refreshCompEvents(){
   const nowLabel = monthTH[m] + ' ' + (y + 543);
 
   function isTooOld(adYear, adMonth){
-    return new Date(adYear, adMonth - 1, 1) < new Date(y, m - 1, 1);
+    // ตัดทั้งอดีต + เดือนปัจจุบัน → แสดงแต่เดือนหน้าขึ้นไป
+    return new Date(adYear, adMonth - 1, 1) <= new Date(y, m, 1);
   }
 
   // ── กลุ่ม A: Verified คู่แข่ง ──
   const verifiedRaw = [
     {name:'Global Gift Alliance (International)',      detail:'Official Partner · ส่งออก + รับ Referral ต่างประเทศ',                brand:'OGGA IDEA',       brandColor:'var(--blue)',   brandBg:'rgba(79,142,247,.1)',  brandBorder:'rgba(79,142,247,.2)',  type:'🌐 Intl. Alliance',   opportunity:'International credibility',      adYear:null,adMonth:null},
     {name:'Koh Tao / Koh Phaluay Circular Project',   detail:'ogga-circular.com · ขยะพลาสติก → Product · Ongoing',                brand:'OGGA IDEA',       brandColor:'var(--blue)',   brandBg:'rgba(79,142,247,.1)',  brandBorder:'rgba(79,142,247,.2)',  type:'🌿 ESG/Circular',     opportunity:'Media + Brand Story',            adYear:null,adMonth:null},
-    {name:'Admire Tomorrow Meta Ads (Active)',         detail:'Facebook/IG · Active Campaigns · MOQ 200 · คู่แข่งยิง Ads อยู่',   brand:'ADMIRE TOMORROW', brandColor:'var(--purple)',brandBg:'rgba(139,92,246,.1)', brandBorder:'rgba(139,92,246,.2)', type:'📢 Paid Ads',          opportunity:'Counter: MOQ ต่ำกว่า + Quality',adYear:null,adMonth:null},
-    {name:'SwagOn × Line Man Wongnai',                detail:'Online Campaign · TagOn NFC Sticker Corporate · Jan 2026',          brand:'SWAGON',          brandColor:'var(--teal)',   brandBg:'rgba(0,229,160,.1)',   brandBorder:'rgba(0,229,160,.2)',   type:'📱 Digital Collab',   opportunity:'NFC Tech Gift Trend',            adYear:2026,adMonth:1},
-    {name:'Ogga × SCG Packaging Workshop',            detail:'SCG Experience · ก.พ. 2026 · Circular Packaging Design Lab',       brand:'OGGA IDEA',       brandColor:'var(--blue)',   brandBg:'rgba(79,142,247,.1)',  brandBorder:'rgba(79,142,247,.2)',  type:'🌿 Workshop',         opportunity:'Custom Packaging Story',         adYear:2026,adMonth:2},
-    {name:'Admire Tomorrow × BrandAge Expo',          detail:'True Digital Park · มี.ค. 2026 · Premium Corporate Gift Showcase', brand:'ADMIRE TOMORROW', brandColor:'var(--purple)',brandBg:'rgba(139,92,246,.1)', brandBorder:'rgba(139,92,246,.2)', type:'🎁 Brand Expo',        opportunity:'Ads Active — Budget > Folio',   adYear:2026,adMonth:3},
-    {name:'GiftwiseAsia × MICE Thailand',             detail:'BITEC · ก.พ. 2026 · Event Souvenir + Corporate Gift Volume',       brand:'GIFTWISE',        brandColor:'var(--amber)',  brandBg:'rgba(245,158,11,.1)', brandBorder:'rgba(245,158,11,.2)',  type:'🎪 MICE',             opportunity:'Speed + Volume = Gap Folio',     adYear:2026,adMonth:2},
-    {name:'GQ Apparel × SwagOn (Laser Event)',        detail:'GQ Shop Mega Bangna · 21–22 มี.ค. 2026 · xTool Laser',            brand:'SWAGON',          brandColor:'var(--teal)',   brandBg:'rgba(0,229,160,.1)',   brandBorder:'rgba(0,229,160,.2)',   type:'🎨 Brand Collab',     opportunity:'Personalization Event',          adYear:2026,adMonth:3},
-    {name:'Siam Paragon × Ogga (Global Recycle Day)', detail:'NEXTOPIA Zone 5F · 18 มี.ค. 2026 · ESG Workshop',                 brand:'OGGA IDEA',       brandColor:'var(--blue)',   brandBg:'rgba(79,142,247,.1)',  brandBorder:'rgba(79,142,247,.2)',  type:'🛍 Retail Event',     opportunity:'ESG Visibility สูง',             adYear:2026,adMonth:3},
-    {name:'THAIFEX-HOREC Asia × SwagOn',              detail:'IMPACT Hall 2 บูธ S03 · 11–13 มี.ค. 2026 · ครั้งแรก!',           brand:'SWAGON',          brandColor:'var(--teal)',   brandBg:'rgba(0,229,160,.1)',   brandBorder:'rgba(0,229,160,.2)',   type:'🏭 Trade Show',       opportunity:'B2B Lead + TagOn NFC',           adYear:2026,adMonth:3},
+    {name:'Admire Tomorrow — Ads หยุดแล้ว',           detail:'FB/IG · 4 Campaigns เคยรัน หยุดแล้ว เม.ย. 2569 · MOQ 200',       brand:'ADMIRE TOMORROW', brandColor:'var(--purple)',brandBg:'rgba(139,92,246,.1)', brandBorder:'rgba(139,92,246,.2)', type:'📢 Ads Stopped',       opportunity:'Folio ครอง Paid Media เพียงแบรนด์เดียว',adYear:null,adMonth:null},
     {name:'THAIFEX–Anuga Asia 2026 × SwagOn',        detail:'IMPACT Arena · พ.ค. 2026 · B2B Food & Beverage · คาดว่า SwagOn ออกบูธ',brand:'SWAGON',       brandColor:'var(--teal)',   brandBg:'rgba(0,229,160,.1)',   brandBorder:'rgba(0,229,160,.2)',   type:'🏭 Trade Show',       opportunity:'B2B Premium Gift Supplier',      adYear:2026,adMonth:5},
     {name:'Sustainability Expo 2026 × Ogga',          detail:'QSNCC · ก.ย.–ต.ค. 2026 · 200,000+ ผู้เข้าชม · Ogga คาดเข้าร่วม',brand:'OGGA IDEA',       brandColor:'var(--blue)',   brandBg:'rgba(79,142,247,.1)',  brandBorder:'rgba(79,142,247,.2)',  type:'🌿 ESG',              opportunity:'ESG Story + Circular Product',   adYear:2026,adMonth:9},
   ];
@@ -2091,67 +1996,65 @@ function refreshCompEvents(){
 
   // ── กลุ่ม B: โอกาส Folio 12 เดือน ──
   const byMonth = [
-    [{name:'Thailand New Year Corporate Gift Fair',   detail:'BITEC · ม.ค. · ของขวัญปีใหม่องค์กร B2B',                        type:'🎁 Corporate Gift',   opportunity:'MOQ ต่ำ + Custom Pack'},
-     {name:'HR Innovation Summit Q1',                detail:'Centara Grand · ม.ค. · HR Director 500+ คน',                    type:'🎤 HR Summit',        opportunity:'Employee Gift + Branding'},
-     {name:'Thailand Smart City Expo',               detail:'BITEC · ม.ค. · ภาครัฐ + Tech Corporate',                        type:'🏛️ ภาครัฐ',          opportunity:'TOR + Budget จัดซื้อ'},
-     {name:'Retail Expo Bangkok Q1',                 detail:'Siam Paragon EX · ม.ค. · Premium Retail + B2B',                 type:'🛍 Retail',           opportunity:'Premium Gift Launch'},
-     {name:'Government New Year Procurement',        detail:'ม.ค. · งบปีใหม่ภาครัฐ · จัดซื้อรอบแรก',                        type:'🏛️ ภาครัฐ',          opportunity:'Catalog + TOR พร้อม'}],
-    [{name:'Valentine Corporate Gift Campaign',      detail:'Online + Retail · ก.พ. · Wellness Gift B2B',                   type:'🎁 Seasonal',         opportunity:'Custom Packaging โดดเด่น'},
-     {name:'Thailand Design & Craft Fair',           detail:'TCDC · ก.พ. · Creative + Premium Lifestyle',                   type:'🎨 Design Fair',      opportunity:'Custom Design Gift'},
-     {name:'HR Forum — Future of Work',              detail:'Amari Watergate · ก.พ. · HR VP + L&D Manager',                 type:'🎤 HR Forum',         opportunity:'Branded Premium Gift'},
-     {name:'Pharma & Healthcare Expo',               detail:'BITEC · ก.พ. · Healthcare Corporate Gift',                     type:'🏥 Healthcare',       opportunity:'Wellness Gift Set Premium'},
-     {name:'Education & University Expo',            detail:'Impact · ก.พ. · นักศึกษา + องค์กรการศึกษา',                    type:'🎓 Education',        opportunity:'Low MOQ Branded Merch'}],
-    [{name:'Thailand Corporate Expo 2026',           detail:'BITEC Bangkok · มี.ค. 2026 · ภาครัฐ + Enterprise',              type:'🏛️ ภาครัฐ',          opportunity:'โอกาส Folio สูงมาก'},
-     {name:'HR Innovation Summit Thailand',          detail:'Centara Grand · มี.ค. 2026 · HR Director 500+ คน',             type:'🎤 สัมมนา HR',        opportunity:'Sponsor / Booth'},
-     {name:'Sustainability Leadership Forum',        detail:'Siam Paragon · มี.ค. · ESG Officer + CSR Director',            type:'🌿 ESG',              opportunity:'Eco Gift + Circular Story'},
-     {name:'Startup Thailand Connect Q1',            detail:'True Digital Park · มี.ค. · Startup 2,000+ คน',                type:'🚀 Startup',          opportunity:'Branded Merch MOQ ต่ำ'},
-     {name:'THAIFEX–Anuga Pre-Order Season',        detail:'รับออร์เดอร์ล่วงหน้าสำหรับงาน พ.ค. 2026',                      type:'🏭 Pre-Order',        opportunity:'Premium Gift B2B ล่วงหน้า'}],
-    [{name:'Songkran Corporate Gifting Season',      detail:'เม.ย. · ของขวัญสงกรานต์องค์กร · B2B Peak',                     type:'🎁 Seasonal',         opportunity:'Custom Packaging + Speed'},
-     {name:'Thailand Startup & SME Forum',           detail:'True Digital Park · เม.ย. · Startup + SME 1,000+ คน',          type:'🎤 Forum',            opportunity:'Branded Merch + Budget Pack'},
-     {name:'HR Digital Transformation Summit',      detail:'Centara Lakeside · เม.ย. · CHRO + HRD 400+ คน',                type:'🎤 HR Summit',        opportunity:'Premium Employee Gift'},
-     {name:'ASEAN Business Connect Bangkok',         detail:'InterContinental · เม.ย. · Regional Business 500+ คน',         type:'🌐 Regional',         opportunity:'Premium Corporate Gift'},
-     {name:'Government Q2 Procurement Season',      detail:'เม.ย.–พ.ค. · ภาครัฐทั่วประเทศ · งบไตรมาส 2',                  type:'🏛️ ภาครัฐ',          opportunity:'TOR + Catalog พร้อม'}],
-    [{name:'THAIFEX–Anuga Asia 2026',               detail:'IMPACT Arena · พ.ค. 2026 · B2B Food & Beverage ยิ่งใหญ่',       type:'🏭 Trade Show',       opportunity:'Premium Gift B2B'},
-     {name:'HR Summit Bangkok 2026',                 detail:'Centara Grand · พ.ค. 2026 · HR Director 500+ คน',              type:'🎤 สัมมนา HR',        opportunity:'Sponsor / Booth'},
-     {name:'Mother\'s Day Corporate Campaign',      detail:'พ.ค. · ของขวัญวันแม่ B2B · Premium Wellness',                  type:'🎁 Seasonal',         opportunity:'Custom Wellness Set'},
-     {name:'Thailand Education Expo',               detail:'BITEC · พ.ค. · มหาวิทยาลัย + สถาบัน',                          type:'🎓 Education',        opportunity:'Branded Merch + MOQ ต่ำ'},
-     {name:'Franchise & SME Expo Thailand',          detail:'IMPACT · พ.ค. · SME + Franchise 3,000+ คน',                   type:'🏢 SME Expo',         opportunity:'Budget Pack + MOQ ต่ำ'}],
-    [{name:'Thailand ESG & Sustainability Forum',    detail:'QSNCC · มิ.ย. · ESG Officer + CSR 800+ คน',                    type:'🌿 ESG Forum',        opportunity:'Eco Gift + Impact Story'},
-     {name:'Government Procurement Fair Q2',         detail:'Impact Muang Thong · มิ.ย. · จัดซื้อจัดจ้าง',                 type:'🏛️ ภาครัฐ',          opportunity:'TOR Budget + Catalog'},
-     {name:'Digital Marketing Summit Thailand',      detail:'True Digital Park · มิ.ย. · CMO + Marketing Director',         type:'📱 Marketing',        opportunity:'Branded Premium Gift'},
-     {name:'Thai Real Estate Expo',                  detail:'BITEC · มิ.ย. · Developer + Agency Corporate',                 type:'🏢 Real Estate',      opportunity:'High-end Premium Gift'},
-     {name:'Corporate Wellness & HR Festival',       detail:'Centara Grand · มิ.ย. · Wellness + Employee Experience',       type:'🎤 HR Festival',      opportunity:'Wellness Gift Set Premium'}],
-    [{name:'ASEAN Corporate Gift & Premium Expo',    detail:'BITEC · ก.ค. · B2B Premium Gift Regional',                     type:'🌐 Regional Expo',    opportunity:'Export + Intl. Buyer'},
-     {name:'Mid-Year HR & Wellness Summit',          detail:'Amari Watergate · ก.ค. · Wellness + Employee Engagement',      type:'🎤 HR Summit',        opportunity:'Wellness Gift Set'},
-     {name:'Thailand Startup Week',                  detail:'True Digital Park · ก.ค. · Startup + VC + Corporate',          type:'🚀 Startup',          opportunity:'Merch MOQ ต่ำ + Speed'},
-     {name:'Government Mid-Year Review',             detail:'ก.ค. · ภาครัฐ ทบทวนงบ · จัดซื้อรอบกลางปี',                    type:'🏛️ ภาครัฐ',          opportunity:'Catalog + TOR พร้อม'},
-     {name:'Healthcare & Pharma Innovation Expo',    detail:'BITEC · ก.ค. · Hospital + Healthcare Corporate',               type:'🏥 Healthcare',       opportunity:'Premium Wellness Gift'}],
-    [{name:'Thailand Digital & Tech Expo',           detail:'BITEC · ส.ค. · Tech Corporate + Startup',                      type:'💻 Tech Expo',        opportunity:'Branded Tech Gift'},
-     {name:'Queen Mother Day Corporate Gift',        detail:'ส.ค. · ของขวัญวันแม่หลวง B2B · Premium Season',               type:'🎁 Seasonal',         opportunity:'Custom Set + MOQ ต่ำ'},
-     {name:'ASEAN HR Conference',                    detail:'Siam Paragon · ส.ค. · CHRO + HR VP ASEAN',                     type:'🎤 HR Conference',    opportunity:'Premium Executive Gift'},
-     {name:'Thailand Sustainability Awards',         detail:'ส.ค. · ESG Awards Ceremony · Corporate',                       type:'🌿 ESG Awards',       opportunity:'Trophy + Premium Gift'},
-     {name:'Retail & E-commerce Summit',             detail:'True Digital Park · ส.ค. · E-com + Retail Corporate',          type:'🛍 E-commerce',       opportunity:'Branded Gift + Packaging'}],
-    [{name:'Sustainability Expo 2026',               detail:'QSNCC · ก.ย.–ต.ค. 2026 · 200,000+ ผู้เข้าชม',                 type:'🌿 ESG/Sustainability',opportunity:'ESG Product Launch'},
-     {name:'ASEAN HR Leaders Forum',                 detail:'Siam Paragon · ก.ย. · CHRO + HR VP 400+ คน',                  type:'🎤 HR Forum',         opportunity:'Premium Employee Gift'},
-     {name:'Thailand Fintech Festival',              detail:'BITEC · ก.ย. · Fintech + Banking Corporate',                   type:'💳 Fintech',          opportunity:'Premium Executive Gift'},
-     {name:'Corporate Social Responsibility Summit', detail:'Centara Grand · ก.ย. · CSR + ESG Director',                   type:'🌿 CSR Summit',       opportunity:'Eco + Circular Gift'},
-     {name:'Education Technology Expo',              detail:'IMPACT · ก.ย. · EdTech + University Corporate',                type:'🎓 EdTech',           opportunity:'Branded Gift + MOQ ต่ำ'}],
-    [{name:'Thailand MICE & Event Expo',             detail:'IMPACT · ต.ค. · Event Organizer + Corporate',                  type:'🎪 MICE',             opportunity:'Event Gift + Souvenir'},
-     {name:'Government Q4 Budget Planning',          detail:'ต.ค.–พ.ย. · งบประมาณปีหน้า · ภาครัฐทั่วประเทศ',               type:'🏛️ ภาครัฐ',          opportunity:'Catalog + TOR เตรียมงบ'},
-     {name:'HR Tech & Future of Work Conference',    detail:'True Digital Park · ต.ค. · HR Director + Tech',                type:'🎤 HR Tech',          opportunity:'Branded Premium Gift'},
-     {name:'Thailand Insurance & Finance Expo',      detail:'BITEC · ต.ค. · Insurance + Financial Corporate',               type:'💼 Finance',          opportunity:'Premium Executive Set'},
-     {name:'Franchise Asia Thailand',                detail:'IMPACT · ต.ค. · Franchise + SME 5,000+ คน',                   type:'🏢 Franchise',        opportunity:'Budget Merch + Speed'}],
-    [{name:'THAI FAMEEX Premium Gift Fair',          detail:'Siam Paragon EX · พ.ย. · Premium Consumer + B2B',              type:'🛍 Gift Fair',        opportunity:'Holiday Gift + Custom Pack'},
-     {name:'Year-End Corporate Gift Season',         detail:'พ.ย.–ธ.ค. · ของขวัญปีใหม่ · Peak Season ทุกองค์กร',          type:'🎁 Peak Season',      opportunity:'MOQ ต่ำ + รวดเร็ว'},
-     {name:'Thailand HR Congress',                   detail:'Centara Grand · พ.ย. · HR Congress ประจำปี',                   type:'🎤 HR Congress',      opportunity:'Sponsor + Branded Gift'},
-     {name:'ASEAN Sustainability Summit',            detail:'QSNCC · พ.ย. · ESG + Sustainability ASEAN',                    type:'🌿 ESG Summit',       opportunity:'Eco Gift + Circular Pack'},
-     {name:'Banking & Finance Year-End',             detail:'InterContinental · พ.ย. · CFO + Finance Director',             type:'💼 Finance',          opportunity:'Premium Executive Gift'}],
-    [{name:'Year-End Corporate Gift Peak Season',    detail:'ธ.ค. · Peak Season · ทุกองค์กรทั่วประเทศ',                    type:'🎁 Peak Season',      opportunity:'Custom Packaging + Speed'},
-     {name:'Government Year-End Budget Spending',    detail:'ธ.ค. · งบเหลือใช้ · จัดซื้อด่วนก่อนสิ้นปี',                  type:'🏛️ ภาครัฐ',          opportunity:'TOR ด่วน + Catalog พร้อม'},
-     {name:'New Year Corporate Gala',                detail:'โรงแรมหรู · ธ.ค. · งานเลี้ยงปีใหม่ · Gift Exchange',          type:'🎉 New Year Gala',    opportunity:'Premium Gift + Custom Box'},
-     {name:'Thailand Best Employer Awards',          detail:'Centara Grand · ธ.ค. · HR + CEO Award Ceremony',               type:'🏆 Awards',           opportunity:'Trophy + Premium Gift Set'},
-     {name:'Startup Year-End Demo Day',              detail:'True Digital Park · ธ.ค. · Startup + VC Demo',                 type:'🚀 Startup',          opportunity:'Branded Merch + MOQ ต่ำ'}],
-  ];
+    // [0] ม.ค.
+    [{name:'Thailand New Year Corporate Gift Fair',   detail:'BITEC · ม.ค. · ของขวัญปีใหม่องค์กร B2B Premium',           type:'🎁 Corporate Gift',    opportunity:'Custom Premium Pack + MOQ ต่ำ'},
+     {name:'HR Innovation Summit Q1',                detail:'Centara Grand · ม.ค. · HR Director 500+ คน',              type:'🎤 HR Summit',         opportunity:'Employee Premium Gift'},
+     {name:'Government Premium Procurement',         detail:'ม.ค. · งบปีใหม่ภาครัฐ · จัดซื้อ Premium ของขวัญ',        type:'🏛️ ภาครัฐ',           opportunity:'Premium Catalog + TOR'},
+     {name:'Luxury & Premium Gift Expo Q1',          detail:'Siam Paragon · ม.ค. · Premium Lifestyle B2B',             type:'🛍 Premium Retail',    opportunity:'Premium Gift Launch'}],
+    // [1] ก.พ.
+    [{name:'Valentine Corporate Premium Gift',       detail:'Online + Retail · ก.พ. · Wellness Premium Gift B2B',      type:'🎁 Seasonal Premium',  opportunity:'Custom Premium Packaging'},
+     {name:'Thailand Design & Craft Fair',           detail:'TCDC · ก.พ. · Creative + Premium Lifestyle',             type:'🎨 Design Fair',       opportunity:'Custom Design Gift'},
+     {name:'HR Forum — Future of Work',              detail:'Amari Watergate · ก.พ. · HR VP + L&D Manager',           type:'🎤 HR Forum',          opportunity:'Branded Premium Gift'},
+     {name:'Pharma & Healthcare Premium Expo',       detail:'BITEC · ก.พ. · Healthcare Corporate Gift Premium',        type:'🏥 Healthcare',        opportunity:'Wellness Premium Gift Set'}],
+    // [2] มี.ค.
+    [{name:'Thailand Corporate Expo',                detail:'BITEC Bangkok · มี.ค. · ภาครัฐ + Enterprise Premium',     type:'🏛️ ภาครัฐ',           opportunity:'Premium Gift B2B สูงมาก'},
+     {name:'HR Innovation Summit Thailand',          detail:'Centara Grand · มี.ค. · HR Director 500+ คน',            type:'🎤 สัมมนา HR',         opportunity:'Sponsor / Premium Booth'},
+     {name:'Sustainability Leadership Forum',        detail:'Siam Paragon · มี.ค. · ESG Officer + CSR Director',      type:'🌿 ESG Premium',       opportunity:'Eco Premium Gift + Circular'},
+     {name:'THAIFEX Pre-Order Premium Season',       detail:'รับออร์เดอร์ล่วงหน้า Premium Gift · มี.ค.',              type:'🏭 Pre-Order',         opportunity:'Premium Gift B2B ล่วงหน้า'}],
+    // [3] เม.ย.
+    [{name:'Songkran Corporate Premium Season',      detail:'เม.ย. · ของขวัญสงกรานต์องค์กร Premium · B2B Peak',       type:'🎁 Seasonal Premium',  opportunity:'Custom Premium Pack + Speed'},
+     {name:'HR Digital Transformation Summit',      detail:'Centara Lakeside · เม.ย. · CHRO + HRD 400+ คน',          type:'🎤 HR Summit',         opportunity:'Premium Employee Gift'},
+     {name:'ASEAN Business Connect Bangkok',         detail:'InterContinental · เม.ย. · Regional Business 500+ คน',   type:'🌐 Regional',          opportunity:'Premium Corporate Gift'},
+     {name:'Government Q2 Premium Procurement',     detail:'เม.ย.–พ.ค. · ภาครัฐทั่วประเทศ · งบ Premium ไตรมาส 2',  type:'🏛️ ภาครัฐ',           opportunity:'TOR + Premium Catalog'}],
+    // [4] พ.ค.
+    [{name:'THAIFEX–Anuga Asia 2026',               detail:'IMPACT Arena · พ.ค. 2026 · B2B Food & Beverage Premium',  type:'🏭 Trade Show',        opportunity:'Premium Gift B2B'},
+     {name:'HR Summit Bangkok 2026',                 detail:'Centara Grand · พ.ค. 2026 · HR Director 500+ คน',        type:'🎤 สัมมนา HR',         opportunity:'Sponsor / Premium Booth'},
+     {name:'Mothers Day Corporate Premium',        detail:'พ.ค. · ของขวัญวันแม่ B2B · Premium Wellness Set',         type:'🎁 Seasonal Premium',  opportunity:'Custom Premium Wellness Set'},
+     {name:'Franchise & SME Premium Expo',           detail:'IMPACT · พ.ค. · SME + Franchise 3,000+ คน',             type:'🏢 SME Expo',          opportunity:'Premium Pack + MOQ ต่ำ'}],
+    // [5] มิ.ย.
+    [{name:'Thailand ESG & Sustainability Forum',    detail:'QSNCC · มิ.ย. · ESG Officer + CSR 800+ คน',              type:'🌿 ESG Forum',         opportunity:'Eco Premium Gift + Impact'},
+     {name:'Government Premium Fair Q2',             detail:'Impact Muang Thong · มิ.ย. · จัดซื้อ Premium',           type:'🏛️ ภาครัฐ',           opportunity:'TOR Premium + Catalog'},
+     {name:'Digital Marketing Summit Thailand',      detail:'True Digital Park · มิ.ย. · CMO + Marketing Director',   type:'📱 Marketing',         opportunity:'Branded Premium Gift'},
+     {name:'Corporate Wellness & HR Festival',       detail:'Centara Grand · มิ.ย. · Wellness + Employee Experience', type:'🎤 HR Festival',        opportunity:'Premium Wellness Gift Set'}],
+    // [6] ก.ค.
+    [{name:'ASEAN Corporate Gift & Premium Expo',    detail:'BITEC · ก.ค. · B2B Premium Gift Regional',               type:'🌐 Regional Expo',     opportunity:'Export + Intl. Buyer'},
+     {name:'Mid-Year HR & Wellness Summit',          detail:'Amari Watergate · ก.ค. · Wellness + Employee',           type:'🎤 HR Summit',         opportunity:'Premium Wellness Gift Set'},
+     {name:'Government Mid-Year Premium Review',     detail:'ก.ค. · ภาครัฐ ทบทวนงบ · จัดซื้อ Premium รอบกลางปี',    type:'🏛️ ภาครัฐ',           opportunity:'Premium Catalog + TOR'}],
+    // [7] ส.ค.
+    [{name:'Thailand Digital & Tech Premium Expo',   detail:'BITEC · ส.ค. · Tech Corporate Premium Gift',             type:'💻 Tech Expo',         opportunity:'Branded Tech Premium Gift'},
+     {name:'Queen Mother Day Corporate Premium',     detail:'ส.ค. · ของขวัญวันแม่หลวง B2B · Premium Season',          type:'🎁 Seasonal Premium',  opportunity:'Custom Premium Set + MOQ ต่ำ'},
+     {name:'ASEAN HR Conference Premium',            detail:'Siam Paragon · ส.ค. · CHRO + HR VP ASEAN',               type:'🎤 HR Conference',     opportunity:'Premium Executive Gift'},
+     {name:'Thailand Sustainability Awards',         detail:'ส.ค. · ESG Awards Ceremony · Corporate Premium',         type:'🌿 ESG Awards',        opportunity:'Trophy + Premium Gift'}],
+    // [8] ก.ย.
+    [{name:'Sustainability Expo 2026',               detail:'QSNCC · ก.ย.–ต.ค. 2026 · 200,000+ ผู้เข้าชม',           type:'🌿 ESG/Sustainability', opportunity:'ESG Premium Product Launch'},
+     {name:'ASEAN HR Leaders Forum',                 detail:'Siam Paragon · ก.ย. · CHRO + HR VP 400+ คน',            type:'🎤 HR Forum',          opportunity:'Premium Employee Gift'},
+     {name:'CSR Premium Summit',                     detail:'Centara Grand · ก.ย. · CSR + ESG Director',             type:'🌿 CSR Summit',        opportunity:'Eco + Circular Premium Gift'},
+     {name:'Thailand Fintech Premium Expo',          detail:'BITEC · ก.ย. · Fintech + Banking Corporate',             type:'💳 Fintech',           opportunity:'Premium Executive Gift'}],
+    // [9] ต.ค.
+    [{name:'Thailand MICE & Premium Event Expo',     detail:'IMPACT · ต.ค. · Event Organizer + Corporate Premium',    type:'🎪 MICE Premium',      opportunity:'Premium Event Gift + Souvenir'},
+     {name:'Government Q4 Premium Budget',           detail:'ต.ค.–พ.ย. · งบประมาณปีหน้า · Premium ภาครัฐ',          type:'🏛️ ภาครัฐ',           opportunity:'Premium Catalog + TOR เตรียมงบ'},
+     {name:'Thailand Insurance Premium Gift Expo',   detail:'BITEC · ต.ค. · Insurance + Financial Corporate',         type:'💼 Finance',           opportunity:'Premium Executive Set'}],
+    // [10] พ.ย.
+    [{name:'THAI FAMEEX Premium Gift Fair',          detail:'Siam Paragon EX · พ.ย. · Premium Consumer + B2B',        type:'🛍 Premium Gift Fair', opportunity:'Holiday Premium Gift + Custom'},
+     {name:'Year-End Corporate Premium Season',      detail:'พ.ย.–ธ.ค. · ของขวัญปีใหม่ Premium · Peak Season',       type:'🎁 Peak Season',       opportunity:'MOQ ต่ำ + รวดเร็ว Premium'},
+     {name:'Thailand HR Congress Premium',           detail:'Centara Grand · พ.ย. · HR Congress ประจำปี',            type:'🎤 HR Congress',       opportunity:'Sponsor + Premium Branded Gift'},
+     {name:'ASEAN Sustainability Premium Summit',    detail:'QSNCC · พ.ย. · ESG + Sustainability ASEAN',              type:'🌿 ESG Summit',        opportunity:'Eco Premium Gift + Circular'}],
+    // [11] ธ.ค.
+    [{name:'Year-End Corporate Premium Peak',        detail:'ธ.ค. · Peak Season · ทุกองค์กรทั่วประเทศ Premium',      type:'🎁 Peak Season',       opportunity:'Custom Premium Pack + Speed'},
+     {name:'Government Year-End Premium Spending',   detail:'ธ.ค. · งบเหลือใช้ · จัดซื้อ Premium ด่วนก่อนสิ้นปี',  type:'🏛️ ภาครัฐ',           opportunity:'TOR ด่วน + Premium Catalog'},
+     {name:'New Year Corporate Premium Gala',        detail:'โรงแรมหรู · ธ.ค. · งานเลี้ยงปีใหม่ · Premium Gift',    type:'🎉 New Year Gala',     opportunity:'Premium Gift + Custom Box'},
+     {name:'Thailand Best Employer Premium Awards',  detail:'Centara Grand · ธ.ค. · HR + CEO Award Ceremony',        type:'🏆 Awards',            opportunity:'Trophy + Premium Gift Set'}],
+  ]
 
   // helper — สร้าง Folio items พร้อม badge label
   function makeFolioItems(monthIdx, label, badgeLabel){
@@ -2168,10 +2071,12 @@ function refreshCompEvents(){
   const m2 = (m + 2) % 12;
   const m3 = (m + 3) % 12;
 
-  const currentItems  = makeFolioItems(m,  monthTH[m]  + ' ' + (y+543), 'NOW');
-  const upcoming1     = makeFolioItems(m1, monthTH[m1] + ' ' + ((m1<m?y+1:y)+543), monthTH[m1]);
-  const upcoming2     = makeFolioItems(m2, monthTH[m2] + ' ' + ((m2<m?y+1:y)+543), monthTH[m2]);
-  const upcoming3     = makeFolioItems(m3, monthTH[m3] + ' ' + ((m3<m?y+1:y)+543), monthTH[m3]);
+  // ไม่แสดงเดือนนี้ → เริ่มจากเดือนหน้า (m1) ขึ้นไป
+  const upcoming1     = makeFolioItems(m1, monthTH[m1] + ' ' + ((m1<=m?y+1:y)+543), monthTH[m1]);
+  const upcoming2     = makeFolioItems(m2, monthTH[m2] + ' ' + ((m2<=m?y+1:y)+543), monthTH[m2]);
+  const upcoming3     = makeFolioItems(m3, monthTH[m3] + ' ' + ((m3<=m?y+1:y)+543), monthTH[m3]);
+  const m4 = (m + 4) % 12;
+  const upcoming4     = makeFolioItems(m4, monthTH[m4] + ' ' + ((m4<=m?y+1:y)+543), monthTH[m4]);
 
   const verifiedCurrent  = verified.filter(e => e.adYear !== null && e.adMonth === (m+1));
   const verifiedFuture   = verified.filter(e => e.adYear !== null && e.adMonth >  (m+1));
@@ -2179,11 +2084,10 @@ function refreshCompEvents(){
 
   // ลำดับ: ปัจจุบัน → +1 → +2 → +3 → verified เดือนนี้ → verified อนาคต → ongoing
   const allEvents = [
-    ...currentItems,
     ...upcoming1,
     ...upcoming2,
     ...upcoming3,
-    ...verifiedCurrent,
+    ...upcoming4,
     ...verifiedFuture,
     ...verifiedTimeless,
   ];
@@ -2191,15 +2095,30 @@ function refreshCompEvents(){
 
   const INITIAL_SHOW = 8;
 
-  // badge สี: NOW=teal, เดือนถัดไป=blue/purple/amber, verified=ตามสี
-  const badgeStyle = {
-    'NOW':    'background:rgba(0,229,160,.15);color:var(--teal);border:1px solid rgba(0,229,160,.3)',
-    default:  'background:rgba(79,142,247,.1);color:var(--blue);border:1px solid rgba(79,142,247,.2)',
-  };
+  // badge สี: คนละสีแต่ละเดือน
+  const monthColors = [
+    'background:rgba(0,229,160,.15);color:var(--teal);border:1px solid rgba(0,229,160,.3)',      // ม.ค.
+    'background:rgba(236,72,153,.15);color:var(--pink);border:1px solid rgba(236,72,153,.3)',     // ก.พ.
+    'background:rgba(79,142,247,.15);color:var(--blue);border:1px solid rgba(79,142,247,.3)',     // มี.ค.
+    'background:rgba(245,158,11,.15);color:var(--amber);border:1px solid rgba(245,158,11,.3)',    // เม.ย.
+    'background:rgba(16,185,129,.15);color:var(--green);border:1px solid rgba(16,185,129,.3)',    // พ.ค.
+    'background:rgba(139,92,246,.15);color:var(--purple);border:1px solid rgba(139,92,246,.3)',   // มิ.ย.
+    'background:rgba(244,63,94,.15);color:var(--red);border:1px solid rgba(244,63,94,.3)',        // ก.ค.
+    'background:rgba(79,142,247,.15);color:#60c8ff;border:1px solid rgba(96,200,255,.3)',         // ส.ค.
+    'background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(252,211,77,.3)',         // ก.ย.
+    'background:rgba(16,185,129,.15);color:#34d399;border:1px solid rgba(52,211,153,.3)',         // ต.ค.
+    'background:rgba(139,92,246,.15);color:#c084fc;border:1px solid rgba(192,132,252,.3)',        // พ.ย.
+    'background:rgba(236,72,153,.15);color:#f9a8d4;border:1px solid rgba(249,168,212,.3)',        // ธ.ค.
+  ];
+  function getBadgeStyle(label){
+    // หา index เดือนจาก label เช่น "พ.ค." "มิ.ย."
+    const mIdx = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'].indexOf(label);
+    return mIdx >= 0 ? monthColors[mIdx] : 'background:rgba(79,142,247,.1);color:var(--blue);border:1px solid rgba(79,142,247,.2)';
+  }
 
   function renderRow(e){
     const bl = e.badgeLabel || '';
-    const bs = bl === 'NOW' ? badgeStyle['NOW'] : badgeStyle['default'];
+    const bs = getBadgeStyle(bl);
     const badge = bl ? `<div style="font-size:8px;font-weight:900;letter-spacing:.06em;margin-top:3px;padding:1px 5px;border-radius:4px;display:inline-block;${bs}">${bl}</div>` : '';
     return `<tr style="border-bottom:1px solid rgba(255,255,255,.03)${e.isNew?';background:rgba(0,229,160,.012)':''}">
       <td style="padding:12px 16px;font-family:var(--font-display);font-size:14px;font-weight:800;color:var(--border2);vertical-align:top">
