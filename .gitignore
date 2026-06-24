@@ -1,0 +1,17 @@
+# Secrets & credentials
+.env
+.env.*
+*.key
+*.secret
+config.js
+secrets.js
+credentials.json
+
+# Backup & temp
+*.bak
+*.tmp
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
