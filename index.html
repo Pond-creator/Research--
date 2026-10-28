@@ -459,9 +459,10 @@ body{
   <button class="nt" onclick="show('seo',this)">🌐 SEO</button>
   <button class="nt" onclick="show('youtube',this)">▶️ YouTube</button>
   <button class="nt" onclick="show('swot',this)">⚔️ SWOT</button>
-  <button class="nt new-tab" onclick="show('pricing',this)">💰 Pricing</button>
-  <button class="nt new-tab" onclick="show('ai',this)">🤖 AI Analyst</button>
-  <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🏠 Folio</button>
+  <button class="nt new-tab" onclick="show('ctype',this)">🎬 ประเภทคอนเทนต์</button>
+  <button class="nt new-tab" onclick="show('ceng',this)">🔥 คอนเทนต์ที่ปัง</button>
+  <button class="nt new-tab" onclick="show('cfreq',this)">📅 ความถี่โพสต์</button>
+  <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🎯 โอกาส Folio</button>
   <div class="nr">
     <div class="status-pill"><div class="status-dot"></div><span>Real Data + Source Links · 19 ต.ค. 2569</span></div>
     <button class="btn-export" onclick="window.print()">⬇ Export</button>
@@ -1647,171 +1648,69 @@ body{
 </div>
 
 <!-- ══════════════════════════════════════
-     PRICING (NEW)
-══════════════════════════════════════ -->
-<div class="page" id="page-pricing">
+     CTYPE
+═══════════════════════════════════════ -->
+<div class="page" id="page-ctype">
   <div class="ph">
-    <div class="eyebrow">Pricing Intelligence · Corporate Premium Gift Thailand</div>
-    <div class="ptitle">เปรียบ<em>ราคา</em> 6 แบรนด์</div>
-    <div class="psub">ข้อมูลจาก Website + Ads + Post Content · ประเมิน เม.ย. 2569 (ยังไม่มีข้อมูลราคาใหม่) · ราคาเป็นช่วง Est.</div>
+    <div class="eyebrow">Content Intelligence · Apify Scrape</div>
+    <div class="ptitle">แยกตามรูปแบบโพสต์ (ภาพ / วิดีโอ / อัลบั้ม) และธีมเนื้อหาของแต่ละแบรนด์ คู่แข่งเน้นคอนเทนต์<em>ประเภทไหน</em></div>
+    <div class="psub">🎬</div>
   </div>
-
-  <div class="g3 mb">
-    <div class="ins"><div class="ins-tag it-o"><div class="ins-dot"></div>Folio Advantage</div><div class="ins-text">Folio รับ MOQ ต่ำสุด (เริ่ม 10 ชิ้น) ในขณะที่ Admire ขั้นต่ำ 200 ชิ้น → ได้ลูกค้า SME ที่คู่แข่งไม่รับ</div></div>
-    <div class="ins"><div class="ins-tag it-w"><div class="ins-dot"></div>ตลาด Premium Segment</div><div class="ins-text">ราคาเฉลี่ยตลาด 350–750฿/ชิ้น สำหรับ Corporate Gift ระดับกลาง-บน · Admire โฆษณา 750฿/ชิ้น MOQ 200</div></div>
-    <div class="ins"><div class="ins-tag it-t"><div class="ins-dot"></div>Price War Warning</div><div class="ins-text">Shopee/Lazada มีสินค้าคล้ายกันราคา 50–150฿ → ต้องสื่อสาร Value ไม่ใช่แค่ราคา — Custom + Brand Story + Service คือ Moat</div></div>
-  </div>
-
-  <div class="g3">
-    <div class="price-card">
-      <div class="price-brand" style="color:var(--teal)">SwagOn</div>
-      <div style="font-size:10px;color:var(--text3);margin-bottom:6px">swagon.co</div>
-      <div class="price-range" style="color:var(--teal)">150–1,500฿</div>
-      <div class="price-unit">ต่อชิ้น · ขึ้นกับ Item + Qty</div>
-      <div class="price-row"><span class="price-lbl">MOQ</span><span class="price-val">50–100 ชิ้น</span></div>
-      <div class="price-row"><span class="price-lbl">Packaging</span><span class="price-val">Custom (เพิ่มราคา)</span></div>
-      <div class="price-row"><span class="price-lbl">Delivery</span><span class="price-val">~3–4 สัปดาห์</span></div>
-      <div class="price-row"><span class="price-lbl">Quote System</span><span class="price-val" style="color:var(--teal)">✅ Instant Quote</span></div>
-      <div class="price-row"><span class="price-lbl">Target</span><span class="price-val">Enterprise + Brand</span></div>
-      <div class="price-row"><span class="price-lbl">Segment</span><span class="price-val">Mid–Premium</span></div>
-    </div>
-    <div class="price-card">
-      <div class="price-brand" style="color:var(--blue)">Ogga Idea</div>
-      <div style="font-size:10px;color:var(--text3);margin-bottom:6px">ogga-idea.com</div>
-      <div class="price-range" style="color:var(--blue)">200–2,000฿</div>
-      <div class="price-unit">ต่อชิ้น · ESG Premium Pricing</div>
-      <div class="price-row"><span class="price-lbl">MOQ</span><span class="price-val">ขึ้นกับ Product</span></div>
-      <div class="price-row"><span class="price-lbl">Packaging</span><span class="price-val">Eco-friendly</span></div>
-      <div class="price-row"><span class="price-lbl">Delivery</span><span class="price-val">ตามตกลง</span></div>
-      <div class="price-row"><span class="price-lbl">ESG Premium</span><span class="price-val" style="color:var(--blue)">✅ ESG Report ได้</span></div>
-      <div class="price-row"><span class="price-lbl">Target</span><span class="price-val">Corporate ESG</span></div>
-      <div class="price-row"><span class="price-lbl">Segment</span><span class="price-val">Premium–Luxury</span></div>
-    </div>
-    <div class="price-card">
-      <div class="price-brand" style="color:var(--amber)">GiftwiseAsia</div>
-      <div style="font-size:10px;color:var(--text3);margin-bottom:6px">giftwiseasia.com</div>
-      <div class="price-range" style="color:var(--amber)">100–800฿</div>
-      <div class="price-unit">ต่อชิ้น · Mid-range</div>
-      <div class="price-row"><span class="price-lbl">MOQ</span><span class="price-val">ต้องสอบถาม</span></div>
-      <div class="price-row"><span class="price-lbl">Packaging</span><span class="price-val">Standard</span></div>
-      <div class="price-row"><span class="price-lbl">Delivery</span><span class="price-val">ไม่ระบุชัด</span></div>
-      <div class="price-row"><span class="price-lbl">Best Seller</span><span class="price-val">แก้ว Moment Timo</span></div>
-      <div class="price-row"><span class="price-lbl">Target</span><span class="price-val">SME + Corporate</span></div>
-      <div class="price-row"><span class="price-lbl">Segment</span><span class="price-val">Value–Mid</span></div>
-    </div>
-    <div class="price-card">
-      <div class="price-brand" style="color:var(--purple)">Admire Tomorrow</div>
-      <div style="font-size:10px;color:var(--text3);margin-bottom:6px">admiretomorrow.com</div>
-      <div class="price-range" style="color:var(--purple)">350–2,500฿</div>
-      <div class="price-unit">ต่อชิ้น · Luxury Positioning</div>
-      <div class="price-row"><span class="price-lbl">MOQ</span><span class="price-val" style="color:var(--red)">200 ชิ้น (สูง)</span></div>
-      <div class="price-row"><span class="price-lbl">Packaging</span><span class="price-val">Premium Box</span></div>
-      <div class="price-row"><span class="price-lbl">Delivery</span><span class="price-val">4–6 สัปดาห์</span></div>
-      <div class="price-row"><span class="price-lbl">Ads Active</span><span class="price-val" style="color:var(--amber)">750฿/ชิ้น Ads</span></div>
-      <div class="price-row"><span class="price-lbl">Target</span><span class="price-val">Enterprise VIP</span></div>
-      <div class="price-row"><span class="price-lbl">Segment</span><span class="price-val">Premium–Luxury</span></div>
-    </div>
-    <div class="price-card featured">
-      <div class="price-brand" style="color:var(--teal)">🏠 Folio Premium Gifts</div>
-      <div style="font-size:10px;color:var(--text3);margin-bottom:6px">foliobrand.com</div>
-      <div class="price-range" style="color:var(--teal)">ตามสอบถาม</div>
-      <div class="price-unit">Custom Quote · โรงงานตรง</div>
-      <div class="price-row"><span class="price-lbl">MOQ</span><span class="price-val" style="color:var(--teal)">เริ่มต้น 10 ชิ้น ✅</span></div>
-      <div class="price-row"><span class="price-lbl">Packaging</span><span class="price-val" style="color:var(--teal)">Custom ✅✅</span></div>
-      <div class="price-row"><span class="price-lbl">Delivery</span><span class="price-val">ตามตกลง</span></div>
-      <div class="price-row"><span class="price-lbl">ภาครัฐ</span><span class="price-val" style="color:var(--teal)">✅ รับได้</span></div>
-      <div class="price-row"><span class="price-lbl">Target</span><span class="price-val">SME + Enterprise + ภาครัฐ</span></div>
-      <div class="price-row"><span class="price-lbl">จุดขาย</span><span class="price-val" style="color:var(--teal)">โรงงานเอง · MOQ ต่ำ</span></div>
-    </div>
-    <div class="price-card" style="border-color:rgba(16,185,129,.3)">
-      <div class="price-brand" style="color:var(--green)">Bixitia <span style="font-size:9px;background:rgba(16,185,129,.1);padding:1px 5px;border-radius:4px;border:1px solid rgba(16,185,129,.3)">NEW</span></div>
-      <div style="font-size:10px;color:var(--text3);margin-bottom:6px">bixitia.com</div>
-      <div class="price-range" style="color:var(--green)">ตามสั่ง</div>
-      <div class="price-unit">ต่อชิ้น · โรงงานผลิตตรง 30+ ปี</div>
-      <div class="price-row"><span class="price-lbl">MOQ</span><span class="price-val">ตามสอบถาม</span></div>
-      <div class="price-row"><span class="price-lbl">Packaging</span><span class="price-val">Custom Design</span></div>
-      <div class="price-row"><span class="price-lbl">Delivery</span><span class="price-val">ตามตกลง</span></div>
-      <div class="price-row"><span class="price-lbl">Specialty</span><span class="price-val" style="color:var(--green)">✅ Creative + Production</span></div>
-      <div class="price-row"><span class="price-lbl">Target</span><span class="price-val">Corporate ทุกขนาด</span></div>
-      <div class="price-row"><span class="price-lbl">Segment</span><span class="price-val">Mid–Premium</span></div>
-    </div>
-    <div class="price-card" style="background:rgba(244,63,94,.03);border-color:rgba(244,63,94,.12)">
-      <div class="price-brand" style="color:var(--red)">⚠️ Shopee/Lazada</div>
-      <div style="font-size:10px;color:var(--text3);margin-bottom:6px">Marketplace Threat</div>
-      <div class="price-range" style="color:var(--red)">50–200฿</div>
-      <div class="price-unit">ต่อชิ้น · Generic/No Brand</div>
-      <div class="price-row"><span class="price-lbl">MOQ</span><span class="price-val">1 ชิ้น</span></div>
-      <div class="price-row"><span class="price-lbl">Packaging</span><span class="price-val" style="color:var(--red)">Generic ❌</span></div>
-      <div class="price-row"><span class="price-lbl">Custom Logo</span><span class="price-val" style="color:var(--red)">ไม่ได้ / แย่ ❌</span></div>
-      <div class="price-row"><span class="price-lbl">Brand Story</span><span class="price-val" style="color:var(--red)">ไม่มี ❌</span></div>
-      <div class="price-row"><span class="price-lbl">Target</span><span class="price-val">Individual / SME Budget</span></div>
-      <div class="price-row"><span class="price-lbl">Moat</span><span class="price-val" style="color:var(--red)">ไม่มี</span></div>
-    </div>
-  </div>
-
   <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-t">📊</span>Price Positioning Map · ราคา vs MOQ</div></div>
-    <div class="ch-lg"><canvas id="pricingChart"></canvas></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">⏸</span>รอข้อมูล Apify รอบใหม่</div><span class="badge ba">ยังไม่มีข้อมูล</span></div>
+    <div style="padding:4px 2px;font-size:12px;color:var(--text3);line-height:1.7">
+      หน้านี้จะเติมข้อมูลจริงเมื่อได้ไฟล์ scrape รอบใหม่ · สิ่งที่หน้านี้จะแสดง:
+      <ul style="margin:10px 0 0 18px;padding:0">
+        <li style="margin-bottom:5px">สัดส่วนรูปแบบโพสต์รายแบรนด์ — Image / Video (Reel) / Sidecar (อัลบั้มหลายรูป)</li>
+        <li style="margin-bottom:5px">ธีมเนื้อหา แยกจากแคปชั่น + แฮชแท็ก เช่น โชว์สินค้า / เบื้องหลังโรงงาน / เคสลูกค้า / ESG / โปรโมชั่น</li>
+        <li style="margin-bottom:5px">เทียบกับ Folio ว่าเราเน้นประเภทไหน และต่างจากคู่แข่งตรงไหน</li>
+      </ul>
+    </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     LINE OA (NEW)
-══════════════════════════════════════ -->
-<div class="page" id="page-ai">
+     CENG
+═══════════════════════════════════════ -->
+<div class="page" id="page-ceng">
   <div class="ph">
-    <div class="eyebrow">AI-Powered Analysis · Claude API</div>
-    <div class="ptitle">🤖 AI <em>Analyst</em> — วิเคราะห์ข้อมูลด้วย AI</div>
-    <div class="psub">ถาม AI วิเคราะห์ข้อมูลคู่แข่ง Folio Intel · ใช้ Claude AI · ฟรี ไม่ต้องจ่าย API Key เพิ่ม</div>
+    <div class="eyebrow">Content Intelligence · Apify Scrape</div>
+    <div class="ptitle">หาว่ารูปแบบและธีมไหนได้ยอดไลก์/คอมเมนต์ดีที่สุด แยกรายแบรนด์ คอนเทนต์แบบไหน<em>ได้ Engagement สูง</em></div>
+    <div class="psub">🔥</div>
   </div>
-
-  <div class="ai-panel mb">
-    <div class="ai-panel-hd">
-      <div style="display:flex;align-items:center;gap:10px">
-        <span class="ai-badge">🤖 Claude AI</span>
-        <span style="font-size:11px;color:var(--text3)">วิเคราะห์ข้อมูลจาก Folio Intel Dashboard</span>
-      </div>
-      <div class="search-pulse"><div class="search-pulse-dot"></div>Live Analysis</div>
+  <div class="card">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">⏸</span>รอข้อมูล Apify รอบใหม่</div><span class="badge ba">ยังไม่มีข้อมูล</span></div>
+    <div style="padding:4px 2px;font-size:12px;color:var(--text3);line-height:1.7">
+      หน้านี้จะเติมข้อมูลจริงเมื่อได้ไฟล์ scrape รอบใหม่ · สิ่งที่หน้านี้จะแสดง:
+      <ul style="margin:10px 0 0 18px;padding:0">
+        <li style="margin-bottom:5px">Avg likes เทียบตามรูปแบบโพสต์ — วิดีโอชนะภาพนิ่งไหม ในแต่ละแบรนด์</li>
+        <li style="margin-bottom:5px">Top posts ของแต่ละแบรนด์ พร้อมธีมเนื้อหาและยอด engagement จริง</li>
+        <li style="margin-bottom:5px">ธีมที่ได้ผลซ้ำๆ (ไม่ใช่โพสต์ไวรัลครั้งเดียว) → เอาไปใช้ต่อได้จริง</li>
+        <li style="margin-bottom:5px">ข้อควรระวัง: ฐานผู้ติดตามต่างกัน ต้องดู engagement rate ไม่ใช่ยอดดิบ</li>
+      </ul>
     </div>
-    <div class="ai-panel-body">AI จะวิเคราะห์ข้อมูลคู่แข่งทั้ง 6 แบรนด์ โดยอิงจากข้อมูลจริงใน Dashboard นี้ — FB Likes, IG Engagement, Website Stats, Ads Data และ Content Strategy</div>
   </div>
+</div>
 
-  <div class="ai-chip-row" id="chipRow">
-    <button class="ai-chip" onclick="sendChip(this)">วิเคราะห์ภาพรวมคู่แข่งทั้งหมด</button>
-    <button class="ai-chip" onclick="sendChip(this)">Folio ควรทำอะไรก่อนในเดือนนี้?</button>
-    <button class="ai-chip" onclick="sendChip(this)">ทำไม Admire Tomorrow ถึงอันตราย?</button>
-    <button class="ai-chip" onclick="sendChip(this)">SwagOn จุดอ่อนคืออะไร?</button>
-    <button class="ai-chip" onclick="sendChip(this)">Ogga Idea ทำไมถึง Engage ได้ดี?</button>
-    <button class="ai-chip" onclick="sendChip(this)">Folio ควรตั้งราคายังไงเทียบคู่แข่ง?</button>
-    <button class="ai-chip" onclick="sendChip(this)">Line OA ช่วยได้อย่างไร?</button>
-    <button class="ai-chip" onclick="sendChip(this)">Content Strategy ที่ชนะ Ogga ได้?</button>
-    <button class="ai-chip" onclick="sendChip(this)">Bixitia คู่แข่งใหม่ควรระวังแค่ไหน?</button>
+<!-- ══════════════════════════════════════
+     CFREQ
+═══════════════════════════════════════ -->
+<div class="page" id="page-cfreq">
+  <div class="ph">
+    <div class="eyebrow">Content Intelligence · Apify Scrape</div>
+    <div class="ptitle">ความถี่การโพสต์รายเดือน · ช่วงที่หายไป · จังหวะที่ยิงถี่ คู่แข่งโพสต์<em>บ่อยแค่ไหน</em></div>
+    <div class="psub">📅</div>
   </div>
-
-  <div class="ai-chat-wrap">
-    <div class="ai-chat-header">
-      <div class="ai-chat-title">
-        <div style="width:8px;height:8px;background:var(--teal);border-radius:50%;animation:pulse 2s infinite"></div>
-        Folio Intel AI Analyst
-        <span style="font-size:10px;color:var(--text3);font-weight:400">· Powered by Claude</span>
-      </div>
-      <button onclick="clearChat()" style="font-size:10px;color:var(--text3);background:none;border:none;cursor:pointer;padding:4px 8px;border-radius:6px;transition:color .2s" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text3)'">🗑 ล้าง</button>
-    </div>
-    <div class="ai-chat-body" id="chatBody">
-      <div class="msg msg-ai">
-        สวัสดีครับ! ผมคือ <strong>Folio Intel AI Analyst</strong> — พร้อมวิเคราะห์ข้อมูลคู่แข่งในตลาด Corporate Premium Gift ไทย<br><br>
-        ข้อมูลที่ผมรู้:<br>
-        · FB Followers (19 ต.ค. 2569): Folio 10,793 ↓ · Admire 8,732 · SwagOn 3,489 · Bixitia 2,869 ใหม่ · Ogga 1,050<br>
-        · IG Avg Likes (1,824 posts): Ogga 3.43 · Giftwise 3.29 · Admire 2.42 · SwagOn 2.26 · Bixitia 2.20 · Folio 1.20<br>
-        · Ads: Folio + Bixitia ยิงอยู่ (Bixitia เพิ่ง verified 19 ต.ค.) · SwagOn/Ogga/Admire ไม่ยิง · Giftwise ตรวจไม่ได้<br>
-        · Web (Sep 2026): Giftwise 3K · Ogga 2.7K · Bixitia 2.7K · SwagOn 2.4K · Folio 1.9K · Admire 832<br>
-        · <strong style="color:var(--green)">Bixitia</strong>: เจอ FB 2,869 + ยิง Ads แล้ว · คุณภาพเว็บฟื้น 3.09 หน้า/visit · 1:17 · คู่แข่งที่ต้องจับตาสุด<br><br>
-        <strong>ถามได้เลยครับ!</strong> กดปุ่มด้านบน หรือพิมพ์คำถามได้เลย 👇
-      </div>
-    </div>
-    <div class="ai-chat-input-wrap">
-      <input type="text" class="ai-chat-input" id="chatInput" placeholder="พิมพ์คำถามเกี่ยวกับคู่แข่ง Folio..." onkeydown="if(event.key==='Enter')sendMessage()">
-      <button class="ai-send-btn" id="sendBtn" onclick="sendMessage()">ส่ง →</button>
+  <div class="card">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">⏸</span>รอข้อมูล Apify รอบใหม่</div><span class="badge ba">ยังไม่มีข้อมูล</span></div>
+    <div style="padding:4px 2px;font-size:12px;color:var(--text3);line-height:1.7">
+      หน้านี้จะเติมข้อมูลจริงเมื่อได้ไฟล์ scrape รอบใหม่ · สิ่งที่หน้านี้จะแสดง:
+      <ul style="margin:10px 0 0 18px;padding:0">
+        <li style="margin-bottom:5px">จำนวนโพสต์ต่อเดือนรายแบรนด์ ย้อนหลัง 12 เดือน</li>
+        <li style="margin-bottom:5px">ช่วงที่คู่แข่งเงียบ / ช่วงที่เร่งโพสต์ — โยงกับฤดูกาลขายของพรีเมียม</li>
+        <li style="margin-bottom:5px">เทียบความถี่กับ engagement ว่าโพสต์ถี่ขึ้นแล้วยอดดีขึ้นจริงไหม</li>
+        <li style="margin-bottom:5px">ข้อมูลที่มีแล้วรอบ 19 ต.ค.: Giftwise ~20/เดือน · Admire 16/เดือน · SwagOn หยุด ก.ย.–ต.ค. · Folio ก.ย. = 1 โพสต์</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -1821,8 +1720,8 @@ body{
 ══════════════════════════════════════ -->
 <div class="page" id="page-folio">
   <div class="ph">
-    <div class="eyebrow">Brand Profile · Folio Premium Gifts</div>
-    <div class="ptitle">🏠 ข้อมูล<em>Folio</em></div>
+    <div class="eyebrow">Opportunity · Folio Premium Gifts</div>
+    <div class="ptitle">🎯 โอกาส<em>Folio</em></div>
     <div class="psub">จุดแข็งเทียบคู่แข่ง · Content Calendar · Next Steps</div>
   </div>
   <div style="background:linear-gradient(135deg,rgba(0,229,160,.07),rgba(79,142,247,.04));border:1px solid rgba(0,229,160,.18);border-radius:var(--r16);padding:24px;margin-bottom:16px;display:flex;align-items:center;gap:20px">
@@ -1878,7 +1777,7 @@ body{
 
 <!-- FOOTER -->
 <div class="footer">
-  <div>✓ Real Data จาก Apify 19 ต.ค. 2569 (IG 1,824 posts · FB Pages 6 · FB Ads Library) · Similarweb Sep 2026 · NEW: Source Links + Events + AI Analyst</div>
+  <div>✓ Real Data จาก Apify 19 ต.ค. 2569 (IG 1,824 posts · FB Pages 6 · FB Ads Library) · Similarweb Sep 2026 · NEW: Source Links + Events + Content Intelligence</div>
   <div>Folio Intel <strong style="color:var(--teal)">V2</strong> · ตุลาคม 2026</div>
 </div>
 
@@ -1983,106 +1882,8 @@ function initCharts(){
           {label:'Bixitia',data:[22,5,75,15,55,65],borderColor:'rgba(16,185,129,.45)',backgroundColor:'transparent',pointBackgroundColor:'#10b981',borderDash:[4,4],borderWidth:1.5},
         ]},options:{...DO,...GP,scales:{r:GR}}});
   }
-  if(vis('pricingChart')){dc('pricingChart');
-    ch['pricingChart']=new Chart(document.getElementById('pricingChart'),{type:'scatter',
-      data:{datasets:[
-        {label:'SwagOn',data:[{x:75,y:825}],backgroundColor:'#00e5a0',pointRadius:10,pointHoverRadius:12},
-        {label:'Ogga Idea',data:[{x:100,y:1100}],backgroundColor:'#4f8ef7',pointRadius:10,pointHoverRadius:12},
-        {label:'GiftwiseAsia',data:[{x:50,y:450}],backgroundColor:'#f59e0b',pointRadius:10,pointHoverRadius:12},
-        {label:'Admire Tomorrow',data:[{x:200,y:1425}],backgroundColor:'#8b5cf6',pointRadius:14,pointHoverRadius:16},
-        {label:'🏠 Folio',data:[{x:10,y:600}],backgroundColor:'#00e5a0',pointRadius:16,pointHoverRadius:18,pointStyle:'star'},
-        {label:'Shopee/Lazada',data:[{x:1,y:125}],backgroundColor:'#f43f5e',pointRadius:8,pointHoverRadius:10},
-      ]},options:{...DO,...GP,scales:{
-        x:{title:{display:true,text:'MOQ (ชิ้น)',color:'#4a5568'},ticks:{color:'#4a5568'},grid:{color:'rgba(26,34,54,.7)'}},
-        y:{title:{display:true,text:'ราคา Avg (฿/ชิ้น)',color:'#4a5568'},ticks:{color:'#4a5568',callback:v=>v+'฿'},grid:{color:'rgba(26,34,54,.7)'}}
-      }}});
-  }
 }
 
-// ── AI CHAT ──
-const CONTEXT = `คุณคือ Folio Intel AI Analyst ผู้เชี่ยวชาญด้านการวิเคราะห์คู่แข่งตลาด Corporate Premium Gift ประเทศไทย
-
-ข้อมูลจริงจาก Apify / SimilarWeb ส.ค. 2569:
-FB Page Followers (Apify 19 ต.ค. 2569): Folio = 10,793 (สูงสุด แต่ลดต่อเนื่องรอบ 2 จาก 13,514 -> 11,705 -> 10,793 รวม -2,721) · Admire Tomorrow = 8,732 · SwagOn = 3,489 · Bixitia = 2,869 (เจอเพจครั้งแรก) · Ogga Idea = 1,050 · GiftwiseAsia = เพจเข้าไม่ได้
-IG Avg Likes/Post (1,824 posts 19 ต.ค. 2569): Ogga = 3.43 (ดีสุด, 105 posts — หายไป มิ.ย.-ก.ย. กลับมา ต.ค.) · GiftwiseAsia = 3.29 (181, โพสต์ถี่สุด ~20/เดือน) · Admire = 2.42 (371 posts — กลับมา active) · SwagOn = 2.3 (286) · Bixitia = 2.2 (384) · Folio = 1.2 (482 posts — volume สูงสุด แต่ engagement ต่ำสุด, top post 100 likes)
-FB Avg Likes/Post (61 posts): Ogga = 6.85 (ดีสุด) · SwagOn = 5.15 · Admire = 3.10
-FB Ads (19 ต.ค. 2569): Folio = Running Ads · Bixitia = Running Ads (verified ครั้งแรก เลิกใช้สถานะ unknown ได้แล้ว) · SwagOn/Ogga/Admire Tomorrow = ไม่ยิง · GiftwiseAsia = เพจเข้าไม่ได้ ตรวจไม่ได้
-SimilarWeb Sep 2026 (screenshot verified): GiftwiseAsia 3K (Bounce 43.46% แย่สุด · 2.21 p/v · 1:16) · Ogga 2.7K (39.86% · 2.01 · 0:45) · Bixitia 2.7K (32.64% · 3.09 · 1:17) · SwagOn 2.4K (26.10% ดีสุด · 3.79 p/v สูงสุด · 2:38 นานสุด) · Folio 1.9K (38.35% · 2.28 · 0:55) · Admire 832 (33.99% · 2.34 · 1:02)
-แนวโน้ม Jul->Aug->Sep: Folio 3.2K -> 2.1K -> 1.9K ร่วงติดกันและรอบนี้คุณภาพแย่ลงด้วย (Bounce 28.60->38.35, p/v 2.37->2.28, 1:08->0:55) · Bixitia 18.8K -> 3.7K -> 2.7K spike ก.ค. คือ traffic ปลอม แต่คุณภาพฟื้นชัด · SwagOn ครองคุณภาพทุกตัวทั้งที่หยุดโพสต์ IG
-Google Rating: SwagOn = 4.9⭐ · Folio ต้องตรวจสอบเอง
-Website positioning จาก source links:
-Folio = corporate gifts / ready to give / aroma / eco / healthy / tech & travel / notebook / gift guide / made in-house since 2007
-SwagOn = ของพรีเมี่ยมและของขวัญบริษัทครบจบ / 500+ ผู้ผลิต / ขอใบเสนอราคาเร็ว / free mockup / best price guarantee
-Ogga Idea = ESG/Eco / OGGA Circular / recycling with Koh Tao / award-winning / brand experience gift
-GiftwiseAsia = โรงงานผลิตสินค้าพรีเมียม / ของพรีเมียมแจกลูกค้า / สกรีนโลโก้ / แยกตามสินค้า ราคา และ lead time
-Admire Tomorrow = creative team / designers / production team / one stop service / 30+ years / 300+ brands
-Bixitia = creative premium makes easy / brand successories / PR campaign giftset / low quantity / fast / premium set by campaign
-YouTube: ทุกแบรนด์มี Channel link แล้ว แต่ cadence/ads ยังต้อง verify → โอกาสสำหรับ Folio ทำ content สม่ำเสมอ
-Line OA: ทุกแบรนด์มีแต่ใช้เพียงช่องทาง Contact ไม่มี Automation จริงจัง
-Pricing: Admire MOQ 200 ชิ้น 750฿ · Folio MOQ เริ่ม 10 ชิ้น → ได้เปรียบ SME
-
-ตอบเป็นภาษาไทย กระชับ ชัดเจน ใช้ข้อมูลจริงข้างบนในการวิเคราะห์ ให้ Actionable Insight เสมอ ตอบให้สั้นกระชับไม่เกิน 200 คำ`;
-
-let chatHistory = [];
-
-async function sendMessage(){
-  const input = document.getElementById('chatInput');
-  const msg = input.value.trim();
-  if(!msg) return;
-  input.value = '';
-  addMsg(msg,'user');
-  chatHistory.push({role:'user',content:msg});
-  await callAI();
-}
-
-function sendChip(btn){
-  document.getElementById('chatInput').value = btn.textContent;
-  sendMessage();
-}
-
-function addMsg(text,who){
-  const body = document.getElementById('chatBody');
-  const div = document.createElement('div');
-  div.className = 'msg msg-'+who;
-  div.innerHTML = text;
-  body.appendChild(div);
-  body.scrollTop = body.scrollHeight;
-  return div;
-}
-
-async function callAI(){
-  const sendBtn = document.getElementById('sendBtn');
-  sendBtn.disabled = true;
-  const typingDiv = addMsg('<span class="ai-typing"></span>','ai');
-  
-  try {
-    const messages = [{role:'user',content:CONTEXT+'\n\n---\nเริ่มการสนทนา:'},...chatHistory.slice(0,-1),chatHistory[chatHistory.length-1]];
-    const resp = await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-20250514',
-        max_tokens:600,
-        system:CONTEXT,
-        messages:chatHistory
-      })
-    });
-    const data = await resp.json();
-    const text = data.content?.[0]?.text || 'ขออภัย ไม่สามารถตอบได้ในขณะนี้';
-    typingDiv.innerHTML = text.replace(/\n/g,'<br>').replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
-    chatHistory.push({role:'assistant',content:text});
-  } catch(e){
-    typingDiv.innerHTML = '⚠️ ไม่สามารถเชื่อมต่อ AI ได้ กรุณาลองใหม่';
-  }
-  sendBtn.disabled = false;
-  document.getElementById('chatBody').scrollTop = 9999;
-}
-
-function clearChat(){
-  chatHistory = [];
-  const body = document.getElementById('chatBody');
-  body.innerHTML = '<div class="msg msg-ai">ล้างประวัติแล้วครับ — ถามใหม่ได้เลย! 😊</div>';
-}
 
 // ── PLACEHOLDER (refresh removed) ──
 function doRefresh(){}
