@@ -485,6 +485,14 @@ body{
   body{background:#fff;color:#111}:root{--bg:#fff;--card:#f8f9fb;--card2:#f0f2f6;--border:#dde3ee;--text:#111;--text2:#555;--text3:#888}
 }
 </style>
+<script>
+/* tang theme kon render - default = light */
+(function(){
+  var t = 'light';
+  try { t = localStorage.getItem('folioIntelTheme') || 'light'; } catch(e){}
+  if(t !== 'dark'){ document.documentElement.setAttribute('data-theme','light'); }
+})();
+</script>
 </head>
 <body>
 
@@ -507,7 +515,7 @@ body{
   <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🎯 โอกาส Folio</button>
   <div class="nr">
     <div class="status-pill"><div class="status-dot"></div><span>Real Data · 19 ต.ค. 2569</span></div>
-    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="สลับธีมมืด / สว่าง">☀</button>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="สลับธีมมืด / สว่าง">🌙</button>
     <button class="btn-export" onclick="window.print()">⬇ PDF</button>
   </div>
 </nav>
@@ -2164,9 +2172,12 @@ function toggleTheme(){
   applyTheme(cur === 'light' ? 'dark' : 'light');
 }
 (function(){
-  let saved = 'dark';
-  try { saved = localStorage.getItem('folioIntelTheme') || 'dark'; } catch(e){}
-  if(saved === 'light'){ document.documentElement.setAttribute('data-theme','light'); }
+  let saved = 'light';
+  try { saved = localStorage.getItem('folioIntelTheme') || 'light'; } catch(e){}
+  if(saved === 'dark'){ document.documentElement.removeAttribute('data-theme'); }
+  else { document.documentElement.setAttribute('data-theme','light'); }
+  const b = document.getElementById('themeBtn');
+  if(b) b.textContent = (saved === 'dark') ? '\u2600' : '\u{1F319}';
 })();
 function dc(id){if(ch[id]){ch[id].destroy();delete ch[id];}}
 function vis(id){const e=document.getElementById(id);return e&&e.offsetParent!==null;}
