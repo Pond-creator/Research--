@@ -151,6 +151,8 @@ body{
 }
 .card:hover{border-color:var(--border2);transform:translateY(-1px)}
 .card-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.th{font-weight:500;font-size:10.5px;color:var(--text3);margin-left:5px;letter-spacing:0}
+.eyebrow .th{font-size:9.5px;color:var(--text2);margin-left:0}
 .card-title{
   font-size:12.5px;font-weight:700;
   display:flex;align-items:center;gap:8px;
@@ -491,16 +493,17 @@ body{
   <div class="nav-brand">Folio <span>Intel</span></div>
   <button class="nt active" onclick="show('overview',this)">📊 Overview</button>
   <button class="nt" onclick="show('keywords',this)">🔑 Keywords</button>
-  <button class="nt" onclick="show('audience',this)">👥 Audience</button>
-  <button class="nt" onclick="show('social',this)">📱 Social</button>
-  <button class="nt" onclick="show('seo',this)">🌐 SEO</button>
-  <button class="nt" onclick="show('youtube',this)">▶️ YouTube</button>
-  <button class="nt" onclick="show('swot',this)">⚔️ วิเคราะห์เรา</button>
   <span style="width:1px;height:16px;background:var(--border2);margin:0 6px;flex-shrink:0"></span>
   <button class="nt new-tab" onclick="show('cover',this)">📊 ภาพรวมคอนเทนต์</button>
   <button class="nt" onclick="show('ctype',this)">🎬 ประเภทคอนเทนต์</button>
   <button class="nt" onclick="show('ceng',this)">🔥 คอนเทนต์ที่ปัง</button>
   <button class="nt" onclick="show('cfreq',this)">📅 ความถี่โพสต์</button>
+  <span style="width:1px;height:16px;background:var(--border2);margin:0 6px;flex-shrink:0"></span>
+  <button class="nt" onclick="show('audience',this)">👥 Audience</button>
+  <button class="nt" onclick="show('social',this)">📱 Social</button>
+  <button class="nt" onclick="show('seo',this)">🌐 SEO</button>
+  <button class="nt" onclick="show('youtube',this)">▶️ YouTube</button>
+  <button class="nt" onclick="show('swot',this)">⚔️ วิเคราะห์เรา</button>
   <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🎯 โอกาส Folio</button>
   <div class="nr">
     <div class="status-pill"><div class="status-dot"></div><span>Real Data · 19 ต.ค. 2569</span></div>
@@ -514,7 +517,7 @@ body{
 ══════════════════════════════════════ -->
 <div class="page active" id="page-overview">
   <div class="ph">
-    <div class="eyebrow">Competitive Intelligence · Premium Gifts Thailand</div>
+    <div class="eyebrow">Competitive Intelligence <span class="th">· วิเคราะห์คู่แข่ง ตลาดของพรีเมียมไทย</span></div>
     <div class="ptitle" id="overviewTitle">Real Data + Source Links · <em>19 ต.ค. 2569</em></div>
     <div class="psub" id="overviewSub">Folio · SwagOn · Ogga Idea · GiftwiseAsia · Admire Tomorrow · <span style="color:var(--green)">Bixitia</span> · อัปเดตจากเว็บ/FB/IG/YouTube ที่ส่งมา</div>
   </div>
@@ -778,11 +781,11 @@ body{
 
   <div class="g2">
     <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-t">🕸</span>Competitive Radar · 6 แบรนด์</div></div>
+      <div class="card-hd"><div class="card-title"><span class="ci ci-t">🕸</span>Competitive Radar<span class="th">· เรดาร์เทียบคู่แข่ง 6 แบรนด์</span></div></div>
       <div class="ch-lg"><canvas id="radarChart"></canvas></div>
     </div>
     <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-b">🌐</span>Monthly Website Visits (Similarweb Sep 2026)</div></div>
+      <div class="card-hd"><div class="card-title"><span class="ci ci-b">🌐</span>Monthly Website Visits<span class="th">· คนเข้าเว็บต่อเดือน · Similarweb Sep 2026</span></div></div>
       <div class="ch-lg"><canvas id="visitsChart"></canvas></div>
     </div>
   </div>
@@ -923,12 +926,12 @@ body{
 ══════════════════════════════════════ -->
 <div class="page" id="page-social">
   <div class="ph">
-    <div class="eyebrow">Social Media Intelligence · Real Data</div>
-    <div class="ptitle">Facebook · <em>Instagram</em> · Engagement</div>
+    <div class="eyebrow">Social Media Intelligence <span class="th">· ข้อมูลโซเชียลจากการ scrape จริง</span></div>
+    <div class="ptitle">Facebook · <em>Instagram</em> · การมีส่วนร่วม</div>
     <div class="psub">ข้อมูลจาก Apify Scraper จริง + source links ที่ส่งมา · <span style="color:var(--teal);font-weight:700">อัพเดท 19 ต.ค. 2569</span></div>
   </div>
   <div class="card mb">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">🔗</span>Social Profiles · Verified Links + Apify Count</div><span class="src-tag">✓ Links 19 ต.ค. 2569</span></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">🔗</span>Social Profiles<span class="th">· โปรไฟล์โซเชียลที่ยืนยันลิงก์แล้ว + ตัวเลขจาก Apify</span></div><span class="src-tag">✓ Links 19 ต.ค. 2569</span></div>
     <div class="g2" style="gap:8px;margin-bottom:0">
       <div>
         <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Facebook Pages</div>
@@ -951,11 +954,11 @@ body{
     </div>
   </div>
   <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-a">👥</span>FB Followers Comparison</div><span class="bv">Apify Real</span></div>
+      <div class="card-hd"><div class="card-title"><span class="ci ci-a">👥</span>FB Followers Comparison<span class="th">· เทียบจำนวนผู้ติดตามเฟซบุ๊ก</span></div><span class="bv">Apify Real</span></div>
       <div class="ch"><canvas id="fbEngChart"></canvas></div>
   </div>
   <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">🎯</span>Sentiment Analysis · Est. from Post Content</div></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">🎯</span>Sentiment Analysis<span class="th">· วิเคราะห์อารมณ์ความรู้สึก · ประเมินจากเนื้อหาโพสต์</span></div></div>
     <div style="margin-top:4px">
       <div class="sent-row"><div class="sent-lbl" style="color:var(--teal);font-weight:700">🏠 Folio 🟢</div><div class="sent-bar"><div class="sp" style="width:88%"></div><div class="sn" style="width:9%"></div><div class="sneg" style="width:3%"></div></div><div class="sent-pct" style="color:var(--teal)">88% 🏆</div></div>
       <div class="sent-row"><div class="sent-lbl">Ogga Idea 🔵</div><div class="sent-bar"><div class="sp" style="width:84%"></div><div class="sn" style="width:12%"></div><div class="sneg" style="width:4%"></div></div><div class="sent-pct">84%</div></div>
@@ -972,7 +975,7 @@ body{
   </div>
 
   <div class="ph" style="margin-top:22px">
-    <div class="eyebrow">Facebook · Apify Pages Scraper + Meta Ads Library</div>
+    <div class="eyebrow">Facebook <span class="th">· ข้อมูลเพจ + สถานะการยิงโฆษณาจาก Meta</span></div>
   </div>
   <div class="data-card">
     <div class="data-badge">📘 Facebook Pages Scraper · <span class="src-tag" style="font-size:10px">✓ Real Data 19 ต.ค. 2569</span></div>
@@ -1078,7 +1081,7 @@ body{
 ══════════════════════════════════════ -->
 <div class="page" id="page-seo">
   <div class="ph">
-    <div class="eyebrow">Website & SEO Intelligence · Similarweb</div>
+    <div class="eyebrow">Website &amp; SEO <span class="th">· สถิติเว็บไซต์จาก Similarweb</span></div>
     <div class="ptitle">Website Stats · <em>6 แบรนด์</em> รวม Folio</div>
   </div>
   <div class="g3 mb">
@@ -1138,7 +1141,7 @@ body{
     </div>
   </div>
   <div class="card mb">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-t">📊</span>Traffic Source Breakdown (Est.) · 6 แบรนด์ รวม Folio</div></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">📊</span>Traffic Source Breakdown<span class="th">· ที่มาของผู้เข้าเว็บ (ค่าประมาณ) · 6 แบรนด์</span></div></div>
     <div class="ch-lg"><canvas id="trafficChart"></canvas></div>
   </div>
 </div>
@@ -1148,8 +1151,8 @@ body{
 ══════════════════════════════════════ -->
 <div class="page" id="page-keywords">
   <div class="ph">
-    <div class="eyebrow">Keyword Intelligence · อัพเดทอัตโนมัติทุก 7 วัน</div>
-    <div class="ptitle">🔑 Keyword <em>Intelligence</em></div>
+    <div class="eyebrow">Keyword Intelligence <span class="th">· คีย์เวิร์ดคู่แข่ง · อัปเดตอัตโนมัติทุก 7 วัน</span></div>
+    <div class="ptitle">🔑 คีย์เวิร์ด<em>คู่แข่ง</em></div>
     <div class="psub">Keywords เปลี่ยนตามเดือนอัตโนมัติ · <span style="color:var(--teal);font-weight:700">🆕 สีเขียว</span> = keyword ใหม่เดือนนี้ · <span style="color:var(--amber);font-weight:700">⚡ สีส้ม</span> = trend กำลังเปลี่ยน</div>
   </div>
 
@@ -1247,348 +1250,17 @@ body{
 
   <!-- Folio Active Ads -->
   <div class="card mb">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-t">💰</span>Folio Active Ads Keywords</div><span class="badge bt">Active ✅</span></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">💰</span>Folio Active Ads Keywords<span class="th">· คีย์เวิร์ดโฆษณาที่ยิงอยู่จริง</span></div><span class="badge bt">Active ✅</span></div>
     <div id="kw-folio-ads"></div>
     <div style="margin-top:8px;font-size:10.5px;color:var(--text3)">✦ Folio ยิง Ads 10K+/เดือน — ได้เปรียบ SwagOn/Ogga/GiftwiseAsia/Admire ที่ไม่ยิงหรือหยุดแล้ว · Bixitia ยังไม่ verified</div>
   </div>
 </div>
-<div class="page" id="page-audience">
-  <div class="ph">
-    <div class="eyebrow">Audience Intelligence · Market Segments</div>
-    <div class="ptitle">กลุ่ม<em>ลูกค้า</em> · Location · Ad Targeting</div>
-    <div class="psub">ข้อมูลจาก Apify scrape · Facebook Ads Library · SimilarWeb · LinkedIn Ads Data</div>
-  </div>
-
-  <!-- Row 1: Donut + Geo -->
-  <div class="g2" style="margin-bottom:16px">
-    <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-t">🎯</span>Market Segments</div><span class="src-tag">✓ Est.</span></div>
-      <div class="ch-lg"><canvas id="audChart"></canvas></div>
-      <div style="margin-top:12px;display:flex;flex-direction:column;gap:6px">
-        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">รายละเอียดแต่ละ Segment</div>
-        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
-          <span><span style="color:var(--teal)">●</span> <strong>Enterprise 30%</strong></span>
-          <span style="color:var(--text3)">บริษัทจดทะเบียน 500M+, HR/Admin dept</span>
-        </div>
-        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
-          <span><span style="color:var(--blue)">●</span> <strong>SME/Startup 28%</strong></span>
-          <span style="color:var(--text3)">MOQ ต่ำ, งบ 20K–200K บาท/ครั้ง</span>
-        </div>
-        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
-          <span><span style="color:var(--purple)">●</span> <strong>ภาครัฐ 18%</strong></span>
-          <span style="color:var(--text3)">จัดซื้อจัดจ้าง, e-GP, ต้องมีใบกำกับภาษี</span>
-        </div>
-        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
-          <span><span style="color:var(--amber)">●</span> <strong>ESG-focused 14%</strong></span>
-          <span style="color:var(--text3)">CSR budget, sustainable materials required</span>
-        </div>
-        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
-          <span><span style="color:var(--pink)">●</span> <strong>Event/MICE 6%</strong></span>
-          <span style="color:var(--text3)">งาน seminar/conference, ของชำร่วยจำนวนมาก</span>
-        </div>
-        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
-          <span><span style="color:var(--red)">●</span> <strong>Schools 4%</strong></span>
-          <span style="color:var(--text3)">งบรายปี, ของที่ระลึกวันสำเร็จการศึกษา</span>
-        </div>
-      </div>
-    </div>
-
-    <div style="display:flex;flex-direction:column;gap:14px">
-      <!-- Location -->
-      <div class="card">
-        <div class="card-hd"><div class="card-title"><span class="ci ci-b">📍</span>Location Intelligence</div><span class="src-tag">✓ SimilarWeb</span></div>
-        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Traffic by Region</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
-            <span style="min-width:110px;color:var(--text)">🏙 กรุงเทพฯ / ปริมณฑล</span>
-            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:68%;background:var(--teal);height:6px;border-radius:4px"></div></div>
-            <span style="color:var(--teal);font-weight:700">68%</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
-            <span style="min-width:110px;color:var(--text)">🌆 ปริมณฑล</span>
-            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:14%;background:var(--blue);height:6px;border-radius:4px"></div></div>
-            <span style="color:var(--blue);font-weight:700">14%</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
-            <span style="min-width:110px;color:var(--text)">🏭 เชียงใหม่ / นิคมฯ</span>
-            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:9%;background:var(--amber);height:6px;border-radius:4px"></div></div>
-            <span style="color:var(--amber);font-weight:700">9%</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
-            <span style="min-width:110px;color:var(--text)">🏖 ชลบุรี / EEC</span>
-            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:6%;background:var(--purple);height:6px;border-radius:4px"></div></div>
-            <span style="color:var(--purple);font-weight:700">6%</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
-            <span style="min-width:110px;color:var(--text)">🌍 ต่างประเทศ</span>
-            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:3%;background:var(--text3);height:6px;border-radius:4px"></div></div>
-            <span style="color:var(--text3);font-weight:700">3%</span>
-          </div>
-        </div>
-        <div class="ins" style="margin-top:10px"><div class="ins-tag it-o"><div class="ins-dot"></div>โอกาส</div><div class="ins-text">EEC + นิคมอุตสาหกรรม = กลุ่ม B2B ใหม่ที่คู่แข่งยังไม่โฟกัส — งบจัดซื้อสูง ต้องการ Custom Branding</div></div>
-      </div>
-
-      <!-- Ad Targeting -->
-      <div class="card">
-        <div class="card-hd"><div class="card-title"><span class="ci" style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2)">📢</span>Ad Targeting (ตลาดรวม)</div><span class="src-tag">✓ Meta Ads Lib</span></div>
-        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">กลุ่มเป้าหมายที่ถูกยิง Ads ในตลาดนี้</div>
-        <div style="display:flex;flex-direction:column;gap:6px;font-size:11.5px">
-          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--purple);border-radius:0 8px 8px 0">
-            <strong style="color:var(--text)">Job Title:</strong> <span style="color:var(--text2)">Marketing Manager, HR Admin, Procurement, EA/PA</span>
-          </div>
-          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--blue);border-radius:0 8px 8px 0">
-            <strong style="color:var(--text)">อายุ:</strong> <span style="color:var(--text2)">28–50 ปี · เพศ: ทุกเพศ (F 58%, M 42%)</span>
-          </div>
-          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--amber);border-radius:0 8px 8px 0">
-            <strong style="color:var(--text)">Interest:</strong> <span style="color:var(--text2)">Corporate gifts, Business events, Sustainability</span>
-          </div>
-          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--teal);border-radius:0 8px 8px 0">
-            <strong style="color:var(--text)">Behavior:</strong> <span style="color:var(--text2)">B2B buyer, LinkedIn active, Engaged shopper</span>
-          </div>
-          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--green);border-radius:0 8px 8px 0">
-            <strong style="color:var(--text)">Platform:</strong> <span style="color:var(--text2)">Facebook (primary) · Google Search · LinkedIn</span>
-          </div>
-        </div>
-        <div style="margin-top:10px;padding:8px 10px;background:rgba(139,92,246,.07);border:1px solid rgba(139,92,246,.2);border-radius:8px;font-size:11px;color:var(--text2)">
-          ⚠️ <strong style="color:var(--purple)">Folio + Bixitia</strong> verified running ads ณ 19 ต.ค. 2569 — SwagOn / Ogga / Admire ยังไม่ยิง · GiftwiseAsia ตรวจไม่ได้ → <strong>Folio ไม่ได้ครอง paid impression คนเดียวแล้ว</strong>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Known Clients grid -->
-  <div class="card" style="margin-bottom:16px">
-    <div class="card-hd">
-      <div class="card-title"><span class="ci ci-b">🏢</span>Known Clients by Brand</div>
-      <span class="src-tag">✓ Website จริง 19 ต.ค. 2569</span>
-    </div>
-    <div class="g3" style="gap:10px">
-      <div>
-        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">🔴 SwagOn <span style="font-weight:400;text-transform:none;color:var(--text3);font-size:9px">— logo wall 24 แบรนด์ + ผลงาน swagon.co</span></div>
-        <div style="display:flex;flex-wrap:wrap;gap:5px">
-          <span class="badge bt">PwC ABAS</span><span class="badge bt">Amazon AWS</span><span class="badge bt">Meta</span><span class="badge bt">BoonRawd</span><span class="badge bt">Canva</span><span class="badge bt">ExxonMobil</span><span class="badge bt">LINE Thailand</span><span class="badge bt">Gulf Energy</span><span class="badge bt">G-Able</span><span class="badge bt">SCBx</span><span class="badge bt">Cisco</span><span class="badge bt">LG Electronics</span><span class="badge bt">Citibank</span><span class="badge bt">Agoda</span><span class="badge bt">Booking.com</span><span class="badge bt">SCG</span><span class="badge bt">BCG</span><span class="badge bt">Milwaukee Tool</span><span class="badge bt">Koelnmesse</span><span class="badge bt">The Standard</span><span class="badge bt">Visteon</span><span class="badge bt">GoPomelo</span><span class="badge bt">Pi Securities</span><span class="badge bt">Harrow Bangkok</span><span class="badge bt">MIT Media Lab</span><span class="badge bt">Cariber</span><span class="badge bt">Zipcode</span><span class="badge bt">Multiply by Eight</span><span class="badge bt">Gorilla Event</span><span class="badge bt">KRDA</span><span class="badge bt">MEAei</span>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">🔵 Ogga Idea <span style="font-weight:400;text-transform:none;color:var(--text3);font-size:9px">— จาก website + Apify posts</span></div>
-        <div style="display:flex;flex-wrap:wrap;gap:5px">
-          <span class="badge bb">AIA</span><span class="badge bb">KTC</span><span class="badge bb">SCB</span><span class="badge bb">GSB</span><span class="badge bb">Maserati</span><span class="badge bb">Tesla</span><span class="badge bb">Siam Paragon</span><span class="badge bb">NEXTOPIA</span><span class="badge bb">IKEA Thailand</span><span class="badge bb">Central</span><span class="badge bb">SCG</span><span class="badge bb">KBTG</span><span class="badge bb">Global Gift Alliance</span>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">🟣 Admire Tomorrow <span style="font-weight:400;text-transform:none;color:var(--text3);font-size:9px">— จาก website + Apify posts</span></div>
-        <div style="display:flex;flex-wrap:wrap;gap:5px">
-          <span class="badge bp">300+ แบรนด์</span><span class="badge bp">UOB</span><span class="badge bp">BDMS</span><span class="badge bp">King Power</span><span class="badge bp">Minor Hotels</span><span class="badge bp">30+ ปี loyalty</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bixitia Competitor Note -->
-  <div class="ins" style="margin-bottom:12px">
-    <div class="ins-tag" style="background:rgba(16,185,129,.1);color:var(--green);border-color:rgba(16,185,129,.3)"><div class="ins-dot" style="background:var(--green)"></div>Competitor ใหม่</div>
-  <div class="ins-text"><strong style="color:var(--green)">Bixitia (bixitia.com)</strong> — Creative Premium / Brand Story positioning · Traffic 18.8K (Jul) → 3.7K (Aug) → 2.7K (Sep) · แต่<strong style="color:var(--teal)">คุณภาพดีขึ้นทุกตัว</strong> Bounce 32.64% · 3.09 หน้า · 1:17 · <strong style="color:var(--green)">FB 2,869 followers + verified running ads (19 ต.ค. 2569)</strong> · IG 382 posts avg 2.20 · <strong style="color:var(--amber)">⚠️ bixitia.com ตอบ HTTP 200 แต่ส่งหน้าเปล่า</strong> — คู่แข่งที่ต้องจับตาที่สุดตอนนี้</div>
-    <div class="ins-src">📡 Apify 19 ต.ค. 2569 + SimilarWeb Sep 2026</div>
-  </div>
-
-  <!-- Prospect Companies Table -->
-  <div class="card" style="margin-bottom:16px">
-    <div class="card-hd">
-      <div class="card-title"><span class="ci ci-t">🎯</span>บริษัทที่มีประวัติซื้อของพรีเมียม · Top Prospects</div>
-      <span class="src-tag">✓ LinkedIn + Apify</span>
-    </div>
-    <div style="font-size:10.5px;color:var(--text3);margin-bottom:12px">เรียงตามงบจัดซื้อ (ประมาณการจาก headcount + event activity) · <span style="color:var(--amber)">⭐ = High Priority สำหรับ Folio</span></div>
-    <div style="overflow-x:auto">
-    <table class="tbl">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>บริษัท</th>
-          <th>Industry</th>
-          <th>Segment</th>
-          <th>ประมาณ Budget/ปี</th>
-          <th>Contact Point</th>
-          <th>Priority</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td style="color:var(--text3);font-weight:700">01</td><td><strong>PTT Group</strong><div style="font-size:10px;color:var(--text3)">ปตท. + บริษัทในเครือ 10+</div></td><td>Energy / SET100</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">5–15M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement dept</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">02</td><td><strong>SCB / SCBX</strong><div style="font-size:10px;color:var(--text3)">ธนาคารไทยพาณิชย์</div></td><td>Banking / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">5–12M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand dept</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">03</td><td><strong>Central Group</strong><div style="font-size:10px;color:var(--text3)">Central Retail + CPN</div></td><td>Retail / SET100</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">4–10M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / Events</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">04</td><td><strong>AIS</strong><div style="font-size:10px;color:var(--text3)">Advanced Info Service</div></td><td>Telecom / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–8M฿</td><td style="font-size:10.5px;color:var(--text2)">Corporate Comm.</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">05</td><td><strong>DTAC / True Move H</strong><div style="font-size:10px;color:var(--text3)">dtac-True merger</div></td><td>Telecom</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–7M฿</td><td style="font-size:10.5px;color:var(--text2)">Brand / HR</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">06</td><td><strong>Kasikorn Bank (KBank)</strong><div style="font-size:10px;color:var(--text3)">ธนาคารกสิกร</div></td><td>Banking / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–7M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">07</td><td><strong>Accenture Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>Consulting / MNC</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–6M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Procurement</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">08</td><td><strong>PwC Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>Consulting / Big4</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / EA</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">09</td><td><strong>BDMS (Bangkok Dusit)</strong><div style="font-size:10px;color:var(--text3)">Admire verified · รพ. 50+</div></td><td>Healthcare / SET100</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–5M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">10</td><td><strong>Grab Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn client · Tech MNC</div></td><td>Tech / Unicorn</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–4M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / HR</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">11</td><td><strong>Agoda / Booking.com TH</strong></td><td>Tech / OTA</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–4M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand</td><td>⭐⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">12</td><td><strong>Lazada Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">13</td><td><strong>King Power Group</strong><div style="font-size:10px;color:var(--text3)">Admire verified client</div></td><td>Retail / Duty Free</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / Buyer</td><td>⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">14</td><td><strong>Minor Hotels / MINT</strong><div style="font-size:10px;color:var(--text3)">Admire client · โรงแรม 500+</div></td><td>Hospitality / SET100</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Procurement / HR</td><td>⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">15</td><td><strong>SCG (Siam Cement)</strong><div style="font-size:10px;color:var(--text3)">Ogga client</div></td><td>Industrial / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–3M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">16</td><td><strong>KBTG (KBank Tech Group)</strong><div style="font-size:10px;color:var(--text3)">Ogga client · Fintech</div></td><td>Fintech</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand</td><td>⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">17</td><td><strong>Meta Thailand (Facebook)</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified</div></td><td>Tech / MNC</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / HR</td><td>⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">18</td><td><strong>Amazon Thailand</strong></td><td>Tech / E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2M฿</td><td style="font-size:10.5px;color:var(--text2)">HR/Recruitment</td><td>⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">19</td><td><strong>IKEA Thailand</strong><div style="font-size:10px;color:var(--text3)">Ogga verified</div></td><td>Retail / MNC</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">800K–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
-        <tr><td style="color:var(--text3);font-weight:700">20</td><td><strong>Siam Paragon / MQDC</strong><div style="font-size:10px;color:var(--text3)">Ogga verified</div></td><td>Property / Retail</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">800K–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Events / Marketing</td><td>⭐⭐</td></tr>
-        <tr id="audHiddenRows" style="display:none"><td colspan="7" style="padding:0">
-          <table style="width:100%;border-collapse:collapse">
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">21</td><td><strong>Deloitte Thailand</strong></td><td style="font-size:11px;color:var(--text2)">Consulting</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / EA</td><td>⭐⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">22</td><td><strong>EY Thailand (Ernst &amp; Young)</strong></td><td style="font-size:11px;color:var(--text2)">Consulting</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">23</td><td><strong>LINE Thailand (Naver)</strong></td><td style="font-size:11px;color:var(--text2)">Tech / Social</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">24</td><td><strong>Shopee Thailand (Sea)</strong></td><td style="font-size:11px;color:var(--text2)">E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Marketing</td><td>⭐⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">25</td><td><strong>Bangkok Bank (BBL)</strong></td><td style="font-size:11px;color:var(--text2)">Banking / SET50</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.2M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Procurement</td><td>⭐⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">26</td><td><strong>Krungsri (BAY)</strong></td><td style="font-size:11px;color:var(--text2)">Banking</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.2M฿</td><td style="font-size:10.5px;color:var(--text2)">Brand / HR</td><td>⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">27</td><td><strong>Mitr Phol Group</strong><div style="font-size:10px;color:var(--text3)">น้ำตาลมิตรผล</div></td><td style="font-size:11px;color:var(--text2)">Agro-industry</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">400K–1M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">28</td><td><strong>Charoen Pokphand (CP)</strong></td><td style="font-size:11px;color:var(--text2)">Conglomerate</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">400K–1M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">29</td><td><strong>Siam Piwat / One Bangkok</strong></td><td style="font-size:11px;color:var(--text2)">Property / Retail</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">300K–800K฿</td><td style="font-size:10.5px;color:var(--text2)">Events / Marketing</td><td>⭐</td></tr>
-            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">30</td><td><strong>Bumrungrad Hospital</strong></td><td style="font-size:11px;color:var(--text2)">Healthcare</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">300K–800K฿</td><td style="font-size:10.5px;color:var(--text2)">Admin / Procurement</td><td>⭐</td></tr>
-          </table>
-        </td></tr>
-        <tr id="audShowMoreRow">
-          <td colspan="7" style="text-align:center;padding:12px">
-            <button id="audShowMoreBtn" onclick="toggleAudTable(10)"
-              style="font-size:11px;font-weight:700;color:var(--teal);background:rgba(0,229,160,.08);border:1px solid rgba(0,229,160,.2);padding:7px 20px;border-radius:20px;cursor:pointer">
-              ▼ ดูเพิ่มอีก 10 บริษัท (21–30)
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-    <div style="margin-top:8px;font-size:10.5px;color:var(--text3)">* ประมาณการจาก company size, event activity, และ verified purchases จาก competitor data · ไม่ใช่ตัวเลขจริง</div>
-  </div>
-
-  <!-- Blue Ocean Opportunity -->
-  <div class="ins" style="margin-bottom:16px">
-    <div class="ins-tag it-o"><div class="ins-dot"></div>Blue Ocean Opportunity</div>
-    <div class="ins-text">ตลาด <strong>ภาครัฐ + SME MOQ น้อย</strong> ยังไม่มีแบรนด์ใดครองชัดเจน → Folio มีโรงงานเองและรับ MOQ ต่ำ → จุดขายนี้ยังไม่มีคู่แข่งสื่อสารชัด · EEC zone = โอกาสใหม่ที่คู่แข่งยังไม่โฟกัส</div>
-  </div>
-
-  <!-- Event Partners -->
-  <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-a">🤝</span>Event Partners · จาก Apify Post Data</div></div>
-    <table class="tbl">
-      <thead><tr><th>#</th><th>Partner / Event</th><th>แบรนด์</th><th>Type</th><th>Impact</th></tr></thead>
-      <tbody>
-        <tr><td style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--border2)">01</td><td><strong>GQ Apparel × SwagOn</strong> Laser Event<div style="font-size:10px;color:var(--text3)">GQ Shop Mega Bangna · 21–22 มี.ค. 2026</div></td><td><span class="badge bt">SwagOn</span></td><td>🎨 Brand Collab</td><td style="color:var(--teal);font-size:11px">Personalization Event</td></tr>
-        <tr><td style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--border2)">02</td><td><strong>Siam Paragon × Ogga</strong> Global Recycle Day<div style="font-size:10px;color:var(--text3)">NEXTOPIA Zone 5F · 18 มี.ค. 2026</div></td><td><span class="badge bb">Ogga Idea</span></td><td>🛍 Retail Event</td><td style="color:var(--teal);font-size:11px">ESG Visibility</td></tr>
-        <tr><td style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--border2)">03</td><td><strong>THAIFEX-HOREC Asia × SwagOn</strong><div style="font-size:10px;color:var(--text3)">IMPACT Hall 2 บูธ S03 · 11–13 มี.ค. 2026</div></td><td><span class="badge bt">SwagOn</span></td><td>🏭 Trade Show</td><td style="color:var(--teal);font-size:11px">B2B Lead + TagOn NFC</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
-     YOUTUBE
-══════════════════════════════════════ -->
-<div class="page" id="page-youtube">
-  <div class="ph">
-    <div class="eyebrow">YouTube Strategy · Low Competition</div>
-    <div class="ptitle">▶️ YouTube = คู่แข่ง<em>มีแต่ไม่ลงทุนจริงจัง</em></div>
-  </div>
-  <div class="yt-box">
-    <div class="yt-title">▶️ สถานะ YouTube ตลาด Premium Gift ไทย</div>
-    <div class="g2">
-      <div style="font-size:12px;color:var(--text2);line-height:1.7">
-        <strong style="color:var(--text)">ทำไม YouTube ดีกว่า TikTok สำหรับ B2B:</strong><br>
-        · B2B Buyers Research บน YouTube ก่อนตัดสินใจ<br>
-        · Content 5–10 นาที โชว์ Material + Process + Quality ได้<br>
-        · Evergreen: Video ปี 2024 ดูได้ถึง 2030<br>
-        · TikTok = Gen Z 18–24 ปี · ลูกค้า Premium Gift = Manager 28–50 ปี<br><br>
-        <strong style="color:var(--teal)">โอกาส Folio:</strong> ลงทุน Consistent 2 videos/เดือน + YouTube Ads = ชนะใน 3–6 เดือน
-      </div>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--teal)">SwagOn</strong> · <a href="https://www.youtube.com/@SwagOn.Official" target="_blank" class="lu">@SwagOn.Official</a> <span style="color:var(--text3)">· มี Channel ต้องติดตามความสม่ำเสมอ</span></div>
-        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--blue)">Ogga Idea</strong> · <a href="https://www.youtube.com/@OggaIdeaProvider" target="_blank" class="lu">@OggaIdeaProvider</a> <span style="color:var(--text3)">· ESG / provider content</span></div>
-        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--amber)">GiftwiseAsia</strong> · <a href="https://www.youtube.com/@giftwiseasia" target="_blank" class="lu">@giftwiseasia</a> <span style="color:var(--text3)">· มี Channel ต้องติดตาม upload cadence</span></div>
-        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--purple)">Admire Tomorrow</strong> · <a href="https://www.youtube.com/@admiretomorrowbaac" target="_blank" class="lu">@admiretomorrowbaac</a> <span style="color:var(--text3)">· Product showcase</span></div>
-        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--green)">Bixitia</strong> · <a href="https://www.youtube.com/@LifestylesEssential/shorts" target="_blank" class="lu">@LifestylesEssential/shorts</a> <span style="color:var(--text3)">· Shorts link ที่ส่งมา ต้อง verify ownership</span> <span style="font-size:9px;background:rgba(16,185,129,.1);color:var(--green);padding:1px 5px;border-radius:4px;border:1px solid rgba(16,185,129,.3)">NEW</span></div>
-        <div style="background:rgba(0,229,160,.07);border:1px solid rgba(0,229,160,.18);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--teal)">🏠 Folio → <a href="https://www.youtube.com/@FolioPremiumGift" target="_blank" class="lu">@FolioPremiumGift</a></strong><br><span style="color:var(--text2)">ทำ series โรงงาน / material / how-to เพื่อชนะ long-tail search ได้</span></div>
-      </div>
-    </div>
-    <div class="yt-grid">
-      <div class="yt-card"><div class="yt-n">01</div><div class="yt-ct">5 ไอเดียของขวัญงบ 500฿</div><div class="yt-cd">Search Volume สูง · SME ค้นหา</div></div>
-      <div class="yt-card"><div class="yt-n">02</div><div class="yt-ct">Behind the Scenes โรงงาน</div><div class="yt-cd">Build Trust · Evergreen</div></div>
-      <div class="yt-card"><div class="yt-n">03</div><div class="yt-ct">วิธีเลือกของขวัญปีใหม่ HR</div><div class="yt-cd">ตรง Persona · Q4 Traffic</div></div>
-      <div class="yt-card"><div class="yt-n">04</div><div class="yt-ct">Premium Gift Unboxing 3 ระดับ</div><div class="yt-cd">Visual Impact · Share ง่าย</div></div>
-      <div class="yt-card"><div class="yt-n">05</div><div class="yt-ct">สกรีนโลโก้ทำยังไง? ทุก Technique</div><div class="yt-cd">Educational · Reduce Objection</div></div>
-      <div class="yt-card"><div class="yt-n">06</div><div class="yt-ct">10 ผิดพลาดสั่งของพรีเมี่ยม</div><div class="yt-cd">Problem-solving · High Share</div></div>
-      <div class="yt-card"><div class="yt-n">07</div><div class="yt-ct">ของขวัญภาครัฐ Step-by-step</div><div class="yt-cd">Niche เฉพาะ · ไม่มีใครทำ</div></div>
-      <div class="yt-card"><div class="yt-n">08</div><div class="yt-ct">ราคาของพรีเมี่ยม 2026 เปรียบจริง</div><div class="yt-cd">High Intent · Pre-purchase</div></div>
-      <div class="yt-card"><div class="yt-n">09</div><div class="yt-ct">Folio Factory Tour (TH + EN Sub)</div><div class="yt-cd">Brand Story · Trust Builder</div></div>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
-     SWOT
-══════════════════════════════════════ -->
-<div class="page" id="page-swot">
-  <div class="ph">
-    <div class="eyebrow">Strategic Analysis · Folio Premium Gifts</div>
-    <div class="ptitle">⚔️ วิเคราะห์<em>เรา</em></div>
-    <div class="psub">จุดแข็ง จุดอ่อน โอกาส ภัยคุกคาม ของ Folio — อิงตัวเลขจริง Apify + SimilarWeb 19 ต.ค. 2569</div>
-  </div>
-  <div class="swot">
-    <div class="sw"><div class="sw-h"><span>💪</span>จุดแข็งของเรา</div><ul class="sw-ul">
-      <li><span class="sw-b">▸</span><strong>FB followers อันดับ 1 ของตลาด 10,793</strong> · มากกว่า Admire 24% · มากกว่า SwagOn 3.1 เท่า</li>
-      <li><span class="sw-b">▸</span><strong>ยิง Ads อยู่</strong> — เป็น 1 ใน 2 แบรนด์ที่ verified running ads (อีกรายคือ Bixitia)</li>
-      <li><span class="sw-b">▸</span><strong>โพสต์ที่ดีที่สุดในตลาดทั้งกลุ่มเป็นของเรา — 100 ไลก์</strong> · อันดับ 2 ของตลาดได้ 53 · พิสูจน์ว่าเราทำคอนเทนต์ที่ปังได้จริง</li>
-      <li><span class="sw-b">▸</span><strong>โรงงานผลิตเอง</strong> คุมคุณภาพ-ต้นทุน-เวลาได้เอง · คู่แข่งหลายรายจ้างผลิต</li>
-      <li><span class="sw-b">▸</span><strong>MOQ เริ่ม 10 ชิ้น</strong> ต่ำสุดในกลุ่ม (Admire 200) → รับงาน SME และงานตัวอย่างได้</li>
-      <li><span class="sw-b">▸</span>ผลิตกล่องบรรจุภัณฑ์เอง + งานร่วมกับศิลปินไทย — เรื่องเล่าที่คู่แข่งไม่มี</li>
-      <li><span class="sw-b">▸</span>โชว์รูมพระราม 5 ให้ลูกค้าดูของจริงได้</li>
-    </ul></div>
-
-    <div class="sw"><div class="sw-h"><span>⚠️</span>จุดอ่อนของเรา</div><ul class="sw-ul">
-      <li><span class="sw-b">▸</span><strong style="color:var(--red)">IG avg likes 1.20 ต่ำสุดในกลุ่ม</strong> ทั้งที่โพสต์มากสุด 498 ครั้ง · คอมเมนต์ 0.01 ต่ำสุด (Ogga 0.35 = มากกว่า 35 เท่า)</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--red)">ทำวิดีโอแค่ 4.8%</strong> ทั้งที่วิดีโอของเราได้ไลก์มากกว่าภาพนิ่ง 24 เท่า (13.67 vs 0.57)</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--red)">แคปชั่นซ้ำ 366 จาก 498 โพสต์ (73%)</strong> — IG ลดการมองเห็นคอนเทนต์ซ้ำ</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--red)">โพสต์ไม่สม่ำเสมอ เฉลี่ย 4.0/เดือน</strong> (Giftwise 18.2 · Admire 14.6) · ก.ย. โพสต์แค่ 1 ครั้ง</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--red)">เว็บร่วง 4 เดือนติด</strong> 3.2K → 2.1K → 1.9K (อันดับ 5 จาก 6) และรอบล่าสุดคุณภาพแย่ลงด้วย</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--red)">FB followers ลดต่อเนื่อง 2 รอบ รวม −2,721</strong> (13,514 → 10,793) ขณะคู่แข่งนิ่งหรือเพิ่ม</li>
-      <li><span class="sw-b">▸</span>ไม่เคยทำคอนเทนต์ <strong>เคสลูกค้า</strong> (หมวดที่ได้ engagement สูงสุดของตลาด) เลยสักโพสต์ · อีเวนต์ทำแค่ 4</li>
-      <li><span class="sw-b">▸</span>YouTube มีช่องแต่ไม่ได้ทำจริง</li>
-    </ul></div>
-
-    <div class="sw"><div class="sw-h"><span>🚀</span>โอกาสของเรา</div><ul class="sw-ul">
-      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">เพิ่มวิดีโอ = ผลตอบแทนสูงสุดต่อแรงที่ลง</strong> · ทำ 100 คลิปในอัตราเดิมได้ engagement ~1,367 มากกว่าที่ 498 โพสต์ทั้งหมดทำได้ (599) ถึง 2 เท่า</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">หมวดเคสลูกค้าได้ engagement สูงสุด 3.44</strong> และเรายังไม่ได้ลงสนามเลย — มีผลงานอยู่แล้ว แค่เอามาเล่า</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">SwagOn หยุดโพสต์ 2 เดือน + Ogga หาย 4 เดือน</strong> — ช่องว่างในฟีดที่คู่แข่ง 2 รายหายไป</li>
-      <li><span class="sw-b">▸</span>คอนเทนต์เบื้องหลังโรงงาน — จุดแข็งที่มีอยู่แล้วแต่ไม่เคยถ่าย และเป็นวัตถุดิบวิดีโอชั้นดี</li>
-      <li><span class="sw-b">▸</span>YouTube ทั้งตลาดไม่มีใครลงทุนจริง → สนามว่าง</li>
-      <li><span class="sw-b">▸</span>งานใหญ่ 3 เดือนข้างหน้า: in-cosmetics + SX2026 + METALEX (พ.ย.) · <strong>Motor Expo 2–13 ธ.ค. ตรงพีคของขวัญปีใหม่</strong></li>
-      <li><span class="sw-b">▸</span>Ads ยังมีคู่แข่งแค่รายเดียว — ต้นทุน impression ยังไม่แพงเท่าตลาดที่แข่งกันหลายเจ้า</li>
-    </ul></div>
-
-    <div class="sw"><div class="sw-h"><span>⚡</span>ภัยคุกคามต่อเรา</div><ul class="sw-ul">
-      <li><span class="sw-b">▸</span><strong style="color:var(--green)">Bixitia เริ่มยิง FB Ads แล้ว</strong> (verified 19 ต.ค. 2569) + คุณภาพเว็บฟื้นทุกตัว — เราไม่ได้ครอง paid media คนเดียวอีกต่อไป</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--amber)">GiftwiseAsia</strong> โพสต์ถี่สุด 18.2/เดือน + visits อันดับ 1 ที่ 3K — ครองพื้นที่สายตาลูกค้า</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--red)">SwagOn</strong> คุณภาพเว็บดีสุดทุกตัว (bounce 26.10% · 3.79 หน้า · 2:38) + ลูกค้าระดับ Meta / AWS / PwC = Network Effect</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--purple)">Admire</strong> โพสต์สม่ำเสมอสุด 16/เดือน + ครองหมวดเคสลูกค้า (105 โพสต์) + 30 ปี + รีวิว 100% จาก 113 ราย</li>
-      <li><span class="sw-b">▸</span><strong style="color:var(--blue)">Ogga Idea</strong> ครอง ESG เดี่ยว + คอมเมนต์สูงสุดในตลาด — ถ้าลูกค้าองค์กรเริ่มจริงจังเรื่อง ESG เขาได้เปรียบ</li>
-      <li><span class="sw-b">▸</span>Shopee / Lazada ตัดราคาในงานจำนวนน้อย</li>
-    </ul></div>
-  </div>
-
-  <div class="ins" style="margin-top:14px;margin-bottom:0">
-    <div class="ins-tag it-w"><div class="ins-dot"></div>อ่านอย่างระวัง</div>
-    <div class="ins-text">
-      หน้านี้วิเคราะห์ <strong>Folio</strong> เป็นหลัก · ข้อมูลคู่แข่งแบบเจาะรายแบรนด์ดูได้ที่แท็บ
-      <strong>Overview</strong> (ตัวเลขรวม) · <strong>ภาพรวมคอนเทนต์</strong> (คอนเทนต์) · <strong>SEO</strong> (เว็บ)<br>
-      <span style="color:var(--text3)">ตัวเลข IG/FB = Apify 19 ต.ค. 2569 · เว็บ = SimilarWeb Sep 2026 · ส่วน Sentiment / YouTube / ราคา เป็นค่าประมาณ ไม่ใช่ข้อมูล verified</span>
-    </div>
-  </div>
-</div>
-
 <!-- ══════════════════════════════════════
      CONTENT OVERVIEW
 ═══════════════════════════════════════ -->
 <div class="page" id="page-cover">
   <div class="ph">
-    <div class="eyebrow">Competitor Instagram Analysis · Apify Scrape 19 ต.ค. 2569</div>
+    <div class="eyebrow">Competitor Instagram Analysis <span class="th">· วิเคราะห์ไอจีคู่แข่ง · Apify 19 ต.ค. 2569</span></div>
     <div class="ptitle">📊 ภาพรวม<em>คอนเทนต์คู่แข่ง</em></div>
     <div class="psub">1,824 โพสต์ · 6 แบรนด์ · รูปแบบ / หมวดเนื้อหา / ความถี่ / โพสต์ที่ปัง — รวมในหน้าเดียว</div>
   </div>
@@ -1728,7 +1400,7 @@ body{
 
     <div style="display:flex;flex-direction:column;gap:14px">
       <div class="card" style="margin-bottom:0">
-        <div class="card-hd"><div class="card-title"><span class="ci ci-t">💡</span>Key Insights</div></div>
+        <div class="card-hd"><div class="card-title"><span class="ci ci-t">💡</span>Key Insights<span class="th">· สรุปประเด็นสำคัญ</span></div></div>
         <div style="font-size:11.5px;color:var(--text2);line-height:1.7;display:flex;flex-direction:column;gap:11px">
           <div><strong style="color:var(--teal)">วิดีโอคือตัวแปรที่ชัดที่สุด</strong><br>
             <span style="color:var(--text3)">Folio: ภาพนิ่ง 0.57 → วิดีโอ 13.67 (24 เท่า) · 8 ใน 10 โพสต์ที่ปังของทั้งตลาดเป็นวิดีโอ</span></div>
@@ -1772,7 +1444,7 @@ body{
 ═══════════════════════════════════════ -->
 <div class="page" id="page-ctype">
   <div class="ph">
-    <div class="eyebrow">Content Intelligence · Apify IG Scrape 19 ต.ค. 2569</div>
+    <div class="eyebrow">Content Intelligence <span class="th">· วิเคราะห์คอนเทนต์ · Apify IG 19 ต.ค. 2569</span></div>
     <div class="ptitle">🎬 คู่แข่งเน้นคอนเทนต์<em>ประเภทไหน</em></div>
     <div class="psub">แยกตามรูปแบบโพสต์จริง 1,824 posts · ภาพนิ่ง (Image) / อัลบั้มหลายรูป (Sidecar) / วิดีโอ-Reel (Video)</div>
   </div>
@@ -1841,7 +1513,7 @@ body{
 ═══════════════════════════════════════ -->
 <div class="page" id="page-ceng">
   <div class="ph">
-    <div class="eyebrow">Content Intelligence · Apify IG Scrape 19 ต.ค. 2569</div>
+    <div class="eyebrow">Content Intelligence <span class="th">· วิเคราะห์คอนเทนต์ · Apify IG 19 ต.ค. 2569</span></div>
     <div class="ptitle">🔥 คอนเทนต์แบบไหน<em>ได้ Engagement สูง</em></div>
     <div class="psub">เทียบยอดไลก์-คอมเมนต์จริง 1,824 posts · หาว่าอะไรคือตัวแปรที่ทำให้ engagement ต่างกัน</div>
   </div>
@@ -1952,7 +1624,7 @@ body{
 ═══════════════════════════════════════ -->
 <div class="page" id="page-cfreq">
   <div class="ph">
-    <div class="eyebrow">Content Intelligence · Apify IG Scrape 19 ต.ค. 2569</div>
+    <div class="eyebrow">Content Intelligence <span class="th">· วิเคราะห์คอนเทนต์ · Apify IG 19 ต.ค. 2569</span></div>
     <div class="ptitle">📅 คู่แข่งโพสต์คอนเทนต์<em>บ่อยแค่ไหน</em></div>
     <div class="psub">จำนวนโพสต์ IG ต่อเดือน พ.ค.–ต.ค. 2569 · ช่วงที่เงียบ / ช่วงที่เร่ง</div>
   </div>
@@ -1986,12 +1658,343 @@ body{
   </div>
 </div>
 
+<div class="page" id="page-audience">
+  <div class="ph">
+    <div class="eyebrow">Audience Intelligence <span class="th">· กลุ่มลูกค้าและส่วนแบ่งตลาด</span></div>
+    <div class="ptitle">กลุ่ม<em>ลูกค้า</em> · Location · Ad Targeting</div>
+    <div class="psub">ข้อมูลจาก Apify scrape · Facebook Ads Library · SimilarWeb · LinkedIn Ads Data</div>
+  </div>
+
+  <!-- Row 1: Donut + Geo -->
+  <div class="g2" style="margin-bottom:16px">
+    <div class="card">
+      <div class="card-hd"><div class="card-title"><span class="ci ci-t">🎯</span>Market Segments<span class="th">· กลุ่มตลาด</span></div><span class="src-tag">✓ Est.</span></div>
+      <div class="ch-lg"><canvas id="audChart"></canvas></div>
+      <div style="margin-top:12px;display:flex;flex-direction:column;gap:6px">
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">รายละเอียดแต่ละ Segment</div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--teal)">●</span> <strong>Enterprise 30%</strong></span>
+          <span style="color:var(--text3)">บริษัทจดทะเบียน 500M+, HR/Admin dept</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--blue)">●</span> <strong>SME/Startup 28%</strong></span>
+          <span style="color:var(--text3)">MOQ ต่ำ, งบ 20K–200K บาท/ครั้ง</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--purple)">●</span> <strong>ภาครัฐ 18%</strong></span>
+          <span style="color:var(--text3)">จัดซื้อจัดจ้าง, e-GP, ต้องมีใบกำกับภาษี</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--amber)">●</span> <strong>ESG-focused 14%</strong></span>
+          <span style="color:var(--text3)">CSR budget, sustainable materials required</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--pink)">●</span> <strong>Event/MICE 6%</strong></span>
+          <span style="color:var(--text3)">งาน seminar/conference, ของชำร่วยจำนวนมาก</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:7px 10px;background:var(--card2);border-radius:8px;font-size:11px">
+          <span><span style="color:var(--red)">●</span> <strong>Schools 4%</strong></span>
+          <span style="color:var(--text3)">งบรายปี, ของที่ระลึกวันสำเร็จการศึกษา</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <!-- Location -->
+      <div class="card">
+        <div class="card-hd"><div class="card-title"><span class="ci ci-b">📍</span>Location Intelligence<span class="th">· ทำเลที่ตั้งของลูกค้า</span></div><span class="src-tag">✓ SimilarWeb</span></div>
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Traffic by Region</div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🏙 กรุงเทพฯ / ปริมณฑล</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:68%;background:var(--teal);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--teal);font-weight:700">68%</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🌆 ปริมณฑล</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:14%;background:var(--blue);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--blue);font-weight:700">14%</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🏭 เชียงใหม่ / นิคมฯ</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:9%;background:var(--amber);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--amber);font-weight:700">9%</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🏖 ชลบุรี / EEC</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:6%;background:var(--purple);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--purple);font-weight:700">6%</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11.5px">
+            <span style="min-width:110px;color:var(--text)">🌍 ต่างประเทศ</span>
+            <div style="flex:1;background:var(--border);border-radius:4px;height:6px"><div style="width:3%;background:var(--text3);height:6px;border-radius:4px"></div></div>
+            <span style="color:var(--text3);font-weight:700">3%</span>
+          </div>
+        </div>
+        <div class="ins" style="margin-top:10px"><div class="ins-tag it-o"><div class="ins-dot"></div>โอกาส</div><div class="ins-text">EEC + นิคมอุตสาหกรรม = กลุ่ม B2B ใหม่ที่คู่แข่งยังไม่โฟกัส — งบจัดซื้อสูง ต้องการ Custom Branding</div></div>
+      </div>
+
+      <!-- Ad Targeting -->
+      <div class="card">
+        <div class="card-hd"><div class="card-title"><span class="ci" style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2)">📢</span>Ad Targeting (ตลาดรวม)</div><span class="src-tag">✓ Meta Ads Lib</span></div>
+        <div style="font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">กลุ่มเป้าหมายที่ถูกยิง Ads ในตลาดนี้</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:11.5px">
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--purple);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">Job Title:</strong> <span style="color:var(--text2)">Marketing Manager, HR Admin, Procurement, EA/PA</span>
+          </div>
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--blue);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">อายุ:</strong> <span style="color:var(--text2)">28–50 ปี · เพศ: ทุกเพศ (F 58%, M 42%)</span>
+          </div>
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--amber);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">Interest:</strong> <span style="color:var(--text2)">Corporate gifts, Business events, Sustainability</span>
+          </div>
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--teal);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">Behavior:</strong> <span style="color:var(--text2)">B2B buyer, LinkedIn active, Engaged shopper</span>
+          </div>
+          <div style="padding:6px 10px;background:var(--card2);border-left:3px solid var(--green);border-radius:0 8px 8px 0">
+            <strong style="color:var(--text)">Platform:</strong> <span style="color:var(--text2)">Facebook (primary) · Google Search · LinkedIn</span>
+          </div>
+        </div>
+        <div style="margin-top:10px;padding:8px 10px;background:rgba(139,92,246,.07);border:1px solid rgba(139,92,246,.2);border-radius:8px;font-size:11px;color:var(--text2)">
+          ⚠️ <strong style="color:var(--purple)">Folio + Bixitia</strong> verified running ads ณ 19 ต.ค. 2569 — SwagOn / Ogga / Admire ยังไม่ยิง · GiftwiseAsia ตรวจไม่ได้ → <strong>Folio ไม่ได้ครอง paid impression คนเดียวแล้ว</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Known Clients grid -->
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci ci-b">🏢</span>Known Clients by Brand<span class="th">· ลูกค้าที่รู้จัก แยกตามแบรนด์</span></div>
+      <span class="src-tag">✓ Website จริง 19 ต.ค. 2569</span>
+    </div>
+    <div class="g3" style="gap:10px">
+      <div>
+        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">🔴 SwagOn <span style="font-weight:400;text-transform:none;color:var(--text3);font-size:9px">— logo wall 24 แบรนด์ + ผลงาน swagon.co</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="badge bt">PwC ABAS</span><span class="badge bt">Amazon AWS</span><span class="badge bt">Meta</span><span class="badge bt">BoonRawd</span><span class="badge bt">Canva</span><span class="badge bt">ExxonMobil</span><span class="badge bt">LINE Thailand</span><span class="badge bt">Gulf Energy</span><span class="badge bt">G-Able</span><span class="badge bt">SCBx</span><span class="badge bt">Cisco</span><span class="badge bt">LG Electronics</span><span class="badge bt">Citibank</span><span class="badge bt">Agoda</span><span class="badge bt">Booking.com</span><span class="badge bt">SCG</span><span class="badge bt">BCG</span><span class="badge bt">Milwaukee Tool</span><span class="badge bt">Koelnmesse</span><span class="badge bt">The Standard</span><span class="badge bt">Visteon</span><span class="badge bt">GoPomelo</span><span class="badge bt">Pi Securities</span><span class="badge bt">Harrow Bangkok</span><span class="badge bt">MIT Media Lab</span><span class="badge bt">Cariber</span><span class="badge bt">Zipcode</span><span class="badge bt">Multiply by Eight</span><span class="badge bt">Gorilla Event</span><span class="badge bt">KRDA</span><span class="badge bt">MEAei</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">🔵 Ogga Idea <span style="font-weight:400;text-transform:none;color:var(--text3);font-size:9px">— จาก website + Apify posts</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="badge bb">AIA</span><span class="badge bb">KTC</span><span class="badge bb">SCB</span><span class="badge bb">GSB</span><span class="badge bb">Maserati</span><span class="badge bb">Tesla</span><span class="badge bb">Siam Paragon</span><span class="badge bb">NEXTOPIA</span><span class="badge bb">IKEA Thailand</span><span class="badge bb">Central</span><span class="badge bb">SCG</span><span class="badge bb">KBTG</span><span class="badge bb">Global Gift Alliance</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">🟣 Admire Tomorrow <span style="font-weight:400;text-transform:none;color:var(--text3);font-size:9px">— จาก website + Apify posts</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="badge bp">300+ แบรนด์</span><span class="badge bp">UOB</span><span class="badge bp">BDMS</span><span class="badge bp">King Power</span><span class="badge bp">Minor Hotels</span><span class="badge bp">30+ ปี loyalty</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bixitia Competitor Note -->
+  <div class="ins" style="margin-bottom:12px">
+    <div class="ins-tag" style="background:rgba(16,185,129,.1);color:var(--green);border-color:rgba(16,185,129,.3)"><div class="ins-dot" style="background:var(--green)"></div>Competitor ใหม่</div>
+  <div class="ins-text"><strong style="color:var(--green)">Bixitia (bixitia.com)</strong> — Creative Premium / Brand Story positioning · Traffic 18.8K (Jul) → 3.7K (Aug) → 2.7K (Sep) · แต่<strong style="color:var(--teal)">คุณภาพดีขึ้นทุกตัว</strong> Bounce 32.64% · 3.09 หน้า · 1:17 · <strong style="color:var(--green)">FB 2,869 followers + verified running ads (19 ต.ค. 2569)</strong> · IG 382 posts avg 2.20 · <strong style="color:var(--amber)">⚠️ bixitia.com ตอบ HTTP 200 แต่ส่งหน้าเปล่า</strong> — คู่แข่งที่ต้องจับตาที่สุดตอนนี้</div>
+    <div class="ins-src">📡 Apify 19 ต.ค. 2569 + SimilarWeb Sep 2026</div>
+  </div>
+
+  <!-- Prospect Companies Table -->
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-hd">
+      <div class="card-title"><span class="ci ci-t">🎯</span>บริษัทที่มีประวัติซื้อของพรีเมียม · Top Prospects</div>
+      <span class="src-tag">✓ LinkedIn + Apify</span>
+    </div>
+    <div style="font-size:10.5px;color:var(--text3);margin-bottom:12px">เรียงตามงบจัดซื้อ (ประมาณการจาก headcount + event activity) · <span style="color:var(--amber)">⭐ = High Priority สำหรับ Folio</span></div>
+    <div style="overflow-x:auto">
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>บริษัท</th>
+          <th>Industry</th>
+          <th>Segment</th>
+          <th>ประมาณ Budget/ปี</th>
+          <th>Contact Point</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="color:var(--text3);font-weight:700">01</td><td><strong>PTT Group</strong><div style="font-size:10px;color:var(--text3)">ปตท. + บริษัทในเครือ 10+</div></td><td>Energy / SET100</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">5–15M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement dept</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">02</td><td><strong>SCB / SCBX</strong><div style="font-size:10px;color:var(--text3)">ธนาคารไทยพาณิชย์</div></td><td>Banking / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">5–12M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand dept</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">03</td><td><strong>Central Group</strong><div style="font-size:10px;color:var(--text3)">Central Retail + CPN</div></td><td>Retail / SET100</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">4–10M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / Events</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">04</td><td><strong>AIS</strong><div style="font-size:10px;color:var(--text3)">Advanced Info Service</div></td><td>Telecom / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–8M฿</td><td style="font-size:10.5px;color:var(--text2)">Corporate Comm.</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">05</td><td><strong>DTAC / True Move H</strong><div style="font-size:10px;color:var(--text3)">dtac-True merger</div></td><td>Telecom</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–7M฿</td><td style="font-size:10.5px;color:var(--text2)">Brand / HR</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">06</td><td><strong>Kasikorn Bank (KBank)</strong><div style="font-size:10px;color:var(--text3)">ธนาคารกสิกร</div></td><td>Banking / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">3–7M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">07</td><td><strong>Accenture Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>Consulting / MNC</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–6M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Procurement</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">08</td><td><strong>PwC Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>Consulting / Big4</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / EA</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">09</td><td><strong>BDMS (Bangkok Dusit)</strong><div style="font-size:10px;color:var(--text3)">Admire verified · รพ. 50+</div></td><td>Healthcare / SET100</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">2–5M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">10</td><td><strong>Grab Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn client · Tech MNC</div></td><td>Tech / Unicorn</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–4M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / HR</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">11</td><td><strong>Agoda / Booking.com TH</strong></td><td>Tech / OTA</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–4M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand</td><td>⭐⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">12</td><td><strong>Lazada Thailand</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified client</div></td><td>E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">13</td><td><strong>King Power Group</strong><div style="font-size:10px;color:var(--text3)">Admire verified client</div></td><td>Retail / Duty Free</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / Buyer</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">14</td><td><strong>Minor Hotels / MINT</strong><div style="font-size:10px;color:var(--text3)">Admire client · โรงแรม 500+</div></td><td>Hospitality / SET100</td><td><span class="badge bp">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1.5–3M฿</td><td style="font-size:10.5px;color:var(--text2)">Procurement / HR</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">15</td><td><strong>SCG (Siam Cement)</strong><div style="font-size:10px;color:var(--text3)">Ogga client</div></td><td>Industrial / SET50</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–3M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">16</td><td><strong>KBTG (KBank Tech Group)</strong><div style="font-size:10px;color:var(--text3)">Ogga client · Fintech</div></td><td>Fintech</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Brand</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">17</td><td><strong>Meta Thailand (Facebook)</strong><div style="font-size:10px;color:var(--text3)">SwagOn verified</div></td><td>Tech / MNC</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing / HR</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">18</td><td><strong>Amazon Thailand</strong></td><td>Tech / E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700">1–2M฿</td><td style="font-size:10.5px;color:var(--text2)">HR/Recruitment</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">19</td><td><strong>IKEA Thailand</strong><div style="font-size:10px;color:var(--text3)">Ogga verified</div></td><td>Retail / MNC</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">800K–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
+        <tr><td style="color:var(--text3);font-weight:700">20</td><td><strong>Siam Paragon / MQDC</strong><div style="font-size:10px;color:var(--text3)">Ogga verified</div></td><td>Property / Retail</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700">800K–2M฿</td><td style="font-size:10.5px;color:var(--text2)">Events / Marketing</td><td>⭐⭐</td></tr>
+        <tr id="audHiddenRows" style="display:none"><td colspan="7" style="padding:0">
+          <table style="width:100%;border-collapse:collapse">
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">21</td><td><strong>Deloitte Thailand</strong></td><td style="font-size:11px;color:var(--text2)">Consulting</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / EA</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">22</td><td><strong>EY Thailand (Ernst &amp; Young)</strong></td><td style="font-size:11px;color:var(--text2)">Consulting</td><td><span class="badge bb">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">23</td><td><strong>LINE Thailand (Naver)</strong></td><td style="font-size:11px;color:var(--text2)">Tech / Social</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">Marketing</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">24</td><td><strong>Shopee Thailand (Sea)</strong></td><td style="font-size:11px;color:var(--text2)">E-commerce</td><td><span class="badge bt">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.5M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Marketing</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">25</td><td><strong>Bangkok Bank (BBL)</strong></td><td style="font-size:11px;color:var(--text2)">Banking / SET50</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.2M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Procurement</td><td>⭐⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">26</td><td><strong>Krungsri (BAY)</strong></td><td style="font-size:11px;color:var(--text2)">Banking</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">500K–1.2M฿</td><td style="font-size:10.5px;color:var(--text2)">Brand / HR</td><td>⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">27</td><td><strong>Mitr Phol Group</strong><div style="font-size:10px;color:var(--text3)">น้ำตาลมิตรผล</div></td><td style="font-size:11px;color:var(--text2)">Agro-industry</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">400K–1M฿</td><td style="font-size:10.5px;color:var(--text2)">CSR / Procurement</td><td>⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">28</td><td><strong>Charoen Pokphand (CP)</strong></td><td style="font-size:11px;color:var(--text2)">Conglomerate</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">400K–1M฿</td><td style="font-size:10.5px;color:var(--text2)">HR / Admin</td><td>⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">29</td><td><strong>Siam Piwat / One Bangkok</strong></td><td style="font-size:11px;color:var(--text2)">Property / Retail</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">300K–800K฿</td><td style="font-size:10.5px;color:var(--text2)">Events / Marketing</td><td>⭐</td></tr>
+            <tr><td style="color:var(--text3);font-weight:700;padding:10px 8px">30</td><td><strong>Bumrungrad Hospital</strong></td><td style="font-size:11px;color:var(--text2)">Healthcare</td><td><span class="badge ba">Enterprise</span></td><td style="color:var(--teal);font-weight:700;font-size:12px">300K–800K฿</td><td style="font-size:10.5px;color:var(--text2)">Admin / Procurement</td><td>⭐</td></tr>
+          </table>
+        </td></tr>
+        <tr id="audShowMoreRow">
+          <td colspan="7" style="text-align:center;padding:12px">
+            <button id="audShowMoreBtn" onclick="toggleAudTable(10)"
+              style="font-size:11px;font-weight:700;color:var(--teal);background:rgba(0,229,160,.08);border:1px solid rgba(0,229,160,.2);padding:7px 20px;border-radius:20px;cursor:pointer">
+              ▼ ดูเพิ่มอีก 10 บริษัท (21–30)
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div style="margin-top:8px;font-size:10.5px;color:var(--text3)">* ประมาณการจาก company size, event activity, และ verified purchases จาก competitor data · ไม่ใช่ตัวเลขจริง</div>
+  </div>
+
+  <!-- Blue Ocean Opportunity -->
+  <div class="ins" style="margin-bottom:16px">
+    <div class="ins-tag it-o"><div class="ins-dot"></div>Blue Ocean Opportunity</div>
+    <div class="ins-text">ตลาด <strong>ภาครัฐ + SME MOQ น้อย</strong> ยังไม่มีแบรนด์ใดครองชัดเจน → Folio มีโรงงานเองและรับ MOQ ต่ำ → จุดขายนี้ยังไม่มีคู่แข่งสื่อสารชัด · EEC zone = โอกาสใหม่ที่คู่แข่งยังไม่โฟกัส</div>
+  </div>
+
+  <!-- Event Partners -->
+  <div class="card">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-a">🤝</span>Event Partners<span class="th">· พันธมิตรที่ร่วมออกงาน · จากโพสต์จริง</span></div></div>
+    <table class="tbl">
+      <thead><tr><th>#</th><th>Partner / Event</th><th>แบรนด์</th><th>Type</th><th>Impact</th></tr></thead>
+      <tbody>
+        <tr><td style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--border2)">01</td><td><strong>GQ Apparel × SwagOn</strong> Laser Event<div style="font-size:10px;color:var(--text3)">GQ Shop Mega Bangna · 21–22 มี.ค. 2026</div></td><td><span class="badge bt">SwagOn</span></td><td>🎨 Brand Collab</td><td style="color:var(--teal);font-size:11px">Personalization Event</td></tr>
+        <tr><td style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--border2)">02</td><td><strong>Siam Paragon × Ogga</strong> Global Recycle Day<div style="font-size:10px;color:var(--text3)">NEXTOPIA Zone 5F · 18 มี.ค. 2026</div></td><td><span class="badge bb">Ogga Idea</span></td><td>🛍 Retail Event</td><td style="color:var(--teal);font-size:11px">ESG Visibility</td></tr>
+        <tr><td style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--border2)">03</td><td><strong>THAIFEX-HOREC Asia × SwagOn</strong><div style="font-size:10px;color:var(--text3)">IMPACT Hall 2 บูธ S03 · 11–13 มี.ค. 2026</div></td><td><span class="badge bt">SwagOn</span></td><td>🏭 Trade Show</td><td style="color:var(--teal);font-size:11px">B2B Lead + TagOn NFC</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     YOUTUBE
+══════════════════════════════════════ -->
+<div class="page" id="page-youtube">
+  <div class="ph">
+    <div class="eyebrow">YouTube Strategy <span class="th">· สนามที่คู่แข่งยังไม่ลงทุนจริงจัง</span></div>
+    <div class="ptitle">▶️ YouTube = คู่แข่ง<em>มีแต่ไม่ลงทุนจริงจัง</em></div>
+  </div>
+  <div class="yt-box">
+    <div class="yt-title">▶️ สถานะ YouTube ตลาด Premium Gift ไทย</div>
+    <div class="g2">
+      <div style="font-size:12px;color:var(--text2);line-height:1.7">
+        <strong style="color:var(--text)">ทำไม YouTube ดีกว่า TikTok สำหรับ B2B:</strong><br>
+        · B2B Buyers Research บน YouTube ก่อนตัดสินใจ<br>
+        · Content 5–10 นาที โชว์ Material + Process + Quality ได้<br>
+        · Evergreen: Video ปี 2024 ดูได้ถึง 2030<br>
+        · TikTok = Gen Z 18–24 ปี · ลูกค้า Premium Gift = Manager 28–50 ปี<br><br>
+        <strong style="color:var(--teal)">โอกาส Folio:</strong> ลงทุน Consistent 2 videos/เดือน + YouTube Ads = ชนะใน 3–6 เดือน
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--teal)">SwagOn</strong> · <a href="https://www.youtube.com/@SwagOn.Official" target="_blank" class="lu">@SwagOn.Official</a> <span style="color:var(--text3)">· มี Channel ต้องติดตามความสม่ำเสมอ</span></div>
+        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--blue)">Ogga Idea</strong> · <a href="https://www.youtube.com/@OggaIdeaProvider" target="_blank" class="lu">@OggaIdeaProvider</a> <span style="color:var(--text3)">· ESG / provider content</span></div>
+        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--amber)">GiftwiseAsia</strong> · <a href="https://www.youtube.com/@giftwiseasia" target="_blank" class="lu">@giftwiseasia</a> <span style="color:var(--text3)">· มี Channel ต้องติดตาม upload cadence</span></div>
+        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--purple)">Admire Tomorrow</strong> · <a href="https://www.youtube.com/@admiretomorrowbaac" target="_blank" class="lu">@admiretomorrowbaac</a> <span style="color:var(--text3)">· Product showcase</span></div>
+        <div style="background:var(--card2);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--green)">Bixitia</strong> · <a href="https://www.youtube.com/@LifestylesEssential/shorts" target="_blank" class="lu">@LifestylesEssential/shorts</a> <span style="color:var(--text3)">· Shorts link ที่ส่งมา ต้อง verify ownership</span> <span style="font-size:9px;background:rgba(16,185,129,.1);color:var(--green);padding:1px 5px;border-radius:4px;border:1px solid rgba(16,185,129,.3)">NEW</span></div>
+        <div style="background:rgba(0,229,160,.07);border:1px solid rgba(0,229,160,.18);border-radius:8px;padding:10px;font-size:12px"><strong style="color:var(--teal)">🏠 Folio → <a href="https://www.youtube.com/@FolioPremiumGift" target="_blank" class="lu">@FolioPremiumGift</a></strong><br><span style="color:var(--text2)">ทำ series โรงงาน / material / how-to เพื่อชนะ long-tail search ได้</span></div>
+      </div>
+    </div>
+    <div class="yt-grid">
+      <div class="yt-card"><div class="yt-n">01</div><div class="yt-ct">5 ไอเดียของขวัญงบ 500฿</div><div class="yt-cd">Search Volume สูง · SME ค้นหา</div></div>
+      <div class="yt-card"><div class="yt-n">02</div><div class="yt-ct">Behind the Scenes โรงงาน</div><div class="yt-cd">Build Trust · Evergreen</div></div>
+      <div class="yt-card"><div class="yt-n">03</div><div class="yt-ct">วิธีเลือกของขวัญปีใหม่ HR</div><div class="yt-cd">ตรง Persona · Q4 Traffic</div></div>
+      <div class="yt-card"><div class="yt-n">04</div><div class="yt-ct">Premium Gift Unboxing 3 ระดับ</div><div class="yt-cd">Visual Impact · Share ง่าย</div></div>
+      <div class="yt-card"><div class="yt-n">05</div><div class="yt-ct">สกรีนโลโก้ทำยังไง? ทุก Technique</div><div class="yt-cd">Educational · Reduce Objection</div></div>
+      <div class="yt-card"><div class="yt-n">06</div><div class="yt-ct">10 ผิดพลาดสั่งของพรีเมี่ยม</div><div class="yt-cd">Problem-solving · High Share</div></div>
+      <div class="yt-card"><div class="yt-n">07</div><div class="yt-ct">ของขวัญภาครัฐ Step-by-step</div><div class="yt-cd">Niche เฉพาะ · ไม่มีใครทำ</div></div>
+      <div class="yt-card"><div class="yt-n">08</div><div class="yt-ct">ราคาของพรีเมี่ยม 2026 เปรียบจริง</div><div class="yt-cd">High Intent · Pre-purchase</div></div>
+      <div class="yt-card"><div class="yt-n">09</div><div class="yt-ct">Folio Factory Tour (TH + EN Sub)</div><div class="yt-cd">Brand Story · Trust Builder</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SWOT
+══════════════════════════════════════ -->
+<div class="page" id="page-swot">
+  <div class="ph">
+    <div class="eyebrow">Strategic Analysis <span class="th">· วิเคราะห์เชิงกลยุทธ์ของ Folio</span></div>
+    <div class="ptitle">⚔️ วิเคราะห์<em>เรา</em></div>
+    <div class="psub">จุดแข็ง จุดอ่อน โอกาส ภัยคุกคาม ของ Folio — อิงตัวเลขจริง Apify + SimilarWeb 19 ต.ค. 2569</div>
+  </div>
+  <div class="swot">
+    <div class="sw"><div class="sw-h"><span>💪</span>จุดแข็งของเรา</div><ul class="sw-ul">
+      <li><span class="sw-b">▸</span><strong>FB followers อันดับ 1 ของตลาด 10,793</strong> · มากกว่า Admire 24% · มากกว่า SwagOn 3.1 เท่า</li>
+      <li><span class="sw-b">▸</span><strong>ยิง Ads อยู่</strong> — เป็น 1 ใน 2 แบรนด์ที่ verified running ads (อีกรายคือ Bixitia)</li>
+      <li><span class="sw-b">▸</span><strong>โพสต์ที่ดีที่สุดในตลาดทั้งกลุ่มเป็นของเรา — 100 ไลก์</strong> · อันดับ 2 ของตลาดได้ 53 · พิสูจน์ว่าเราทำคอนเทนต์ที่ปังได้จริง</li>
+      <li><span class="sw-b">▸</span><strong>โรงงานผลิตเอง</strong> คุมคุณภาพ-ต้นทุน-เวลาได้เอง · คู่แข่งหลายรายจ้างผลิต</li>
+      <li><span class="sw-b">▸</span><strong>MOQ เริ่ม 10 ชิ้น</strong> ต่ำสุดในกลุ่ม (Admire 200) → รับงาน SME และงานตัวอย่างได้</li>
+      <li><span class="sw-b">▸</span>ผลิตกล่องบรรจุภัณฑ์เอง + งานร่วมกับศิลปินไทย — เรื่องเล่าที่คู่แข่งไม่มี</li>
+      <li><span class="sw-b">▸</span>โชว์รูมพระราม 5 ให้ลูกค้าดูของจริงได้</li>
+    </ul></div>
+
+    <div class="sw"><div class="sw-h"><span>⚠️</span>จุดอ่อนของเรา</div><ul class="sw-ul">
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">IG avg likes 1.20 ต่ำสุดในกลุ่ม</strong> ทั้งที่โพสต์มากสุด 498 ครั้ง · คอมเมนต์ 0.01 ต่ำสุด (Ogga 0.35 = มากกว่า 35 เท่า)</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">ทำวิดีโอแค่ 4.8%</strong> ทั้งที่วิดีโอของเราได้ไลก์มากกว่าภาพนิ่ง 24 เท่า (13.67 vs 0.57)</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">แคปชั่นซ้ำ 366 จาก 498 โพสต์ (73%)</strong> — IG ลดการมองเห็นคอนเทนต์ซ้ำ</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">โพสต์ไม่สม่ำเสมอ เฉลี่ย 4.0/เดือน</strong> (Giftwise 18.2 · Admire 14.6) · ก.ย. โพสต์แค่ 1 ครั้ง</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">เว็บร่วง 4 เดือนติด</strong> 3.2K → 2.1K → 1.9K (อันดับ 5 จาก 6) และรอบล่าสุดคุณภาพแย่ลงด้วย</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">FB followers ลดต่อเนื่อง 2 รอบ รวม −2,721</strong> (13,514 → 10,793) ขณะคู่แข่งนิ่งหรือเพิ่ม</li>
+      <li><span class="sw-b">▸</span>ไม่เคยทำคอนเทนต์ <strong>เคสลูกค้า</strong> (หมวดที่ได้ engagement สูงสุดของตลาด) เลยสักโพสต์ · อีเวนต์ทำแค่ 4</li>
+      <li><span class="sw-b">▸</span>YouTube มีช่องแต่ไม่ได้ทำจริง</li>
+    </ul></div>
+
+    <div class="sw"><div class="sw-h"><span>🚀</span>โอกาสของเรา</div><ul class="sw-ul">
+      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">เพิ่มวิดีโอ = ผลตอบแทนสูงสุดต่อแรงที่ลง</strong> · ทำ 100 คลิปในอัตราเดิมได้ engagement ~1,367 มากกว่าที่ 498 โพสต์ทั้งหมดทำได้ (599) ถึง 2 เท่า</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">หมวดเคสลูกค้าได้ engagement สูงสุด 3.44</strong> และเรายังไม่ได้ลงสนามเลย — มีผลงานอยู่แล้ว แค่เอามาเล่า</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">SwagOn หยุดโพสต์ 2 เดือน + Ogga หาย 4 เดือน</strong> — ช่องว่างในฟีดที่คู่แข่ง 2 รายหายไป</li>
+      <li><span class="sw-b">▸</span>คอนเทนต์เบื้องหลังโรงงาน — จุดแข็งที่มีอยู่แล้วแต่ไม่เคยถ่าย และเป็นวัตถุดิบวิดีโอชั้นดี</li>
+      <li><span class="sw-b">▸</span>YouTube ทั้งตลาดไม่มีใครลงทุนจริง → สนามว่าง</li>
+      <li><span class="sw-b">▸</span>งานใหญ่ 3 เดือนข้างหน้า: in-cosmetics + SX2026 + METALEX (พ.ย.) · <strong>Motor Expo 2–13 ธ.ค. ตรงพีคของขวัญปีใหม่</strong></li>
+      <li><span class="sw-b">▸</span>Ads ยังมีคู่แข่งแค่รายเดียว — ต้นทุน impression ยังไม่แพงเท่าตลาดที่แข่งกันหลายเจ้า</li>
+    </ul></div>
+
+    <div class="sw"><div class="sw-h"><span>⚡</span>ภัยคุกคามต่อเรา</div><ul class="sw-ul">
+      <li><span class="sw-b">▸</span><strong style="color:var(--green)">Bixitia เริ่มยิง FB Ads แล้ว</strong> (verified 19 ต.ค. 2569) + คุณภาพเว็บฟื้นทุกตัว — เราไม่ได้ครอง paid media คนเดียวอีกต่อไป</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--amber)">GiftwiseAsia</strong> โพสต์ถี่สุด 18.2/เดือน + visits อันดับ 1 ที่ 3K — ครองพื้นที่สายตาลูกค้า</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">SwagOn</strong> คุณภาพเว็บดีสุดทุกตัว (bounce 26.10% · 3.79 หน้า · 2:38) + ลูกค้าระดับ Meta / AWS / PwC = Network Effect</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--purple)">Admire</strong> โพสต์สม่ำเสมอสุด 16/เดือน + ครองหมวดเคสลูกค้า (105 โพสต์) + 30 ปี + รีวิว 100% จาก 113 ราย</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--blue)">Ogga Idea</strong> ครอง ESG เดี่ยว + คอมเมนต์สูงสุดในตลาด — ถ้าลูกค้าองค์กรเริ่มจริงจังเรื่อง ESG เขาได้เปรียบ</li>
+      <li><span class="sw-b">▸</span>Shopee / Lazada ตัดราคาในงานจำนวนน้อย</li>
+    </ul></div>
+  </div>
+
+  <div class="ins" style="margin-top:14px;margin-bottom:0">
+    <div class="ins-tag it-w"><div class="ins-dot"></div>อ่านอย่างระวัง</div>
+    <div class="ins-text">
+      หน้านี้วิเคราะห์ <strong>Folio</strong> เป็นหลัก · ข้อมูลคู่แข่งแบบเจาะรายแบรนด์ดูได้ที่แท็บ
+      <strong>Overview</strong> (ตัวเลขรวม) · <strong>ภาพรวมคอนเทนต์</strong> (คอนเทนต์) · <strong>SEO</strong> (เว็บ)<br>
+      <span style="color:var(--text3)">ตัวเลข IG/FB = Apify 19 ต.ค. 2569 · เว็บ = SimilarWeb Sep 2026 · ส่วน Sentiment / YouTube / ราคา เป็นค่าประมาณ ไม่ใช่ข้อมูล verified</span>
+    </div>
+  </div>
+</div>
+
 <!-- ══════════════════════════════════════
      FOLIO BRAND
 ══════════════════════════════════════ -->
 <div class="page" id="page-folio">
   <div class="ph">
-    <div class="eyebrow">Opportunity · Folio Premium Gifts</div>
+    <div class="eyebrow">Opportunity <span class="th">· โอกาสทางการตลาดของ Folio</span></div>
     <div class="ptitle">🎯 โอกาส<em>Folio</em></div>
     <div class="psub">จุดแข็งเทียบคู่แข่ง · Content Calendar · Next Steps</div>
   </div>
@@ -2089,7 +2092,7 @@ body{
   </div>
   <div class="g2">
     <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-t">💪</span>Folio vs 4 คู่แข่ง · Feature Map</div></div>
+      <div class="card-hd"><div class="card-title"><span class="ci ci-t">💪</span>Feature Map<span class="th">· ตารางเทียบความสามารถ · Folio vs 4 คู่แข่ง</span></div></div>
       <table class="cmp">
         <thead><tr><th>Feature</th><th>Folio</th><th>SwagOn</th><th>Ogga</th><th>Giftwise</th><th>Admire</th></tr></thead>
         <tbody>
@@ -2105,7 +2108,7 @@ body{
       </table>
     </div>
     <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-a">📅</span>Content Calendar · Folio</div></div>
+      <div class="card-hd"><div class="card-title"><span class="ci ci-a">📅</span>Content Calendar<span class="th">· ปฏิทินคอนเทนต์ของ Folio</span></div></div>
       <table class="tbl">
         <thead><tr><th>วัน</th><th>Platform</th><th>Content</th></tr></thead>
         <tbody>
@@ -2121,7 +2124,7 @@ body{
     </div>
   </div>
   <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-t">🕸</span>Folio vs 4 คู่แข่ง · Position Radar</div></div>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">🕸</span>Position Radar<span class="th">· เรดาร์ตำแหน่งแบรนด์ · Folio vs 4 คู่แข่ง</span></div></div>
     <div class="ch-lg"><canvas id="folioRadar"></canvas></div>
   </div>
 </div>
