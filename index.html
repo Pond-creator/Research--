@@ -80,7 +80,7 @@ body{
   color:var(--text3);
   background:none;border:none;
   border-bottom:2px solid transparent;
-  padding:12px 8px;
+  padding:12px 7px;
   cursor:pointer;
   transition:all .15s;
   white-space:nowrap;flex-shrink:0;
@@ -493,15 +493,14 @@ body{
   <button class="nt" onclick="show('keywords',this)">🔑 Keywords</button>
   <button class="nt" onclick="show('audience',this)">👥 Audience</button>
   <button class="nt" onclick="show('social',this)">📱 Social</button>
-  <button class="nt" onclick="show('apify',this)">📡 Apify Data</button>
   <button class="nt" onclick="show('seo',this)">🌐 SEO</button>
   <button class="nt" onclick="show('youtube',this)">▶️ YouTube</button>
-  <button class="nt" onclick="show('swot',this)">⚔️ SWOT</button>
+  <button class="nt" onclick="show('swot',this)">⚔️ วิเคราะห์เรา</button>
   <span style="width:1px;height:16px;background:var(--border2);margin:0 6px;flex-shrink:0"></span>
   <button class="nt new-tab" onclick="show('cover',this)">📊 ภาพรวมคอนเทนต์</button>
-  <button class="nt new-tab" onclick="show('ctype',this)">🎬 ประเภทคอนเทนต์</button>
-  <button class="nt new-tab" onclick="show('ceng',this)">🔥 คอนเทนต์ที่ปัง</button>
-  <button class="nt new-tab" onclick="show('cfreq',this)">📅 ความถี่โพสต์</button>
+  <button class="nt" onclick="show('ctype',this)">🎬 ประเภทคอนเทนต์</button>
+  <button class="nt" onclick="show('ceng',this)">🔥 คอนเทนต์ที่ปัง</button>
+  <button class="nt" onclick="show('cfreq',this)">📅 ความถี่โพสต์</button>
   <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🎯 โอกาส Folio</button>
   <div class="nr">
     <div class="status-pill"><div class="status-dot"></div><span>Real Data · 19 ต.ค. 2569</span></div>
@@ -920,224 +919,6 @@ body{
 </div>
 
 <!-- ══════════════════════════════════════
-     APIFY DATA
-══════════════════════════════════════ -->
-<div class="page" id="page-apify">
-  <div class="ph">
-    <div class="eyebrow">Raw Data Analysis · Apify Scraper Results</div>
-    <div class="ptitle">สรุปข้อมูล<em>จาก CSV จริง</em> · Real Scrape</div>
-    <div class="psub">Instagram Scraper · Facebook Pages Scraper · SimilarWeb · <span style="color:var(--teal);font-weight:700">อัพเดท 19 ต.ค. 2569</span></div>
-  </div>
-
-  <!-- Facebook Pages Real Data -->
-  <div class="data-card">
-    <div class="data-badge">📘 Facebook Pages Scraper · <span class="src-tag" style="font-size:10px">✓ Real Data 19 ต.ค. 2569</span></div>
-    <div class="stat-grid" style="grid-template-columns:repeat(6,1fr)">
-      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
-        <div class="stat-brand" style="color:var(--teal)">🏠 Folio</div>
-        <div class="stat-num" style="color:var(--teal)">10,793</div>
-        <div class="stat-lbl">FB Followers 🏆</div>
-        <div style="margin-top:4px"><span class="src-tag" style="font-size:9px">✅ Running Ads</span></div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--purple)">Admire</div>
-        <div class="stat-num" style="color:var(--purple)">8,732</div>
-        <div class="stat-lbl">FB Followers</div>
-        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--red)">SwagOn</div>
-        <div class="stat-num" style="color:var(--red)">3,489</div>
-        <div class="stat-lbl">FB Followers</div>
-        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--blue)">Ogga Idea</div>
-        <div class="stat-num" style="color:var(--blue)">1,050</div>
-        <div class="stat-lbl">FB Followers</div>
-        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
-      </div>
-      <div class="stat-box" style="background:rgba(16,185,129,.05);border-color:rgba(16,185,129,.2)">
-        <div class="stat-brand" style="color:var(--green)">Bixitia</div>
-        <div class="stat-num" style="color:var(--green)">2,869</div>
-        <div class="stat-lbl">FB Followers · ใหม่</div>
-        <div style="margin-top:4px"><span class="src-tag" style="font-size:9px;color:var(--green);border-color:rgba(16,185,129,.4)">✅ Running Ads</span></div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div>
-        <div class="stat-num" style="color:var(--text3)">—</div>
-        <div class="stat-lbl">เพจเข้าไม่ได้</div>
-        <div style="margin-top:4px"><span class="badge ba" style="font-size:9px">ดูไม่ได้</span></div>
-      </div>
-    </div>
-    <div class="ins" style="margin-top:12px;margin-bottom:0">
-      <div class="ins-tag it-t"><div class="ins-dot"></div>Key Insight</div>
-      <div class="ins-text"><strong style="color:var(--teal)">Folio = อันดับ 1 FB Followers</strong> ในตลาด (10,793) · มากกว่า Admire 24% · มากกว่า SwagOn 3.1 เท่า · ⚠️ <strong style="color:var(--red)">ลดต่อเนื่องรอบที่ 2 รวม −2,721</strong> (13,514 → 11,705 → 10,793) · และตอนนี้ Bixitia ก็ยิง Ads แล้ว ขณะที่คู่แข่งทุกรายเติบขึ้น</div>
-    </div>
-  </div>
-
-  <!-- Instagram Real Data -->
-  <div class="data-card">
-    <div class="data-badge">📸 Instagram Scraper · 1,824 Posts <span class="src-tag" style="font-size:10px">✓ Real Data 19 ต.ค. 2569</span></div>
-    <div class="stat-grid" style="grid-template-columns:repeat(6,1fr)">
-      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
-        <div class="stat-brand" style="color:var(--teal)">🏠 Folio</div>
-        <div class="stat-num" style="color:var(--teal)">498</div>
-        <div class="stat-lbl">posts scraped</div>
-        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 1.2</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div>
-        <div class="stat-num" style="color:var(--amber)">181</div>
-        <div class="stat-lbl">posts scraped</div>
-        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 3.3 🏆</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--blue)">Ogga Idea</div>
-        <div class="stat-num" style="color:var(--blue)">105</div>
-        <div class="stat-lbl">posts scraped</div>
-        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 2.8 ↑</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--red)">SwagOn</div>
-        <div class="stat-num" style="color:var(--red)">287</div>
-        <div class="stat-lbl">posts scraped</div>
-        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 2.3</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--green)">Bixitia</div>
-        <div class="stat-num" style="color:var(--green)">382</div>
-        <div class="stat-lbl">posts scraped</div>
-        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 2.2 ↑</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--purple)">Admire</div>
-        <div class="stat-num" style="color:var(--purple)">371</div>
-        <div class="stat-lbl">posts scraped</div>
-        <div style="font-size:11px;color:var(--text3);margin-top:2px">avg ❤️ 2.5 ↑</div>
-      </div>
-    </div>
-    <div style="margin-top:14px;background:var(--card);border:1px solid var(--border);border-radius:var(--r12);padding:14px">
-      <table class="tbl">
-        <thead><tr><th>Account</th><th>Posts</th><th>Avg Likes</th><th>Total Engagement</th><th>Avg Comments</th><th>Top Post Likes</th><th>Trend</th></tr></thead>
-        <tbody>
-          <tr><td><strong style="color:var(--blue)">oggaidea</strong></td><td>105</td><td><strong style="color:var(--blue)">3.43 ❤️ 🏆</strong></td><td>360</td><td>0.35 🏆</td><td>11</td><td><span class="badge bb">หาย 4 เดือน · กลับมา ต.ค.</span></td></tr>
-          <tr><td><strong style="color:var(--amber)">giftwise.official</strong></td><td>181</td><td><strong style="color:var(--amber)">3.29 ❤️</strong></td><td>596</td><td>0.13</td><td>20</td><td><span class="badge ba">โพสต์ถี่สุด ~20/เดือน</span></td></tr>
-          <tr style="background:rgba(0,229,160,.03)"><td><strong style="color:var(--teal)">🏠 foliopremiumgifts</strong></td><td>498</td><td><strong style="color:var(--teal)">1.20 ❤️ ↓ ต่ำสุด</strong></td><td>599</td><td>0.01</td><td>100 🏆</td><td><span class="badge bt">volume สูงสุด แต่ ก.ย. โพสต์แค่ 1</span></td></tr>
-          <tr><td><strong style="color:var(--red)">swagon.official</strong></td><td>287</td><td>2.26 ❤️</td><td>650</td><td>0.03</td><td>53</td><td><span class="badge br">หยุดโพสต์ ก.ย.–ต.ค. = 0</span></td></tr>
-          <tr><td><strong style="color:var(--green)">bixitia</strong> <span style="font-size:9px;color:var(--green);background:rgba(16,185,129,.1);padding:1px 5px;border-radius:4px;border:1px solid rgba(16,185,129,.3)">NEW</span></td><td>382</td><td>2.20 ❤️</td><td>841</td><td>0.07</td><td>41</td><td><span class="badge" style="background:rgba(16,185,129,.1);color:var(--green);border:1px solid rgba(16,185,129,.3)">Competitor ใหม่</span></td></tr>
-          <tr><td><strong style="color:var(--purple)">admire.tomorrow</strong></td><td>371</td><td>2.42 ❤️</td><td>899</td><td>0.01</td><td>38</td><td><span class="badge bp">สม่ำเสมอสุด 16/เดือน</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="ins" style="margin-top:12px;margin-bottom:0">
-      <div class="ins-tag it-o"><div class="ins-dot"></div>Insight</div>
-      <div class="ins-text">Scrape รอบนี้ 1,824 posts (19 ต.ค. 2569) → เห็นภาพจริงกว่าเดิม · <strong style="color:var(--teal)">Folio 482 posts avg 1.2 ❤️</strong> — volume สูงสุด แต่ engagement ต่อโพสต์ต่ำสุด · <strong style="color:var(--amber)">Giftwise 3.3 ❤️</strong> นำ · <strong style="color:var(--purple)">Admire กลับมา 404 posts</strong> จากเคย inactive</div>
-    </div>
-  </div>
-
-  <!-- Facebook Ads Real Data -->
-  <div class="data-card">
-    <div class="data-badge">💰 Facebook Ads Status · <span class="src-tag" style="font-size:10px">✓ Verified 19 ต.ค. 2569</span></div>
-    <div style="display:flex;flex-direction:column;gap:8px">
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(0,229,160,.06);border:1px solid rgba(0,229,160,.2);border-radius:10px">
-        <div style="display:flex;align-items:center;gap:10px">
-          <span style="font-size:18px">🏠</span>
-          <div><strong style="color:var(--teal)">Folio</strong> <span style="font-size:10px;color:var(--text3)">foliopremiumgifts</span></div>
-        </div>
-        <span class="src-tag">✅ This Page is currently running ads.</span>
-      </div>
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.25);border-radius:10px">
-        <div style="display:flex;align-items:center;gap:10px">
-          <span style="font-size:18px">🟢</span>
-          <div><strong style="color:var(--green)">Bixitia</strong> <span style="font-size:10px;color:var(--text3)">bixitia · 2,869 followers · เจอเพจครั้งแรก</span></div>
-        </div>
-        <span class="src-tag" style="color:var(--green);border-color:rgba(16,185,129,.4)">✅ This Page is currently running ads.</span>
-      </div>
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
-        <div style="display:flex;align-items:center;gap:10px">
-          <span style="font-size:18px">🟣</span>
-          <div><strong style="color:var(--purple)">Admire Tomorrow</strong> <span style="font-size:10px;color:var(--text3)">admire.tomorrow.thailand</span></div>
-        </div>
-        <span class="badge br">This Page isn't currently running ads.</span>
-      </div>
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
-        <div style="display:flex;align-items:center;gap:10px">
-          <span style="font-size:18px">🔵</span>
-          <div><strong style="color:var(--red)">SwagOn</strong> <span style="font-size:10px;color:var(--text3)">swagon.co</span></div>
-        </div>
-        <span class="badge br">This Page isn't currently running ads.</span>
-      </div>
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
-        <div style="display:flex;align-items:center;gap:10px">
-          <span style="font-size:18px">🟢</span>
-          <div><strong style="color:var(--blue)">Ogga Idea</strong> <span style="font-size:10px;color:var(--text3)">ogga.idea</span></div>
-        </div>
-        <span class="badge br">This Page isn't currently running ads.</span>
-      </div>
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
-        <div style="display:flex;align-items:center;gap:10px">
-          <span style="font-size:18px">🟡</span>
-          <div><strong style="color:var(--amber)">GiftwiseAsia</strong> <span style="font-size:10px;color:var(--text3)">GiftwiseAsia</span></div>
-        </div>
-        <span class="badge ba">เพจเข้าไม่ได้ — ตรวจสอบไม่ได้</span>
-      </div>
-    </div>
-    <div class="ins" style="margin-top:12px;margin-bottom:0">
-      <div class="ins-tag it-t"><div class="ins-dot"></div>สรุป Ads</div>
-      <div class="ins-text">🔴 <strong style="color:var(--green)">Bixitia เริ่มยิง Ads แล้ว</strong> — 19 ต.ค. 2569 เจอเพจ fb/bixitia (2,869 followers) ครั้งแรก และ verified <strong>running ads</strong> · Folio ไม่ได้ครอง paid media คนเดียวอีกต่อไป · Admire / SwagOn / Ogga ยัง verified ไม่ยิง · GiftwiseAsia เพจเข้าไม่ได้ ตรวจไม่ได้</div>
-    </div>
-  </div>
-
-  <!-- SimilarWeb Real Data -->
-  <div class="data-card">
-    <div class="data-badge">🌐 SimilarWeb · Monthly Visits Sep 2026 <span class="src-tag" style="font-size:10px">✓ Screenshot verified</span></div>
-    <div class="stat-grid" style="grid-template-columns:repeat(6,1fr)">
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div>
-        <div class="stat-num" style="color:var(--amber)">3K 🏆</div>
-        <div class="stat-lbl">visits/mo</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 43.46% ⚠️ · 2.21 p/v · 1:16</div>
-      </div>
-      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
-        <div class="stat-brand" style="color:var(--teal)">🏠 Folio</div>
-        <div class="stat-num" style="color:var(--teal)">1.9K</div>
-        <div class="stat-lbl">visits/mo</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 38.35% ↓ · 2.28 p/v · 0:55</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--blue)">Ogga Idea</div>
-        <div class="stat-num" style="color:var(--blue)">2.7K</div>
-        <div class="stat-lbl">visits/mo</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 39.86% · 2.01 p/v · 0:45</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--red)">SwagOn</div>
-        <div class="stat-num" style="color:var(--red)">2.4K</div>
-        <div class="stat-lbl">visits/mo</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 26.10% 🏆 · 3.79 p/v 🏆 · 2:38 🏆</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--purple)">Admire</div>
-        <div class="stat-num" style="color:var(--purple)">832</div>
-        <div class="stat-lbl">visits/mo</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 33.99% · 2.34 p/v · 1:02</div>
-      </div>
-      <div class="stat-box" style="background:rgba(16,185,129,.05);border-color:rgba(16,185,129,.2)">
-        <div class="stat-brand" style="color:var(--green)">Bixitia</div>
-        <div class="stat-num" style="color:var(--green)">2.7K</div>
-        <div class="stat-lbl">visits/mo</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:3px">Bounce 32.64% ↑ · 3.09 p/v ↑ · 1:17 ↑</div>
-      </div>
-    </div>
-    <div class="ins" style="margin-top:12px;margin-bottom:0">
-      <div class="ins-tag it-w"><div class="ins-dot"></div>อ่านตัวเลขอย่างระวัง</div>
-      <div class="ins-text"><strong style="color:var(--teal)">Folio 1.9K — ร่วงติดกัน 4 เดือน</strong> (3.2K Jul → 2.1K Aug → 1.9K Sep) และรอบนี้<strong style="color:var(--red)">คุณภาพแย่ลงด้วย</strong>: Bounce 28.60% → 38.35% · 2.37 → 2.28 หน้า · 68 → 55 วินาที (เดือนที่แล้วคุณภาพยังดีขึ้น รอบนี้กลับทาง) · <strong style="color:var(--red)">SwagOn ครองคุณภาพทุกตัว</strong> 26.10% / 3.79 หน้า / 2:38 · ห้ามเปรียบตัวเลข visits เดี่ยวๆ</div>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
      SOCIAL
 ══════════════════════════════════════ -->
 <div class="page" id="page-social">
@@ -1187,6 +968,107 @@ body{
       <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text3)"><div style="width:8px;height:8px;border-radius:2px;background:var(--teal)"></div>Positive</div>
       <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text3)"><div style="width:8px;height:8px;border-radius:2px;background:var(--border2)"></div>Neutral</div>
       <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text3)"><div style="width:8px;height:8px;border-radius:2px;background:var(--red)"></div>Negative</div>
+    </div>
+  </div>
+
+  <div class="ph" style="margin-top:22px">
+    <div class="eyebrow">Facebook · Apify Pages Scraper + Meta Ads Library</div>
+  </div>
+  <div class="data-card">
+    <div class="data-badge">📘 Facebook Pages Scraper · <span class="src-tag" style="font-size:10px">✓ Real Data 19 ต.ค. 2569</span></div>
+    <div class="stat-grid" style="grid-template-columns:repeat(6,1fr)">
+      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
+        <div class="stat-brand" style="color:var(--teal)">🏠 Folio</div>
+        <div class="stat-num" style="color:var(--teal)">10,793</div>
+        <div class="stat-lbl">FB Followers 🏆</div>
+        <div style="margin-top:4px"><span class="src-tag" style="font-size:9px">✅ Running Ads</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--purple)">Admire</div>
+        <div class="stat-num" style="color:var(--purple)">8,732</div>
+        <div class="stat-lbl">FB Followers</div>
+        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--red)">SwagOn</div>
+        <div class="stat-num" style="color:var(--red)">3,489</div>
+        <div class="stat-lbl">FB Followers</div>
+        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--blue)">Ogga Idea</div>
+        <div class="stat-num" style="color:var(--blue)">1,050</div>
+        <div class="stat-lbl">FB Followers</div>
+        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
+      </div>
+      <div class="stat-box" style="background:rgba(16,185,129,.05);border-color:rgba(16,185,129,.2)">
+        <div class="stat-brand" style="color:var(--green)">Bixitia</div>
+        <div class="stat-num" style="color:var(--green)">2,869</div>
+        <div class="stat-lbl">FB Followers · ใหม่</div>
+        <div style="margin-top:4px"><span class="src-tag" style="font-size:9px;color:var(--green);border-color:rgba(16,185,129,.4)">✅ Running Ads</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div>
+        <div class="stat-num" style="color:var(--text3)">—</div>
+        <div class="stat-lbl">เพจเข้าไม่ได้</div>
+        <div style="margin-top:4px"><span class="badge ba" style="font-size:9px">ดูไม่ได้</span></div>
+      </div>
+    </div>
+    <div class="ins" style="margin-top:12px;margin-bottom:0">
+      <div class="ins-tag it-t"><div class="ins-dot"></div>Key Insight</div>
+      <div class="ins-text"><strong style="color:var(--teal)">Folio = อันดับ 1 FB Followers</strong> ในตลาด (10,793) · มากกว่า Admire 24% · มากกว่า SwagOn 3.1 เท่า · ⚠️ <strong style="color:var(--red)">ลดต่อเนื่องรอบที่ 2 รวม −2,721</strong> (13,514 → 11,705 → 10,793) · และตอนนี้ Bixitia ก็ยิง Ads แล้ว ขณะที่คู่แข่งทุกรายเติบขึ้น</div>
+    </div>
+  </div>
+
+  <div class="data-card">
+    <div class="data-badge">💰 Facebook Ads Status · <span class="src-tag" style="font-size:10px">✓ Verified 19 ต.ค. 2569</span></div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(0,229,160,.06);border:1px solid rgba(0,229,160,.2);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🏠</span>
+          <div><strong style="color:var(--teal)">Folio</strong> <span style="font-size:10px;color:var(--text3)">foliopremiumgifts</span></div>
+        </div>
+        <span class="src-tag">✅ This Page is currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.25);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🟢</span>
+          <div><strong style="color:var(--green)">Bixitia</strong> <span style="font-size:10px;color:var(--text3)">bixitia · 2,869 followers · เจอเพจครั้งแรก</span></div>
+        </div>
+        <span class="src-tag" style="color:var(--green);border-color:rgba(16,185,129,.4)">✅ This Page is currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🟣</span>
+          <div><strong style="color:var(--purple)">Admire Tomorrow</strong> <span style="font-size:10px;color:var(--text3)">admire.tomorrow.thailand</span></div>
+        </div>
+        <span class="badge br">This Page isn't currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🔵</span>
+          <div><strong style="color:var(--red)">SwagOn</strong> <span style="font-size:10px;color:var(--text3)">swagon.co</span></div>
+        </div>
+        <span class="badge br">This Page isn't currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🟢</span>
+          <div><strong style="color:var(--blue)">Ogga Idea</strong> <span style="font-size:10px;color:var(--text3)">ogga.idea</span></div>
+        </div>
+        <span class="badge br">This Page isn't currently running ads.</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🟡</span>
+          <div><strong style="color:var(--amber)">GiftwiseAsia</strong> <span style="font-size:10px;color:var(--text3)">GiftwiseAsia</span></div>
+        </div>
+        <span class="badge ba">เพจเข้าไม่ได้ — ตรวจสอบไม่ได้</span>
+      </div>
+    </div>
+    <div class="ins" style="margin-top:12px;margin-bottom:0">
+      <div class="ins-tag it-t"><div class="ins-dot"></div>สรุป Ads</div>
+      <div class="ins-text">🔴 <strong style="color:var(--green)">Bixitia เริ่มยิง Ads แล้ว</strong> — 19 ต.ค. 2569 เจอเพจ fb/bixitia (2,869 followers) ครั้งแรก และ verified <strong>running ads</strong> · Folio ไม่ได้ครอง paid media คนเดียวอีกต่อไป · Admire / SwagOn / Ogga ยัง verified ไม่ยิง · GiftwiseAsia เพจเข้าไม่ได้ ตรวจไม่ได้</div>
     </div>
   </div>
 </div>
@@ -1645,46 +1527,59 @@ body{
 ══════════════════════════════════════ -->
 <div class="page" id="page-swot">
   <div class="ph">
-    <div class="eyebrow">Strategic Analysis · Based on Real Data</div>
-    <div class="ptitle"><em>SWOT</em> · จุดแข็ง จุดอ่อน โอกาส ภัยคุกคาม</div>
+    <div class="eyebrow">Strategic Analysis · Folio Premium Gifts</div>
+    <div class="ptitle">⚔️ วิเคราะห์<em>เรา</em></div>
+    <div class="psub">จุดแข็ง จุดอ่อน โอกาส ภัยคุกคาม ของ Folio — อิงตัวเลขจริง Apify + SimilarWeb 19 ต.ค. 2569</div>
   </div>
   <div class="swot">
-    <div class="sw"><div class="sw-h"><span>💪</span>จุดแข็ง</div><ul class="sw-ul">
-      <li><span class="sw-b">▸</span>SwagOn: ลูกค้า World-class (Meta, Amazon, PwC) · Google 4.9⭐</li>
-      <li><span class="sw-b">▸</span>Ogga Idea: ESG Positioning ครองเดี่ยว · FB Engagement สูงสุด (6.9 likes, 2.3 shares/post)</li>
-      <li><span class="sw-b">▸</span>Admire Tomorrow: FB 8,732 likes · 30+ ปี · IG สม่ำเสมอสุด 16 โพสต์/เดือน (371 posts) · Ads ยังไม่ยิง</li>
-      <li><span class="sw-b">▸</span>GiftwiseAsia: IG Avg Likes สูงสุด (3.3/post) · Monthly Visits 4K · Bounce 25.9% ต่ำสุด</li>
-      <li><span class="sw-b">▸</span>Bixitia: 30+ ปีในตลาด · Web 2.7K visits · <strong>FB 2,869 + ยิง Ads แล้ว</strong> · IG 382 posts · โรงงานผลิตตรง <span style="font-size:9px;background:rgba(16,185,129,.1);color:var(--green);padding:1px 5px;border-radius:4px;border:1px solid rgba(16,185,129,.3)">NEW</span></li>
+    <div class="sw"><div class="sw-h"><span>💪</span>จุดแข็งของเรา</div><ul class="sw-ul">
+      <li><span class="sw-b">▸</span><strong>FB followers อันดับ 1 ของตลาด 10,793</strong> · มากกว่า Admire 24% · มากกว่า SwagOn 3.1 เท่า</li>
+      <li><span class="sw-b">▸</span><strong>ยิง Ads อยู่</strong> — เป็น 1 ใน 2 แบรนด์ที่ verified running ads (อีกรายคือ Bixitia)</li>
+      <li><span class="sw-b">▸</span><strong>โพสต์ที่ดีที่สุดในตลาดทั้งกลุ่มเป็นของเรา — 100 ไลก์</strong> · อันดับ 2 ของตลาดได้ 53 · พิสูจน์ว่าเราทำคอนเทนต์ที่ปังได้จริง</li>
+      <li><span class="sw-b">▸</span><strong>โรงงานผลิตเอง</strong> คุมคุณภาพ-ต้นทุน-เวลาได้เอง · คู่แข่งหลายรายจ้างผลิต</li>
+      <li><span class="sw-b">▸</span><strong>MOQ เริ่ม 10 ชิ้น</strong> ต่ำสุดในกลุ่ม (Admire 200) → รับงาน SME และงานตัวอย่างได้</li>
+      <li><span class="sw-b">▸</span>ผลิตกล่องบรรจุภัณฑ์เอง + งานร่วมกับศิลปินไทย — เรื่องเล่าที่คู่แข่งไม่มี</li>
+      <li><span class="sw-b">▸</span>โชว์รูมพระราม 5 ให้ลูกค้าดูของจริงได้</li>
     </ul></div>
-    <div class="sw"><div class="sw-h"><span>⚠️</span>จุดอ่อน</div><ul class="sw-ul">
-      <li><span class="sw-b">▸</span>ทุกแบรนด์: YouTube ไม่ได้ลงทุนจริง → โอกาสสำหรับ Folio</li>
-      <li><span class="sw-b">▸</span>SwagOn: IG 145 followers · avg likes เพียง 2.3 (286 posts)</li>
-      <li><span class="sw-b">▸</span>Bixitia: spike 18.8K ก.ค. ร่วงเหลือ 2.7K ก.ย. = traffic ที่พุ่งไม่ใช่ demand จริง · แต่คุณภาพฟื้นแล้ว (3.09 หน้า/visit · 1:17) + เริ่มยิง Ads</li>
-      <li><span class="sw-b">▸</span>GiftwiseAsia FB: เพจเข้าไม่ได้ ดูไม่ได้ · DA ต่ำสุด (~18–22) · Bounce 43.46% แย่สุดในกลุ่ม</li>
+
+    <div class="sw"><div class="sw-h"><span>⚠️</span>จุดอ่อนของเรา</div><ul class="sw-ul">
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">IG avg likes 1.20 ต่ำสุดในกลุ่ม</strong> ทั้งที่โพสต์มากสุด 498 ครั้ง · คอมเมนต์ 0.01 ต่ำสุด (Ogga 0.35 = มากกว่า 35 เท่า)</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">ทำวิดีโอแค่ 4.8%</strong> ทั้งที่วิดีโอของเราได้ไลก์มากกว่าภาพนิ่ง 24 เท่า (13.67 vs 0.57)</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">แคปชั่นซ้ำ 366 จาก 498 โพสต์ (73%)</strong> — IG ลดการมองเห็นคอนเทนต์ซ้ำ</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">โพสต์ไม่สม่ำเสมอ เฉลี่ย 4.0/เดือน</strong> (Giftwise 18.2 · Admire 14.6) · ก.ย. โพสต์แค่ 1 ครั้ง</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">เว็บร่วง 4 เดือนติด</strong> 3.2K → 2.1K → 1.9K (อันดับ 5 จาก 6) และรอบล่าสุดคุณภาพแย่ลงด้วย</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">FB followers ลดต่อเนื่อง 2 รอบ รวม −2,721</strong> (13,514 → 10,793) ขณะคู่แข่งนิ่งหรือเพิ่ม</li>
+      <li><span class="sw-b">▸</span>ไม่เคยทำคอนเทนต์ <strong>เคสลูกค้า</strong> (หมวดที่ได้ engagement สูงสุดของตลาด) เลยสักโพสต์ · อีเวนต์ทำแค่ 4</li>
+      <li><span class="sw-b">▸</span>YouTube มีช่องแต่ไม่ได้ทำจริง</li>
     </ul></div>
-    <div class="sw"><div class="sw-h"><span>🚀</span>โอกาส</div><ul class="sw-ul">
-      <li><span class="sw-b">▸</span>YouTube: คู่แข่งมีแต่ไม่ทำจริง → ลงทุน Consistent + YouTube Ads ชนะได้</li>
-      <li><span class="sw-b">▸</span>Facebook Ads: 4 คู่แข่ง verified ว่าไม่ยิง/หยุดยิง → Folio ครอง paid media ชัด</li>
-      <li><span class="sw-b">▸</span>SEO Keywords "SME", "ภาครัฐ", "MOQ น้อย" → Competition ต่ำ</li>
-      <li><span class="sw-b">▸</span>LinkedIn B2B: ไม่มีใครทำ → Enterprise Audience โดยตรง</li>
-      <li><span class="sw-b">▸</span>Line OA: ช่องทาง CRM ที่ตลาด Premium Gift ไทยใช้แต่ยัง under-optimized</li>
+
+    <div class="sw"><div class="sw-h"><span>🚀</span>โอกาสของเรา</div><ul class="sw-ul">
+      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">เพิ่มวิดีโอ = ผลตอบแทนสูงสุดต่อแรงที่ลง</strong> · ทำ 100 คลิปในอัตราเดิมได้ engagement ~1,367 มากกว่าที่ 498 โพสต์ทั้งหมดทำได้ (599) ถึง 2 เท่า</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">หมวดเคสลูกค้าได้ engagement สูงสุด 3.44</strong> และเรายังไม่ได้ลงสนามเลย — มีผลงานอยู่แล้ว แค่เอามาเล่า</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--teal)">SwagOn หยุดโพสต์ 2 เดือน + Ogga หาย 4 เดือน</strong> — ช่องว่างในฟีดที่คู่แข่ง 2 รายหายไป</li>
+      <li><span class="sw-b">▸</span>คอนเทนต์เบื้องหลังโรงงาน — จุดแข็งที่มีอยู่แล้วแต่ไม่เคยถ่าย และเป็นวัตถุดิบวิดีโอชั้นดี</li>
+      <li><span class="sw-b">▸</span>YouTube ทั้งตลาดไม่มีใครลงทุนจริง → สนามว่าง</li>
+      <li><span class="sw-b">▸</span>งานใหญ่ 3 เดือนข้างหน้า: in-cosmetics + SX2026 + METALEX (พ.ย.) · <strong>Motor Expo 2–13 ธ.ค. ตรงพีคของขวัญปีใหม่</strong></li>
+      <li><span class="sw-b">▸</span>Ads ยังมีคู่แข่งแค่รายเดียว — ต้นทุน impression ยังไม่แพงเท่าตลาดที่แข่งกันหลายเจ้า</li>
     </ul></div>
-    <div class="sw"><div class="sw-h"><span>⚡</span>ภัยคุกคาม</div><ul class="sw-ul">
-      <li><span class="sw-b">▸</span>Bixitia เริ่มยิง FB Ads แล้ว (19 ต.ค. 2569) + คุณภาพเว็บฟื้นทุกตัว · Admire IG สม่ำเสมอ 16 โพสต์/เดือน · ประสบการณ์ 30+ ปี</li>
-      <li><span class="sw-b">▸</span>SwagOn มีลูกค้า Enterprise ใหญ่มาก Network Effect แข็ง</li>
-      <li><span class="sw-b">▸</span>Ogga Idea ออกบูธ Siam Paragon + ESG กำลัง trend</li>
-      <li><span class="sw-b">▸</span>Shopee/Lazada Seller ราคาถูกกว่าบุก Corporate Gift Market</li>
-      <li><span class="sw-b">▸</span>Bixitia: โรงงานผลิตตรง 30+ ปี · Traffic 2.7K สูงกว่า Folio · FB 2,869 + ยิง Ads แล้ว (19 ต.ค. 2569) <span style="font-size:9px;background:rgba(16,185,129,.1);color:var(--green);padding:1px 5px;border-radius:4px;border:1px solid rgba(16,185,129,.3)">NEW</span></li>
+
+    <div class="sw"><div class="sw-h"><span>⚡</span>ภัยคุกคามต่อเรา</div><ul class="sw-ul">
+      <li><span class="sw-b">▸</span><strong style="color:var(--green)">Bixitia เริ่มยิง FB Ads แล้ว</strong> (verified 19 ต.ค. 2569) + คุณภาพเว็บฟื้นทุกตัว — เราไม่ได้ครอง paid media คนเดียวอีกต่อไป</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--amber)">GiftwiseAsia</strong> โพสต์ถี่สุด 18.2/เดือน + visits อันดับ 1 ที่ 3K — ครองพื้นที่สายตาลูกค้า</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--red)">SwagOn</strong> คุณภาพเว็บดีสุดทุกตัว (bounce 26.10% · 3.79 หน้า · 2:38) + ลูกค้าระดับ Meta / AWS / PwC = Network Effect</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--purple)">Admire</strong> โพสต์สม่ำเสมอสุด 16/เดือน + ครองหมวดเคสลูกค้า (105 โพสต์) + 30 ปี + รีวิว 100% จาก 113 ราย</li>
+      <li><span class="sw-b">▸</span><strong style="color:var(--blue)">Ogga Idea</strong> ครอง ESG เดี่ยว + คอมเมนต์สูงสุดในตลาด — ถ้าลูกค้าองค์กรเริ่มจริงจังเรื่อง ESG เขาได้เปรียบ</li>
+      <li><span class="sw-b">▸</span>Shopee / Lazada ตัดราคาในงานจำนวนน้อย</li>
     </ul></div>
   </div>
-  <div class="sec">Priority Actions · เรียงลำดับก่อน-หลัง</div>
-  <div class="act"><div class="act-num">01</div><div><div class="act-title">▶️ ลงทุน YouTube อย่างจริงจัง — คู่แข่งมีแต่ไม่ทำจริง</div><div class="act-desc">ทุกแบรนด์มี YouTube Channel แล้ว แต่ cadence ยังไม่เด่น — Folio ที่ Upload 2 videos/เดือน + ทำ YouTube Ads แบบ B2B จะ Outrank ได้ใน 3–6 เดือน</div><div class="act-tags"><span class="at at-u">🔴 Priority</span><span class="at at-q">Low Competition</span></div></div></div>
-  <div class="act"><div class="act-num">02</div><div><div class="act-title">💰 Facebook Ads — เพิ่ม Budget โจมตีช่วงที่คู่แข่งหยุด</div><div class="act-desc">Folio ยิง FB Ads 10K+/เดือน อยู่แล้ว — เพิ่ม Budget ช่วง Q4 + ก่อนสงกรานต์ เพราะคู่แข่งหลัก 4 ราย Absent ทาง Paid ส่วน Bixitia ยังไม่ verified</div><div class="act-tags"><span class="at at-u">🔴 Priority</span><span class="at at-q">CPM ถูก</span></div></div></div>
-  <div class="act"><div class="act-num">03</div><div><div class="act-title">🔑 SEO Blog Long-tail Keywords — ฟรี + ROI ยาว</div><div class="act-desc">"ของขวัญ SME ราคา", "ของพรีเมี่ยมสั่ง 10 ชิ้น", "ของขวัญภาครัฐ" — ไม่มีคู่แข่งทำ ชนะ SEO ได้ง่ายมาก</div><div class="act-tags"><span class="at at-u">🔴 เร่งด่วน</span><span class="at at-q">ฟรี</span><span class="at at-m">ROI 2–3 เดือน</span></div></div></div>
-  <div class="act"><div class="act-num">05</div><div><div class="act-title">💼 LinkedIn — ยังไม่มีแบรนด์ไหนครองจริง</div><div class="act-desc">Post Case Studies + Premium Gift Showcase · Target C-Level, HR Director · CPL สูงกว่า Meta แต่ Lead Quality ดีที่สุดสำหรับ Enterprise</div><div class="act-tags"><span class="at at-m">🟡 Medium</span><span class="at at-q">Blue Ocean</span></div></div></div>
-  <div class="card" style="margin-top:16px">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-t">🕸</span>6 Brands · Competitive Radar</div></div>
-    <div class="ch-lg"><canvas id="swotRadar"></canvas></div>
+
+  <div class="ins" style="margin-top:14px;margin-bottom:0">
+    <div class="ins-tag it-w"><div class="ins-dot"></div>อ่านอย่างระวัง</div>
+    <div class="ins-text">
+      หน้านี้วิเคราะห์ <strong>Folio</strong> เป็นหลัก · ข้อมูลคู่แข่งแบบเจาะรายแบรนด์ดูได้ที่แท็บ
+      <strong>Overview</strong> (ตัวเลขรวม) · <strong>ภาพรวมคอนเทนต์</strong> (คอนเทนต์) · <strong>SEO</strong> (เว็บ)<br>
+      <span style="color:var(--text3)">ตัวเลข IG/FB = Apify 19 ต.ค. 2569 · เว็บ = SimilarWeb Sep 2026 · ส่วน Sentiment / YouTube / ราคา เป็นค่าประมาณ ไม่ใช่ข้อมูล verified</span>
+    </div>
   </div>
 </div>
 
