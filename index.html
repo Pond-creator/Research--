@@ -1648,70 +1648,145 @@ body{
 </div>
 
 <!-- ══════════════════════════════════════
-     CTYPE
+     CONTENT TYPE
 ═══════════════════════════════════════ -->
 <div class="page" id="page-ctype">
   <div class="ph">
-    <div class="eyebrow">Content Intelligence · Apify Scrape</div>
-    <div class="ptitle">แยกตามรูปแบบโพสต์ (ภาพ / วิดีโอ / อัลบั้ม) และธีมเนื้อหาของแต่ละแบรนด์ คู่แข่งเน้นคอนเทนต์<em>ประเภทไหน</em></div>
-    <div class="psub">🎬</div>
+    <div class="eyebrow">Content Intelligence · Apify IG Scrape 19 ต.ค. 2569</div>
+    <div class="ptitle">🎬 คู่แข่งเน้นคอนเทนต์<em>ประเภทไหน</em></div>
+    <div class="psub">แยกตามรูปแบบโพสต์จริง 1,824 posts · ภาพนิ่ง (Image) / อัลบั้มหลายรูป (Sidecar) / วิดีโอ-Reel (Video)</div>
   </div>
-  <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">⏸</span>รอข้อมูล Apify รอบใหม่</div><span class="badge ba">ยังไม่มีข้อมูล</span></div>
-    <div style="padding:4px 2px;font-size:12px;color:var(--text3);line-height:1.7">
-      หน้านี้จะเติมข้อมูลจริงเมื่อได้ไฟล์ scrape รอบใหม่ · สิ่งที่หน้านี้จะแสดง:
-      <ul style="margin:10px 0 0 18px;padding:0">
-        <li style="margin-bottom:5px">สัดส่วนรูปแบบโพสต์รายแบรนด์ — Image / Video (Reel) / Sidecar (อัลบั้มหลายรูป)</li>
-        <li style="margin-bottom:5px">ธีมเนื้อหา แยกจากแคปชั่น + แฮชแท็ก เช่น โชว์สินค้า / เบื้องหลังโรงงาน / เคสลูกค้า / ESG / โปรโมชั่น</li>
-        <li style="margin-bottom:5px">เทียบกับ Folio ว่าเราเน้นประเภทไหน และต่างจากคู่แข่งตรงไหน</li>
-      </ul>
+
+  <div class="card mb">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">📊</span>สัดส่วนรูปแบบโพสต์ · 6 แบรนด์</div><span class="src-tag">✓ Apify IG 19 ต.ค. 2569 · 1,824 posts</span></div>
+    <div class="ch-lg"><canvas id="ctypeChart"></canvas></div>
+  </div>
+
+  <div class="card mb">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">📋</span>ตารางเทียบรายแบรนด์</div></div>
+    <table class="tbl">
+      <thead><tr><th>แบรนด์</th><th>โพสต์</th><th>ภาพนิ่ง</th><th>อัลบั้ม</th><th>วิดีโอ</th><th style="min-width:130px">สัดส่วน</th><th>เน้นอะไร</th></tr></thead>
+      <tbody>
+          <tr style="background:rgba(0,229,160,.03)"><td><strong style="color:var(--teal)">🏠 Folio</strong><div style="font-size:9px;color:var(--text3)">foliopremiumgifts</div></td><td>498</td><td>421 <span style="color:var(--text3);font-size:10px">(84.5%)</span></td><td>53 <span style="color:var(--text3);font-size:10px">(10.6%)</span></td><td>24 <span style="color:var(--text3);font-size:10px">(4.8%)</span></td><td><div style="display:flex;height:9px;border-radius:5px;overflow:hidden;min-width:120px"><div style="width:84.5%;background:rgba(79,142,247,.75)"></div><div style="width:10.6%;background:rgba(245,158,11,.75)"></div><div style="width:4.8%;background:rgba(244,63,94,.75)"></div></div></td><td><strong style="color:var(--teal)">ภาพนิ่ง</strong></td></tr>
+          <tr><td><strong style="color:var(--green)">Bixitia</strong><div style="font-size:9px;color:var(--text3)">bixitia</div></td><td>382</td><td>88 <span style="color:var(--text3);font-size:10px">(23.0%)</span></td><td>203 <span style="color:var(--text3);font-size:10px">(53.1%)</span></td><td>91 <span style="color:var(--text3);font-size:10px">(23.8%)</span></td><td><div style="display:flex;height:9px;border-radius:5px;overflow:hidden;min-width:120px"><div style="width:23.0%;background:rgba(79,142,247,.75)"></div><div style="width:53.1%;background:rgba(245,158,11,.75)"></div><div style="width:23.8%;background:rgba(244,63,94,.75)"></div></div></td><td><strong style="color:var(--green)">อัลบั้ม</strong></td></tr>
+          <tr><td><strong style="color:var(--purple)">Admire</strong><div style="font-size:9px;color:var(--text3)">admire.tomorrow</div></td><td>371</td><td>11 <span style="color:var(--text3);font-size:10px">(3.0%)</span></td><td>294 <span style="color:var(--text3);font-size:10px">(79.2%)</span></td><td>66 <span style="color:var(--text3);font-size:10px">(17.8%)</span></td><td><div style="display:flex;height:9px;border-radius:5px;overflow:hidden;min-width:120px"><div style="width:3.0%;background:rgba(79,142,247,.75)"></div><div style="width:79.2%;background:rgba(245,158,11,.75)"></div><div style="width:17.8%;background:rgba(244,63,94,.75)"></div></div></td><td><strong style="color:var(--purple)">อัลบั้ม</strong></td></tr>
+          <tr><td><strong style="color:var(--red)">SwagOn</strong><div style="font-size:9px;color:var(--text3)">swagon.official</div></td><td>287</td><td>124 <span style="color:var(--text3);font-size:10px">(43.2%)</span></td><td>108 <span style="color:var(--text3);font-size:10px">(37.6%)</span></td><td>55 <span style="color:var(--text3);font-size:10px">(19.2%)</span></td><td><div style="display:flex;height:9px;border-radius:5px;overflow:hidden;min-width:120px"><div style="width:43.2%;background:rgba(79,142,247,.75)"></div><div style="width:37.6%;background:rgba(245,158,11,.75)"></div><div style="width:19.2%;background:rgba(244,63,94,.75)"></div></div></td><td><strong style="color:var(--red)">ภาพนิ่ง</strong></td></tr>
+          <tr><td><strong style="color:var(--amber)">GiftwiseAsia</strong><div style="font-size:9px;color:var(--text3)">giftwise.official</div></td><td>181</td><td>6 <span style="color:var(--text3);font-size:10px">(3.3%)</span></td><td>25 <span style="color:var(--text3);font-size:10px">(13.8%)</span></td><td>150 <span style="color:var(--text3);font-size:10px">(82.9%)</span></td><td><div style="display:flex;height:9px;border-radius:5px;overflow:hidden;min-width:120px"><div style="width:3.3%;background:rgba(79,142,247,.75)"></div><div style="width:13.8%;background:rgba(245,158,11,.75)"></div><div style="width:82.9%;background:rgba(244,63,94,.75)"></div></div></td><td><strong style="color:var(--amber)">วิดีโอ</strong></td></tr>
+          <tr><td><strong style="color:var(--blue)">Ogga Idea</strong><div style="font-size:9px;color:var(--text3)">oggaidea</div></td><td>105</td><td>61 <span style="color:var(--text3);font-size:10px">(58.1%)</span></td><td>19 <span style="color:var(--text3);font-size:10px">(18.1%)</span></td><td>25 <span style="color:var(--text3);font-size:10px">(23.8%)</span></td><td><div style="display:flex;height:9px;border-radius:5px;overflow:hidden;min-width:120px"><div style="width:58.1%;background:rgba(79,142,247,.75)"></div><div style="width:18.1%;background:rgba(245,158,11,.75)"></div><div style="width:23.8%;background:rgba(244,63,94,.75)"></div></div></td><td><strong style="color:var(--blue)">ภาพนิ่ง</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:10px;color:var(--text3)">
+      <span style="display:inline-block;width:9px;height:9px;background:rgba(79,142,247,.75);border-radius:2px"></span> ภาพนิ่ง ·
+      <span style="display:inline-block;width:9px;height:9px;background:rgba(245,158,11,.75);border-radius:2px"></span> อัลบั้ม ·
+      <span style="display:inline-block;width:9px;height:9px;background:rgba(244,63,94,.75);border-radius:2px"></span> วิดีโอ
     </div>
+  </div>
+
+  <div class="g3">
+    <div class="ins"><div class="ins-tag it-t"><div class="ins-dot"></div>ภัย</div><div class="ins-text"><strong style="color:var(--teal)">Folio ใช้ภาพนิ่ง 84.5%</strong> สูงสุดในกลุ่มมาก · วิดีโอแค่ <strong style="color:var(--red)">4.8% (24 คลิป จาก 498 โพสต์)</strong> ขณะที่ GiftwiseAsia ทำวิดีโอ 82.9% และได้ avg likes 3.29 (เรา 1.20) — เราคือแบรนด์เดียวในกลุ่มที่ยังยึดภาพนิ่งเป็นหลัก</div><div class="ins-src">📡 Apify IG · 19 ต.ค. 2569</div></div>
+    <div class="ins"><div class="ins-tag it-w"><div class="ins-dot"></div>สังเกต</div><div class="ins-text"><strong style="color:var(--purple)">Admire ใช้อัลบั้มหลายรูป 79.2%</strong> และ <strong style="color:var(--green)">Bixitia 53.1%</strong> — ทั้งคู่ avg likes สูงกว่าเรา · อัลบั้มได้เปรียบตรงที่ผู้ใช้ต้องปัดดู = เวลาอยู่กับโพสต์นานขึ้น · Folio ใช้แค่ 10.6%</div><div class="ins-src">📡 Apify IG · 19 ต.ค. 2569</div></div>
+    <div class="ins"><div class="ins-tag it-o"><div class="ins-dot"></div>ข้อควรระวัง</div><div class="ins-text"><strong>รูปแบบไม่ได้ตัดสินทุกอย่าง</strong> — Ogga Idea ใช้ภาพนิ่ง 58.1% แต่ได้ avg likes สูงสุด 3.43 · แปลว่า <strong>เนื้อหา</strong>สำคัญกว่ารูปแบบ ดูต่อที่แท็บ <strong>คอนเทนต์ที่ปัง</strong></div></div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     CENG
+     CONTENT ENGAGEMENT
 ═══════════════════════════════════════ -->
 <div class="page" id="page-ceng">
   <div class="ph">
-    <div class="eyebrow">Content Intelligence · Apify Scrape</div>
-    <div class="ptitle">หาว่ารูปแบบและธีมไหนได้ยอดไลก์/คอมเมนต์ดีที่สุด แยกรายแบรนด์ คอนเทนต์แบบไหน<em>ได้ Engagement สูง</em></div>
-    <div class="psub">🔥</div>
+    <div class="eyebrow">Content Intelligence · Apify IG Scrape 19 ต.ค. 2569</div>
+    <div class="ptitle">🔥 คอนเทนต์แบบไหน<em>ได้ Engagement สูง</em></div>
+    <div class="psub">เทียบยอดไลก์-คอมเมนต์จริง 1,824 posts · หาว่าอะไรคือตัวแปรที่ทำให้ engagement ต่างกัน</div>
   </div>
+
+  <div class="card mb">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">📊</span>Avg Likes เทียบ Avg Comments ต่อโพสต์</div><span class="src-tag">✓ Apify IG 19 ต.ค. 2569 · 1,824 posts</span></div>
+    <div class="ch-lg"><canvas id="cengChart"></canvas></div>
+  </div>
+
+  <div class="card mb">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">📋</span>Engagement รายแบรนด์ · เรียงจากดีสุด</div></div>
+    <table class="tbl">
+      <thead><tr><th>แบรนด์</th><th>โพสต์</th><th>Avg Likes</th><th>Avg Comments</th><th>Engagement รวม</th><th>โพสต์ที่ดีสุด</th><th>ดีสุด / เฉลี่ย</th></tr></thead>
+      <tbody>
+          <tr><td><strong style="color:var(--blue)">Ogga Idea</strong></td><td>105</td><td><strong style="color:var(--blue)">3.43 ❤️</strong></td><td>0.35</td><td>360</td><td>11</td><td><span style="color:var(--text3)">3 เท่า</span></td></tr>
+          <tr><td><strong style="color:var(--amber)">GiftwiseAsia</strong></td><td>181</td><td><strong style="color:var(--amber)">3.29 ❤️</strong></td><td>0.13</td><td>596</td><td>20</td><td><span style="color:var(--text3)">6 เท่า</span></td></tr>
+          <tr><td><strong style="color:var(--purple)">Admire</strong></td><td>371</td><td><strong style="color:var(--purple)">2.42 ❤️</strong></td><td>0.01</td><td>899</td><td>38</td><td><span style="color:var(--text3)">16 เท่า</span></td></tr>
+          <tr><td><strong style="color:var(--red)">SwagOn</strong></td><td>287</td><td><strong style="color:var(--red)">2.26 ❤️</strong></td><td>0.03</td><td>650</td><td>53</td><td><span style="color:var(--text3)">23 เท่า</span></td></tr>
+          <tr><td><strong style="color:var(--green)">Bixitia</strong></td><td>382</td><td><strong style="color:var(--green)">2.20 ❤️</strong></td><td>0.07</td><td>841</td><td>41</td><td><span style="color:var(--text3)">19 เท่า</span></td></tr>
+          <tr style="background:rgba(0,229,160,.03)"><td><strong style="color:var(--teal)">🏠 Folio</strong></td><td>498</td><td><strong style="color:var(--teal)">1.20 ❤️</strong></td><td>0.01</td><td>599</td><td>100</td><td><span style="color:var(--text3)">83 เท่า</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card mb">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-a">🔍</span>3 ข้อที่ตัวเลขบอก</div></div>
+    <div style="font-size:12.5px;color:var(--text2);line-height:1.85;padding:2px">
+      <div style="margin-bottom:12px"><strong style="color:var(--amber)">1. โพสต์เยอะ ไม่ได้แปลว่าได้ engagement เยอะ</strong><br>
+      Folio โพสต์มากสุด <strong>498</strong> ครั้ง ได้ engagement รวม <strong>599</strong> ·
+      Admire โพสต์ <strong>371</strong> ครั้ง ได้ <strong>899</strong> · Bixitia โพสต์ <strong>382</strong> ได้ <strong>841</strong><br>
+      <span style="color:var(--text3)">→ เราโพสต์มากกว่า Admire 34% แต่ได้ engagement น้อยกว่า 33%</span></div>
+
+      <div style="margin-bottom:12px"><strong style="color:var(--blue)">2. ตัวแปรที่แยกชัดที่สุดคือ "คอมเมนต์" ไม่ใช่รูปแบบโพสต์</strong><br>
+      2 แบรนด์ที่ avg likes สูงสุดคือ Ogga (3.43) กับ Giftwise (3.29) — ซึ่ง<strong>ใช้รูปแบบตรงข้ามกันเลย</strong>
+      (Ogga ภาพนิ่ง 58% · Giftwise วิดีโอ 83%)<br>
+      แต่สิ่งที่ทั้งคู่มีเหมือนกันคือ <strong>avg comments สูงสุด 2 อันดับแรก</strong> (0.35 และ 0.13) ขณะที่ Folio อยู่ที่ <strong style="color:var(--red)">0.01 ต่ำสุด</strong><br>
+      <span style="color:var(--text3)">→ Ogga ได้คอมเมนต์ต่อโพสต์มากกว่าเรา 35 เท่า · คอนเทนต์ที่ "ชวนคุย" ชนะคอนเทนต์ที่ "โชว์ของ"</span></div>
+
+      <div><strong style="color:var(--teal)">3. Folio ทำได้อยู่แล้ว แต่ไม่สม่ำเสมอ</strong><br>
+      โพสต์ที่ดีที่สุดของเราได้ <strong>100 ไลก์ — สูงสุดในกลุ่ม</strong> (อันดับ 2 คือ SwagOn 53 · Giftwise ที่ avg ดีสุดทำได้แค่ 20)<br>
+      แต่ค่าเฉลี่ยเราอยู่ที่ 1.20 = <strong>โพสต์ที่ดีสุดสูงกว่าค่าเฉลี่ยตัวเอง 83 เท่า</strong><br>
+      <span style="color:var(--text3)">→ ไม่ใช่ปัญหา "ทำไม่เป็น" แต่เป็นปัญหา "ทำดีบ้างไม่ดีบ้าง" · มีโพสต์จำนวนมากที่แทบไม่มีคนเห็น</span></div>
+    </div>
+  </div>
+
   <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">⏸</span>รอข้อมูล Apify รอบใหม่</div><span class="badge ba">ยังไม่มีข้อมูล</span></div>
-    <div style="padding:4px 2px;font-size:12px;color:var(--text3);line-height:1.7">
-      หน้านี้จะเติมข้อมูลจริงเมื่อได้ไฟล์ scrape รอบใหม่ · สิ่งที่หน้านี้จะแสดง:
-      <ul style="margin:10px 0 0 18px;padding:0">
-        <li style="margin-bottom:5px">Avg likes เทียบตามรูปแบบโพสต์ — วิดีโอชนะภาพนิ่งไหม ในแต่ละแบรนด์</li>
-        <li style="margin-bottom:5px">Top posts ของแต่ละแบรนด์ พร้อมธีมเนื้อหาและยอด engagement จริง</li>
-        <li style="margin-bottom:5px">ธีมที่ได้ผลซ้ำๆ (ไม่ใช่โพสต์ไวรัลครั้งเดียว) → เอาไปใช้ต่อได้จริง</li>
-        <li style="margin-bottom:5px">ข้อควรระวัง: ฐานผู้ติดตามต่างกัน ต้องดู engagement rate ไม่ใช่ยอดดิบ</li>
-      </ul>
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">⏸</span>ส่วนที่ยังทำไม่ได้ — ต้องใช้ caption</div><span class="badge ba">รอข้อมูล</span></div>
+    <div style="font-size:12px;color:var(--text3);line-height:1.75;padding:2px">
+      ตอนนี้บอกได้ว่า <strong>รูปแบบไหน</strong> และ <strong>แบรนด์ไหน</strong> ได้ engagement ดี แต่ยังบอกไม่ได้ว่า <strong>เนื้อหาเรื่องอะไร</strong> ที่ได้ผล
+      (เช่น โชว์สินค้า / เบื้องหลังโรงงาน / เคสลูกค้า / ESG / โปรโมชั่น)<br><br>
+      ต้องใช้คอลัมน์ <strong>caption</strong> + แฮชแท็ก จากไฟล์ Apify IG — ไฟล์รอบ 19 ต.ค. ถูกลบไปจาก Downloads แล้ว<br>
+      <strong style="color:var(--amber)">โหลดชุดเดิมซ้ำจาก Apify ได้เลย (dataset เดิม = ข้อมูลเดิม ไม่ต้อง scrape ใหม่)</strong> แล้วผมเติมส่วนนี้ให้ทันที
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     CFREQ
+     CONTENT FREQUENCY
 ═══════════════════════════════════════ -->
 <div class="page" id="page-cfreq">
   <div class="ph">
-    <div class="eyebrow">Content Intelligence · Apify Scrape</div>
-    <div class="ptitle">ความถี่การโพสต์รายเดือน · ช่วงที่หายไป · จังหวะที่ยิงถี่ คู่แข่งโพสต์<em>บ่อยแค่ไหน</em></div>
-    <div class="psub">📅</div>
+    <div class="eyebrow">Content Intelligence · Apify IG Scrape 19 ต.ค. 2569</div>
+    <div class="ptitle">📅 คู่แข่งโพสต์คอนเทนต์<em>บ่อยแค่ไหน</em></div>
+    <div class="psub">จำนวนโพสต์ IG ต่อเดือน พ.ค.–ต.ค. 2569 · ช่วงที่เงียบ / ช่วงที่เร่ง</div>
   </div>
-  <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">⏸</span>รอข้อมูล Apify รอบใหม่</div><span class="badge ba">ยังไม่มีข้อมูล</span></div>
-    <div style="padding:4px 2px;font-size:12px;color:var(--text3);line-height:1.7">
-      หน้านี้จะเติมข้อมูลจริงเมื่อได้ไฟล์ scrape รอบใหม่ · สิ่งที่หน้านี้จะแสดง:
-      <ul style="margin:10px 0 0 18px;padding:0">
-        <li style="margin-bottom:5px">จำนวนโพสต์ต่อเดือนรายแบรนด์ ย้อนหลัง 12 เดือน</li>
-        <li style="margin-bottom:5px">ช่วงที่คู่แข่งเงียบ / ช่วงที่เร่งโพสต์ — โยงกับฤดูกาลขายของพรีเมียม</li>
-        <li style="margin-bottom:5px">เทียบความถี่กับ engagement ว่าโพสต์ถี่ขึ้นแล้วยอดดีขึ้นจริงไหม</li>
-        <li style="margin-bottom:5px">ข้อมูลที่มีแล้วรอบ 19 ต.ค.: Giftwise ~20/เดือน · Admire 16/เดือน · SwagOn หยุด ก.ย.–ต.ค. · Folio ก.ย. = 1 โพสต์</li>
-      </ul>
-    </div>
+
+  <div class="card mb">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">📈</span>โพสต์ต่อเดือน · 6 แบรนด์</div><span class="src-tag">✓ Apify IG 19 ต.ค. 2569 · 1,824 posts</span></div>
+    <div class="ch-lg"><canvas id="cfreqChart"></canvas></div>
+    <div style="margin-top:6px;font-size:10px;color:var(--text3)">* ต.ค. นับถึงวันที่ 19 เท่านั้น (วันที่ scrape) — ยังไม่ใช่ยอดทั้งเดือน</div>
+  </div>
+
+  <div class="card mb">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">📋</span>ตารางจำนวนโพสต์รายเดือน</div></div>
+    <table class="tbl">
+      <thead><tr><th>แบรนด์</th><th>พ.ค.</th><th>มิ.ย.</th><th>ก.ค.</th><th>ส.ค.</th><th>ก.ย.</th><th>ต.ค.*</th><th>เฉลี่ย/เดือน</th></tr></thead>
+      <tbody>
+          <tr style="background:rgba(0,229,160,.03)"><td><strong style="color:var(--teal)">🏠 Folio</strong></td><td>4</td><td>4</td><td>8</td><td>3</td><td>1</td><td>9</td><td><strong style="color:var(--teal)">4.0</strong></td></tr>
+          <tr><td><strong style="color:var(--green)">Bixitia</strong></td><td>9</td><td>10</td><td>7</td><td>13</td><td>12</td><td>3</td><td><strong style="color:var(--green)">10.2</strong></td></tr>
+          <tr><td><strong style="color:var(--purple)">Admire</strong></td><td>9</td><td>16</td><td>16</td><td>16</td><td>16</td><td>7</td><td><strong style="color:var(--purple)">14.6</strong></td></tr>
+          <tr><td><strong style="color:var(--red)">SwagOn</strong></td><td>12</td><td>10</td><td>18</td><td>2</td><td style="color:var(--red);font-weight:700">0</td><td style="color:var(--red);font-weight:700">0</td><td><strong style="color:var(--red)">8.4</strong></td></tr>
+          <tr><td><strong style="color:var(--amber)">GiftwiseAsia</strong></td><td>22</td><td>15</td><td>15</td><td>19</td><td>20</td><td>9</td><td><strong style="color:var(--amber)">18.2</strong></td></tr>
+          <tr><td><strong style="color:var(--blue)">Ogga Idea</strong></td><td>2</td><td style="color:var(--red);font-weight:700">0</td><td style="color:var(--red);font-weight:700">0</td><td style="color:var(--red);font-weight:700">0</td><td style="color:var(--red);font-weight:700">0</td><td>3</td><td><strong style="color:var(--blue)">0.4</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:10px;color:var(--text3)">เฉลี่ยคิดจาก พ.ค.–ก.ย. (5 เดือนเต็ม) ไม่รวม ต.ค. ที่ยังไม่จบเดือน</div>
+  </div>
+
+  <div class="g3">
+    <div class="ins"><div class="ins-tag it-t"><div class="ins-dot"></div>ภัย</div><div class="ins-text"><strong style="color:var(--amber)">GiftwiseAsia ยิงถี่สุด เฉลี่ย 18.2 โพสต์/เดือน</strong> และ <strong style="color:var(--purple)">Admire 14.6</strong> สม่ำเสมอมาก (16 โพสต์ติดกัน 4 เดือน) · Folio เฉลี่ยแค่ <strong style="color:var(--red)">4.0</strong> — น้อยกว่า Giftwise 4.5 เท่า</div><div class="ins-src">📡 Apify IG · 19 ต.ค. 2569</div></div>
+    <div class="ins"><div class="ins-tag it-w"><div class="ins-dot"></div>สังเกต</div><div class="ins-text"><strong style="color:var(--teal)">ก.ย. Folio โพสต์แค่ 1 ครั้ง</strong> — เดือนเดียวกับที่ web traffic ร่วงเหลือ 1.9K และ bounce rate แย่ลงจาก 28.60% เป็น 38.35% · ต.ค. กลับมาโพสต์ 9 ครั้งแล้ว (แค่ 19 วัน) <strong>ต้องดูรอบหน้าว่า traffic ฟื้นตามไหม</strong></div><div class="ins-src">📡 Apify IG + SimilarWeb</div></div>
+    <div class="ins"><div class="ins-tag it-o"><div class="ins-dot"></div>โอกาส</div><div class="ins-text"><strong style="color:var(--red)">SwagOn หยุดโพสต์ 2 เดือนเต็ม</strong> (ก.ย. + ต.ค. = 0) และ <strong style="color:var(--blue)">Ogga หายไป 4 เดือน</strong> (มิ.ย.–ก.ย.) · ช่วงนี้คือ<strong>ช่องว่างในฟีด</strong>ที่คู่แข่ง 2 รายหายไปจากสายตาลูกค้า — จังหวะดีที่เราจะเร่ง</div></div>
   </div>
 </div>
 
@@ -1869,6 +1944,44 @@ function initCharts(){
           {label:'Admire Tomorrow',data:[75,20,62,90,20,5],borderColor:'rgba(139,92,246,.7)',backgroundColor:'rgba(139,92,246,.04)',pointBackgroundColor:'#8b5cf6',borderDash:[3,3],borderWidth:1.5},
           {label:'Bixitia',data:[20,18,45,65,35,0],borderColor:'rgba(16,185,129,.7)',backgroundColor:'rgba(16,185,129,.04)',pointBackgroundColor:'#10b981',borderDash:[3,3],borderWidth:1.5},
         ]},options:{...DO,...GP,scales:{r:GR}}});
+  }
+  if(vis('ctypeChart')){dc('ctypeChart');
+    ch['ctypeChart']=new Chart(document.getElementById('ctypeChart'),{type:'bar',
+      data:{labels:['\uD83C\uDFE0 Folio','Bixitia','Admire','SwagOn','GiftwiseAsia','Ogga Idea'],
+        datasets:[
+          {label:'\u0E20\u0E32\u0E1E\u0E19\u0E34\u0E48\u0E07 Image',data:[84.5,23.0,3.0,43.2,3.3,58.1],backgroundColor:'rgba(79,142,247,.75)',borderRadius:4},
+          {label:'\u0E2D\u0E31\u0E25\u0E1A\u0E31\u0E49\u0E21 Sidecar',data:[10.6,53.1,79.2,37.6,13.8,18.1],backgroundColor:'rgba(245,158,11,.75)',borderRadius:4},
+          {label:'\u0E27\u0E34\u0E14\u0E35\u0E42\u0E2D Reel',data:[4.8,23.8,17.8,19.2,82.9,23.8],backgroundColor:'rgba(244,63,94,.75)',borderRadius:4},
+        ]},
+      options:{...DO,...GP,scales:{
+        x:{stacked:true,ticks:{color:'#4a5568',font:{family:'Plus Jakarta Sans',size:10}},grid:{display:false}},
+        y:{stacked:true,max:100,ticks:{color:'#4a5568',font:{size:10},callback:v=>v+'%'},grid:{color:'rgba(26,34,54,.7)'}}},
+        plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.raw+'%'}}}}});
+  }
+  if(vis('cengChart')){dc('cengChart');
+    ch['cengChart']=new Chart(document.getElementById('cengChart'),{type:'bar',
+      data:{labels:['Ogga Idea','GiftwiseAsia','Admire','SwagOn','Bixitia','\uD83C\uDFE0 Folio'],
+        datasets:[
+          {label:'Avg Likes / post',data:[3.43,3.29,2.42,2.26,2.20,1.20],backgroundColor:['rgba(79,142,247,.6)','rgba(245,158,11,.6)','rgba(139,92,246,.6)','rgba(244,63,94,.6)','rgba(16,185,129,.6)','rgba(0,229,160,.85)'],borderRadius:6,yAxisID:'y'},
+          {label:'Avg Comments / post',type:'line',data:[0.35,0.13,0.01,0.03,0.07,0.01],borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.15)',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#f59e0b',tension:.3,yAxisID:'y1'},
+        ]},
+      options:{...DO,...GP,scales:{
+        x:{ticks:{color:'#4a5568',font:{family:'Plus Jakarta Sans',size:10}},grid:{display:false}},
+        y:{position:'left',ticks:{color:'#4a5568',font:{size:10}},grid:{color:'rgba(26,34,54,.7)'},title:{display:true,text:'Avg Likes',color:'#4a5568',font:{size:10}}},
+        y1:{position:'right',ticks:{color:'#f59e0b',font:{size:10}},grid:{display:false},title:{display:true,text:'Avg Comments',color:'#f59e0b',font:{size:10}}}}}});
+  }
+  if(vis('cfreqChart')){dc('cfreqChart');
+    ch['cfreqChart']=new Chart(document.getElementById('cfreqChart'),{type:'line',
+      data:{labels:['\u0E1E.\u0E04.','\u0E21\u0E34.\u0E22.','\u0E01.\u0E04.','\u0E2A.\u0E04.','\u0E01.\u0E22.','\u0E15.\u0E04.*'],
+        datasets:[
+          {label:'\uD83C\uDFE0 Folio',data:[4,4,8,3,1,9],borderColor:FC,backgroundColor:FBG,borderWidth:3,pointRadius:5,pointBackgroundColor:FC,tension:.3,order:0},
+          {label:'GiftwiseAsia',data:[22,15,15,19,20,9],borderColor:'rgba(245,158,11,.8)',backgroundColor:'transparent',borderWidth:1.8,pointRadius:3,tension:.3},
+          {label:'Admire',data:[9,16,16,16,16,7],borderColor:'rgba(139,92,246,.8)',backgroundColor:'transparent',borderWidth:1.8,pointRadius:3,tension:.3},
+          {label:'Bixitia',data:[9,10,7,13,12,3],borderColor:'rgba(16,185,129,.8)',backgroundColor:'transparent',borderWidth:1.8,pointRadius:3,tension:.3},
+          {label:'SwagOn',data:[12,10,18,2,0,0],borderColor:'rgba(244,63,94,.8)',backgroundColor:'transparent',borderWidth:1.8,pointRadius:3,borderDash:[4,3],tension:.3},
+          {label:'Ogga Idea',data:[2,0,0,0,0,3],borderColor:'rgba(79,142,247,.8)',backgroundColor:'transparent',borderWidth:1.8,pointRadius:3,borderDash:[4,3],tension:.3},
+        ]},
+      options:{...DO,...GP,scales:{...GS,y:{beginAtZero:true,ticks:{color:'#4a5568',font:{size:10}},grid:{color:'rgba(26,34,54,.7)'},title:{display:true,text:'\u0E42\u0E1E\u0E2A\u0E15\u0E4C / \u0E40\u0E14\u0E37\u0E2D\u0E19',color:'#4a5568',font:{size:10}}}}}});
   }
   if(vis('folioRadar')){dc('folioRadar');
     ch['folioRadar']=new Chart(document.getElementById('folioRadar'),{type:'radar',
