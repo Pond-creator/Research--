@@ -9,6 +9,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
 :root{
+  --tint0:rgba(255,255,255,.02);
+  --tint1:rgba(255,255,255,.03);
+  --tint2:rgba(255,255,255,.04);
   --bg:#060810;
   --card:#0d1119;
   --card2:#111520;
@@ -143,7 +146,7 @@ body{
 }
 .card::before{
   content:'';position:absolute;top:0;left:0;right:0;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.04),transparent);
+  background:linear-gradient(90deg,transparent,var(--tint2),transparent);
 }
 .card:hover{border-color:var(--border2);transform:translateY(-1px)}
 .card-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
@@ -195,14 +198,14 @@ body{
   border-bottom:1px solid var(--border);
 }
 .tbl th+th,.tbl td+td{padding-left:12px}
-.tbl td{padding:10px 0;font-size:12px;border-bottom:1px solid rgba(255,255,255,.03);vertical-align:middle;line-height:1.4}
+.tbl td{padding:10px 0;font-size:12px;border-bottom:1px solid var(--tint1);vertical-align:middle;line-height:1.4}
 .tbl tr:last-child td{border:none}
 
 /* ── CMP TABLE ── */
 .cmp{width:100%;border-collapse:collapse}
-.cmp th{font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);padding:9px 12px;text-align:center;background:rgba(255,255,255,.02)}
+.cmp th{font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);padding:9px 12px;text-align:center;background:var(--tint0)}
 .cmp th:first-child{text-align:left}
-.cmp td{padding:10px 12px;font-size:12px;border-bottom:1px solid rgba(255,255,255,.03);text-align:center;line-height:1.4}
+.cmp td{padding:10px 12px;font-size:12px;border-bottom:1px solid var(--tint1);text-align:center;line-height:1.4}
 .cmp td:first-child{text-align:left;font-weight:500;color:var(--text2)}
 .cmp tr:last-child td{border:none}
 .cy{color:var(--teal);font-weight:700}.cn{color:var(--red);opacity:.4}.cp{color:var(--amber)}
@@ -213,7 +216,7 @@ body{
 .ch-xl{position:relative;height:300px}
 
 /* ── METRIC ROW ── */
-.mr{display:grid;grid-template-columns:130px 1fr 72px;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.mr{display:grid;grid-template-columns:130px 1fr 72px;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--tint1)}
 .mr:last-child{border:none}
 .mr-l{font-size:12px;color:var(--text2);font-weight:500}
 .bar-wrap{height:4px;background:var(--border);border-radius:5px;overflow:hidden}
@@ -229,7 +232,7 @@ body{
 .pp-line{background:rgba(0,185,0,.1);color:#00b900;border:1px solid rgba(0,185,0,.15)}
 
 /* ── LINK ── */
-.lr{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.lr{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--tint1)}
 .lr:last-child{border:none}
 .lu{font-size:12px;color:var(--blue);text-decoration:none;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .lu:hover{text-decoration:underline;color:var(--teal)}
@@ -266,7 +269,7 @@ body{
 .sw:nth-child(1) .sw-h{color:var(--teal)}.sw:nth-child(2) .sw-h{color:var(--red)}
 .sw:nth-child(3) .sw-h{color:var(--blue)}.sw:nth-child(4) .sw-h{color:var(--amber)}
 .sw-ul{list-style:none}
-.sw-ul li{font-size:12px;line-height:1.55;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);display:flex;gap:7px;color:var(--text2)}
+.sw-ul li{font-size:12px;line-height:1.55;padding:5px 0;border-bottom:1px solid var(--tint2);display:flex;gap:7px;color:var(--text2)}
 .sw-ul li:last-child{border:none}
 .sw-b{font-size:9px;opacity:.4;margin-top:3px;flex-shrink:0}
 
@@ -300,7 +303,7 @@ body{
 .ws-teal .ws-brand{color:var(--teal)}.ws-blue .ws-brand{color:var(--blue)}
 .ws-amber .ws-brand{color:var(--amber)}.ws-purple .ws-brand{color:var(--purple)}
 .ws-folio .ws-brand{color:var(--teal)}
-.ws-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.ws-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid var(--tint1)}
 .ws-row:last-child{border:none}
 .ws-lbl{font-size:9.5px;color:var(--text3)}.ws-val{font-size:12px;font-weight:700;color:var(--text)}
 
@@ -360,7 +363,7 @@ body{
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 
 /* ── STAT ROW ── */
-.stat-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.stat-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--tint1)}
 .stat-row:last-child{border:none}
 .sl3{font-size:10px;color:var(--text3);font-weight:500}
 .sv3{font-size:11.5px;color:var(--text2);text-align:right}
@@ -400,7 +403,7 @@ body{
 .price-brand{font-family:var(--font-display);font-size:15px;font-weight:800;margin-bottom:4px}
 .price-range{font-size:22px;font-weight:900;font-family:var(--font-display);letter-spacing:-0.03em;margin:10px 0 5px}
 .price-unit{font-size:10.5px;color:var(--text3);margin-bottom:14px}
-.price-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.03);font-size:11.5px}
+.price-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--tint1);font-size:11.5px}
 .price-row:last-child{border:none}
 .price-lbl{color:var(--text2)}.price-val{font-weight:700;color:var(--text)}
 
@@ -440,6 +443,40 @@ body{
 @media(max-width:480px){
   .ptitle{font-size:17px}.nav-brand{display:none}.nt{font-size:10px;padding:12px 5px}.yt-grid{grid-template-columns:1fr!important}
 }
+
+/* ─── ธีมสว่าง (กดสลับที่ปุ่ม ☀/🌙 บนแถบเมนู) ─── */
+:root[data-theme="light"]{
+  --tint0:rgba(15,23,42,.02);
+  --tint1:rgba(15,23,42,.035);
+  --tint2:rgba(15,23,42,.05);
+  --bg:#f4f6fa;
+  --card:#ffffff;
+  --card2:#f7f9fc;
+  --card3:#eef2f8;
+  --border:#dde3ee;
+  --border2:#c9d3e4;
+  --teal:#00a878;
+  --teal2:#00916a;
+  --blue:#2b6fd6;
+  --amber:#b97708;
+  --red:#d92a4b;
+  --purple:#6d3fd1;
+  --green:#0d8f63;
+  --pink:#d42b85;
+  --text:#121a2b;
+  --text2:#48566e;
+  --text3:#6b7a92;
+}
+:root[data-theme="light"] body{background:var(--bg);color:var(--text)}
+:root[data-theme="light"] .nav{background:rgba(255,255,255,.92);border-bottom:1px solid var(--border)}
+:root[data-theme="light"] .card,
+:root[data-theme="light"] .data-card{box-shadow:0 1px 3px rgba(15,23,42,.06)}
+:root[data-theme="light"] .nt{color:var(--text2)}
+:root[data-theme="light"] .nt.active{color:var(--teal)}
+:root[data-theme="light"] canvas{filter:none}
+.theme-btn{background:var(--tint2);border:1px solid var(--border2);color:var(--text2);border-radius:20px;
+  padding:5px 11px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;margin-left:6px}
+.theme-btn:hover{color:var(--text);border-color:var(--teal)}
 @media print{
   .nav{position:static}.ai-send-btn,.ai-chip-row{display:none}
   body{background:#fff;color:#111}:root{--bg:#fff;--card:#f8f9fb;--card2:#f0f2f6;--border:#dde3ee;--text:#111;--text2:#555;--text3:#888}
@@ -465,6 +502,7 @@ body{
   <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🎯 โอกาส Folio</button>
   <div class="nr">
     <div class="status-pill"><div class="status-dot"></div><span>Real Data + Source Links · 19 ต.ค. 2569</span></div>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="สลับธีมมืด / สว่าง">☀ สว่าง</button>
     <button class="btn-export" onclick="window.print()">⬇ Export</button>
   </div>
 </nav>
@@ -490,12 +528,12 @@ body{
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:7px;flex-shrink:0">
-        <span id="eventsStatus" style="font-size:10px;font-weight:700;color:var(--teal);background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:20px;padding:4px 10px">ต.ค. 2569 – ม.ค. 2570</span>
+        <span id="eventsStatus" style="font-size:10px;font-weight:700;color:var(--teal);background:var(--tint2);border:1px solid var(--border2);border-radius:20px;padding:4px 10px">ต.ค. 2569 – ม.ค. 2570</span>
 
       </div>
     </div>
     <div id="eventsList" style="padding:14px 18px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(79,142,247,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="background:var(--tint1);border:1px solid rgba(79,142,247,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="font-size:20px;flex-shrink:0">🎡</div>
         <div>
           <div style="font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:1px 7px;border-radius:4px;display:inline-block;background:rgba(52,211,153,.15);color:#34d399;border:1px solid rgba(52,211,153,.3);margin-bottom:4px">ต.ค.</div>
@@ -505,7 +543,7 @@ body{
           <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(79,142,247,.1);color:var(--blue);border:1px solid rgba(79,142,247,.2)">Souvenir + Branded Merchandise</span></div>
         </div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(244,63,94,.2);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="background:var(--tint1);border:1px solid rgba(244,63,94,.2);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="font-size:20px;flex-shrink:0">💄</div>
         <div>
           <div style="font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:1px 7px;border-radius:4px;display:inline-block;background:rgba(192,132,252,.15);color:#c084fc;border:1px solid rgba(192,132,252,.3);margin-bottom:4px">พ.ย.</div>
@@ -515,7 +553,7 @@ body{
           <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(244,63,94,.1);color:var(--red);border:1px solid rgba(244,63,94,.2)">Beauty Launch Gift Set + Packaging</span></div>
         </div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(16,185,129,.2);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="background:var(--tint1);border:1px solid rgba(16,185,129,.2);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="font-size:20px;flex-shrink:0">♻️</div>
         <div>
           <div style="font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:1px 7px;border-radius:4px;display:inline-block;background:rgba(192,132,252,.15);color:#c084fc;border:1px solid rgba(192,132,252,.3);margin-bottom:4px">พ.ย.</div>
@@ -525,7 +563,7 @@ body{
           <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(16,185,129,.1);color:var(--green);border:1px solid rgba(16,185,129,.2)">Eco Premium + Circular Story 🏆</span></div>
         </div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(192,132,252,.22);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="background:var(--tint1);border:1px solid rgba(192,132,252,.22);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="font-size:20px;flex-shrink:0">🔒</div>
         <div>
           <div style="font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:1px 7px;border-radius:4px;display:inline-block;background:rgba(192,132,252,.15);color:#c084fc;border:1px solid rgba(192,132,252,.3);margin-bottom:4px">พ.ย.</div>
@@ -535,7 +573,7 @@ body{
           <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(192,132,252,.1);color:#c084fc;border:1px solid rgba(192,132,252,.25)">Corporate Tech Gift + Smart Premium</span></div>
         </div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(245,158,11,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="background:var(--tint1);border:1px solid rgba(245,158,11,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="font-size:20px;flex-shrink:0">⚙️</div>
         <div>
           <div style="font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:1px 7px;border-radius:4px;display:inline-block;background:rgba(192,132,252,.15);color:#c084fc;border:1px solid rgba(192,132,252,.3);margin-bottom:4px">พ.ย.</div>
@@ -545,7 +583,7 @@ body{
           <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(245,158,11,.1);color:var(--amber);border:1px solid rgba(245,158,11,.2)">Factory Procurement Premium Gift</span></div>
         </div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(79,142,247,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="background:var(--tint1);border:1px solid rgba(79,142,247,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="font-size:20px;flex-shrink:0">💻</div>
         <div>
           <div style="font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:1px 7px;border-radius:4px;display:inline-block;background:rgba(192,132,252,.15);color:#c084fc;border:1px solid rgba(192,132,252,.3);margin-bottom:4px">พ.ย.</div>
@@ -555,7 +593,7 @@ body{
           <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(79,142,247,.1);color:var(--blue);border:1px solid rgba(79,142,247,.2)">Tech Premium + Branded Kit</span></div>
         </div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(0,229,160,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="background:var(--tint1);border:1px solid rgba(0,229,160,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="font-size:20px;flex-shrink:0">🎨</div>
         <div>
           <div style="font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:1px 7px;border-radius:4px;display:inline-block;background:rgba(192,132,252,.15);color:#c084fc;border:1px solid rgba(192,132,252,.3);margin-bottom:4px">พ.ย.</div>
@@ -565,7 +603,7 @@ body{
           <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(0,229,160,.1);color:var(--teal);border:1px solid rgba(0,229,160,.2)">Creative Craft + Thai Artist Collab</span></div>
         </div>
       </div>
-      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(249,168,212,.25);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="background:var(--tint1);border:1px solid rgba(249,168,212,.25);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="position:absolute;top:10px;right:10px;font-size:8.5px;font-weight:900;letter-spacing:.06em;background:rgba(0,229,160,.15);color:var(--teal);border:1px solid rgba(0,229,160,.3);padding:1px 6px;border-radius:4px">NEW</div>
         <div style="font-size:20px;flex-shrink:0">🚗</div>
         <div>
@@ -576,7 +614,7 @@ body{
           <div style="margin-top:6px"><span style="font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:5px;background:rgba(244,63,94,.1);color:var(--red);border:1px solid rgba(244,63,94,.2)">Dealer Gift + Year-End Premium Peak 🏆</span></div>
         </div>
       </div>
-      <div style="grid-column:1 / -1;background:rgba(255,255,255,.03);border:1px solid rgba(0,229,160,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
+      <div style="grid-column:1 / -1;background:var(--tint1);border:1px solid rgba(0,229,160,.18);border-radius:var(--r12);padding:13px 15px;display:flex;gap:12px;align-items:flex-start;position:relative">
         <div style="position:absolute;top:10px;right:10px;font-size:8.5px;font-weight:900;letter-spacing:.06em;background:rgba(0,229,160,.15);color:var(--teal);border:1px solid rgba(0,229,160,.3);padding:1px 6px;border-radius:4px">NEW</div>
         <div style="font-size:20px;flex-shrink:0">🤖</div>
         <div>
@@ -605,7 +643,7 @@ body{
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:7px;flex-shrink:0">
-        <span id="compEventsStatus" style="font-size:10px;font-weight:700;color:var(--text3);background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:20px;padding:4px 10px;white-space:nowrap">กำลังโหลด...</span>
+        <span id="compEventsStatus" style="font-size:10px;font-weight:700;color:var(--text3);background:var(--tint2);border:1px solid var(--border2);border-radius:20px;padding:4px 10px;white-space:nowrap">กำลังโหลด...</span>
         <span style="display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--teal);background:rgba(0,229,160,.08);border:1px solid rgba(0,229,160,.2);padding:5px 12px;border-radius:9px;white-space:nowrap">
           <span id="compEventsIcon" style="font-size:12px;display:inline-block">✦</span> ข้อมูลจาก AI
         </span>
@@ -614,7 +652,7 @@ body{
     <div style="overflow-x:auto">
       <table id="compEventsTable" style="width:100%;border-collapse:collapse;min-width:700px">
         <thead>
-          <tr style="background:rgba(255,255,255,.02)">
+          <tr style="background:var(--tint0)">
             <th style="font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding:9px 16px;text-align:left;border-bottom:1px solid var(--border);width:32px">#</th>
             <th style="font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding:9px 12px;text-align:left;border-bottom:1px solid var(--border)">งาน / องค์กร</th>
             <th style="font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding:9px 12px;text-align:left;border-bottom:1px solid var(--border)">คู่แข่ง</th>
@@ -623,28 +661,28 @@ body{
           </tr>
         </thead>
         <tbody id="compEventsTbody">
-          <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+          <tr style="border-bottom:1px solid var(--tint1)">
             <td style="padding:12px 16px;font-family:var(--font-display);font-size:14px;font-weight:800;color:var(--border2)">01</td>
             <td style="padding:12px"><div style="font-size:12.5px;font-weight:700;color:var(--text)">Global Gift Alliance <span style="color:var(--text3);font-weight:400">(International)</span></div><div style="font-size:10px;color:var(--text3);margin-top:2px">Official Partner · ส่งออก + รับ Referral ต่างประเทศ</div></td>
             <td style="padding:12px"><span style="font-size:9.5px;font-weight:900;padding:3px 9px;border-radius:6px;background:rgba(79,142,247,.1);color:var(--blue);border:1px solid rgba(79,142,247,.2)">OGGA IDEA</span></td>
             <td style="padding:12px;font-size:11.5px;color:var(--text2)">🌐 Intl. Alliance</td>
             <td style="padding:12px 16px;font-size:11.5px;color:var(--teal);font-weight:600">International credibility</td>
           </tr>
-          <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+          <tr style="border-bottom:1px solid var(--tint1)">
             <td style="padding:12px 16px;font-family:var(--font-display);font-size:14px;font-weight:800;color:var(--border2)">02</td>
             <td style="padding:12px"><div style="font-size:12.5px;font-weight:700;color:var(--text)">Koh Tao / Koh Phaluay Circular Project</div><div style="font-size:10px;color:var(--text3);margin-top:2px">ogga-circular.com · ขยะพลาสติก → Product</div></td>
             <td style="padding:12px"><span style="font-size:9.5px;font-weight:900;padding:3px 9px;border-radius:6px;background:rgba(79,142,247,.1);color:var(--blue);border:1px solid rgba(79,142,247,.2)">OGGA IDEA</span></td>
             <td style="padding:12px;font-size:11.5px;color:var(--text2)">🌿 ESG/Circular</td>
             <td style="padding:12px 16px;font-size:11.5px;color:var(--teal);font-weight:600">Media + Brand Story</td>
           </tr>
-          <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+          <tr style="border-bottom:1px solid var(--tint1)">
             <td style="padding:12px 16px;font-family:var(--font-display);font-size:14px;font-weight:800;color:var(--border2)">03</td>
             <td style="padding:12px"><div style="font-size:12.5px;font-weight:700;color:var(--text)">GQ Apparel × SwagOn <span style="color:var(--text3);font-weight:400">(Laser Event)</span></div><div style="font-size:10px;color:var(--text3);margin-top:2px">GQ Shop Mega Bangna · 21–22 มี.ค. 2026 · xTool Laser</div></td>
             <td style="padding:12px"><span style="font-size:9.5px;font-weight:900;padding:3px 9px;border-radius:6px;background:rgba(0,229,160,.1);color:var(--teal);border:1px solid rgba(0,229,160,.2)">SWAGON</span></td>
             <td style="padding:12px;font-size:11.5px;color:var(--text2)">🎨 Brand Collab</td>
             <td style="padding:12px 16px;font-size:11.5px;color:var(--teal);font-weight:600">Personalization Event</td>
           </tr>
-          <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+          <tr style="border-bottom:1px solid var(--tint1)">
             <td style="padding:12px 16px;font-family:var(--font-display);font-size:14px;font-weight:800;color:var(--border2)">04</td>
             <td style="padding:12px"><div style="font-size:12.5px;font-weight:700;color:var(--text)">Siam Paragon × Ogga <span style="color:var(--text3);font-weight:400">(Global Recycle Day)</span></div><div style="font-size:10px;color:var(--text3);margin-top:2px">NEXTOPIA Zone 5F · 18 มี.ค. 2026 · ESG Workshop</div></td>
             <td style="padding:12px"><span style="font-size:9.5px;font-weight:900;padding:3px 9px;border-radius:6px;background:rgba(79,142,247,.1);color:var(--blue);border:1px solid rgba(79,142,247,.2)">OGGA IDEA</span></td>
@@ -762,7 +800,7 @@ body{
     </div>
     <table style="width:100%;border-collapse:collapse">
       <thead>
-        <tr style="background:rgba(255,255,255,.02)">
+        <tr style="background:var(--tint0)">
           <th style="font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding:10px 20px;text-align:left;border-bottom:1px solid var(--border)">Segment</th>
           <th style="font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding:10px 12px;text-align:center;border-bottom:1px solid var(--border)">%</th>
           <th style="font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding:10px 12px;text-align:left;border-bottom:1px solid var(--border)">Driver</th>
@@ -770,7 +808,7 @@ body{
         </tr>
       </thead>
       <tbody>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+        <tr style="border-bottom:1px solid var(--tint1)">
           <td style="padding:12px 20px;font-size:12.5px;font-weight:600">🏢 Enterprise</td>
           <td style="padding:12px;text-align:center"><span style="font-family:var(--font-display);font-size:18px;font-weight:800;color:var(--teal)">30%</span></td>
           <td style="padding:12px;font-size:12px;color:var(--text2)">Trust + Quality</td>
@@ -779,7 +817,7 @@ body{
             <span style="font-size:10px;font-weight:900;padding:4px 10px;border-radius:6px;background:rgba(139,92,246,.1);color:var(--purple);border:1px solid rgba(139,92,246,.2);letter-spacing:.04em">ADMIRE</span>
           </td>
         </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+        <tr style="border-bottom:1px solid var(--tint1)">
           <td style="padding:12px 20px;font-size:12.5px;font-weight:600">🏪 SME / Startup</td>
           <td style="padding:12px;text-align:center"><span style="font-family:var(--font-display);font-size:18px;font-weight:800;color:var(--blue)">28%</span></td>
           <td style="padding:12px;font-size:12px;color:var(--text2)">ดีไซน์ + ราคา</td>
@@ -788,7 +826,7 @@ body{
             <span style="font-size:10px;font-weight:900;padding:4px 10px;border-radius:6px;background:rgba(0,229,160,.15);color:var(--teal);border:1px solid rgba(0,229,160,.3);letter-spacing:.04em;margin-left:6px">FOLIO โอกาส ✅</span>
           </td>
         </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03);background:rgba(0,229,160,.02)">
+        <tr style="border-bottom:1px solid var(--tint1);background:rgba(0,229,160,.02)">
           <td style="padding:12px 20px;font-size:12.5px;font-weight:600">🏛️ ภาครัฐ</td>
           <td style="padding:12px;text-align:center"><span style="font-family:var(--font-display);font-size:18px;font-weight:800;color:var(--amber)">18%</span></td>
           <td style="padding:12px;font-size:12px;color:var(--text2)">TOR + Budget</td>
@@ -796,7 +834,7 @@ body{
             <span style="font-size:10px;font-weight:900;padding:4px 10px;border-radius:6px;background:rgba(0,229,160,.15);color:var(--teal);border:1px solid rgba(0,229,160,.3);letter-spacing:.04em">โอกาส Folio 🏆</span>
           </td>
         </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+        <tr style="border-bottom:1px solid var(--tint1)">
           <td style="padding:12px 20px;font-size:12.5px;font-weight:600">🌿 ESG-focused</td>
           <td style="padding:12px;text-align:center"><span style="font-family:var(--font-display);font-size:18px;font-weight:800;color:var(--green)">14%</span></td>
           <td style="padding:12px;font-size:12px;color:var(--text2)">Eco + Impact</td>
@@ -804,7 +842,7 @@ body{
             <span style="font-size:10px;font-weight:900;padding:4px 10px;border-radius:6px;background:rgba(79,142,247,.1);color:var(--blue);border:1px solid rgba(79,142,247,.2);letter-spacing:.04em">OGGA ✓✓</span>
           </td>
         </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+        <tr style="border-bottom:1px solid var(--tint1)">
           <td style="padding:12px 20px;font-size:12.5px;font-weight:600">🎪 Event / MICE</td>
           <td style="padding:12px;text-align:center"><span style="font-family:var(--font-display);font-size:18px;font-weight:800;color:var(--pink)">6%</span></td>
           <td style="padding:12px;font-size:12px;color:var(--text2)">Speed + Volume</td>
@@ -833,31 +871,31 @@ body{
     </div>
     <table style="width:100%;border-collapse:collapse">
       <thead>
-        <tr style="background:rgba(255,255,255,.02)">
+        <tr style="background:var(--tint0)">
           <th style="font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding:10px 20px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap">แบรนด์</th>
           <th style="font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);padding:10px 20px;text-align:left;border-bottom:1px solid var(--border)">ลูกค้า / Partners ที่ระบุ</th>
         </tr>
       </thead>
       <tbody>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+        <tr style="border-bottom:1px solid var(--tint1)">
           <td style="padding:14px 20px;white-space:nowrap"><strong style="color:var(--teal)">SwagOn</strong></td>
           <td style="padding:14px 20px;font-size:11.5px;color:var(--text2);line-height:1.6">
             <span style="color:var(--text)">PwC, Amazon AWS, BoonRawd, Canva, ExxonMobil, LINE Thailand, Gulf Energy, G-Able, SCBx, Cisco, LG Electronics, Citibank, Agoda, Booking.com, SCG, BCG International, Skooldio, ThoughtWorks, Milwaukee Tool</span>
           </td>
         </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+        <tr style="border-bottom:1px solid var(--tint1)">
           <td style="padding:14px 20px;white-space:nowrap"><strong style="color:var(--blue)">Ogga Idea</strong></td>
           <td style="padding:14px 20px;font-size:11.5px;color:var(--text2);line-height:1.6">
             AIA, KTC, Global Gift Alliance Members · Event: Global Recycle Day @ Siam Paragon (18 มี.ค. 2026) · Koh Tao / Koh Phaluay Community
           </td>
         </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+        <tr style="border-bottom:1px solid var(--tint1)">
           <td style="padding:14px 20px;white-space:nowrap"><strong style="color:var(--amber)">GiftwiseAsia</strong></td>
           <td style="padding:14px 20px;font-size:11.5px;color:var(--text2);line-height:1.6">
             Industrial / Manufacturing Sector · B2B กระบอกน้ำ แก้วเยติ รัม <span style="color:var(--text3)">(ไม่ระบุชื่อ)</span>
           </td>
         </tr>
-        <tr style="border-bottom:1px solid rgba(255,255,255,.03)">
+        <tr style="border-bottom:1px solid var(--tint1)">
           <td style="padding:14px 20px;white-space:nowrap"><strong style="color:var(--purple)">Admire Tomorrow</strong></td>
           <td style="padding:14px 20px;font-size:11.5px;color:var(--text2);line-height:1.6">
             300+ Thai &amp; overseas brands · Testimonials: Thanakrit, Ploysupaporn (sales contact) · Ads: Product sets ราคา 350–750 บาท/ชิ้น
@@ -1237,8 +1275,8 @@ body{
       <span id="kwStatusSub" style="font-size:10.5px;color:var(--text3)"></span>
     </div>
     <div style="display:flex;align-items:center;gap:8px">
-      <span id="kwNextUpdate" style="font-size:10px;color:var(--text3);padding:4px 10px;background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:20px"></span>
-      <span style="font-size:10px;color:var(--text3);padding:5px 12px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:8px">⏸ รอคำสั่งอัพเดท</span>
+      <span id="kwNextUpdate" style="font-size:10px;color:var(--text3);padding:4px 10px;background:var(--tint2);border:1px solid var(--border2);border-radius:20px"></span>
+      <span style="font-size:10px;color:var(--text3);padding:5px 12px;background:var(--tint1);border:1px solid var(--border);border-radius:8px">⏸ รอคำสั่งอัพเดท</span>
     </div>
   </div>
 
@@ -1868,13 +1906,34 @@ function show(id,btn){
 
 // ── CHART REGISTRY ──
 const ch={};
+
+// ── สลับธีมมืด / สว่าง (จำค่าไว้ใน localStorage) ──
+function applyTheme(t){
+  const r = document.documentElement;
+  if(t === 'light'){ r.setAttribute('data-theme','light'); }
+  else { r.removeAttribute('data-theme'); }
+  const b = document.getElementById('themeBtn');
+  if(b) b.textContent = (t === 'light') ? '\u{1F319} \u0E21\u0E37\u0E14' : '\u2600 \u0E2A\u0E27\u0E48\u0E32\u0E07';
+  try { localStorage.setItem('folioIntelTheme', t); } catch(e){}
+  // chart ต้องวาดใหม่เพื่อให้สีแกน/ตัวอักษรตามธีม
+  try { for(const k in ch){ if(ch[k]) { ch[k].destroy(); delete ch[k]; } } setTimeout(initCharts, 60); } catch(e){}
+}
+function toggleTheme(){
+  const cur = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+  applyTheme(cur === 'light' ? 'dark' : 'light');
+}
+(function(){
+  let saved = 'dark';
+  try { saved = localStorage.getItem('folioIntelTheme') || 'dark'; } catch(e){}
+  if(saved === 'light'){ document.documentElement.setAttribute('data-theme','light'); }
+})();
 function dc(id){if(ch[id]){ch[id].destroy();delete ch[id];}}
 function vis(id){const e=document.getElementById(id);return e&&e.offsetParent!==null;}
 
 const DO={responsive:true,maintainAspectRatio:false,animation:{duration:600,easing:'easeInOutQuart'}};
-const GP={plugins:{legend:{labels:{color:'#8896b0',font:{family:'Plus Jakarta Sans',size:10.5},boxWidth:9,padding:12}}}};
-const GS={x:{ticks:{color:'#4a5568',font:{family:'Plus Jakarta Sans',size:10}},grid:{color:'rgba(26,34,54,.7)'}},y:{ticks:{color:'#4a5568',font:{family:'Plus Jakarta Sans',size:10}},grid:{color:'rgba(26,34,54,.7)'}}};
-const GR={ticks:{color:'#4a5568',backdropColor:'transparent',font:{size:9}},grid:{color:'rgba(26,34,54,.8)'},pointLabels:{color:'#8896b0',font:{family:'Plus Jakarta Sans',size:10}},min:0,max:100};
+const GP={plugins:{legend:{labels:{color:'#5a6b86',font:{family:'Plus Jakarta Sans',size:10.5},boxWidth:9,padding:12}}}};
+const GS={x:{ticks:{color:'#64748b',font:{family:'Plus Jakarta Sans',size:10}},grid:{color:'rgba(127,140,165,.22)'}},y:{ticks:{color:'#64748b',font:{family:'Plus Jakarta Sans',size:10}},grid:{color:'rgba(127,140,165,.22)'}}};
+const GR={ticks:{color:'#64748b',backdropColor:'transparent',font:{size:9}},grid:{color:'rgba(127,140,165,.25)'},pointLabels:{color:'#5a6b86',font:{family:'Plus Jakarta Sans',size:10}},min:0,max:100};
 
 function initCharts(){
   // ── FOLIO COLORS (always bright green, solid border) ──
@@ -1917,7 +1976,7 @@ function initCharts(){
           {label:'Direct',data:[22,14,28,30,25,20],backgroundColor:'rgba(79,142,247,.7)',borderWidth:0,borderRadius:3},
           {label:'Social',data:[15,14,18,10,20,12],backgroundColor:'rgba(139,92,246,.7)',borderWidth:0,borderRadius:3},
           {label:'Referral',data:[13,7,14,5,10,13],backgroundColor:'rgba(245,158,11,.7)',borderWidth:0,borderRadius:3},
-        ]},options:{...DO,...GP,scales:{x:{stacked:true,ticks:{color:'#4a5568'},grid:{color:'rgba(26,34,54,.7)'}},y:{stacked:true,ticks:{color:'#4a5568',callback:v=>v+'%'},grid:{color:'rgba(26,34,54,.7)'}}}}});
+        ]},options:{...DO,...GP,scales:{x:{stacked:true,ticks:{color:'#64748b'},grid:{color:'rgba(127,140,165,.22)'}},y:{stacked:true,ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'rgba(127,140,165,.22)'}}}}});
   }
   if(vis('kwChart')){dc('kwChart');
     ch['kwChart']=new Chart(document.getElementById('kwChart'),{type:'bar',
@@ -1931,7 +1990,7 @@ function initCharts(){
     ch['audChart']=new Chart(document.getElementById('audChart'),{type:'doughnut',
       data:{labels:['Enterprise 30%','SME/Startup 28%','ภาครัฐ 18%','ESG-focused 14%','Event/MICE 6%','Schools 4%'],
         datasets:[{data:[30,28,18,14,6,4],backgroundColor:['#00e5a0','#4f8ef7','#8b5cf6','#f59e0b','#ec4899','#f43f5e'],borderColor:'#060810',borderWidth:2}]},
-      options:{...DO,plugins:{legend:{labels:{color:'#8896b0',font:{size:10.5},padding:10}}}}});
+      options:{...DO,plugins:{legend:{labels:{color:'#5a6b86',font:{size:10.5},padding:10}}}}});
   }
   if(vis('swotRadar')){dc('swotRadar');
     ch['swotRadar']=new Chart(document.getElementById('swotRadar'),{type:'radar',
@@ -1954,8 +2013,8 @@ function initCharts(){
           {label:'\u0E27\u0E34\u0E14\u0E35\u0E42\u0E2D Reel',data:[4.8,23.8,17.8,19.2,82.9,23.8],backgroundColor:'rgba(244,63,94,.75)',borderRadius:4},
         ]},
       options:{...DO,...GP,scales:{
-        x:{stacked:true,ticks:{color:'#4a5568',font:{family:'Plus Jakarta Sans',size:10}},grid:{display:false}},
-        y:{stacked:true,max:100,ticks:{color:'#4a5568',font:{size:10},callback:v=>v+'%'},grid:{color:'rgba(26,34,54,.7)'}}},
+        x:{stacked:true,ticks:{color:'#64748b',font:{family:'Plus Jakarta Sans',size:10}},grid:{display:false}},
+        y:{stacked:true,max:100,ticks:{color:'#64748b',font:{size:10},callback:v=>v+'%'},grid:{color:'rgba(127,140,165,.22)'}}},
         plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.raw+'%'}}}}});
   }
   if(vis('cengChart')){dc('cengChart');
@@ -1966,8 +2025,8 @@ function initCharts(){
           {label:'Avg Comments / post',type:'line',data:[0.35,0.13,0.01,0.03,0.07,0.01],borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.15)',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#f59e0b',tension:.3,yAxisID:'y1'},
         ]},
       options:{...DO,...GP,scales:{
-        x:{ticks:{color:'#4a5568',font:{family:'Plus Jakarta Sans',size:10}},grid:{display:false}},
-        y:{position:'left',ticks:{color:'#4a5568',font:{size:10}},grid:{color:'rgba(26,34,54,.7)'},title:{display:true,text:'Avg Likes',color:'#4a5568',font:{size:10}}},
+        x:{ticks:{color:'#64748b',font:{family:'Plus Jakarta Sans',size:10}},grid:{display:false}},
+        y:{position:'left',ticks:{color:'#64748b',font:{size:10}},grid:{color:'rgba(127,140,165,.22)'},title:{display:true,text:'Avg Likes',color:'#64748b',font:{size:10}}},
         y1:{position:'right',ticks:{color:'#f59e0b',font:{size:10}},grid:{display:false},title:{display:true,text:'Avg Comments',color:'#f59e0b',font:{size:10}}}}}});
   }
   if(vis('cfreqChart')){dc('cfreqChart');
@@ -1981,7 +2040,7 @@ function initCharts(){
           {label:'SwagOn',data:[12,10,18,2,0,0],borderColor:'rgba(244,63,94,.8)',backgroundColor:'transparent',borderWidth:1.8,pointRadius:3,borderDash:[4,3],tension:.3},
           {label:'Ogga Idea',data:[2,0,0,0,0,3],borderColor:'rgba(79,142,247,.8)',backgroundColor:'transparent',borderWidth:1.8,pointRadius:3,borderDash:[4,3],tension:.3},
         ]},
-      options:{...DO,...GP,scales:{...GS,y:{beginAtZero:true,ticks:{color:'#4a5568',font:{size:10}},grid:{color:'rgba(26,34,54,.7)'},title:{display:true,text:'\u0E42\u0E1E\u0E2A\u0E15\u0E4C / \u0E40\u0E14\u0E37\u0E2D\u0E19',color:'#4a5568',font:{size:10}}}}}});
+      options:{...DO,...GP,scales:{...GS,y:{beginAtZero:true,ticks:{color:'#64748b',font:{size:10}},grid:{color:'rgba(127,140,165,.22)'},title:{display:true,text:'\u0E42\u0E1E\u0E2A\u0E15\u0E4C / \u0E40\u0E14\u0E37\u0E2D\u0E19',color:'#64748b',font:{size:10}}}}}});
   }
   if(vis('folioRadar')){dc('folioRadar');
     ch['folioRadar']=new Chart(document.getElementById('folioRadar'),{type:'radar',
@@ -2197,7 +2256,7 @@ function refreshCompEvents(){
     const bs = getBadgeStyle(bl);
     const badge = bl ? `<div style="font-size:8px;font-weight:900;letter-spacing:.06em;margin-top:3px;padding:1px 5px;border-radius:4px;display:inline-block;${bs}">${bl}</div>` : '';
     const detail = e.url ? `${e.detail} · <a href="${e.url}" target="_blank" class="lu" style="font-size:10px">source</a>` : e.detail;
-    return `<tr style="border-bottom:1px solid rgba(255,255,255,.03)${e.isNew?';background:rgba(0,229,160,.012)':''}">
+    return `<tr style="border-bottom:1px solid var(--tint1)${e.isNew?';background:rgba(0,229,160,.012)':''}">
       <td style="padding:12px 16px;font-family:var(--font-display);font-size:14px;font-weight:800;color:var(--border2);vertical-align:top">
         <div>${e.num}</div>${badge}
       </td>
