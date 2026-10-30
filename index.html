@@ -1974,31 +1974,6 @@ body{
     <div style="margin-top:9px;font-size:10.5px;color:var(--text3)">🔴 ขยับแรง ต้องจับตาทุกเดือน · 🟠 แข็งแรงในมุมของตัวเอง · 🟡 แรงกดดันจากนอกวงการ</div>
   </div>
 
-  <div class="card mb" style="border-left:3px solid var(--text3)">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-b">📉</span>สัญญาณฝั่งเรา<span class="th">· ตัวเลขที่ลดลง — บางเรื่องมีคำอธิบายแล้ว</span></div></div>
-    <table class="tbl">
-      <thead><tr><th style="min-width:170px">เรื่อง</th><th style="min-width:210px">ตัวเลข</th><th style="min-width:280px">อ่านยังไง</th></tr></thead>
-      <tbody>
-        <tr><td style="font-size:12px"><strong>FB followers ลดลง</strong></td>
-          <td style="font-size:11.5px">13,514 → 11,705 → <strong>10,793</strong> (รวม −2,721)</td>
-          <td style="font-size:11.5px;color:var(--text2)"><strong style="color:var(--teal)">มีคำอธิบายแล้ว</strong> — ทีมแจ้งว่าได้ลบผู้ติดตามที่เป็นสแปมออกเอง ซึ่งมีจำนวนมาก ·
-            <strong>ไม่ใช่สัญญาณลบ</strong> ฐานที่เหลือคุณภาพดีกว่าเดิม · ยังอันดับ 1 ของตลาด
-            <div style="font-size:10px;color:var(--text3);margin-top:3px">หมายเหตุ: ข้อมูลจากทีม ไม่ได้มาจาก scrape — ถ้าอยากยืนยันสัดส่วน เปิด Meta Business Suite ดู Follows/Unfollows ย้อนหลังได้</div></td></tr>
-        <tr><td style="font-size:12px"><strong>เว็บร่วงติดกัน 4 เดือน</strong></td>
-          <td style="font-size:11.5px">3.2K → 2.1K → <strong>1.9K</strong> · อันดับ 5 จาก 6</td>
-          <td style="font-size:11.5px;color:var(--text2)"><strong style="color:var(--amber)">ยังไม่มีคำอธิบาย</strong> · เดือน ก.ย. ที่ร่วงหนักสุด เป็นเดือนเดียวกับที่โพสต์ IG แค่ 1 ครั้ง ·
-            ต.ค. กลับมาโพสต์ 9 ครั้งแล้ว <strong>รอบหน้าดูว่า traffic ฟื้นตามไหม จะรู้คำตอบ</strong></td></tr>
-        <tr><td style="font-size:12px"><strong>คุณภาพเว็บกลับทาง</strong></td>
-          <td style="font-size:11.5px">Bounce 28.60% → <strong>38.35%</strong> · เวลาอยู่ 1:08 → 0:55</td>
-          <td style="font-size:11.5px;color:var(--text2)">เดือนก่อนคุณภาพยังดีขึ้น รอบนี้แย่ลงทุกตัว · ดูคู่กับเรื่องเว็บร่วงข้างบน — น่าจะเรื่องเดียวกัน</td></tr>
-      </tbody>
-    </table>
-    <div style="margin-top:9px;font-size:10.5px;color:var(--text3)">
-      💡 IG ของทั้งตลาดเล็กมาก (แชมป์ยังได้แค่ 3.43 ไลก์/โพสต์) — อย่าทุ่ม IG จนลืมว่าเราแข็งกว่าที่ FB 10,793 followers + ยิง Ads อยู่ ·
-      ตัวเลข Sentiment / YouTube / ราคาคู่แข่ง เป็นค่าประมาณ ห้ามใช้อ้างอิงตัดสินใจ
-    </div>
-  </div>
-
   <div class="card mb" style="background:rgba(0,229,160,.05);border:1px solid rgba(0,229,160,.3)">
     <div class="card-hd"><div class="card-title"><span class="ci ci-t">🎯</span>ถ้าทำได้แค่ 3 อย่างในเดือนนี้<span class="th">· เลือกมาแล้วว่าคุ้มที่สุด</span></div></div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:11px;padding:2px">
@@ -2079,11 +2054,6 @@ body{
       </table>
     </div>
   </div>
-  <div class="card">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-t">🕸</span>Position Radar<span class="th">· เรดาร์ตำแหน่งแบรนด์ · Folio vs 4 คู่แข่ง</span></div></div>
-    <div class="ch-lg"><canvas id="folioRadar"></canvas></div>
-  </div>
-
   <div class="ins" style="margin-bottom:0">
     <div class="ins-tag it-w"><div class="ins-dot"></div>ที่มาของข้อสรุปในหน้านี้</div>
     <div class="ins-text">
@@ -2253,18 +2223,6 @@ function initCharts(){
           {label:'Ogga Idea',data:[2,0,0,0,0,3],borderColor:'rgba(79,142,247,.8)',backgroundColor:'transparent',borderWidth:1.8,pointRadius:3,borderDash:[4,3],tension:.3},
         ]},
       options:{...DO,...GP,scales:{...GS,y:{beginAtZero:true,ticks:{color:'#64748b',font:{size:10}},grid:{color:'rgba(127,140,165,.22)'},title:{display:true,text:'\u0E42\u0E1E\u0E2A\u0E15\u0E4C / \u0E40\u0E14\u0E37\u0E2D\u0E19',color:'#64748b',font:{size:10}}}}}});
-  }
-  if(vis('folioRadar')){dc('folioRadar');
-    ch['folioRadar']=new Chart(document.getElementById('folioRadar'),{type:'radar',
-      data:{labels:['Social Media','YouTube','Custom/Production','ภาครัฐ','Price Flex','Brand Trust'],
-        datasets:[
-          {label:'🏠 Folio',data:[40,10,85,75,85,60],borderColor:'#00e5a0',backgroundColor:'rgba(0,229,160,.15)',pointBackgroundColor:'#00e5a0',borderWidth:2.5},
-          {label:'SwagOn',data:[22,5,60,10,80,55],borderColor:'rgba(244,63,94,.45)',backgroundColor:'transparent',pointBackgroundColor:'#f43f5e',borderDash:[4,4],borderWidth:1.5},
-          {label:'Ogga Idea',data:[55,8,55,5,50,65],borderColor:'rgba(79,142,247,.35)',backgroundColor:'transparent',pointBackgroundColor:'#4f8ef7',borderDash:[4,4],borderWidth:1.5},
-          {label:'GiftwiseAsia',data:[20,5,55,10,60,45],borderColor:'rgba(245,158,11,.45)',backgroundColor:'transparent',pointBackgroundColor:'#f59e0b',borderDash:[4,4],borderWidth:1.5},
-          {label:'Admire Tomorrow',data:[65,5,70,60,40,90],borderColor:'rgba(139,92,246,.35)',backgroundColor:'transparent',pointBackgroundColor:'#8b5cf6',borderDash:[4,4],borderWidth:1.5},
-          {label:'Bixitia',data:[22,5,75,15,55,65],borderColor:'rgba(16,185,129,.45)',backgroundColor:'transparent',pointBackgroundColor:'#10b981',borderDash:[4,4],borderWidth:1.5},
-        ]},options:{...DO,...GP,scales:{r:GR}}});
   }
 }
 
