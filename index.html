@@ -511,7 +511,7 @@ body{
   <button class="nt" onclick="show('seo',this)">🌐 SEO</button>
   <button class="nt" onclick="show('youtube',this)">▶️ YouTube</button>
   <button class="nt" onclick="show('swot',this)">⚔️ วิเคราะห์เรา</button>
-  <button class="nt" onclick="show('folio',this)" style="color:var(--teal)">🎯 โอกาส Folio</button>
+  <button class="nt new-tab" onclick="show('sum',this)" style="color:var(--teal)">🎯 สรุป &amp; แผนงาน</button>
   <div class="nr">
     <div class="status-pill"><div class="status-dot"></div><span>Real Data · 19 ต.ค. 2569</span></div>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="สลับธีมมืด / สว่าง">🌙</button>
@@ -1956,81 +1956,108 @@ body{
 </div>
 
 <!-- ══════════════════════════════════════
-     FOLIO BRAND
-══════════════════════════════════════ -->
-<div class="page" id="page-folio">
+     SUMMARY
+═══════════════════════════════════════ -->
+<div class="page" id="page-sum">
   <div class="ph">
-    <div class="eyebrow">Opportunity <span class="th">· โอกาสทางการตลาดของ Folio</span></div>
-    <div class="ptitle">🎯 โอกาส<em>Folio</em></div>
-    <div class="psub">จุดแข็งเทียบคู่แข่ง · Content Calendar · Next Steps</div>
-  </div>
-
-  <!-- ─── คำวิเคราะห์ + สิ่งที่ควรทำ ─── -->
-  <div class="card mb" style="border:1px solid rgba(0,229,160,.3)">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-t">🧭</span>สรุปสถานการณ์ Folio · ต.ค. 2569</div><span class="src-tag">✓ Apify + SimilarWeb 19 ต.ค. 2569</span></div>
-    <div style="font-size:12.5px;color:var(--text2);line-height:1.85;padding:2px">
-      <strong style="color:var(--teal)">ที่เรายังนำอยู่</strong> — FB followers 10,793 อันดับ 1 · เป็น 1 ใน 2 แบรนด์ที่ยิง Ads ·
-      โพสต์ IG ที่ดีที่สุดในตลาดทั้งกลุ่มเป็นของเรา (100 ไลก์ — อันดับ 2 ได้ 53) · มีโรงงานผลิตเอง · MOQ เริ่ม 10 ชิ้น<br><br>
-      <strong style="color:var(--red)">ที่กำลังถดถอย</strong> — FB ลดต่อเนื่อง 2 รอบ รวม −2,721 · เว็บร่วง 4 เดือนติดเหลือ 1.9K (อันดับ 5 จาก 6) ·
-      IG avg likes 1.20 ต่ำสุดในกลุ่ม · คอมเมนต์ 0.01 ต่ำสุด · ก.ย. โพสต์ IG แค่ 1 ครั้ง<br><br>
-      <strong style="color:var(--amber)">ภาพรวม</strong> — ปัญหาไม่ใช่ "ทำไม่เป็น" แต่เป็น <strong>ทำผิดสัดส่วนและทำไม่สม่ำเสมอ</strong> ·
-      ข้อมูลชี้จุดเดียวกันหมด: สิ่งที่ได้ผลเราทำน้อย สิ่งที่ไม่ได้ผลเราทำเยอะ
-    </div>
-  </div>
-
-  <div class="card mb">
-    <div class="card-hd"><div class="card-title"><span class="ci ci-a">🚀</span>5 เรื่องที่ควรทำ · เรียงตามผลตอบแทนต่อแรงที่ลง</div></div>
-    <div style="font-size:12.5px;color:var(--text2);line-height:1.8;padding:2px">
-
-      <div style="border-left:3px solid var(--teal);padding:2px 0 2px 12px;margin-bottom:16px">
-        <strong style="color:var(--teal);font-size:13px">1 · เปลี่ยนสัดส่วนมาทำวิดีโอ</strong>
-        <span style="font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px;background:rgba(0,229,160,.12);color:var(--teal);margin-left:6px">ผลตอบแทนสูงสุด</span><br>
-        วิดีโอของเราได้เฉลี่ย <strong>13.67 ไลก์</strong> ภาพนิ่งได้ <strong>0.57</strong> — ห่างกัน 24 เท่า แต่เราทำวิดีโอแค่ 24 คลิปจาก 498 โพสต์<br>
-        <span style="color:var(--text3)">เลขง่ายๆ: 498 โพสต์ที่ทำมาทั้งหมดได้ engagement รวม 599 · ถ้าทำวิดีโอ 100 คลิปในอัตราเดิม จะได้ราว 1,367 — มากกว่าเดิม 2 เท่า ด้วยจำนวนโพสต์ 1 ใน 5</span>
-      </div>
-
-      <div style="border-left:3px solid var(--amber);padding:2px 0 2px 12px;margin-bottom:16px">
-        <strong style="color:var(--amber);font-size:13px">2 · เลิกใช้แคปชั่นสำเร็จรูป</strong><br>
-        366 จาก 498 โพสต์ (73%) ใช้ข้อความชุดเดียวกันคำต่อคำ · IG ลดการมองเห็นคอนเทนต์ซ้ำ และคนที่ตามอยู่ก็เลื่อนผ่าน<br>
-        <span style="color:var(--text3)">แก้ได้ทันทีโดยไม่ต้องลงทุนอะไร — เขียนใหม่ทุกโพสต์ เล่าว่าชิ้นนี้ทำให้ใคร แก้โจทย์อะไร</span>
-      </div>
-
-      <div style="border-left:3px solid var(--blue);padding:2px 0 2px 12px;margin-bottom:16px">
-        <strong style="color:var(--blue);font-size:13px">3 · ทำคอนเทนต์ที่ชวนคุย ไม่ใช่ประกาศขาย</strong><br>
-        เราได้ 0.01 คอมเมนต์/โพสต์ · Ogga ได้ 0.35 (มากกว่า 35 เท่า) เพราะเล่าเรื่องโครงการเกาะเต่า/ชุมชน ·
-        โพสต์ที่ได้คอมเมนต์สูงสุดของ Giftwise คือคลิปที่<strong>ตั้งคำถาม</strong>กับพนักงาน<br>
-        <span style="color:var(--text3)">คอมเมนต์ใกล้เคียงกับการเป็นลูกค้ามากกว่าไลก์ — คนที่พิมพ์ถาม คือคนที่สนใจจริง</span>
-      </div>
-
-      <div style="border-left:3px solid var(--purple);padding:2px 0 2px 12px;margin-bottom:16px">
-        <strong style="color:var(--purple);font-size:13px">4 · โพสต์ให้สม่ำเสมอ อย่างน้อย 8–10 ครั้ง/เดือน</strong><br>
-        เราเฉลี่ย 4.0/เดือน · Giftwise 18.2 · Admire 14.6 (16 โพสต์ติดกัน 4 เดือน) ·
-        <strong style="color:var(--red)">เดือน ก.ย. ที่เราโพสต์แค่ 1 ครั้ง คือเดือนเดียวกับที่เว็บร่วงเหลือ 1.9K และ bounce แย่ลงจาก 28.60% เป็น 38.35%</strong><br>
-        <span style="color:var(--text3)">ยังไม่ยืนยันว่าเป็นเหตุเป็นผลกัน แต่ ต.ค. เรากลับมาโพสต์ 9 ครั้งแล้ว — รอบหน้าดูว่า traffic ฟื้นตามไหม จะรู้คำตอบ</span>
-      </div>
-
-      <div style="border-left:3px solid var(--green);padding:2px 0 2px 12px">
-        <strong style="color:var(--green);font-size:13px">5 · ใช้ของที่เรามีอยู่แล้วแต่ยังไม่ได้เล่า</strong><br>
-        <strong>โรงงานตัวเอง</strong> — คู่แข่งส่วนใหญ่จ้างผลิต เรามีโรงงาน แต่ไม่เคยถ่ายเบื้องหลัง ทั้งที่เป็นวัตถุดิบวิดีโอชั้นดี<br>
-        <strong>ศิลปินไทย / ชุมชน</strong> — โพสต์เรื่องศิลปินไทยของเราได้ 23 ไลก์ (อันดับ 9 ของตลาด) และ Ogga พิสูจน์แล้วว่าเรื่องเล่าชุมชนได้คอมเมนต์สูงสุด<br>
-        <strong>โชว์รูมพระราม 5</strong> — Giftwise ดันโชว์รูมหนักมากในแคปชั่น เรามีแต่พูดถึงน้อย
-      </div>
-    </div>
+    <div class="eyebrow">Action Summary <span class="th">· สรุปสิ่งที่ต้องทำ · อิงตัวเลขจริง 19 ต.ค. 2569</span></div>
+    <div class="ptitle">🎯 สรุป<em>โอกาส Folio</em> · ทำอะไรต่อ</div>
+    <div class="psub">อ่านหน้าเดียวจบ — อะไรดีอยู่แล้ว · อะไรต้องแก้ · อะไรต้องจับตา · แล้วลงมือยังไง</div>
   </div>
 
   <div class="g3 mb">
-    <div class="ins"><div class="ins-tag it-o"><div class="ins-dot"></div>จังหวะดี</div><div class="ins-text">
-      <strong style="color:var(--red)">SwagOn หยุดโพสต์ IG 2 เดือนเต็ม</strong> (ก.ย. + ต.ค. = 0) และ <strong style="color:var(--blue)">Ogga หายไป 4 เดือน</strong> ·
-      ช่วงนี้มีคู่แข่ง 2 รายหายจากฟีด — เร่งตอนนี้คุ้มกว่าตอนที่ทุกคนยิงพร้อมกัน</div>
-      <div class="ins-src">📡 Apify IG · 19 ต.ค. 2569</div></div>
-    <div class="ins"><div class="ins-tag it-t"><div class="ins-dot"></div>ภัย</div><div class="ins-text">
-      <strong style="color:var(--green)">Bixitia เริ่มยิง FB Ads แล้ว</strong> (verified 19 ต.ค.) + คุณภาพเว็บฟื้นทุกตัว ·
-      <strong style="color:var(--amber)">GiftwiseAsia โพสต์ถี่สุด 18.2/เดือน</strong> และ visits อันดับ 1 ที่ 3K</div>
-      <div class="ins-src">📡 Apify + SimilarWeb</div></div>
-    <div class="ins"><div class="ins-tag it-w"><div class="ins-dot"></div>อ่านอย่างระวัง</div><div class="ins-text">
-      <strong>IG ของตลาดนี้เล็กมากทุกแบรนด์</strong> — แชมป์ยังได้แค่ 3.43 ไลก์/โพสต์ ·
-      อย่าทุ่ม IG จนลืมช่องที่เราแข็งกว่า: <strong style="color:var(--teal)">FB 10,793 followers อันดับ 1</strong> และ Ads ที่ยิงอยู่แล้ว ·
-      ให้มอง IG เป็นที่เก็บผลงานให้ลูกค้าเช็กความน่าเชื่อถือ ไม่ใช่ท่อขายหลัก</div></div>
+    <div class="card" style="margin-bottom:0;border:1px solid rgba(0,229,160,.3);text-align:center;padding:16px 14px">
+      <div style="font-size:26px;margin-bottom:4px">✅</div>
+      <div style="font-family:var(--font-display);font-size:30px;font-weight:800;color:var(--teal);line-height:1">6</div>
+      <div style="font-size:11.5px;font-weight:700;color:var(--text);margin-top:4px">เรื่องที่ทำแล้วดี</div>
+      <div style="font-size:10px;color:var(--text3);margin-top:2px">รักษาไว้ อย่าทิ้ง</div>
+    </div>
+    <div class="card" style="margin-bottom:0;border:1px solid rgba(245,158,11,.3);text-align:center;padding:16px 14px">
+      <div style="font-size:26px;margin-bottom:4px">🔧</div>
+      <div style="font-family:var(--font-display);font-size:30px;font-weight:800;color:var(--amber);line-height:1">6</div>
+      <div style="font-size:11.5px;font-weight:700;color:var(--text);margin-top:4px">เรื่องที่ต้องแก้</div>
+      <div style="font-size:10px;color:var(--text3);margin-top:2px">เรียงตามผลตอบแทนต่อแรง</div>
+    </div>
+    <div class="card" style="margin-bottom:0;border:1px solid rgba(244,63,94,.3);text-align:center;padding:16px 14px">
+      <div style="font-size:26px;margin-bottom:4px">⚠️</div>
+      <div style="font-family:var(--font-display);font-size:30px;font-weight:800;color:var(--red);line-height:1">8</div>
+      <div style="font-size:11.5px;font-weight:700;color:var(--text);margin-top:4px">เรื่องที่ต้องจับตา</div>
+      <div style="font-size:10px;color:var(--text3);margin-top:2px">3 เรื่องแดง = เร่งด่วน</div>
+    </div>
+  </div>
+
+  <div class="card mb" style="border-left:3px solid var(--teal)">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">✅</span>ทำแล้วดี<span class="th">· รักษาไว้และทำต่อ</span></div></div>
+    <table class="tbl">
+      <thead><tr><th style="min-width:170px">สิ่งที่ทำได้ดี</th><th>ตัวเลขที่ยืนยัน</th><th style="min-width:200px">ทำต่อยังไง</th></tr></thead>
+      <tbody>
+          <tr><td style="font-size:12px"><strong style="color:var(--teal)">ยิง Facebook Ads ต่อเนื่อง</strong></td><td style="font-size:11.5px">เป็น 1 ใน 2 แบรนด์ที่ verified ว่ายิงอยู่ · FB followers อันดับ 1 ของตลาด 10,793</td><td style="font-size:11.5px;color:var(--text2)">รักษาไว้ · Bixitia เพิ่งเริ่มยิง 19 ต.ค. อย่าให้ไล่ทัน</td></tr>
+          <tr><td style="font-size:12px"><strong style="color:var(--teal)">วิดีโอที่ทำไปได้ผลดีมาก</strong></td><td style="font-size:11.5px">วิดีโอได้ 13.67 ไลก์/โพสต์ · ภาพนิ่งได้ 0.57 = ต่างกัน <strong>24 เท่า</strong></td><td style="font-size:11.5px;color:var(--text2)">ทำต่อและเพิ่มจำนวน (ดูหัวข้อถัดไป)</td></tr>
+          <tr><td style="font-size:12px"><strong style="color:var(--teal)">คอนเทนต์คุณภาพทำได้จริง</strong></td><td style="font-size:11.5px">โพสต์ที่ดีสุดของทั้งตลาดเป็นของเรา <strong>100 ไลก์</strong> · อันดับ 2 ของตลาดได้ 53 · ติด Top 10 ถึง 5 อันดับ</td><td style="font-size:11.5px;color:var(--text2)">ถอดสูตรโพสต์ที่ปัง แล้วทำซ้ำให้สม่ำเสมอ</td></tr>
+          <tr><td style="font-size:12px"><strong style="color:var(--teal)">เรื่องเล่าศิลปินไทย / ชุมชน</strong></td><td style="font-size:11.5px">โพสต์กล่องของขวัญ × ศิลปินไทย ได้ 23 ไลก์ (อันดับ 9 ของตลาด)</td><td style="font-size:11.5px;color:var(--text2)">ขยายเป็นซีรีส์ · Ogga พิสูจน์แล้วว่าแนวนี้ได้คอมเมนต์สูงสุด</td></tr>
+          <tr><td style="font-size:12px"><strong style="color:var(--teal)">โรงงานผลิตเอง + MOQ 10 ชิ้น</strong></td><td style="font-size:11.5px">MOQ ต่ำสุดในกลุ่ม (Admire 200 ชิ้น) · คุมคุณภาพ-ต้นทุน-เวลาเองได้</td><td style="font-size:11.5px;color:var(--text2)">ยังไม่เคยเอามาทำคอนเทนต์เลย — เป็นวัตถุดิบวิดีโอชั้นดี</td></tr>
+          <tr><td style="font-size:12px"><strong style="color:var(--teal)">กลับมาโพสต์แล้วเดือน ต.ค.</strong></td><td style="font-size:11.5px">ก.ย. โพสต์ 1 ครั้ง → ต.ค. 9 ครั้ง (นับแค่ 19 วันแรก)</td><td style="font-size:11.5px;color:var(--text2)">รักษาให้ได้ 8–10 โพสต์/เดือน อย่าให้ตกอีก</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card mb" style="border-left:3px solid var(--amber)">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-a">🔧</span>ต้องปรับปรุง<span class="th">· เรียงจากผลตอบแทนสูงสุดต่อแรงที่ลง</span></div></div>
+    <div style="overflow-x:auto">
+    <table class="tbl" style="min-width:820px">
+      <thead><tr><th style="width:36px"></th><th style="min-width:150px">เรื่อง</th><th style="min-width:200px">ตอนนี้เป็นยังไง</th><th style="min-width:200px">ควรทำอะไร</th><th style="min-width:180px">ทำไมถึงคุ้ม</th></tr></thead>
+      <tbody>
+          <tr><td style="text-align:center"><span style="display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;border-radius:50%;background:var(--teal);color:#fff;font-weight:800;font-size:11px">1</span></td><td style="font-size:12px"><strong style="color:var(--teal)">เพิ่มวิดีโอ</strong></td><td style="font-size:11.5px">ทำแค่ <strong>4.8%</strong> (24 จาก 498 โพสต์)</td><td style="font-size:11.5px;color:var(--text2)">ตั้งเป้า 20–30% ของโพสต์ทั้งหมด</td><td style="font-size:11px;color:var(--text3)">498 โพสต์ที่ทำมาทั้งหมดได้ engagement รวม 599 · ถ้าทำวิดีโอ 100 คลิปในอัตราเดิมจะได้ราว <strong>1,367</strong> = มากกว่าเดิม 2 เท่า ด้วยจำนวนโพสต์ 1 ใน 5</td></tr>
+          <tr><td style="text-align:center"><span style="display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;border-radius:50%;background:var(--amber);color:#fff;font-weight:800;font-size:11px">2</span></td><td style="font-size:12px"><strong style="color:var(--amber)">เลิกแคปชั่นสำเร็จรูป</strong></td><td style="font-size:11.5px"><strong>366 จาก 498 โพสต์ (73%)</strong> ใช้ข้อความชุดเดียวกันคำต่อคำ</td><td style="font-size:11.5px;color:var(--text2)">เขียนใหม่ทุกโพสต์ เล่าว่าชิ้นนี้ทำให้ใคร แก้โจทย์อะไร</td><td style="font-size:11px;color:var(--text3)">ฟรี ทำได้พรุ่งนี้ · IG ลดการมองเห็นคอนเทนต์ซ้ำ</td></tr>
+          <tr><td style="text-align:center"><span style="display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;border-radius:50%;background:var(--purple);color:#fff;font-weight:800;font-size:11px">3</span></td><td style="font-size:12px"><strong style="color:var(--purple)">เริ่มทำคอนเทนต์เคสลูกค้า</strong></td><td style="font-size:11.5px">ทำ <strong style="color:var(--red)">0 โพสต์</strong> ทั้งที่เป็นหมวดที่ได้ engagement สูงสุดของตลาด (3.44)</td><td style="font-size:11.5px;color:var(--text2)">เอาผลงานที่มีอยู่แล้วมาเล่า: ลูกค้าใคร โจทย์อะไร แก้ยังไง</td><td style="font-size:11px;color:var(--text3)">Admire ทำ 105 โพสต์ในหมวดนี้</td></tr>
+          <tr><td style="text-align:center"><span style="display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;border-radius:50%;background:var(--green);color:#fff;font-weight:800;font-size:11px">4</span></td><td style="font-size:12px"><strong style="color:var(--green)">ถ่ายงานอีเวนต์</strong></td><td style="font-size:11.5px">ทำแค่ <strong>4 โพสต์</strong> · หมวดนี้ได้ 3.08 เป็นอันดับ 2 ของตลาด</td><td style="font-size:11.5px;color:var(--text2)">งาน พ.ย.–ธ.ค. มี 5 งาน ถ่ายคลิปหน้างานทุกครั้ง</td><td style="font-size:11px;color:var(--text3)">SwagOn ติด Top 10 ถึง 3 อันดับ ด้วยคอนเทนต์อีเวนต์ล้วน</td></tr>
+          <tr><td style="text-align:center"><span style="display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;font-size:11px">5</span></td><td style="font-size:12px"><strong style="color:var(--blue)">ทำคอนเทนต์ที่ชวนคุย</strong></td><td style="font-size:11.5px">คอมเมนต์ <strong style="color:var(--red)">0.01</strong>/โพสต์ ต่ำสุดในกลุ่ม · Ogga ได้ 0.35 = มากกว่า 35 เท่า</td><td style="font-size:11.5px;color:var(--text2)">ตั้งคำถามท้ายแคปชั่น · เล่าเรื่องแทนการประกาศขาย</td><td style="font-size:11px;color:var(--text3)">คอมเมนต์ใกล้เคียงการเป็นลูกค้ามากกว่าไลก์</td></tr>
+          <tr><td style="text-align:center"><span style="display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;border-radius:50%;background:var(--pink);color:#fff;font-weight:800;font-size:11px">6</span></td><td style="font-size:12px"><strong style="color:var(--pink)">โพสต์ให้สม่ำเสมอ</strong></td><td style="font-size:11.5px">เฉลี่ย <strong>4.0</strong>/เดือน · Giftwise 18.2 · Admire 14.6</td><td style="font-size:11.5px;color:var(--text2)">ตั้งขั้นต่ำ 8–10 โพสต์/เดือน ทำปฏิทินล่วงหน้า</td><td style="font-size:11px;color:var(--text3)">เดือนที่เราหายไป เว็บร่วงตามทันที</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="card mb" style="border-left:3px solid var(--red)">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-b">⚠️</span>ต้องระวัง<span class="th">· สัญญาณที่ต้องจับตารอบหน้า</span></div></div>
+    <table class="tbl">
+      <thead><tr><th style="width:40px"></th><th style="min-width:180px">เรื่อง</th><th style="min-width:210px">ตัวเลข</th><th style="min-width:230px">ทำไมต้องระวัง</th></tr></thead>
+      <tbody>
+          <tr><td style="font-size:15px;text-align:center">🔴</td><td style="font-size:12px"><strong>FB followers ลดต่อเนื่อง 2 รอบ</strong></td><td style="font-size:11.5px">13,514 → 11,705 → <strong>10,793</strong> (รวม −2,721)</td><td style="font-size:11.5px;color:var(--text2)">คู่แข่งนิ่งหรือเพิ่มขึ้น มีแต่เราที่ลด · <strong>ยังไม่รู้สาเหตุ</strong> ต้องหาให้เจอ</td></tr>
+          <tr><td style="font-size:15px;text-align:center">🔴</td><td style="font-size:12px"><strong>เว็บร่วงติดกัน 4 เดือน</strong></td><td style="font-size:11.5px">3.2K → 2.1K → <strong>1.9K</strong> · อันดับ 5 จาก 6</td><td style="font-size:11.5px;color:var(--text2)">เดือน ก.ย. ที่ร่วงหนักสุด คือเดือนเดียวกับที่โพสต์ IG แค่ 1 ครั้ง</td></tr>
+          <tr><td style="font-size:15px;text-align:center">🔴</td><td style="font-size:12px"><strong>คุณภาพเว็บกลับทาง</strong></td><td style="font-size:11.5px">Bounce 28.60% → <strong>38.35%</strong> · เวลาอยู่ 1:08 → 0:55</td><td style="font-size:11.5px;color:var(--text2)">เดือนก่อนคุณภาพยังดีขึ้น รอบนี้แย่ลงทุกตัว — สัญญาณที่ต้องจับตา</td></tr>
+          <tr><td style="font-size:15px;text-align:center">🟠</td><td style="font-size:12px"><strong>Bixitia เริ่มยิง Ads แล้ว</strong></td><td style="font-size:11.5px">verified 19 ต.ค. · FB 2,869 · คุณภาพเว็บฟื้นทุกตัว</td><td style="font-size:11.5px;color:var(--text2)">เราไม่ได้ครอง paid media คนเดียวอีกต่อไป</td></tr>
+          <tr><td style="font-size:15px;text-align:center">🟠</td><td style="font-size:12px"><strong>GiftwiseAsia ครองพื้นที่สายตา</strong></td><td style="font-size:11.5px">โพสต์ถี่สุด 18.2/เดือน · visits อันดับ 1 ที่ 3K</td><td style="font-size:11.5px;color:var(--text2)">แม้ engagement ต่อโพสต์ไม่สูง แต่ปริมาณชนะ</td></tr>
+          <tr><td style="font-size:15px;text-align:center">🟠</td><td style="font-size:12px"><strong>SwagOn โตโดยไม่ง้อ social</strong></td><td style="font-size:11.5px">หยุดโพสต์ IG 2 เดือน แต่เว็บครองคุณภาพทุกตัว (26.10% / 3.79 / 2:38)</td><td style="font-size:11.5px;color:var(--text2)">เขาโตด้วย SEO + ลูกค้า Enterprise (Meta / AWS / PwC)</td></tr>
+          <tr><td style="font-size:15px;text-align:center">🟡</td><td style="font-size:12px"><strong>อย่าทุ่ม IG จนลืมช่องที่เราแข็ง</strong></td><td style="font-size:11.5px">ทั้งตลาด IG เล็กมาก แชมป์ยังได้แค่ 3.43 ไลก์/โพสต์</td><td style="font-size:11.5px;color:var(--text2)">FB เรามี 10,793 followers + ยิง Ads อยู่ — ท่อขายจริงอยู่ตรงนั้น</td></tr>
+          <tr><td style="font-size:15px;text-align:center">🟡</td><td style="font-size:12px"><strong>ตัวเลขที่ยังไม่ verified</strong></td><td style="font-size:11.5px">Sentiment · YouTube · ราคาคู่แข่ง = ค่าประมาณทั้งหมด</td><td style="font-size:11.5px;color:var(--text2)">ใช้ดูแนวโน้มได้ แต่<strong>ห้ามใช้อ้างอิงตัดสินใจ</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:9px;font-size:10.5px;color:var(--text3)">🔴 เร่งด่วน · 🟠 คู่แข่งขยับ · 🟡 เตือนวิธีอ่านตัวเลข</div>
+  </div>
+
+  <div class="card mb" style="background:rgba(0,229,160,.05);border:1px solid rgba(0,229,160,.3)">
+    <div class="card-hd"><div class="card-title"><span class="ci ci-t">🎯</span>ถ้าทำได้แค่ 3 อย่างในเดือนนี้<span class="th">· เลือกมาแล้วว่าคุ้มที่สุด</span></div></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:11px;padding:2px">
+      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:13px 14px">
+        <div style="font-size:10px;font-weight:800;color:var(--teal);letter-spacing:.08em">อันดับ 1</div>
+        <div style="font-size:13px;font-weight:800;color:var(--text);margin:5px 0 6px">ถ่ายวิดีโอ 8 คลิป</div>
+        <div style="font-size:11px;color:var(--text2);line-height:1.6">เบื้องหลังโรงงาน 3 · เคสลูกค้า 3 · งานอีเวนต์ 2<br>
+          <span style="color:var(--text3)">ครบ 3 หมวดที่ได้ผลดีที่สุดในคราวเดียว</span></div>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:13px 14px">
+        <div style="font-size:10px;font-weight:800;color:var(--amber);letter-spacing:.08em">อันดับ 2</div>
+        <div style="font-size:13px;font-weight:800;color:var(--text);margin:5px 0 6px">เลิกใช้แคปชั่นเดิม</div>
+        <div style="font-size:11px;color:var(--text2);line-height:1.6">เขียนใหม่ทุกโพสต์ จบด้วยคำถาม 1 ข้อ<br>
+          <span style="color:var(--text3)">ไม่ต้องใช้งบเลย เริ่มได้ทันที</span></div>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:13px 14px">
+        <div style="font-size:10px;font-weight:800;color:var(--red);letter-spacing:.08em">อันดับ 3</div>
+        <div style="font-size:13px;font-weight:800;color:var(--text);margin:5px 0 6px">หาสาเหตุ FB ลด</div>
+        <div style="font-size:11px;color:var(--text2);line-height:1.6">เปิด Meta Business Suite ดู Follows/Unfollows ย้อนหลัง 6 เดือน<br>
+          <span style="color:var(--text3)">หาย 2,721 คน ต้องรู้ว่าเพราะอะไร</span></div>
+      </div>
+    </div>
   </div>
 
   <div class="card mb">
@@ -2093,9 +2120,17 @@ body{
     <div class="card-hd"><div class="card-title"><span class="ci ci-t">🕸</span>Position Radar<span class="th">· เรดาร์ตำแหน่งแบรนด์ · Folio vs 4 คู่แข่ง</span></div></div>
     <div class="ch-lg"><canvas id="folioRadar"></canvas></div>
   </div>
+
+  <div class="ins" style="margin-bottom:0">
+    <div class="ins-tag it-w"><div class="ins-dot"></div>ที่มาของข้อสรุปในหน้านี้</div>
+    <div class="ins-text">
+      ทุกบรรทัดอิงตัวเลขจริง — Apify IG 1,824 โพสต์ + FB Pages 6 เพจ (19 ต.ค. 2569) · SimilarWeb Sep 2026 · เว็บคู่แข่ง 5 เว็บ<br>
+      <span style="color:var(--text3)">· ยังไม่รวมคอนเทนต์ฝั่ง Facebook (ต้องใช้ Facebook Posts Scraper ซึ่งยังไม่เคยดึง)
+      · ตัวเลข Sentiment / YouTube / ราคา เป็นค่าประมาณ ไม่ได้ใช้เป็นฐานข้อสรุปใดในหน้านี้</span>
+    </div>
+  </div>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
   <div>✓ Real Data จาก Apify 19 ต.ค. 2569 (IG 1,824 posts · FB Pages 6 · FB Ads Library) · Similarweb Sep 2026 · NEW: Source Links + Events + Content Intelligence</div>
   <div>Folio Intel <strong style="color:var(--teal)">V2</strong> · ตุลาคม 2026</div>
