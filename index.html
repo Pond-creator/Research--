@@ -508,7 +508,7 @@ body{
   <button class="nt" onclick="show('cfreq',this)">📅 ความถี่โพสต์</button>
   <span style="width:1px;height:16px;background:var(--border2);margin:0 6px;flex-shrink:0"></span>
   <button class="nt" onclick="show('audience',this)">👥 Audience</button>
-  <button class="nt" onclick="show('social',this)">📱 Social</button>
+  <button class="nt" onclick="show('social',this)">📱 ช่องทางโซเชียล</button>
   <button class="nt" onclick="show('seo',this)">🌐 SEO</button>
   <button class="nt" onclick="show('youtube',this)">▶️ YouTube</button>
   <button class="nt" onclick="show('swot',this)">⚔️ วิเคราะห์เรา</button>
@@ -934,8 +934,8 @@ body{
 ══════════════════════════════════════ -->
 <div class="page" id="page-social">
   <div class="ph">
-    <div class="eyebrow">Social Media Intelligence <span class="th">· ข้อมูลโซเชียลจากการ scrape จริง</span></div>
-    <div class="ptitle">Facebook · <em>Instagram</em> · การมีส่วนร่วม</div>
+    <div class="eyebrow">Social Channels <span class="th">· ลิงก์เพจจริงทุกแบรนด์ + สถานะการยิงโฆษณา</span></div>
+    <div class="ptitle">📱 ช่องทาง<em>โซเชียล</em> · ลิงก์ + สถานะ Ads</div>
     <div class="psub">ข้อมูลจาก Apify Scraper จริง + source links ที่ส่งมา · <span style="color:var(--teal);font-weight:700">อัพเดท 19 ต.ค. 2569</span></div>
   </div>
   <div class="card mb">
@@ -952,67 +952,18 @@ body{
       </div>
       <div>
         <div style="font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:8px">Instagram · avg likes/post (จาก scrape จริง)</div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px">GiftwiseAsia IG</span><a href="https://www.instagram.com/giftwise.official/" target="_blank" class="lu">@giftwise.official</a><strong style="color:var(--amber);font-family:var(--font-display);font-size:15px">3.29 ❤️</strong><span class="src-tag">✓</span></div>
-        <div class="lr" style="background:rgba(0,229,160,.03);border-radius:8px;padding:9px 8px"><span class="pp pp-ig" style="min-width:115px;background:rgba(0,229,160,.15);color:var(--teal);border-color:rgba(0,229,160,.3)">🏠 Folio IG</span><a href="https://www.instagram.com/foliopremiumgifts/" target="_blank" class="lu">@foliopremiumgifts</a><strong style="color:var(--teal);font-family:var(--font-display);font-size:15px">1.20 ❤️ ↓</strong><span style="font-size:10px;color:var(--amber)">Top post 100 ❤️</span></div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px">Ogga IG</span><a href="https://www.instagram.com/oggaidea/" target="_blank" class="lu">@oggaidea</a><strong style="color:var(--blue);font-family:var(--font-display);font-size:15px">3.43 ❤️ 🏆</strong><span class="src-tag">✓</span></div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px">SwagOn IG</span><a href="https://www.instagram.com/swagon.official" target="_blank" class="lu">@swagon.official</a><strong style="color:var(--red);font-family:var(--font-display);font-size:15px">2.26 ❤️</strong><span class="src-tag">✓</span></div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px;background:rgba(16,185,129,.1);color:var(--green);border-color:rgba(16,185,129,.3)">Bixitia IG</span><a href="https://www.instagram.com/bixitia/" target="_blank" class="lu">@bixitia</a><strong style="color:var(--green);font-family:var(--font-display);font-size:15px">2.20 ❤️</strong><span style="font-size:9px;background:rgba(16,185,129,.1);color:var(--green);padding:1px 6px;border-radius:4px;border:1px solid rgba(16,185,129,.3);margin-left:4px">NEW</span></div>
-        <div class="lr"><span class="pp pp-ig" style="min-width:115px">Admire IG</span><a href="https://www.instagram.com/admire.tomorrow/" target="_blank" class="lu">@admire.tomorrow</a><strong style="color:var(--purple);font-family:var(--font-display);font-size:15px">2.42 ❤️</strong><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px">GiftwiseAsia IG</span><a href="https://www.instagram.com/giftwise.official/" target="_blank" class="lu">@giftwise.official</a><span class="src-tag">✓</span></div>
+        <div class="lr" style="background:rgba(0,229,160,.03);border-radius:8px;padding:9px 8px"><span class="pp pp-ig" style="min-width:115px;background:rgba(0,229,160,.15);color:var(--teal);border-color:rgba(0,229,160,.3)">🏠 Folio IG</span><a href="https://www.instagram.com/foliopremiumgifts/" target="_blank" class="lu">@foliopremiumgifts</a><span style="font-size:10px;color:var(--amber)">Top post 100 ❤️</span></div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px">Ogga IG</span><a href="https://www.instagram.com/oggaidea/" target="_blank" class="lu">@oggaidea</a><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px">SwagOn IG</span><a href="https://www.instagram.com/swagon.official" target="_blank" class="lu">@swagon.official</a><span class="src-tag">✓</span></div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px;background:rgba(16,185,129,.1);color:var(--green);border-color:rgba(16,185,129,.3)">Bixitia IG</span><a href="https://www.instagram.com/bixitia/" target="_blank" class="lu">@bixitia</a><span style="font-size:9px;background:rgba(16,185,129,.1);color:var(--green);padding:1px 6px;border-radius:4px;border:1px solid rgba(16,185,129,.3);margin-left:4px">NEW</span></div>
+        <div class="lr"><span class="pp pp-ig" style="min-width:115px">Admire IG</span><a href="https://www.instagram.com/admire.tomorrow/" target="_blank" class="lu">@admire.tomorrow</a><span class="src-tag">✓</span></div>
       </div>
     </div>
-  </div>
-  <div class="card">
-      <div class="card-hd"><div class="card-title"><span class="ci ci-a">👥</span>FB Followers Comparison<span class="th">· เทียบจำนวนผู้ติดตามเฟซบุ๊ก</span></div><span class="bv">Apify Real</span></div>
-      <div class="ch"><canvas id="fbEngChart"></canvas></div>
   </div>
 
   <div class="ph" style="margin-top:22px">
-    <div class="eyebrow">Facebook <span class="th">· ข้อมูลเพจ + สถานะการยิงโฆษณาจาก Meta</span></div>
-  </div>
-  <div class="data-card">
-    <div class="data-badge">📘 Facebook Pages Scraper · <span class="src-tag" style="font-size:10px">✓ Real Data 19 ต.ค. 2569</span></div>
-    <div class="stat-grid" style="grid-template-columns:repeat(6,1fr)">
-      <div class="stat-box" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
-        <div class="stat-brand" style="color:var(--teal)">🏠 Folio</div>
-        <div class="stat-num" style="color:var(--teal)">10,793</div>
-        <div class="stat-lbl">FB Followers 🏆</div>
-        <div style="margin-top:4px"><span class="src-tag" style="font-size:9px">✅ Running Ads</span></div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--purple)">Admire</div>
-        <div class="stat-num" style="color:var(--purple)">8,732</div>
-        <div class="stat-lbl">FB Followers</div>
-        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--red)">SwagOn</div>
-        <div class="stat-num" style="color:var(--red)">3,489</div>
-        <div class="stat-lbl">FB Followers</div>
-        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--blue)">Ogga Idea</div>
-        <div class="stat-num" style="color:var(--blue)">1,050</div>
-        <div class="stat-lbl">FB Followers</div>
-        <div style="margin-top:4px"><span class="badge br" style="font-size:9px">Not Running Ads</span></div>
-      </div>
-      <div class="stat-box" style="background:rgba(16,185,129,.05);border-color:rgba(16,185,129,.2)">
-        <div class="stat-brand" style="color:var(--green)">Bixitia</div>
-        <div class="stat-num" style="color:var(--green)">2,869</div>
-        <div class="stat-lbl">FB Followers · ใหม่</div>
-        <div style="margin-top:4px"><span class="src-tag" style="font-size:9px;color:var(--green);border-color:rgba(16,185,129,.4)">✅ Running Ads</span></div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-brand" style="color:var(--amber)">GiftwiseAsia</div>
-        <div class="stat-num" style="color:var(--text3)">—</div>
-        <div class="stat-lbl">เพจเข้าไม่ได้</div>
-        <div style="margin-top:4px"><span class="badge ba" style="font-size:9px">ดูไม่ได้</span></div>
-      </div>
-    </div>
-    <div class="ins" style="margin-top:12px;margin-bottom:0">
-      <div class="ins-tag it-t"><div class="ins-dot"></div>Key Insight</div>
-      <div class="ins-text"><strong style="color:var(--teal)">Folio = อันดับ 1 FB Followers</strong> ในตลาด (10,793) · มากกว่า Admire 24% · มากกว่า SwagOn 3.1 เท่า · ⚠️ <strong style="color:var(--red)">ลดต่อเนื่องรอบที่ 2 รวม −2,721</strong> (13,514 → 11,705 → 10,793) · และตอนนี้ Bixitia ก็ยิง Ads แล้ว ขณะที่คู่แข่งทุกรายเติบขึ้น</div>
-    </div>
+    <div class="eyebrow">Facebook Ads <span class="th">· สถานะจริงจาก Meta Ads Library</span></div>
   </div>
 
   <div class="data-card">
@@ -1063,7 +1014,7 @@ body{
     </div>
     <div class="ins" style="margin-top:12px;margin-bottom:0">
       <div class="ins-tag it-t"><div class="ins-dot"></div>สรุป Ads</div>
-      <div class="ins-text">🔴 <strong style="color:var(--green)">Bixitia เริ่มยิง Ads แล้ว</strong> — 19 ต.ค. 2569 เจอเพจ fb/bixitia (2,869 followers) ครั้งแรก และ verified <strong>running ads</strong> · Folio ไม่ได้ครอง paid media คนเดียวอีกต่อไป · Admire / SwagOn / Ogga ยัง verified ไม่ยิง · GiftwiseAsia เพจเข้าไม่ได้ ตรวจไม่ได้</div>
+      <div class="ins-text"><strong style="color:var(--teal)">Folio = อันดับ 1 FB Followers</strong> ในตลาด (10,793) · มากกว่า Admire 24% · มากกว่า SwagOn 3.1 เท่า · ⚠️ <strong style="color:var(--red)">ลดต่อเนื่องรอบที่ 2 รวม −2,721</strong> (13,514 → 11,705 → 10,793) · และตอนนี้ Bixitia ก็ยิง Ads แล้ว ขณะที่คู่แข่งทุกรายเติบขึ้น<br><br>🔴 <strong style="color:var(--green)">Bixitia เริ่มยิง Ads แล้ว</strong> — 19 ต.ค. 2569 เจอเพจ fb/bixitia (2,869 followers) ครั้งแรก และ verified <strong>running ads</strong> · Folio ไม่ได้ครอง paid media คนเดียวอีกต่อไป · Admire / SwagOn / Ogga ยัง verified ไม่ยิง · GiftwiseAsia เพจเข้าไม่ได้ ตรวจไม่ได้</div>
     </div>
   </div>
 </div>
@@ -2217,13 +2168,6 @@ function initCharts(){
   }
 
 
-  if(vis('fbEngChart')){dc('fbEngChart');
-    ch['fbEngChart']=new Chart(document.getElementById('fbEngChart'),{type:'bar',
-      data:{labels:['SwagOn','Ogga Idea','Admire Tomorrow','GiftwiseAsia','🏠 Folio','Bixitia'],
-        datasets:[
-          {label:'FB Followers',data:[3489,1050,8732,null,10793,2869],backgroundColor:['rgba(244,63,94,.5)','rgba(79,142,247,.5)','rgba(139,92,246,.5)','rgba(245,158,11,.15)','rgba(0,229,160,.6)','rgba(16,185,129,.5)'],borderColor:['#f43f5e','#4f8ef7','#8b5cf6','#f59e0b',FC,'#10b981'],borderWidth:1.5,borderRadius:5},
-        ]},options:{...DO,...GP,scales:{...GS},plugins:{...GP.plugins,tooltip:{callbacks:{label:c=>c.raw===null?'Page Private — ไม่มีข้อมูล':c.dataset.label+': '+c.raw.toLocaleString()}}}}});
-  }
   if(vis('trafficChart')){dc('trafficChart');
     ch['trafficChart']=new Chart(document.getElementById('trafficChart'),{type:'bar',
       data:{labels:['SwagOn','Ogga Idea','GiftwiseAsia','Admire Tomorrow','🏠 Folio','Bixitia'],
